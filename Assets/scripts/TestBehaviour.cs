@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c060445d43fda522b90e9b2cfc2a5f66b5f813ffd953d35380a197a58b15167
-size 404
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+public class TestBehaviour : UdonSharpBehaviour
+{
+
+    private VRCPlayerApi localPlayer;
+
+    void Start()
+    {
+        this.localPlayer = Networking.LocalPlayer;
+    }
+
+    public void Update()
+    {
+        Debug.Log(
+            this.localPlayer.GetVelocity()
+        );
+
+        this.localPlayer.SetGravityStrength();
+
+    }
+
+    // test line
+
+}
