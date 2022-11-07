@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fed53a491a6b1dfc5602aba7725214ec70e39e872e620daf244c85398aef4ad7
-size 1297
+//-----------------------------------------------------------------------
+// <copyright file="RegisterDictionaryKeyPathProviderAttribute.cs" company="Sirenix IVS">
+// Copyright (c) 2018 Sirenix IVS
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// </copyright>
+//-----------------------------------------------------------------------
+
+namespace VRC.Udon.Serialization.OdinSerializer
+{
+    using System;
+
+    [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
+    public sealed class RegisterDictionaryKeyPathProviderAttribute : Attribute
+    {
+        public readonly Type ProviderType;
+
+        public RegisterDictionaryKeyPathProviderAttribute(Type providerType)
+        {
+            this.ProviderType = providerType;
+        }
+    }
+}

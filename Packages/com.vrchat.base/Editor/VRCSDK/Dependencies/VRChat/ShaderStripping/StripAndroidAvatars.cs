@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e8d60c8e0106dea6eb3eb225d27ed14f08f3fe61ebab63bc87e44da1ca7f298
-size 1069
+﻿using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Build;
+using UnityEditor.Build.Reporting;
+using UnityEditor.Rendering;
+using UnityEngine;
+using VRC.SDKBase.Editor.BuildPipeline;
+
+public class StripAndroidAvatars : IPreprocessShaders, IVRCSDKBuildRequestedCallback, IPostprocessBuildWithReport
+{
+    private static VRCSDKRequestedBuildType? _buildType = null;
+
+    public int callbackOrder => 0;
+
+    public bool OnBuildRequested(VRCSDKRequestedBuildType requestedBuildType)
+    {
+        _buildType = requestedBuildType;
+        return true;
+    }
+
+    public void OnProcessShader(Shader shader, ShaderSnippetData snippet, IList<ShaderCompilerData> data)
+    {
+        if(_buildType != VRCSDKRequestedBuildType.Avatar)
+        {
+            return;
+        }
+
+        if(EditorUserBuildSettings.activeBuildTarget != BuildTarget.Android)
+        {
+            return;
+        }
+
+        data.Clear();
+    }
+
+    public void OnPostprocessBuild(BuildReport report)
+    {
+        _buildType = null;
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29ccd065c3eb0f5786eb855fc77b030c30916db94b76929264de80d6604ae9d6
-size 527
+﻿using VRC.Udon;
+
+namespace VRC.SDK3.ClientSim
+{
+    public class ClientSimUdonManagerEventSender : IClientSimUdonEventSender
+    {
+        private readonly UdonManager _udonManager;
+
+        public ClientSimUdonManagerEventSender(UdonManager udonManager)
+        {
+            _udonManager = udonManager;
+        }
+        
+        public void RunEvent(string eventName, params (string, object)[] programVariables)
+        {
+            _udonManager.RunEvent(eventName, programVariables);
+        }
+    }
+}

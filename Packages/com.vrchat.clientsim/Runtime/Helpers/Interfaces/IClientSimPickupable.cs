@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42486f7e99f50d0abf9cabf333063f53af72a00ed63b82273ee456682b9cc2e9
-size 775
+﻿using System;
+using UnityEngine;
+using VRC.SDKBase;
+
+namespace VRC.SDK3.ClientSim
+{
+    public interface IClientSimPickupable : IClientSimInteractable
+    {
+        bool IsHeld();
+        VRCPlayerApi GetHoldingPlayer();
+        bool AutoHold();
+        GameObject GetGameObject();
+        Transform GetTransform();
+        Rigidbody GetRigidbody();
+        VRC_Pickup GetPickup();
+        VRC_Pickup.PickupOrientation GetOrientation();
+        Transform GetGunLocation();
+        Transform GetGripLocation();
+        float GetThrowVelocityBoostScale();
+        bool AllowManipulation();
+        void Pickup(VRCPlayerApi player, VRC_Pickup.PickupHand heldHand, Action<IClientSimPickupable> forceDrop);
+        void Drop(VRCPlayerApi player);
+    }
+}

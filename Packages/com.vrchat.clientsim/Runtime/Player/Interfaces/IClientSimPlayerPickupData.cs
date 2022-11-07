@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d69852d12f9debaf19a9be4875082ca4823c5c9e2e6416bd3aebbadeefb5c1a
-size 347
+﻿using VRC.SDKBase;
+
+namespace VRC.SDK3.ClientSim
+{
+    public interface IClientSimPlayerPickupData
+    {
+        void SetPickupsEnabled(bool enabled);
+        bool GetPickupsEnabled();
+        VRC_Pickup GetPickupInHand(VRC_Pickup.PickupHand hand);
+        void SetPickupInHand(VRC_Pickup.PickupHand hand, VRC_Pickup pickup);
+    }
+}

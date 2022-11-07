@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42c58d1e5179c69840ac630e106ac0f94bcce95f15ada70b4c91481e49a72009
-size 691
+﻿using VRC.Udon;
+using VRC.Udon.Common;
+
+namespace VRC.SDK3.ClientSim
+{
+    /// <summary>
+    /// Wrapper for UdonManager. Only needed to prevent direct dependency to UdonManger in the UdonInput class.
+    /// </summary>
+    public class ClientSimUdonManagerInputEventSender : IClientSimUdonInputEventSender
+    {
+        private readonly UdonManager _udonManager;
+
+        public ClientSimUdonManagerInputEventSender(UdonManager udonManager)
+        {
+            _udonManager = udonManager;
+        }
+
+        public void RunInputAction(string eventName, UdonInputEventArgs args)
+        {
+            _udonManager.RunInputAction(eventName, args);
+        }
+    }
+}

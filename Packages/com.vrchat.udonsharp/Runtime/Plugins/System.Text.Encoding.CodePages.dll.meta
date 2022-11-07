@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9a160e07379651f08402a2a7d472cc1be077c5b64a7a52ca8e8d133dc69ad33
-size 678
+fileFormatVersion: 2
+guid: 15eaba9fdc5c0b34a86676edbbb3afb0
+PluginImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  iconMap: {}
+  executionOrder: {}
+  defineConstraints: []
+  isPreloaded: 0
+  isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
+  platformData:
+  - first:
+      Any: 
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

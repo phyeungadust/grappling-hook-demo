@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:378cb645f5f53bc271f097950ca67e7b4767c55bfb6a71e1e3f36e2245ac6add
-size 486
+fileFormatVersion: 2
+guid: 98baae691215eb546a697ff7d942a5bb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Lato
+  fontNames:
+  - Lato
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

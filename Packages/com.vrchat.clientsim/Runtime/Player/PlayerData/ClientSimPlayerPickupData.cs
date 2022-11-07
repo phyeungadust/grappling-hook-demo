@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b2278669936ca111c59ef8a358ada0dd072b6dca7fe1a106976a3efcffd33d4
-size 1354
+﻿using System;
+using VRC.SDKBase;
+
+namespace VRC.SDK3.ClientSim
+{
+    [Serializable]
+    public class ClientSimPlayerPickupData : IClientSimPlayerPickupData
+    {
+        public bool pickupsEnabled = true;
+        private VRC_Pickup _leftHandPickup;
+        private VRC_Pickup _rightHandPickup;
+
+        public void SetPickupsEnabled(bool enabled)
+        {
+            pickupsEnabled = enabled;
+        }
+
+        public bool GetPickupsEnabled()
+        {
+            return pickupsEnabled;
+        }
+
+        public VRC_Pickup GetPickupInHand(VRC_Pickup.PickupHand hand)
+        {
+            switch (hand)
+            {
+                case VRC_Pickup.PickupHand.Left:
+                    return _leftHandPickup;
+                case VRC_Pickup.PickupHand.Right:
+                    return _rightHandPickup;
+                default:
+                    return null;
+            }
+        }
+
+        public void SetPickupInHand(VRC_Pickup.PickupHand hand, VRC_Pickup pickup)
+        {
+            switch (hand)
+            {
+                case VRC_Pickup.PickupHand.Left:
+                    _leftHandPickup = pickup;
+                    break;
+                case VRC_Pickup.PickupHand.Right:
+                    _rightHandPickup = pickup;
+                    break;
+            }
+        }
+    }
+}

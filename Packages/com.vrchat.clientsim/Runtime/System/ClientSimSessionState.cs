@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c470eb41b0a85ccb06f8a4ba84c2e1e043e7f005ecc3f64c6a13f5b70469f299
-size 715
+﻿namespace VRC.SDK3.ClientSim
+{
+    public class ClientSimSessionState : IClientSimSessionState
+    {
+        private const string SESSION_KEY_PREFIX = "com.vrchat.clientsim.session";
+
+        private string GetSessionKey(string key)
+        {
+            return $"{SESSION_KEY_PREFIX}.{key}";
+        }
+        
+        public bool GetBool(string key)
+        {
+#if UNITY_EDITOR
+            return UnityEditor.SessionState.GetBool(GetSessionKey(key), false);
+#else
+            return false;
+#endif
+        }
+
+        public void SetBool(string key, bool value)
+        {
+#if UNITY_EDITOR
+            UnityEditor.SessionState.SetBool(GetSessionKey(key), value);
+#endif
+        }
+    }
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d3ca2652a36d75c0195b5b1a46ba1949dfc9b91851413fa06840197409a910a6
-size 551
+﻿using System;
+using System.Collections.Generic;
+using JetBrains.Annotations;
+using UnityEngine;
+using VRC.Udon.Common.Interfaces;
+
+namespace VRC.Udon
+{
+    public abstract class AbstractUdonProgramSource : ScriptableObject
+    {
+        [PublicAPI]
+        public abstract AbstractSerializedUdonProgramAsset SerializedProgramAsset { get; }
+
+        [PublicAPI]
+        public abstract void RunEditorUpdate(UdonBehaviour udonBehaviour, ref bool dirty);
+
+        [PublicAPI]
+        public abstract void RefreshProgram();
+    }
+}

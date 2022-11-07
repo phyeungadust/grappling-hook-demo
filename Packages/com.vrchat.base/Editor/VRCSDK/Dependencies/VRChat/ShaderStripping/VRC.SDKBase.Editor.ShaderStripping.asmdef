@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f23c2bbbcbdabe002da480f5b23baddd270775ead3fafb54da7d8a0065fbc1cd
-size 392
+{
+    "name": "VRC.SDKBase.Editor.ShaderStripping",
+    "references": [],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        "VRCSDKBase-Editor.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

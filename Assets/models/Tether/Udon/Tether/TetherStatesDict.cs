@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:694ddd4677f2498629e5e135a40f327560e6105eb79d13fec6225aeb12ea3852
-size 729
+﻿using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace Tether
+{
+    public class TetherStatesDict : UdonSharpBehaviour
+    {
+        public TetherNoneState tetherNoneState;
+        public TetherAccelState tetherAccelState;
+        public TetherBrakeState tetherBrakeState;
+        void Start()
+        {
+            this.tetherNoneState = 
+                this.transform.Find("TetherNoneState").GetComponent<TetherNoneState>();
+            this.tetherAccelState = 
+                this.transform.Find("TetherAccelState").GetComponent<TetherAccelState>();
+            this.tetherBrakeState = 
+                this.transform.Find("TetherBrakeState").GetComponent<TetherBrakeState>();
+        }
+    }
+}

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11267100ea97eb7f9b779ee0c40dd3f2a8a05ddcd6888da42aaf3e503effea0d
-size 823
+namespace VRC.Udon.Serialization.OdinSerializer
+{
+    using System;
+
+    /// <summary>
+    /// Implements methods for logging warnings, errors and exceptions during serialization and deserialization.
+    /// </summary>
+    public interface ILogger
+    {
+        /// <summary>
+        /// Logs a warning.
+        /// </summary>
+        /// <param name="warning">The warning to log.</param>
+        void LogWarning(string warning);
+
+        /// <summary>
+        /// Logs an error.
+        /// </summary>
+        /// <param name="error">The error to log.</param>
+        void LogError(string error);
+
+        /// <summary>
+        /// Logs an exception.
+        /// </summary>
+        /// <param name="exception">The exception to log.</param>
+        void LogException(Exception exception);
+    }
+}

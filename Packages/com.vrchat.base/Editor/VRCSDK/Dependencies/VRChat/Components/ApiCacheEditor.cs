@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff45bdce60dee0b5dee43e66e9f572cf9012bcf0157758ea27b0aa894e3844a0
-size 622
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
+using VRC.Core;
+
+[CustomEditor(typeof(ApiCache))]
+public class ApiCacheEditor : Editor {
+    public override void OnInspectorGUI()
+    {
+        foreach (System.Type type in ApiCache.cache.Keys)
+        {
+            Dictionary<string, ApiCache.CacheEntry> typeCache = ApiCache.cache[type];
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PrefixLabel(type.Name);
+            EditorGUILayout.LabelField(typeCache.Count.ToString());
+            EditorGUILayout.EndHorizontal();
+        }
+    }
+}

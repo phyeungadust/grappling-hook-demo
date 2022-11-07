@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4125ad0feec9618d7c5760f83ddee037f5044c3e369af8b2bc8e12e45004721
-size 686
+﻿using UnityEngine.UIElements;
+using UIElements = UnityEditor.UIElements;
+using UnityEngine;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI
+{
+    public class LayerMaskField : BaseField<LayerMask>
+    {
+        public LayerMaskField() : base(null,null)
+        {
+            // Set up styling
+            AddToClassList("UdonValueField");
+
+            // Create LayerMask Editor and listen for changes
+            UIElements.LayerMaskField field = new UIElements.LayerMaskField();
+            field.RegisterValueChangedCallback(e =>
+            {
+                this.value = e.newValue;
+            });
+
+            Add(field);
+        }
+    }
+}

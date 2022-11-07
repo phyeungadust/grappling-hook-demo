@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bad7c485032d3b9240af9e1b5009df371568053ea909940dad3e444b25e23a9a
-size 429
+﻿using Microsoft.CodeAnalysis;
+using UdonSharp.Compiler.Emit;
+
+namespace UdonSharp.Compiler.Binder
+{
+    internal sealed class BoundBreakStatement : BoundStatement
+    {
+        public BoundBreakStatement(SyntaxNode node)
+            :base(node)
+        {
+        }
+
+        public override void Emit(EmitContext context)
+        {
+            context.Module.AddJump(context.TopBreakLabel);
+        }
+    }
+}

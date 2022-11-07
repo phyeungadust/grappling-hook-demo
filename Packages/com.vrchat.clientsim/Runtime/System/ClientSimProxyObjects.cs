@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ec487bfe40f6d0e9eaf38ee78a22ac280e3d1622e5b04cf055952d045386b9ec
-size 568
+﻿using UnityEngine;
+
+namespace VRC.SDK3.ClientSim
+{
+    /// <summary>
+    /// Manager class for holding any proxy object. Currently only the camera proxy provided for the combat system.
+    /// </summary>
+    [AddComponentMenu("")]
+    public class ClientSimProxyObjects : ClientSimBehaviour, IClientSimProxyObjectProvider
+    {
+        [SerializeField] 
+        private Transform cameraProxy;
+
+        public Transform CameraProxy() => cameraProxy;
+
+        public void DestroyProxy()
+        {
+            Destroy(gameObject);
+        }
+    }
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73b9adc229e2ce36590c27e53f87e85e27abdd0db87c61affb8f5c2e3bd5c9dd
-size 413
+{
+    "name": "UdonSharp.Runtime",
+    "references": [
+        "VRC.Udon.Serialization.OdinSerializer",
+        "VRC.Udon"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

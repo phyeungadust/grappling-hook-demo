@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7725b00cd30a22cdd0bef539228a2db61d1dfc49dcf0b644639ce7dc5c92f97
-size 429
+fileFormatVersion: 2
+guid: 2a08897387d5ffd4795ccec0e8384a6a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 8404be70184654265930450def6a9037, type: 3}
+  generateWrapperCode: 0
+  wrapperCodePath: 
+  wrapperClassName: ClientSimInputMapping
+  wrapperCodeNamespace: VRC.SDK3.ClientSim

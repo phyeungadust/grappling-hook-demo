@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79360ad1d978cc89d13f47655a8c6fc98b152f5e0a6fdceafce222023348e8b9
-size 400
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace UdonSharp.Tests
+{
+    [AddComponentMenu("Udon Sharp/Tests/<TemplateClassName>")]
+    public class <TemplateClassName> : UdonSharpBehaviour
+    {
+        [System.NonSerialized]
+        public IntegrationTestSuite tester;
+
+        public void ExecuteTests()
+        {
+            
+        }
+    }
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea9f6eb7ed71d6554a781687a98a697472cb7843c3e64743e68c014db8b76a49
-size 1329
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace UdonSharp.Serialization
+{
+    /// <summary>
+    /// Handles class serialization where there are multiple unknown fields that need to be serialized.
+    /// Instead of how serializers key off the root storage type using type metadata, Formatters try to extract the type data from their target object to serialize
+    /// This handles inheritance which serializers cannot handle on their own
+    /// </summary>
+    public interface IFormatter
+    {
+        void Write(IValueStorage targetObject, object sourceObject);
+        void Read(ref object targetObject, IValueStorage sourceObject);
+    }
+
+    public abstract class Formatter<T> : IFormatter
+    {
+        public abstract void Read(ref T targetObject, IValueStorage sourceObject);
+
+        public abstract void Write(IValueStorage targetObject, T sourceObject);
+
+        void IFormatter.Read(ref object targetObject, IValueStorage sourceObject)
+        {
+            T targetT = (T)targetObject;
+            Read(ref targetT, sourceObject);
+            targetObject = targetT;
+        }
+
+        void IFormatter.Write(IValueStorage targetObject, object sourceObject)
+        {
+            Write(targetObject, (T)sourceObject);
+        }
+    }
+}

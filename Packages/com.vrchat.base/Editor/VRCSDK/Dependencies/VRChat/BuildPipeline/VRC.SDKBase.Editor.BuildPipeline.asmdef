@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa4085f87dd9fe2158607d2d77a225626717de4f11cf5b67968c8562fd4b52da
-size 327
+{
+    "name": "VRC.SDKBase.Editor.BuildPipeline",
+    "references": [],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6946292cde16de775437884264221ee9d7f76da05d95ff1001440dbf15cc9bbd
-size 644
+﻿using System;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI
+{
+    public class DecimalField : BaseField<decimal>
+    {
+        public DecimalField():base(null,null)
+        {
+            // Set up styling
+            AddToClassList("UdonValueField");
+            
+            // Create Char Editor and listen for changes
+            DoubleField field = new DoubleField();
+            field.RegisterValueChangedCallback(
+                e =>
+                    value = Convert.ToDecimal(e.newValue));
+
+            Add(field);
+        }
+    }
+}

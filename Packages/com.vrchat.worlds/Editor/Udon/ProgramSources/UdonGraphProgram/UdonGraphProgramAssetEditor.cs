@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bde5888d5a45dbb257cc27f9338f9566ae33c536bff9e7b8683fd17ac247434a
-size 721
+﻿using UnityEditor;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram
+{
+    [CustomEditor(typeof(UdonGraphProgramAsset))]
+    public class UdonGraphProgramAssetEditor : UdonAssemblyProgramAssetEditor
+    {
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            var asset = (UdonGraphProgramAsset) target;
+            EditorGUI.BeginChangeCheck();
+            asset.graphData.updateOrder = EditorGUILayout.IntField("UpdateOrder", asset.graphData.updateOrder);
+            if (EditorGUI.EndChangeCheck())
+            {
+                EditorUtility.SetDirty(target);
+                AssetDatabase.SaveAssets();
+            }
+        }
+    }
+}

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:722d0ebcd4898347141913289f6f7867de2290e93f3678fd1eac51a8f37e67d5
-size 787
+﻿
+using Microsoft.CodeAnalysis;
+using UdonSharp.Compiler.Emit;
+using UdonSharp.Compiler.Symbols;
+
+namespace UdonSharp.Compiler.Binder
+{
+    internal sealed class BoundAssignmentExpression : BoundExpression
+    {
+        private BoundAccessExpression TargetExpression { get; }
+
+        public override TypeSymbol ValueType => SourceExpression.ValueType;
+
+        public BoundAssignmentExpression(SyntaxNode node, BoundAccessExpression assignmentTarget, BoundExpression assignmentSource)
+            : base(node, assignmentSource)
+        {
+            TargetExpression = assignmentTarget;
+        }
+
+        public override Value EmitValue(EmitContext context)
+        {
+            return context.EmitSet(TargetExpression, SourceExpression);
+        }
+    }
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:455272fbc9f4848844626cb32705b6825231fd92e1fa31b5c8ee9eb9dc4a7422
-size 1150
+﻿using System.IO;
+using JetBrains.Annotations;
+using UnityEditor;
+using UnityEditor.Experimental.AssetImporters;
+using UnityEngine;
+
+namespace VRC.Udon.Editor.ProgramSources
+{
+    [ScriptedImporter(1, "uasm")]
+    [UsedImplicitly]
+    public class UdonAssemblyProgramAssetImporter : ScriptedImporter
+    {
+        public override void OnImportAsset(AssetImportContext ctx)
+        {
+            UdonAssemblyProgramAsset udonAssemblyProgramAsset = ScriptableObject.CreateInstance<UdonAssemblyProgramAsset>();
+            SerializedObject serializedUdonAssemblyProgramAsset = new SerializedObject(udonAssemblyProgramAsset);
+            SerializedProperty udonAssemblyProperty = serializedUdonAssemblyProgramAsset.FindProperty("udonAssembly");
+            udonAssemblyProperty.stringValue = File.ReadAllText(ctx.assetPath);
+            serializedUdonAssemblyProgramAsset.ApplyModifiedProperties();
+
+            udonAssemblyProgramAsset.RefreshProgram();
+
+            ctx.AddObjectToAsset("Imported Udon Assembly Program", udonAssemblyProgramAsset);
+            ctx.SetMainObject(udonAssemblyProgramAsset);
+        }
+    }
+}

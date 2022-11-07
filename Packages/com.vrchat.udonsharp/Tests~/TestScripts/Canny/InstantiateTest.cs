@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eeb8821fc0f7f0cab6d1ce784d120b512e7f070b653cf70b8478fe7440ff2c82
-size 559
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace UdonSharp.Tests
+{
+    [AddComponentMenu("Udon Sharp/Tests/InstantiateTest")]
+    public class InstantiateTest : UdonSharpBehaviour
+    {
+        [System.NonSerialized]
+        public IntegrationTestSuite tester;
+
+        public GameObject objectToSpawn;
+
+        public void ExecuteTests()
+        {
+            GameObject newObject = Instantiate(objectToSpawn);
+
+            tester.TestAssertion("Instantiation", newObject != null);
+        }
+    }
+}

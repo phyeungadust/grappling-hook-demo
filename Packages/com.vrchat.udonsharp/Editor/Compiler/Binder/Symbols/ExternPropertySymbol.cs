@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1325d7647cf12a2296fcff8742bb090c29f8dcf18774af02cfc36bbd8f0a3f8d
-size 796
+﻿
+using Microsoft.CodeAnalysis;
+
+namespace UdonSharp.Compiler.Symbols
+{
+    internal class ExternPropertySymbol : PropertySymbol, IExternAccessor
+    {
+        public ExternPropertySymbol(IPropertySymbol sourceSymbol, AbstractPhaseContext context)
+            : base(sourceSymbol, context)
+        {
+            if (GetMethod != null)
+                ExternGetSignature = ((ExternMethodSymbol) GetMethod).ExternSignature;
+            
+            if (SetMethod != null)
+                ExternSetSignature = ((ExternMethodSymbol) SetMethod).ExternSignature;
+        }
+
+        public override bool IsExtern => true;
+
+        public override bool IsBound => true;
+        public string ExternGetSignature { get; }
+        public string ExternSetSignature { get; }
+    }
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f214bcbfeebd77df53c86c71654cc191a45f149730fad53517b74d8d4ae33779
-size 480
+﻿using System;
+
+namespace VRC.Udon.Editor.ProgramSources.Attributes
+{
+    [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
+    public class UdonProgramSourceNewMenuAttribute : Attribute
+    {
+        public Type Type { get; }
+        public string DisplayName { get; }
+
+        public UdonProgramSourceNewMenuAttribute(Type type, string displayName)
+        {
+            Type = type;
+            DisplayName = displayName;
+        }
+    }
+}
+

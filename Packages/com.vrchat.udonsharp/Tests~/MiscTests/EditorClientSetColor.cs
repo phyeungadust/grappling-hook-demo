@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41543ffd82071bbc74b8bb9c86e5f6d7dfe1e9c3be9e6cb091b3a652d2708d5c
-size 456
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace UdonSharp.Tests
+{
+    public class EditorClientSetColor : UdonSharpBehaviour
+    {
+        void Start()
+        {
+            Material meshMaterial = GetComponent<MeshRenderer>().material;
+
+#if UNITY_EDITOR
+            meshMaterial.SetColor("_Color", Color.red);
+#else
+            meshMaterial.SetColor("_Color", Color.blue);
+#endif
+        }
+    }
+}

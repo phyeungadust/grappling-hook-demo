@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b232a337b89e5da4b6ef32d6bd9515b228163258048f400d24608822c690551c
-size 779
+﻿
+using System;
+using Microsoft.CodeAnalysis;
+using UdonSharp.Compiler.Binder;
+
+namespace UdonSharp.Compiler.Symbols
+{
+    internal class TypeParameterSymbol : TypeSymbol
+    {
+        public TypeParameterSymbol(ITypeParameterSymbol sourceSymbol, AbstractPhaseContext context) 
+            :base(sourceSymbol, context)
+        {
+        }
+
+        public TypeParameterSymbol(IArrayTypeSymbol arraySymbol, AbstractPhaseContext context)
+            :base(arraySymbol, context)
+        {
+        }
+
+        public override void Bind(BindContext context)
+        {
+        }
+
+        protected override Symbol CreateSymbol(ISymbol roslynSymbol, AbstractPhaseContext context)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

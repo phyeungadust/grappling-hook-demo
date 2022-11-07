@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49613e4a06738cdd5f867d424671fc11fd70d5e339ebca4acefcd6c1ffbfa4c2
-size 470
+﻿using UnityEngine;
+
+namespace VRC.SDK3.ClientSim
+{
+    public class ClientSimTransformRayProvider : IClientSimRayProvider
+    {
+        private readonly Transform _rayTransform;
+
+        public ClientSimTransformRayProvider(Transform rayTransform)
+        {
+            _rayTransform = rayTransform;
+        }
+        
+        public Ray GetRay()
+        {
+            return new Ray(_rayTransform.position, _rayTransform.forward);
+        }
+    }
+}

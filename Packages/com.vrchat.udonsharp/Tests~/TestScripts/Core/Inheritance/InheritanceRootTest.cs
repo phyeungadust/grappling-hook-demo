@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c3807b623ebdbf61e111396b07b26762384f0ab8cb92455f65a5d0fc3417d36
-size 1144
+﻿
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace UdonSharp.Tests
+{
+    [AddComponentMenu("Udon Sharp/Tests/InheritanceRootTest")]
+    public class InheritanceRootTest : UdonSharpBehaviour
+    {
+        [System.NonSerialized]
+        public IntegrationTestSuite tester;
+
+        public TestInheritanceClassBase[] testClasses;
+
+        public void ExecuteTests()
+        {
+            string resultStr = "";
+            
+            foreach (var testInheritanceClassBase in testClasses)
+            {
+                resultStr += testInheritanceClassBase.GetClassName();
+            }
+            
+            tester.TestAssertion("Inherited methods", resultStr == "ABBC");
+            tester.TestAssertion("Inherited methods 2", testClasses[0].GetClassID() == 1);
+            tester.TestAssertion("Inherited type field 1", testClasses[0].BaseClassField == 4);
+            tester.TestAssertion("Inherited type field 2", testClasses[1].BaseClassField == 20);
+            tester.TestAssertion("Inherited type field 3", testClasses[2].NonSerializedField == 5);
+        }
+    }
+}

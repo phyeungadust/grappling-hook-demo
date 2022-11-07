@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e07b41e8e3b2b7ceb152d974f2c489f00498a3c0243eb2fe55cf797fefb6c88
-size 1177
+﻿using UnityEngine;
+
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
+
+namespace VRC.SDK3.ClientSim
+{
+    /// <summary>
+    /// Wrapper around ClientSimInputActionBased that supplies the input actions.
+    /// Classes were split to allow for testing without monobehaviours.
+    /// </summary>
+    [AddComponentMenu("")]
+    public class ClientSimInputManager : ClientSimBehaviour
+    {
+#if ENABLE_INPUT_SYSTEM
+        private PlayerInput _playerInput;
+        private ClientSimInputActionBased _input;
+        
+        protected override void Awake()
+        {
+            base.Awake();
+            _playerInput = GetComponent<PlayerInput>();
+        }
+        
+        private void OnDestroy()
+        {
+            _input?.Dispose();
+        }
+#endif
+        
+        public void Initialize(ClientSimSettings settings)
+        {
+#if ENABLE_INPUT_SYSTEM
+            _input = new ClientSimInputActionBased(_playerInput.actions, settings);
+#endif
+        }
+
+        public IClientSimInput GetInput()
+        {
+#if ENABLE_INPUT_SYSTEM
+            return _input;
+#else
+            return null;
+#endif
+        }
+    }
+}

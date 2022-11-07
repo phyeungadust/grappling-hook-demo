@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6412a80adc8eb9c4b1799b96c06141c29d0560369d8bdf60f1049f2beb68657e
-size 548
+﻿using UnityEngine;
+using VRC.Udon;
+
+namespace ClientSimTest
+{
+    // This class is only to make getting references to objects in the scene easier. 
+    // This can also be done without a dedicated MonoBehaviour and search the scene based on object names.
+    [AddComponentMenu("")]
+    public class ClientSimIssue3RespawnTestObjectReferences : MonoBehaviour
+    {
+        public UdonBehaviour respawnCube;
+        public UdonBehaviour respawnWithIndexCube;
+        public Transform spawn1;
+        public Transform spawn2;
+    }
+}

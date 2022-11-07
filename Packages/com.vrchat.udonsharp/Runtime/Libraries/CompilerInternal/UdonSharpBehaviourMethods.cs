@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35374517656b0eeda08f7b0bb8a05186a4871e48aafcd834777d90810b188633
-size 682
+﻿
+using JetBrains.Annotations;
+using VRC.Udon;
+
+namespace UdonSharp.Lib.Internal
+{
+    public static class UdonSharpBehaviourMethods
+    {
+        [UsedImplicitly]
+        internal static long GetUdonTypeID(UdonBehaviour behaviour)
+        {
+            object id = behaviour.GetProgramVariable(CompilerConstants.UsbTypeIDHeapKey);
+            if (id == null)
+                return 0;
+
+            return (long)id;
+        }
+        
+        [UsedImplicitly]
+        internal static string GetUdonTypeName(UdonBehaviour behaviour)
+        {
+            return (string)behaviour.GetProgramVariable(CompilerConstants.UsbTypeNameHeapKey);
+        }
+    }
+}

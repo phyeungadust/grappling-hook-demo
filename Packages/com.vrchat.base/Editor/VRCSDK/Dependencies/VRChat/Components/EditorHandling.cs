@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebcef6bc33c6b608aecab70d16af1db8cd539b01dbeeb5503b31f526fe22b90c
-size 540
+﻿using UnityEditor;
+using UnityEngine.SceneManagement;
+
+[InitializeOnLoad]
+public static class EditorHandling
+{
+    static EditorHandling()
+    {
+        UnityEditor.SceneManagement.EditorSceneManager.sceneOpened += SceneOpenedCallback;
+    }
+
+    static void SceneOpenedCallback( Scene scene, UnityEditor.SceneManagement.OpenSceneMode mode)
+    {
+        // refresh window when scene is opened to display content images correctly
+        if (null != VRCSdkControlPanel.window) VRCSdkControlPanel.window.Reset();
+    }
+}

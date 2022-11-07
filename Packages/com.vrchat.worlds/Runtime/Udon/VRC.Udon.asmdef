@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:179846be6818c2f3a54726756267060579a69aa85ad3530e522b0b1f9e14af13
-size 358
+{
+    "name": "VRC.Udon",
+    "references": [
+        "VRC.Udon.Serialization.OdinSerializer"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

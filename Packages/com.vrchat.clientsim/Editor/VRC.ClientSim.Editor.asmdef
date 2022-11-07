@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cf8866db20031381a51d1d4e06fa015bfb2cf8b6cda3e08956cbe37a909b867
-size 474
+{
+    "name": "VRC.ClientSim.Editor",
+    "references": [
+        "VRC.ClientSim",
+        "VRC.Udon",
+        "VRC.Udon.Editor",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

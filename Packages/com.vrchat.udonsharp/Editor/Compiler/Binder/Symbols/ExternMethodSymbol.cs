@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dfe5406328018437f8e8176b0f4562bfd087b5635d9fc5bbb048ae8ca3382a3
-size 766
+﻿
+using Microsoft.CodeAnalysis;
+using UdonSharp.Compiler.Udon;
+
+namespace UdonSharp.Compiler.Symbols
+{
+    internal class ExternMethodSymbol : MethodSymbol, IExternSymbol
+    {
+        public ExternMethodSymbol(IMethodSymbol sourceSymbol, AbstractPhaseContext context)
+            : base(sourceSymbol, context)
+        {
+            if (sourceSymbol != null)
+                ExternSignature = CompilerUdonInterface.GetUdonMethodName(this, context);
+        }
+
+        public override bool IsExtern => true;
+
+        public override bool IsBound => true;
+        public virtual string ExternSignature { get; }
+
+        public override string ToString()
+        {
+            return $"ExternMethodSymbol: {RoslynSymbol}";
+        }
+    }
+}

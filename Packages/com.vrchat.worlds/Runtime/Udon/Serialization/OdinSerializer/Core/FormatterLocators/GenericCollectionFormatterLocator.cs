@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1929ded6b8bfea36752742a4ace4c30f0602acad1f7c778b4fbe3c2803b61991
-size 1738
+//-----------------------------------------------------------------------
+// <copyright file="GenericCollectionFormatterLocator.cs" company="Sirenix IVS">
+// Copyright (c) 2018 Sirenix IVS
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+// </copyright>
+//-----------------------------------------------------------------------
+
+using VRC.Udon.Serialization.OdinSerializer;
+
+[assembly: RegisterFormatterLocator(typeof(GenericCollectionFormatterLocator), -100)]
+
+namespace VRC.Udon.Serialization.OdinSerializer
+{
+    using System;
+
+    internal class GenericCollectionFormatterLocator : IFormatterLocator
+    {
+        public bool TryGetFormatter(Type type, FormatterLocationStep step, ISerializationPolicy policy, out IFormatter formatter)
+        {
+            Type elementType;
+            if (step != FormatterLocationStep.AfterRegisteredFormatters || !GenericCollectionFormatter.CanFormat(type, out elementType))
+            {
+                formatter = null;
+                return false;
+            }
+
+            formatter = (IFormatter)Activator.CreateInstance(typeof(GenericCollectionFormatter<,>).MakeGenericType(type, elementType));
+            return true;
+        }
+    }
+}

@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d427ab08d5cf8231cef6f7e58f522d947290c6801599064a1a4208233f9375ce
-size 807
+﻿using System;
+
+namespace UdonSharp.Compiler.Binder
+{
+    internal interface IConstantValue
+    {
+        object Value { get; }
+        Type ValueType { get; }
+    }
+
+    internal class ConstantValue<T> : IConstantValue
+    {
+        public T Value { get; }
+
+        object IConstantValue.Value => Value;
+        public Type ValueType => typeof(T);
+
+        public ConstantValue(T value)
+        {
+            Value = value;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is ConstantValue<T> other)
+            {
+                return Value.Equals(other.Value);
+            }
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Value.GetHashCode();
+        }
+    }
+}

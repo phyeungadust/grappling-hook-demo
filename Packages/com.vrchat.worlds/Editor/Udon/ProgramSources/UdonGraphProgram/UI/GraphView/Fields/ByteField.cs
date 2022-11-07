@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0158591b46823ca5644197d2d7494ef1b4d4af189117de54965ca7bc455aaf85
-size 648
+﻿using System;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI
+{
+    public class ByteField : BaseField<byte>
+    {
+        public ByteField():base(null,null)
+        {
+            // Set up styling
+            AddToClassList("UdonValueField");
+            
+            // Create Char Editor and listen for changes
+            IntegerField field = new IntegerField();
+            
+            field.RegisterValueChangedCallback(
+                e =>
+                    value = Convert.ToByte(e.newValue));
+
+            Add(field);
+        }
+    }
+}

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1bf7da28f141ac07fb273d0604f7c599ac5442d83cfb42d671e1f18c78198034
-size 365
+﻿ using UnityEditor;
+ using VRC.PackageManagement;
+
+ [InitializeOnLoad]
+ public class VRCSocketClient
+ {
+
+     private static UnityWindowClient _client = null;
+     
+     static VRCSocketClient ()
+     {
+         if (_client != null)
+         {
+             _client.Disconnect();
+         }
+
+         _client = new UnityWindowClient();
+     }
+ }

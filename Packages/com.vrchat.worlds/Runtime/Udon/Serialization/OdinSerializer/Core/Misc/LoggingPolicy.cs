@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e9a776a12eb6f0ca8cabeb5a74c77e74b98155ae743cf2e26bf5970b75f0a38
-size 633
+namespace VRC.Udon.Serialization.OdinSerializer
+{
+    /// <summary>
+    /// The policy for which level of logging to do during serialization and deserialization.
+    /// </summary>
+    public enum LoggingPolicy
+    {
+        /// <summary>
+        /// Log errors.
+        /// </summary>
+        LogErrors,
+
+        /// <summary>
+        /// Log both warnings and errors.
+        /// </summary>
+        LogWarningsAndErrors,
+
+        /// <summary>
+        /// Log nothing at all. Note: Some extremely severe categories of errors are logged regardless of this setting.
+        /// </summary>
+        Silent
+    }
+}

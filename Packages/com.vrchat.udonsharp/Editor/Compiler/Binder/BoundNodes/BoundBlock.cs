@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8eaa5bc8f5afdab1520651c1336e2068fddf75c99615de0d9fd5d8858c0d2ab4
-size 940
+﻿
+using System.Collections.Generic;
+using System.Collections.Immutable;
+using Microsoft.CodeAnalysis;
+using UdonSharp.Compiler.Emit;
+
+namespace UdonSharp.Compiler.Binder
+{
+    internal class BoundBlock : BoundStatement
+    {
+        private ImmutableArray<BoundStatement> Statements { get; }
+
+        public BoundBlock(SyntaxNode node)
+            :base(node)
+        {
+            Statements = ImmutableArray<BoundStatement>.Empty;
+        }
+
+        public BoundBlock(SyntaxNode node, IEnumerable<BoundStatement> statements)
+            : base(node)
+        {
+            Statements = ImmutableArray.CreateRange(statements);
+        }
+
+        public override void Emit(EmitContext context)
+        {
+            using (context.OpenBlockScope())
+            {
+                foreach (BoundStatement statement in Statements)
+                    context.Emit(statement);
+            }
+        }
+    }
+}

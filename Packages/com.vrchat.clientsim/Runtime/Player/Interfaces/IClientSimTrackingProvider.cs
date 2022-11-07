@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6a551599faeeee299c39302277618baf5f004a7b6330d3053a01e5df19a1f940
-size 647
+﻿using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon.Common;
+
+namespace VRC.SDK3.ClientSim
+{
+    public interface IClientSimTrackingProvider : IClientSimPlayerCameraProvider
+    {
+        VRCPlayerApi.TrackingData GetTrackingData(VRCPlayerApi.TrackingDataType trackingDataType);
+        Transform GetTrackingTransform(VRCPlayerApi.TrackingDataType trackingDataType);
+        float GetTrackingScale();
+        void SetTrackingScale(float scale);
+        ClientSimPlayerStanceEnum GetPlayerStance();
+        Transform GetHandRaycastTransform(HandType handType);
+        bool IsVR();
+        bool SupportsPickupAutoHold();
+    }
+}

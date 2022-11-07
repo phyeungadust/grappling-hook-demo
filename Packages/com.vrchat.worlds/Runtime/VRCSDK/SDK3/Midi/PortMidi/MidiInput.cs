@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:222695b268a189483cc875d40057c74bfa9b00dca78151d8a4a2a6fc5463f970
-size 1769
+using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+
+namespace PortMidi
+{
+    public class MidiInput : MidiStream
+    {
+        public MidiInput(IntPtr stream, Int32 inputDevice)
+            : base(stream, inputDevice)
+        {
+        }
+
+        public bool HasData => PortMidiMarshal.Pm_Poll(stream) == MidiErrorType.GotData;
+
+        public int Read(byte[] buffer, int index, int length)
+        {
+            var gch = GCHandle.Alloc(buffer);
+            try
+            {
+                var ptr = Marshal.UnsafeAddrOfPinnedArrayElement(buffer, index);
+                int size = PortMidiMarshal.Pm_Read(stream, ptr, length);
+                if (size < 0)
+                {
+                    throw new MidiException((MidiErrorType) size,
+                        PortMidiMarshal.Pm_GetErrorText((MidiErrorType) size));
+                }
+                return size * 4;
+            }
+            finally
+            {
+                gch.Free();
+            }
+        }
+
+        public Event ReadEvent(byte[] buffer, int index, int length)
+        {
+            var gch = GCHandle.Alloc(buffer);
+            try
+            {
+                var ptr = Marshal.UnsafeAddrOfPinnedArrayElement(buffer, index);
+                int size = PortMidiMarshal.Pm_Read(stream, ptr, length);
+                if (size < 0)
+                {
+                    throw new MidiException((MidiErrorType) size,
+                        PortMidiMarshal.Pm_GetErrorText((MidiErrorType) size));
+                }
+
+                return new Event(Marshal.PtrToStructure<PmEvent>(ptr));
+            }
+            finally
+            {
+                gch.Free();
+            }
+        }
+    }
+}

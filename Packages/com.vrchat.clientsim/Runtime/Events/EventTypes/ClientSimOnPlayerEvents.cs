@@ -1,3 +1,57 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51fffc1ac94f9391abaeab759d6d425917d6115eecf8de1ce3d6c95178aa7efc
-size 1432
+﻿using VRC.SDKBase;
+
+namespace VRC.SDK3.ClientSim
+{
+    public class ClientSimOnPlayerJoinedEvent : IClientSimEvent
+    {
+        public VRCPlayerApi player;
+    }
+    
+    public class ClientSimOnPlayerLeftEvent : IClientSimEvent
+    {
+        public VRCPlayerApi player;
+    }
+    
+    public class ClientSimOnPlayerRespawnEvent : IClientSimEvent
+    {
+        public VRCPlayerApi player;
+    }
+    
+    public class ClientSimOnPlayerTeleportedEvent : IClientSimEvent
+    {
+        public VRCPlayerApi player;
+    }
+    
+    public class ClientSimOnPlayerMovedEvent : IClientSimEvent
+    {
+        public VRCPlayerApi player;
+    }
+    
+    public class ClientSimOnPlayerEnteredStationEvent : IClientSimEvent
+    {
+        public VRCPlayerApi player;
+        public IClientSimStation station;
+    }
+    
+    public class ClientSimOnPlayerExitedStationEvent : IClientSimEvent
+    {
+        public VRCPlayerApi player;
+        public IClientSimStation station;
+    }
+
+    public class ClientSimOnPlayerHeightUpdateEvent : IClientSimEvent
+    {
+        public float playerHeight;
+    }
+    
+    public class ClientSimOnTrackingScaleUpdateEvent : IClientSimEvent
+    {
+        public float trackingScale;
+    }
+
+    public class ClientSimOnNewMasterEvent : IClientSimEvent
+    {
+        public VRCPlayerApi oldMasterPlayer;
+        public VRCPlayerApi newMasterPlayer;
+    }
+}

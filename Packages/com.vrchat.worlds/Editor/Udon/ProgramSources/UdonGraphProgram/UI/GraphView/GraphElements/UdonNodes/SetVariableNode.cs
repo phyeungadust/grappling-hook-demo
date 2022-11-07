@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e59ba4b99e2ea6c496ca326e268b6bc7df2d60e442be64a7dee30c240847a69
-size 730
+﻿using UnityEngine;
+using UnityEngine.UIElements;
+using VRC.Udon.Graph;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI.GraphView.UdonNodes
+{
+    public class SetVariableNode : UdonNode
+    {
+        public SetVariableNode(UdonNodeDefinition nodeDefinition, UdonGraph view, UdonNodeData nodeData = null) : base(nodeDefinition, view, nodeData)
+        {
+        }
+
+        public override void Initialize()
+        {
+            base.Initialize();
+            
+            UdonPort sendChangePort = portsIn[2];
+            var toggle = sendChangePort.Q<Toggle>();
+            if (toggle != null)
+            {
+                sendChangePort.Insert(0, toggle);
+            }
+        }
+    }
+}

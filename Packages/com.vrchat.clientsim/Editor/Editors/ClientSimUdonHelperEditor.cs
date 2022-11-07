@@ -1,3 +1,88 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a30f9025735d0ab09a43e9002319b16892592039cbb2a93808e5aaa828c028b2
-size 2875
+﻿using System;
+using System.Reflection;
+using UnityEngine;
+using UnityEditor;
+using VRC.Udon;
+using VRC.Udon.Editor.ProgramSources;
+
+namespace VRC.SDK3.ClientSim.Editor
+{
+    [CustomEditor(typeof(ClientSimUdonHelper))]
+    public class ClientSimUdonHelperEditor : UnityEditor.Editor
+    {
+        private static readonly MethodInfo _drawPropertyMethod;
+        
+        private bool _expandVariableEditor = false;
+        private bool _expandEventSelector = false;
+
+        static ClientSimUdonHelperEditor()
+        {
+            _drawPropertyMethod = typeof(UdonProgramAsset).GetMethod("DrawPublicVariableField", BindingFlags.NonPublic | BindingFlags.Instance);
+        }
+        
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+
+            ClientSimUdonHelper udonHelper = target as ClientSimUdonHelper;
+
+            ClientSimSyncableEditorHelper.DisplaySyncOptions(udonHelper);
+
+            UdonBehaviour udonBehaviour = udonHelper.GetUdonBehaviour();
+
+            ShowVariableEditor(udonBehaviour);
+            
+            ShowExportedEvents(udonBehaviour);
+        }
+
+        private void ShowVariableEditor(UdonBehaviour udonBehaviour)
+        {
+            _expandVariableEditor = EditorGUILayout.Foldout(_expandVariableEditor, "Edit Public Variables", true);
+
+            if (!_expandVariableEditor)
+            {
+                return;
+            }
+
+            var program = udonBehaviour.programSource;
+
+            if (!(program is UdonProgramAsset programAsset))
+            {
+                return;
+            }
+            
+            var publicVariables = udonBehaviour.publicVariables;
+
+            foreach (var varName in publicVariables.VariableSymbols)
+            {
+                publicVariables.TryGetVariableType(varName, out Type varType);
+                object value = udonBehaviour.GetProgramVariable(varName);
+                object[] parameters = {varName, value, varType, false, true};
+                var res = _drawPropertyMethod.Invoke(programAsset, parameters);
+                
+                if ((bool)parameters[3])
+                {
+                    udonBehaviour.SetProgramVariable(varName, res);
+                }
+            }
+        }
+        
+        private void ShowExportedEvents(UdonBehaviour udonBehaviour)
+        {
+            _expandEventSelector = EditorGUILayout.Foldout(_expandEventSelector, "Run Custom Event", true);
+
+            if (!_expandEventSelector)
+            {
+                return;
+            }
+
+            foreach (string eventName in udonBehaviour.GetPrograms())
+            {
+                if (GUILayout.Button(eventName))
+                {
+                    udonBehaviour.SendCustomEvent(eventName);
+                }
+            }
+        }
+    }
+}

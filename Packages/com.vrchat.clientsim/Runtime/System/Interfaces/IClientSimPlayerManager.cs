@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94491fd10870d7cd7cd049e1ba5ba2ec18eab439be00aaebb5b9f89718b1c796
-size 760
+﻿
+using UnityEngine;
+using VRC.SDKBase;
+
+namespace VRC.SDK3.ClientSim
+{
+    public interface IClientSimPlayerManager
+    {
+        VRCPlayerApi CreateNewPlayer(bool local, ClientSimPlayer player, string name = null);
+        void RemovePlayer(VRCPlayerApi player);
+
+        int GetMasterID();
+        VRCPlayerApi GetMaster();
+        VRCPlayerApi LocalPlayer();
+        VRCPlayerApi GetPlayerByID(int playerID);
+        int GetPlayerID(VRCPlayerApi player);
+        bool IsMaster(VRCPlayerApi player);
+        bool IsInstanceOwner(VRCPlayerApi player);
+        bool IsInstanceOwner();
+        bool IsLocalPlayerMaster();
+        VRCPlayerApi GetOwner(GameObject obj);
+        bool IsOwner(VRCPlayerApi player, GameObject obj);
+    }
+}

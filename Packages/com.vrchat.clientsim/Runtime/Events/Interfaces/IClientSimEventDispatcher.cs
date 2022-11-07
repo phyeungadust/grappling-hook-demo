@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9a5c79e2c0776a044cf41418e475c33587bf016507c90f8c893f57eb7050081c
-size 346
+﻿using System;
+
+namespace VRC.SDK3.ClientSim
+{
+    public interface IClientSimEventDispatcher
+    {
+        void Subscribe<T>(Action<T> eventHandler) where T : IClientSimEvent;
+        void Unsubscribe<T>(Action<T> eventHandler) where T : IClientSimEvent;
+        void SendEvent<T>(T clientSimEvent) where T : IClientSimEvent;
+    }
+}

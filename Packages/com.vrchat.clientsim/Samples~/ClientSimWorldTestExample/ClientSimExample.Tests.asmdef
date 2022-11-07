@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dca5f4bcdfc89b9ac01c17a32f6ebff869f95a18109ab7ff00169c94c5bd5cc9
-size 652
+{
+    "name": "ClientSimExample.Tests",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "VRC.ClientSim",
+        "VRC.ClientSim.Tests",
+        "VRC.Udon"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "VRCSDKBase.dll",
+        "VRCSDK3.dll",
+        "VRC.Udon.Common.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

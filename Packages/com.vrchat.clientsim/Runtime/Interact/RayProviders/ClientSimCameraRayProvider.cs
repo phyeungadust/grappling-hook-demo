@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6018f33f87694054b23e8c90d38d1f7f160b596a6798dbc794716dd2a89adc6
-size 742
+﻿using UnityEngine;
+
+namespace VRC.SDK3.ClientSim
+{
+    public class ClientSimCameraRayProvider : IClientSimRayProvider
+    {
+        private readonly Camera _playerCamera;
+        private readonly IClientSimMousePositionProvider _mousePositionProvider;
+
+        public ClientSimCameraRayProvider(
+            IClientSimPlayerCameraProvider cameraProvider,
+            IClientSimMousePositionProvider mousePositionProvider)
+        {
+            _playerCamera = cameraProvider.GetCamera();
+            _mousePositionProvider = mousePositionProvider;
+        }
+        
+        public Ray GetRay()
+        {
+            return _playerCamera.ScreenPointToRay(_mousePositionProvider.GetMousePosition());
+        }
+    }
+}

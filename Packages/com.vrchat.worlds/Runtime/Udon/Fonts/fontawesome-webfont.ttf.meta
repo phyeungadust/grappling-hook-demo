@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:974d6b2485939c97a674c683cd7ae7bf32e32c92363f5b0d9c0917e28d3273be
-size 500
+fileFormatVersion: 2
+guid: 6cb934e9a1d9ea6448040aad7dbeac81
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FontAwesome
+  fontNames:
+  - FontAwesome
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

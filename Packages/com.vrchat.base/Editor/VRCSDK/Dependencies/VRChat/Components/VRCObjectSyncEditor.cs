@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a29a47ca324603b67675ee101e2205d7a06899fc695e7927642eb6d1daa9d341
-size 648
+﻿#if VRC_SDK_VRCSDK2
+
+using UnityEngine;
+using System.Collections;
+using UnityEditor;
+using System;
+
+[CustomEditor(typeof(VRCSDK2.VRC_ObjectSync))]
+public class VRCObjectSyncEditor : Editor
+{
+    VRCSDK2.VRC_ObjectSync sync;
+
+    void OnEnable()
+    {
+        if (sync == null)
+            sync = (VRCSDK2.VRC_ObjectSync)target;
+    }
+
+    public override void OnInspectorGUI()
+    {
+        sync.SynchronizePhysics = EditorGUILayout.Toggle("Synchronize Physics",sync.SynchronizePhysics);
+        sync.AllowCollisionTransfer = EditorGUILayout.Toggle("Allow Collision Transfer", sync.AllowCollisionTransfer);
+    }
+}
+#endif

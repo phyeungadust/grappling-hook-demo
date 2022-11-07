@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:508b3bcfb22f5fce4c7b49c62787fd24172ffd6119e72968e478cfd315b2da61
-size 724
+﻿
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using UdonSharp.Compiler.Emit;
+
+namespace UdonSharp.Compiler.Binder
+{
+    internal sealed class BoundVariableDeclarationStatement : BoundStatement
+    {
+        private BoundVariableDeclaratorStatement[] Declarations { get; }
+
+        public BoundVariableDeclarationStatement(VariableDeclarationSyntax node, BoundVariableDeclaratorStatement[] declarations)
+            : base(node)
+        {
+            Declarations = declarations;
+        }
+
+        public override void Emit(EmitContext context)
+        {
+            foreach (BoundVariableDeclaratorStatement declaration in Declarations)
+                context.Emit(declaration);
+        }
+    }
+}

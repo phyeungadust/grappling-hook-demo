@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccae142e833968ebff630733b599d510b4e932956296207d7c0f5213ee5ca473
-size 352
+﻿using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+public class CoinBehaviour : UdonSharpBehaviour
+{
+
+    public AudioSource coinPickUpSound;
+
+    public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+    {
+        this.coinPickUpSound.Play();
+        this
+            .gameObject
+            .SetActive(false);
+    }
+}

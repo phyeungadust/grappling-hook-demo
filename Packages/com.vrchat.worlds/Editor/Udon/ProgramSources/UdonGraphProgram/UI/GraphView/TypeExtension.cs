@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d12a769302d59a6d1846dc2c46a79d99cd46478e93e71b0c1b8da14b3dd8140
-size 739
+﻿using System;
+using System.Linq.Expressions;
+using UnityEngine;
+using VRC.Udon.Common.Interfaces;
+
+// nicked from GraphProcessor project
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram
+{
+	public static class TypeExtension
+	{
+		public static bool IsReallyAssignableFrom(this Type type, Type otherType)
+		{
+			if (type == null && otherType != null) return false;
+			if (otherType == null && type != null) return false;
+
+			if (type == otherType)
+				return true;
+			if (type.IsAssignableFrom(otherType))
+				return true;
+			if (otherType.IsAssignableFrom(type))
+				return true;
+			if (type == typeof(IUdonEventReceiver) && otherType == typeof(Component))
+				return true;
+
+			return false;
+		}
+
+	}
+}

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b63134e3019e7b2e066e1dacc68d99450d7e00c7e5a65a130377844ed17ff24
-size 933
+using System;
+using System.Runtime.InteropServices;
+
+namespace PortMidi
+{
+    public struct MidiDeviceInfo
+    {
+        PmDeviceInfo info;
+
+        internal MidiDeviceInfo(int id, IntPtr ptr)
+        {
+            ID = id;
+            this.info = (PmDeviceInfo) Marshal.PtrToStructure(ptr, typeof(PmDeviceInfo));
+        }
+
+        public int ID { get; set; }
+
+        public string Interface => Marshal.PtrToStringAnsi(info.Interface);
+
+        public string Name => Marshal.PtrToStringAnsi(info.Name);
+
+        public bool IsInput => info.Input != 0;
+
+        public bool IsOutput => info.Output != 0;
+
+        public bool IsOpened => info.Opened != 0;
+
+        public override string ToString()
+        {
+            return
+                $"{Interface} - {Name} ({(IsInput ? (IsOutput ? "I/O" : "Input") : (IsOutput ? "Output" : "N/A"))} {(IsOpened ? "open" : String.Empty)})";
+        }
+    }
+}

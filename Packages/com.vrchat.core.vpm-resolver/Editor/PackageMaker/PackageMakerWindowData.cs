@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:afc06a827c9fd47a762c91a4306b1db116fcf9c56df9bb6bba4476af79cc5510
-size 1313
+﻿using System.IO;
+using UnityEditor;
+using UnityEngine;
+using VRC.PackageManagement.PackageMaker;
+
+public class PackageMakerWindowData : ScriptableObject
+{
+    public static string defaultAssetPath = Path.Combine("Assets", "PackageMakerWindowData.asset");
+    public string targetAssetFolder;
+    public string packageID;
+    public PackageMakerWindow.VRCPackageEnum relatedPackage;
+
+    public static PackageMakerWindowData GetOrCreate()
+    {
+        var existingData = AssetDatabase.AssetPathToGUID(defaultAssetPath);
+        if (string.IsNullOrWhiteSpace(existingData))
+        {
+            return Create();
+        }
+        else
+        {
+            var saveData = AssetDatabase.LoadAssetAtPath<PackageMakerWindowData>(defaultAssetPath);
+            if (saveData == null)
+            {
+                Debug.LogError($"Could not load saved data but the save file exists. Resetting.");
+                return Create();
+            }
+            return saveData;
+        }
+    }
+
+    public static PackageMakerWindowData Create()
+    {
+        var saveData = CreateInstance<PackageMakerWindowData>();
+        AssetDatabase.CreateAsset(saveData, defaultAssetPath);
+        AssetDatabase.SaveAssets();
+        return saveData;
+    }
+
+    public void Save()
+    {
+        AssetDatabase.SaveAssets();
+    }
+}

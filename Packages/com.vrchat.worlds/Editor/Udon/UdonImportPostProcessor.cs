@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6ab1eb9ce5f4a6c91b0ed606e2942b239145dbd67b47adfa4aa0f3251bb9e7a
-size 1088
+﻿using System.IO;
+using UnityEditor;
+using UnityEngine;
+
+namespace VRC.Udon.Editor
+{
+    public class UdonImportPostProcessor : AssetPostprocessor
+    {
+        private const string PREFABS_INITIALIZED = "PrefabsInitialized";
+        
+        static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
+        {
+            // Get key unique to this project, exit early if we've run the function already
+            string key = Path.Combine(Application.dataPath, PREFABS_INITIALIZED);
+            if (EditorPrefs.HasKey(key))
+                return;
+            
+            // Function never run for this project - compile and link all prefab programs
+            foreach(string importedAsset in importedAssets)
+            {
+                UdonEditorManager.PopulateAssetDependenciesPrefabSerializedProgramAssetReferences(importedAsset);
+            }
+
+            UdonEditorManager.RecompileAllProgramSources();
+
+            EditorPrefs.SetBool(key, true);
+        }
+    }
+}

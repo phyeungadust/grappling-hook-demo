@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c04f3d3c88b373e863520f663fd04fe668b8b0a64b1596d7399273d0ddb75f4d
-size 907
+
+using UnityEngine;
+using VRC.SDK3.Components;
+
+namespace UdonSharp.Examples.Utilities
+{
+    /// <summary>
+    /// A Basic example class that demonstrates how to toggle a list of object on and off when someone interacts with the UdonBehaviour
+    /// This toggle only works locally
+    /// </summary>
+    [AddComponentMenu("Udon Sharp/Utilities/Interact Toggle")]
+    [UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
+    public class InteractToggle : UdonSharpBehaviour 
+    {
+        [Tooltip("List of objects to toggle on and off")]
+        public GameObject[] toggleObjects;
+
+        public override void Interact()
+        {
+            foreach (GameObject toggleObject in toggleObjects)
+            {
+                if (toggleObject != null) {
+                    toggleObject.SetActive(!toggleObject.activeSelf);
+                }
+            }
+        }
+    }
+}

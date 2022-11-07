@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:38a283cf706786b6b38a0444e88aecf6a32aa693e407449605eeab26166a5623
-size 783
+#if VRC_SDK_VRCSDK2
+using UnityEngine;
+using UnityEditor;
+using System.Collections;
+
+[CustomEditor (typeof(VRCSDK2.VRC_SceneDescriptor))]
+public class VRCSceneDescriptorEditor : Editor
+{
+    VRCSDK2.VRC_SceneDescriptor sceneDescriptor;
+    VRC.Core.PipelineManager pipelineManager;
+
+    public override void OnInspectorGUI()
+    {
+        if(sceneDescriptor == null)
+            sceneDescriptor = (VRCSDK2.VRC_SceneDescriptor)target;
+
+        if(pipelineManager == null)
+        {
+            pipelineManager = sceneDescriptor.GetComponent<VRC.Core.PipelineManager>();
+            if(pipelineManager == null)
+                sceneDescriptor.gameObject.AddComponent<VRC.Core.PipelineManager>();
+        }
+
+        DrawDefaultInspector();
+
+
+    }
+}
+#endif

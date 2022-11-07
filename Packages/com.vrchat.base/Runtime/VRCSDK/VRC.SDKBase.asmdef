@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:214d16ccda439ec7136cada5a535e5320aa67d372e2af52732acf998fd6b9069
-size 553
+{
+    "name": "VRC.SDKBase",
+    "references": [
+        "Unity.Timeline",
+        "VRC.Enums.Validation.Performance"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.vrchat.base",
+            "expression": "3.0.0",
+            "define": "VRC_SDK_VRCSDK3"
+        }
+    ],
+    "noEngineReferences": false
+}

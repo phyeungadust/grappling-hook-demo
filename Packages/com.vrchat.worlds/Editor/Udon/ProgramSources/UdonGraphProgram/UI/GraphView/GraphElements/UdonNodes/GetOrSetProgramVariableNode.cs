@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9579d00d7bd4f5bcf25c7b5adcf7700b110f7dd4bb15ac8a8e43dffce554d916
-size 1043
+﻿#if UNITY_2019_3_OR_NEWER
+using UnityEditor.Experimental.GraphView;
+using EngineUI = UnityEngine.UIElements;
+using EditorUI = UnityEditor.UIElements;
+#else
+using EditorGV = UnityEditor.Experimental.UIElements.GraphView;
+using EngineUI = UnityEngine.Experimental.UIElements;
+using EditorUI = UnityEditor.Experimental.UIElements;
+#endif
+using VRC.Udon.Graph;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI.GraphView.UdonNodes
+{
+    public class GetOrSetProgramVariableNode : UdonNode
+    {
+        private EditorUI.PopupField<string> _programVariablePopup;
+
+        public GetOrSetProgramVariableNode(UdonNodeDefinition nodeDefinition, UdonGraph view, UdonNodeData nodeData = null) :
+            base(nodeDefinition, view, nodeData)
+        {
+        }
+
+        public override void Initialize()
+        {
+            base.Initialize();
+            _programVariablePopup =
+                this.GetProgramPopup(UdonNodeExtensions.ProgramPopupType.Variables, _programVariablePopup);
+        }
+    }
+}

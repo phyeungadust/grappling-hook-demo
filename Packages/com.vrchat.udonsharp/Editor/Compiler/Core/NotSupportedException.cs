@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c5334cf645059701062f973d1b57c1da6141feeab97958793fb136cedacfc82
-size 1053
+﻿
+using Microsoft.CodeAnalysis;
+
+namespace UdonSharp.Core
+{
+    /// <summary>
+    /// Exception for when something is not supported by U#
+    /// </summary>
+    internal class NotSupportedException : CompilerException
+    {
+        public NotSupportedException(string message, Location sourceLocation = null)
+            : base(message, sourceLocation)
+        {
+        }
+
+        public NotSupportedException(Localization.LocStr stringIdentifier, Location sourceLocation = null)
+            : base(Localization.Loc.Get(stringIdentifier), sourceLocation)
+        {
+        }
+
+        public NotSupportedException(Localization.LocStr stringIdentifier, params object[] stringArgs)
+            : base(Localization.Loc.Format(stringIdentifier, stringArgs))
+        {
+        }
+
+        public NotSupportedException(Localization.LocStr stringIdentifier, Location sourceLocation, params object[] stringArgs)
+           : base(Localization.Loc.Format(stringIdentifier, stringArgs), sourceLocation)
+        {
+        }
+    }
+}

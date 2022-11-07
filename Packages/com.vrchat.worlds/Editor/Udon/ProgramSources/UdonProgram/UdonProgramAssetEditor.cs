@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b78b905793ac099962c83caa3ede4ee2226a0894827a2769d1d9dffb30257ed
-size 530
+﻿using UnityEditor;
+
+namespace VRC.Udon.Editor.ProgramSources
+{
+    [CustomEditor(typeof(UdonProgramAsset))]
+    public class UdonProgramAssetEditor : UnityEditor.Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            bool dirty = false;
+            UdonProgramAsset programAsset = (UdonProgramAsset)target;
+            programAsset.RunEditorUpdate(null, ref dirty);
+            if(dirty)
+            {
+                EditorUtility.SetDirty(target);
+            }
+        }
+    }
+}

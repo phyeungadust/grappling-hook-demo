@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e680cf5d671761a420c21390c9839adbbb4aa9ff7423e3e44ecc36cba6f6b055
-size 911
+﻿using UnityEngine;
+using VRC.Udon;
+
+namespace VRC.SDK3.ClientSim
+{
+    /// <summary>
+    /// Wrapper class for UdonInput
+    /// </summary>
+    [AddComponentMenu("")]
+    [DefaultExecutionOrder(1)] // Ensure that input events happen after UdonBehaviour.Update
+    public class ClientSimUdonInputBehaviour : ClientSimBehaviour
+    {
+        private ClientSimUdonInput _udonInput;
+
+        public void Initialize(IClientSimEventDispatcher eventDispatcher, IClientSimInput input)
+        {
+            _udonInput = new ClientSimUdonInput(
+                eventDispatcher, 
+                input,
+                new ClientSimUdonManagerInputEventSender(UdonManager.Instance));
+        }
+
+        private void OnDestroy()
+        {
+            _udonInput?.Dispose();
+        }
+
+        public void Update()
+        {
+            _udonInput?.ProcessInputEvents();
+        }
+    }
+}

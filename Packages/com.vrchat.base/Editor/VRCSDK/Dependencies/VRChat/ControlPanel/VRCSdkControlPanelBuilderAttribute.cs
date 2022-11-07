@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7d8410df8cebbd83ada95413393606eb3166681e36b53f114890428d28d5fc6
-size 487
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using JetBrains.Annotations;
+using UnityEngine;
+
+namespace VRC.SDKBase.Editor
+{
+    [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
+    [MeansImplicitUse]
+    public class VRCSdkControlPanelBuilderAttribute : Attribute
+    {
+        public Type Type { get; }
+        public VRCSdkControlPanelBuilderAttribute(Type type)
+        {
+            Type = type;
+        }
+    }
+}

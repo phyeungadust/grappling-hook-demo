@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:85237e3aeec996f1ff073235f9899753d739b49c74f471adf2c43140bddbc799
-size 406
+using System;
+
+namespace PortMidi
+{
+    public struct MidiMessage
+    {
+        private int v;
+        public MidiMessage(int value)
+        {
+            v = value;
+        }
+
+        public MidiMessage(int status, int data1, int data2)
+        {
+            v = ((data2 << 16) & 0xFF0000) | ((data1 << 8) & 0xFF00) | (status & 0xFF);
+        }
+
+        public Int32 Value => v;
+    }
+}

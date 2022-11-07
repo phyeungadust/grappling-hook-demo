@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03996947dbca156ef15f579682684ec8263e825df14cdc9eb1f4a1d570161627
-size 585
+{
+    "name": "UnityEditorTests",
+    "references": [
+        "VRC.Udon.Editor",
+        "VRC.Udon",
+        "VRC.Udon.Tests",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

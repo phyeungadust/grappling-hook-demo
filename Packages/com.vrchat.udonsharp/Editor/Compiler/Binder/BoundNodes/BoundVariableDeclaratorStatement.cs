@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bdbc74379fe45e1a9be98088f72aef1eaf9230cc89c92355917a61e8de65d67c
-size 984
+﻿
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using UdonSharp.Compiler.Emit;
+using UdonSharp.Compiler.Symbols;
+
+namespace UdonSharp.Compiler.Binder
+{
+    internal sealed class BoundVariableDeclaratorStatement : BoundStatement
+    {
+        public Symbol UserSymbol { get; }
+        public BoundExpression Initializer { get; }
+
+        public BoundVariableDeclaratorStatement(VariableDeclaratorSyntax node, Symbol userSymbol, BoundExpression initializer)
+            : base(node)
+        {
+            UserSymbol = userSymbol;
+            Initializer = initializer;
+        }
+
+        public override void Emit(EmitContext context)
+        {
+            if (UserSymbol is LocalSymbol localSymbol && localSymbol.IsConst)
+                return;
+
+            Value userValue = context.GetUserValue(UserSymbol);
+
+            if (Initializer == null) return;
+            
+            context.EmitValueAssignment(userValue, Initializer);
+        }
+    }
+}

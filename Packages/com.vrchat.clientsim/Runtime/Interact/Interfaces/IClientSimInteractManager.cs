@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c84029c345894da29123fd25bb663d95c74d6aeca63b6600e522bd671c5547f
-size 402
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+namespace VRC.SDK3.ClientSim
+{
+    public interface IClientSimInteractManager
+    {
+        IClientSimInteractable GetFirstInteractable(GameObject obj, float distance);
+        bool CanInteract(IClientSimInteractable interactable, float distance);
+        List<IClientSimInteractable> Interact(GameObject obj, float distance);
+    }
+}

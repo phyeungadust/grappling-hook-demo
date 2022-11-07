@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e850617a9df8118991d6106b7d60f3cdc589ad47289df9b4c373e59add89a68
-size 697
+namespace VRC.Udon.Serialization.OdinSerializer
+{
+    /// <summary>
+    /// The policy for handling errors during serialization and deserialization.
+    /// </summary>
+    public enum ErrorHandlingPolicy
+    {
+        /// <summary>
+        /// Attempts will be made to recover from errors and continue serialization. Data may become invalid.
+        /// </summary>
+        Resilient,
+
+        /// <summary>
+        /// Exceptions will be thrown when errors are logged.
+        /// </summary>
+        ThrowOnErrors,
+
+        /// <summary>
+        /// Exceptions will be thrown when warnings or errors are logged.
+        /// </summary>
+        ThrowOnWarningsAndErrors
+    }
+}

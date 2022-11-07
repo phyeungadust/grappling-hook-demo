@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1270639e7b2679950179cd0f914887a5b4d9dac62ef55a48d84e38454ae415c3
-size 880
+﻿
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace UdonSharp.Tests
+{
+    [AddComponentMenu("Udon Sharp/Tests/SerializationTest")]
+    public class SerializationTest : UdonSharpBehaviour
+    {
+        [System.NonSerialized]
+        public IntegrationTestSuite tester;
+        
+        public VRC.SDK3.Video.Components.VRCUnityVideoPlayer videoPlayer;
+        public VRC.SDK3.Video.Components.Base.BaseVRCVideoPlayer baseVideoPlayer;
+
+        public VRC.SDK3.Video.Components.VRCUnityVideoPlayer nullVideoPlayer;
+
+        public void ExecuteTests()
+        {
+            tester.TestAssertion("Video player valid", videoPlayer != null);
+            tester.TestAssertion("Base Video player valid", baseVideoPlayer != null);
+            tester.TestAssertion("Video player null", nullVideoPlayer == null);
+        }
+    }
+}

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4bd19a79f54db7be8c64f0b8fd2819d9c4f13876b9b32562395db02693458631
-size 754
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace Tether
+{
+    /// <summary>
+    /// Basic TetherController input example that reads an input directly. Combine with TrackedObject.
+    /// </summary>
+    public class TetherButtonInput : UdonSharpBehaviour
+    {
+        [Tooltip("TetherController script.")]
+        public TetherController controller;
+
+        [Tooltip("Input to read and send to tether controller.")]
+        public string tetherInput;
+
+        public void Update()
+        {
+            float input = Input.GetButton(tetherInput) == true ? 1.0f : 0.0f;
+            controller.SetInput(input);
+        }
+
+        private void OnDisable()
+        {
+            controller.SetInput(0.0f);
+        }
+    }
+}

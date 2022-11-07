@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07b5cc58a2a243f3a9e157f58262c8b30c6539b40c5849d32157173f9b32e424
-size 893
+﻿using System;
+using System.Collections.Generic;
+
+namespace VRC.SDK3.ClientSim
+{
+    [Serializable]
+    public class ClientSimPlayerTagsData : IClientSimPlayerTagsData
+    {
+        private readonly Dictionary<string, string> _tags = new Dictionary<string, string>();
+        
+        public void ClearPlayerTags()
+        {
+            _tags.Clear();
+        }
+
+        public void SetPlayerTag(string tagName, string tagValue)
+        {
+            _tags[tagName] = tagValue;
+        }
+
+        public string GetPlayerTag(string tagName)
+        {
+            if (_tags.TryGetValue(tagName, out string tagValue))
+            {
+                return tagValue;
+            }
+            return "";
+        }
+
+        public bool HasPlayerTag(string tagName, string tagValue)
+        {
+            return GetPlayerTag(tagName) == tagValue;
+        }
+    }
+}

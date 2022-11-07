@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f9eb575650b9945fc052c58864ccbeecf0582092854b59b07ed72cc50517601
-size 595
+using System;
+using System.Runtime.InteropServices;
+
+namespace PortMidi
+{
+    [StructLayout(LayoutKind.Sequential)]
+    public struct MidiEvent
+    {
+        MidiMessage msg;
+        Int32 ts;
+        [NonSerialized] byte[] sysex;
+
+        public MidiMessage Message
+        {
+            get => msg;
+            set => msg = value;
+        }
+
+        public Int32 Timestamp
+        {
+            get => ts;
+            set => ts = value;
+        }
+
+        public byte[] SysEx
+        {
+            get => sysex;
+            set => sysex = value;
+        }
+    }
+}

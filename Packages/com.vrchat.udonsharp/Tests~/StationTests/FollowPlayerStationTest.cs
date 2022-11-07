@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3c44aa223fa669347e9f6604909e4f59a2858b899391abf80bea9437353c022
-size 606
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace UdonSharp.Tests
+{
+    [AddComponentMenu("Udon Sharp/Tests/FollowPlayerStationTest")]
+    public class FollowPlayerStationTest : UdonSharpBehaviour
+    {
+        [System.NonSerialized]
+        public VRCPlayerApi followedPlayerApi;
+
+        private void LateUpdate()
+        {
+            if (followedPlayerApi != null)
+            {
+                transform.position = followedPlayerApi.GetTrackingData(VRCPlayerApi.TrackingDataType.Head).position + Vector3.up * 2f;
+            }
+        }
+    }
+}

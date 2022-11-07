@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:647bd7da0401390038341f93b8120db806b96e5e3fafbb755369df8cf4fc33cb
-size 1024
+﻿
+using System;
+using Microsoft.CodeAnalysis;
+using UdonSharp.Compiler.Emit;
+using UdonSharp.Compiler.Symbols;
+
+namespace UdonSharp.Compiler.Binder
+{
+    internal sealed class BoundCastExpression : BoundExpression
+    {
+        private TypeSymbol TargetType { get; }
+        
+        private bool IsExplicit { get; }
+
+        public override TypeSymbol ValueType => TargetType;
+
+        public BoundCastExpression(SyntaxNode node, BoundExpression sourceExpression, TypeSymbol targetType, bool isExplicit)
+            : base(node, sourceExpression)
+        {
+            if (targetType is TypeParameterSymbol)
+                throw new InvalidOperationException("Cannot cast to generic parameter types");
+            
+            TargetType = targetType;
+            IsExplicit = isExplicit;
+        }
+
+        public override Value EmitValue(EmitContext context)
+        {
+            return context.CastValue(context.EmitValue(SourceExpression), TargetType, IsExplicit);
+        }
+    }
+}

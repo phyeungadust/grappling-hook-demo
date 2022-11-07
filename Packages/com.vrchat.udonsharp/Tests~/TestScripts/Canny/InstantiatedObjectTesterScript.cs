@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c3c94903111710419d7dfb34cbd192dfe5c38c6bc31f79778862dcc738e69cf
-size 554
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+using VRC.Udon;
+
+namespace UdonSharp.Tests
+{
+    [AddComponentMenu("Udon Sharp/Tests/InstantiatedObjectTesterScript")]
+    public class InstantiatedObjectTesterScript : UdonSharpBehaviour
+    {
+        [System.NonSerialized]
+        public string testValueStr = "test";
+
+        [System.NonSerialized]
+        public UdonSharpBehaviour spawnerBehaviour;
+
+        public void CallEvent()
+        {
+            spawnerBehaviour.SendCustomEvent("SpawnEvent");
+        }
+    }
+}

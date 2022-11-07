@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3dcc253482ae14804cb5d3f0db91bfdccc410bbecf7ebb69c24e779315b82802
-size 642
+﻿using UnityEngine.UIElements;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI
+{
+    public class CharField : BaseField<char>
+    {
+        public CharField():base(null,null)
+        {
+            // Set up styling
+            AddToClassList("UdonValueField");
+            
+            // Create Char Editor and listen for changes
+            TextField field = new TextField
+            {
+                maxLength = 1
+            };
+            field.RegisterValueChangedCallback(
+                e =>
+                    value = e.newValue.ToCharArray()[0]);
+
+            Add(field);
+        }
+    }
+}

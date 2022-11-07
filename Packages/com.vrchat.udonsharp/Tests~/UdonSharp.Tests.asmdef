@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36ba176564ab071bffccd7207eb440c2552b6589880bfb23f98a908bede8f280
-size 421
+{
+    "name": "UdonSharp.Tests",
+    "references": [
+        "UdonSharp.Editor",
+        "UdonSharp.Runtime",
+        "VRC.Udon"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:871230f9722cdd47437001ba24a677ba547ac9bb1f8c8d480ed5db753fb1c520
-size 1355
+namespace VRC.Udon.Serialization.OdinSerializer
+{
+    /// <summary>
+    /// Defines default loggers for serialization and deserialization. This class and all of its loggers are thread safe.
+    /// </summary>
+    public static class DefaultLoggers
+    {
+        private static readonly object LOCK = new object();
+        private static volatile ILogger unityLogger;
+
+        /// <summary>
+        /// The default logger - usually this is <see cref="UnityLogger"/>.
+        /// </summary>
+        public static ILogger DefaultLogger
+        {
+            get
+            {
+                return UnityLogger;
+            }
+        }
+
+        /// <summary>
+        /// Logs messages using Unity's <see cref="UnityEngine.Debug"/> class.
+        /// </summary>
+        public static ILogger UnityLogger
+        {
+            get
+            {
+                if (unityLogger == null)
+                {
+                    lock (LOCK)
+                    {
+                        if (unityLogger == null)
+                        {
+                            unityLogger = new CustomLogger(UnityEngine.Debug.LogWarning, UnityEngine.Debug.LogError, UnityEngine.Debug.LogException);
+                        }
+                    }
+                }
+
+                return unityLogger;
+            }
+        }
+    }
+}

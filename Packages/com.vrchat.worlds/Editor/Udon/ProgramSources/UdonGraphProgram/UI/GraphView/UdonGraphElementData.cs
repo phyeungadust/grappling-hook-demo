@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5b38573e670427caf2f8a93417bcadd801d430fa84cd85c855ca0b5916fe5ef
-size 664
+﻿using System;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram
+{
+    [Serializable]
+    public class UdonGraphElementData
+    {
+        public UdonGraphElementType type;
+        public string uid;
+        public string jsonData;
+
+        public UdonGraphElementData(UdonGraphElementType type, string uid, string jsonData)
+        {
+            this.type = type;
+            this.jsonData = jsonData;
+            this.uid = uid;
+        }
+    }
+
+    public enum UdonGraphElementType
+    {
+        GraphElement,
+        UdonStackNode,
+        UdonGroup,
+        UdonComment,
+        Minimap,
+        VariablesWindow,
+    };
+}

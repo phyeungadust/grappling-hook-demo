@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82078bcbe8d84c2c676ea2bbc00c6ebcb22b7ae74ee20163d1132a22ceb3e2a3
-size 658
+﻿using System;
+using UnityEditor.UIElements;
+using UnityEngine.UIElements;
+
+namespace VRC.Udon.Editor.ProgramSources.UdonGraphProgram.UI
+{
+    public class UnsignedIntegerField : BaseField<uint>
+    {
+        public UnsignedIntegerField():base(null,null)
+        {
+            // Set up styling
+            AddToClassList("UdonValueField");
+            
+            // Create Char Editor and listen for changes
+            IntegerField field = new IntegerField();
+            field.RegisterValueChangedCallback(
+                e =>
+                    value = Convert.ToUInt32(e.newValue));
+
+            Add(field);
+        }
+    }
+}

@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91dec2b17c65ab063e24cbc0bffdaa81bcdc35e9678782009ac2eae3363951ec
-size 58
+You can now find them in the menu under VRChat SDK/Samples

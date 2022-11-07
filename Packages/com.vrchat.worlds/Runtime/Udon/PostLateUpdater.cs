@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16b61588ac58ca5d038ed224cec4f5ec3935b87cd3e0ec3c13850c0e1bb91b1c
-size 324
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using VRC.Udon;
+
+[DefaultExecutionOrder(31000)]
+public class PostLateUpdater : MonoBehaviour
+{
+    public UdonManager udonManager;
+
+    private void LateUpdate()
+    {
+        udonManager.PostLateUpdate();
+    }
+}

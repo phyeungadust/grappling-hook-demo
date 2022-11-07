@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c197dd3688b78c13db355422f769ff5f9142d5a3eac205c797a05d8bc944705b
-size 735
+{
+    "name": "VRC.SDK3.Editor",
+    "references": [
+        "VRC.SDK3",
+        "VRC.SDKBase.Editor",
+        "VRC.Udon"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UDON"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.vrchat.base",
+            "expression": "3.0.0",
+            "define": "VRC_SDK_VRCSDK3"
+        },
+        {
+            "name": "com.vrchat.base",
+            "expression": "3.0.0",
+            "define": "VRCUPM"
+        }
+    ],
+    "noEngineReferences": false
+}
