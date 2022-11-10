@@ -6,23 +6,13 @@ using VRC.Udon;
 public class TestBehaviour : UdonSharpBehaviour
 {
 
-    private VRCPlayerApi localPlayer;
-
     void Start()
     {
-        this.localPlayer = Networking.LocalPlayer;
+        Debug.Log(Physics.gravity);
     }
 
     public void Update()
     {
-        Debug.Log(
-            this.localPlayer.GetVelocity()
-        );
-
-        this.localPlayer.SetGravityStrength();
-
     }
-
-    // test line
 
 }
