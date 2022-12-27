@@ -31,9 +31,7 @@ namespace Tether
         private float tetherLength;
         private float tetherUnwindRate;
 
-        public float pullFactor;
-
-        public GameObject tetherStates;
+        public TetherStatesDict TetherStatesDict;
 
         private TetherState tetherState;
 
@@ -49,43 +47,43 @@ namespace Tether
 
             // initially, not tethered to anything
             // TetherNoneState
-            this.tetherState = this
-                .tetherStates
-                .transform
-                .Find("TetherNoneState")
-                .GetComponent<TetherNoneState>();
+            this.SwitchState(
+                this
+                    .TetherStatesDict
+                    .TetherNoneState,
+                true
+            );
 
-            // initial setup for TetherNoneState
+        }
+
+        public TetherState SwitchState(TetherState tetherState, bool init = false)
+        {
+
+            // init arg marked true means this.tetherState is set for the 1st time
+            // which means there isn't a previous state
+            // which means no need to call Exit on the previous state
+            // because there is no previous state to begin with
+
+            Debug.Log("prev tetherState: " + this.tetherState);
+            Debug.Log("new thetherState: " + tetherState);
+            if (!init)
+            {
+                this.tetherState.Exit(this);
+            }
+            this.tetherState = tetherState;
             this.tetherState.Enter(this);
+            return this.tetherState;
 
         }
 
         public void Update()
         {
-            if (!editorMode)
-            {
+            this.tetherState.CheckStateChange(this);
+        }
 
-                // check state change
-                TetherState tempState = this
-                    .tetherState
-                    .HandleInput(this);
-
-                if (tempState != this.tetherState)
-                {
-
-                    // state changed
-
-                    // new state initial setup
-                    tempState.Enter(this);
-
-                    // assign new state
-                    this.tetherState = tempState;
-
-                }
-
-                this.tetherState.HandleUpdate(this);
-
-            }
+        public void FixedUpdate()
+        {
+            this.tetherState.HandleUpdate(this);
         }
 
         // public void Update()
