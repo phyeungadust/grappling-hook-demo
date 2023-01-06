@@ -35,6 +35,8 @@ public class ShellBehaviour : UdonSharpBehaviour
             // this line here really sets shooterID
             this.shooterID = System.Int32.Parse(args[1]);
 
+            Debug.Log("hello");
+
             if (args[2] != "")
             {
                 // callback
