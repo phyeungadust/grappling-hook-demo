@@ -14,6 +14,8 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
     private Transform waterSprayGunTransform; 
     [SerializeField]
     private VRCObjectPool waterSprayParticlePool;
+    [SerializeField]
+    private SprayedOverlayBehaviour sprayedOverlay;
 
     private float timeBeforeDespawn;
     private VRCPlayerApi localPlayer;
@@ -152,6 +154,29 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
     {
         this.GetComponent<Rigidbody>().velocity = Vector3.zero;
         Debug.Log("despawned " + this.gameObject.name);
+    }
+
+    public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+    {
+
+        // ignore if a non shooter instance 'witnesses' a particle hit
+        // only the shooter is allowed to register particle hits
+        if (this.localPlayer.playerId != this.ownerID) return;
+
+        // ignore if shooter shoots themself
+        if (player.playerId == this.ownerID) return;
+
+        Networking.SetOwner(
+            this.localPlayer,
+            this.sprayedOverlay.gameObject
+        );
+
+        this.sprayedOverlay.SprayScreenUnicast = string.Join(
+            " ",
+            System.Guid.NewGuid().ToString().Substring(0, 6),
+            player.playerId
+        );
+
     }
 
 }

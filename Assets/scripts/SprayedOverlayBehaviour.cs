@@ -4,6 +4,7 @@ using VRC.SDKBase;
 using VRC.Udon;
 using UnityEngine.UIElements;
 
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class SprayedOverlayBehaviour : UdonSharpBehaviour
 {
 
@@ -45,7 +46,7 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
 
         if (Input.GetKey(KeyCode.R))
         {
-            this.SprayScreen();
+            this.SprayScreenLocal();
         }
 
         if (this.timeBeforeClear <= 0.0f)
@@ -67,7 +68,7 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
         }
     }
 
-    private void SprayScreen()
+    private void SprayScreenLocal()
     {
         // increase alpha (amount of spray on the screen)
         // not more than 1.0f
@@ -97,6 +98,32 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
 
         this.sprayedOverlayMaterial.color = this.sprayedColor;
 
+    }
+
+    [UdonSynced, FieldChangeCallback(nameof(SprayScreenUnicast))]
+    private string sprayScreenUnicast;
+    public string SprayScreenUnicast
+    {
+        get => this.sprayScreenUnicast;
+        set
+        {
+
+            this.sprayScreenUnicast = value;
+            if (this.localPlayer.IsOwner(this.gameObject))
+            {
+                this.RequestSerialization();
+            }
+
+            string[] args = value.Split(' ');
+            string nonce = args[0];
+            int targetID = System.Int32.Parse(args[1]);
+
+            if (this.localPlayer.playerId == targetID)
+            {
+                this.SprayScreenLocal();
+            }
+
+        }
     }
 
 }
