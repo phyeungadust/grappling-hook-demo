@@ -138,23 +138,13 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
             .material
             .color = particleNewColor;
 
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            this.transform.position = this
-                .waterSprayGunTransform
-                .position;
-            this.timeBeforeDespawn = this
-                .properties
-                .ParticleLifeTime;
-        }
-
     }
 
-    void OnDisable()
-    {
-        this.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        Debug.Log("despawned " + this.gameObject.name);
-    }
+    // void OnDisable()
+    // {
+    //     this.GetComponent<Rigidbody>().velocity = Vector3.zero;
+    //     Debug.Log("despawned " + this.gameObject.name);
+    // }
 
     public override void OnPlayerTriggerEnter(VRCPlayerApi player)
     {

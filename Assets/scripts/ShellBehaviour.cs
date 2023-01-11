@@ -14,111 +14,89 @@ public class ShellBehaviour : UdonSharpBehaviour
     private Tether.TetherController leftController;
     [SerializeField]
     private Tether.TetherController rightController;
+    [SerializeField]
+    private ShellProperties shellProperties;
+    [SerializeField]
+    private ShellShootProperties shellShootProperties;
 
+    private bool initialized = false;
     private int shooterID = -1;
+    private int victimID = -1;
+    private VRCPlayerApi localPlayer;
 
-    // SetShooterID = "arg[0] arg[1] arg[2]"
-    // arg[0]: nonce
-    // arg[1]: shooterID
-    // arg[2]: callback
-    [UdonSynced, FieldChangeCallback(nameof(SetShooterID))]
-    private string setShooterID = "";
-    public string SetShooterID
+    [UdonSynced, FieldChangeCallback(nameof(Init))]
+    private string init = "";
+    public string Init
     {
-        get => this.setShooterID;
+        get => this.init;
         set
         {
 
-            this.setShooterID = value;
-            string[] args = value.Split();
+            this.init = value;
+            string[] args = value.Split(' ');
+            string nonce = args[0];
+            int victimID = System.Int32.Parse(args[1]);
 
-            // this line here really sets shooterID
-            this.shooterID = System.Int32.Parse(args[1]);
-
-            Debug.Log("hello");
-
-            if (args[2] != "")
-            {
-                // callback
-                this.SendCustomEvent(args[2]);
-            }
-
-        }
-    }
-    
-    [UdonSynced]
-    private int victimID = -1;
-
-    private VRCPlayerApi localPlayer;
-
-    [SerializeField]
-    private float speed = 1.5f;
-
-    public void SetInitPos()
-    {
-        if (
-            this.shooterID != -1
-        )
-        {
-            Debug.Log("shooterID: " + this.shooterID);
+            // set shooterID
+            this.shooterID = this.shellShootProperties.OwnerID; 
+            
+            // set victimID
+            this.victimID = victimID;
+           
+            // set initial position to where shooter is at
             this.transform.position = VRCPlayerApi
-                .GetPlayerById(this.shooterID)
+                .GetPlayerById(shooterID)
                 .GetPosition();
+
+            // set initialized flag to true
+            this.initialized = true;
+
         }
     }
 
-    void Start()
-    {
-        this.localPlayer = Networking.LocalPlayer;
-    }
-
-    public ShellBehaviour Init()
+    void OnEnable()
     {
 
         this.localPlayer = Networking.LocalPlayer;
 
-        Networking.SetOwner(
-            this.localPlayer,
-            this.gameObject
-        );
+        if (this.localPlayer.IsOwner(this.gameObject))
+        {
 
-        this.SetShooterID = string.Join(
-            " ",
-            Random.Range(int.MinValue, int.MaxValue),
-            this.localPlayer.playerId,
-            "SetInitPos"
-        );
+            // if this is the shooter
+            // set initialize fields and sync to other non-shooter instances
+            this.Init = string.Join(
+                " ",
+                System.Guid.NewGuid().ToString().Substring(0, 6),
+                ShellBehaviour.FindVictim(this.localPlayer.playerId).playerId
+            );
 
-        this.victimID = this.FindVictim().playerId;
-
-        return this;
+        }
 
     }
 
     void FixedUpdate()
     {
 
-        if (
-            this.shooterID != -1
-            && this.victimID != -1
-        )
-        {
-            // valid shooter and victim
-            this.transform.position = Vector3.MoveTowards(
-                this.transform.position,
-                VRCPlayerApi.GetPlayerById(this.victimID).GetPosition(),
-                this.speed * Time.fixedDeltaTime
-            );
-        }
+        // if not yet initialized, do not run below
+        if (!this.initialized) return;
+
+        // shell chases victim
+        this.transform.position = Vector3.MoveTowards(
+            this.transform.position,
+            VRCPlayerApi.GetPlayerById(this.victimID).GetPosition(),
+            this.shellProperties.Speed * Time.fixedDeltaTime
+        );
 
     }
 
     public override void OnPlayerTriggerEnter(VRCPlayerApi player)
     {
 
+        // if not yet initialized, do not run below
+        if (!this.initialized) return;
+
         if (
-            this.localPlayer != null
-            && this.localPlayer.playerId == this.victimID
+            this.localPlayer.playerId == this.victimID
             && player.playerId == this.victimID
         )
         {
@@ -126,27 +104,6 @@ public class ShellBehaviour : UdonSharpBehaviour
             // on victim's instance, they are hit by this shell
             // victim should be stunned
             // shell should be returned to shellPool
-
-            Networking.SetOwner(
-                this.localPlayer,
-                this.shellPool.gameObject
-            );
-
-            Networking.SetOwner(
-                this.localPlayer,
-                this.gameObject
-            );
-
-            // reset shooterID to -1
-            this.SetShooterID = string.Join(
-                " ",
-                Random.Range(int.MinValue, int.MaxValue),
-                -1,
-                ""
-            );
-
-            // reset victimID to -1
-            this.victimID = -1;
 
             // put victim to StunnedState
             this.leftController.SwitchState(
@@ -165,13 +122,26 @@ public class ShellBehaviour : UdonSharpBehaviour
             );
 
             // return shell to shellPool
-            this.shellPool.Return(this.gameObject);
+            this.SendCustomNetworkEvent(
+                VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner,
+                "ReturnShell"
+            );
 
         }
 
     }
 
-    private VRCPlayerApi FindVictim()
+    public void ReturnShell()
+    {
+        this.shellPool.Return(this.gameObject);
+    }
+
+    void OnDisable()
+    {
+        this.initialized = false;
+    }
+
+    public static VRCPlayerApi FindVictim(int shooterID)
     {
 
         // load all players into array
@@ -179,8 +149,13 @@ public class ShellBehaviour : UdonSharpBehaviour
             new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]
         );
 
+        if (allPlayers.Length == 1)
+        {
+            return VRCPlayerApi.GetPlayerById(1);
+        }
+
         VRCPlayerApi shooter = VRCPlayerApi
-            .GetPlayerById(this.shooterID);
+            .GetPlayerById(shooterID);
 
         VRCPlayerApi victim = null;
 
