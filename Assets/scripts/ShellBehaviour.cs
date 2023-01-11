@@ -154,14 +154,14 @@ public class ShellBehaviour : UdonSharpBehaviour
                     .leftController
                     .TetherStatesDict
                     .StunnedState
-                    .Initialize(3.0f)
+                    .Initialize(5.0f)
             );
             this.rightController.SwitchState(
                 this
                     .rightController
                     .TetherStatesDict
                     .StunnedState
-                    .Initialize(3.0f)
+                    .Initialize(5.0f)
             );
 
             // return shell to shellPool
