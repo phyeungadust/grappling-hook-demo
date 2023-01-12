@@ -80,10 +80,19 @@ public class ShellBehaviour : UdonSharpBehaviour
         // if not yet initialized, do not run below
         if (!this.initialized) return;
 
+        Vector3 victimPos = VRCPlayerApi
+            .GetPlayerById(this.victimID)
+            .GetPosition();
+
+        // rotate shell to face victim
+        Vector3 direction = victimPos - this.transform.position;
+        direction = direction.normalized;
+        this.transform.forward = direction;
+
         // shell chases victim
         this.transform.position = Vector3.MoveTowards(
             this.transform.position,
-            VRCPlayerApi.GetPlayerById(this.victimID).GetPosition(),
+            victimPos,
             this.shellProperties.Speed * Time.fixedDeltaTime
         );
 
