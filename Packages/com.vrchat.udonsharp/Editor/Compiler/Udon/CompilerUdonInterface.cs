@@ -9,6 +9,7 @@ using Microsoft.CodeAnalysis;
 using UdonSharp.Compiler.Symbols;
 using UdonSharpEditor;
 using UnityEditor;
+using UnityEditorInternal;
 using UnityEngine;
 using VRC.Udon.Common.Interfaces;
 using VRC.Udon.Editor;
@@ -63,6 +64,11 @@ namespace UdonSharp.Compiler.Udon
         //     AssemblyCacheInit();
         //     CacheInit();
         // }
+
+        internal static void ResetAssemblyCache()
+        {
+            _assemblyInitRan = false;
+        }
 
         internal static void CacheInit()
         {
@@ -143,9 +149,9 @@ namespace UdonSharp.Compiler.Udon
                     
                     assemblyDefinitions.Add(assemblyDefinition);
                     
-                    var sourceAssembly = assemblyDefinition.sourceAssembly;
+                    AssemblyDefinitionAsset sourceAssembly = assemblyDefinition.sourceAssembly;
 
-                    foreach (var assembly in allAssemblies)
+                    foreach (System.Reflection.Assembly assembly in allAssemblies)
                     {
                         if (assembly.IsDynamic || assembly.Location.Length <= 0 ||
                             assembly.Location.StartsWith("data")) 
@@ -159,7 +165,7 @@ namespace UdonSharp.Compiler.Udon
                     }
                 }
 
-                var cSharpAssembly = allAssemblies.FirstOrDefault(e => e.GetName().Name == "Assembly-CSharp");
+                System.Reflection.Assembly cSharpAssembly = allAssemblies.FirstOrDefault(e => e.GetName().Name == "Assembly-CSharp");
 
                 if (cSharpAssembly != null)
                 {
@@ -172,11 +178,11 @@ namespace UdonSharp.Compiler.Udon
 
                 UdonSharpAssemblies = assemblies.ToImmutableArray();
                 UdonSharpAssemblyDefinitions = assemblyDefinitions.ToImmutableArray();
-                var udonSharpAssemblySet = new HashSet<System.Reflection.Assembly>(_udonSharpAssemblies);
+                HashSet<System.Reflection.Assembly> udonSharpAssemblySet = new HashSet<System.Reflection.Assembly>(_udonSharpAssemblies);
 
                 HashSet<System.Reflection.Assembly> externAssemblies = new HashSet<System.Reflection.Assembly>();
 
-                foreach (var assembly in allAssemblies)
+                foreach (System.Reflection.Assembly assembly in allAssemblies)
                 {
                     if (assembly.IsDynamic || assembly.Location.Length <= 0 || 
                         assembly.Location.StartsWith("data")) 
@@ -227,10 +233,29 @@ namespace UdonSharp.Compiler.Udon
             return ExternAssemblySet.Contains(type.Assembly);
         }
 
-        public static bool IsUdonEvent(string eventName)
+        public static bool IsUdonEventName(string name)
         {
             CacheInit();
-            return _builtinEventLookup.ContainsKey(eventName);
+            
+            return _builtinEventLookup.ContainsKey(name);
+        }
+
+        public static bool IsUdonEvent(MethodSymbol method)
+        {
+            CacheInit();
+            
+            // ReSharper disable once InvokeAsExtensionMethod
+            if (_builtinEventLookup.ContainsKey(method.Name) &&
+                !method.Parameters.Any(e => e.IsByRef)) // Builtin events should never have out/ref params
+            {
+                if (method.Parameters.Length == 0 || // Avoid breaking older programs that omit the argument for these events even though they shouldn't. This also somewhat mirrors Unity's behavior as it will fire an event named OnTriggerEnter() without any parameters.
+                    Enumerable.SequenceEqual(method.Parameters.Select(e => e.Type.UdonType.SystemType), GetUdonEventArgs(method.Name).Select(e => e.Item2)))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         public static string GetUdonEventName(string eventName)
