@@ -5,12 +5,23 @@ using VRC.Udon;
 
 public class test : UdonSharpBehaviour
 {
-    void FixedUpdate()
+
+    [SerializeField]
+    private ParticleSystem smoke;
+
+    void Update()
     {
-        this.transform.position = Vector3.MoveTowards(
-            this.transform.position,
-            this.transform.position + this.transform.forward * 99,
-            10 * Time.fixedDeltaTime
-        );
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            if (this.smoke.isPlaying)
+            {
+                this.smoke.Stop();
+            }
+            else
+            {
+                this.smoke.Play();
+            }
+        }
     }
+
 }

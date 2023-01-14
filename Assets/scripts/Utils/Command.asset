@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
-  m_Name: TestBehaviour
+  m_Name: Command
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 62f726e5bd716e44cb75388649f5b528,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: c9f639c7d35c44e49b25b1f2755a78ee,
     type: 2}
   udonAssembly: 
   assemblyError: 
-  sourceCsScript: {fileID: 11500000, guid: 298138476e70865469607da45fd87df9, type: 3}
+  sourceCsScript: {fileID: 11500000, guid: 6364dd72896873d4da8c7a74762cb760, type: 3}
   scriptVersion: 2
   compiledVersion: 2
   behaviourSyncMode: 0
   hasInteractEvent: 0
-  scriptID: -3523270043290052961
+  scriptID: -9146965747234885263
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
