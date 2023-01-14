@@ -9,7 +9,7 @@ public class ShellBehaviour : UdonSharpBehaviour
 {
 
     [SerializeField]
-    private VRCObjectPool shellPool;
+    public VRCObjectPool ShellPool;
     [SerializeField]
     private Tether.TetherController leftController;
     [SerializeField]
@@ -18,6 +18,8 @@ public class ShellBehaviour : UdonSharpBehaviour
     private ShellProperties shellProperties;
     [SerializeField]
     private ShellShootProperties shellShootProperties;
+    [SerializeField]
+    private ParticleSystem smoke;
 
     private bool initialized = false;
     private int shooterID = -1;
@@ -84,10 +86,18 @@ public class ShellBehaviour : UdonSharpBehaviour
             .GetPlayerById(this.victimID)
             .GetPosition();
 
-        // rotate shell to face victim
-        Vector3 direction = victimPos - this.transform.position;
-        direction = direction.normalized;
-        this.transform.forward = direction;
+        float shellToVictimDist = Vector3.Distance(
+            victimPos,
+            this.transform.position
+        );
+
+        if (shellToVictimDist > .5f)
+        {
+            // rotate shell to face victim
+            Vector3 direction = victimPos - this.transform.position;
+            direction = direction.normalized;
+            this.transform.forward = direction;
+        }
 
         // shell chases victim
         this.transform.position = Vector3.MoveTowards(
@@ -130,19 +140,49 @@ public class ShellBehaviour : UdonSharpBehaviour
                     .Initialize(5.0f)
             );
 
-            // return shell to shellPool
+            // smoke particle system stops playing
             this.SendCustomNetworkEvent(
-                VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner,
-                "ReturnShell"
+                VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+                "StopSmoke"
             );
+
+            // // return shell to shellPool
+            // this.SendCustomNetworkEvent(
+            //     VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner,
+            //     "BeforeReturnShell"
+            // );
 
         }
 
     }
 
+    public void BeforeReturnShell()
+    {
+
+        // wait until all smoke particles are gone before returning shell
+
+        SmokeAnimFinishCommand smokeAnimFinishCommand = this
+            .GetComponent<SmokeAnimFinishCommand>().Init(this);
+
+        DoAfterSmokeAnimFinish doAfterSmokeAnimFinish = this
+            .GetComponent<DoAfterSmokeAnimFinish>();
+
+        doAfterSmokeAnimFinish.Init(smoke, smokeAnimFinishCommand);
+
+    }
+
     public void ReturnShell()
     {
-        this.shellPool.Return(this.gameObject);
+        this.ShellPool.Return(this.gameObject);
+    }
+
+    public void StopSmoke()
+    {
+        this.smoke.Stop();
+        if (this.localPlayer.playerId == this.shooterID)
+        {
+            this.BeforeReturnShell();
+        }
     }
 
     void OnDisable()
