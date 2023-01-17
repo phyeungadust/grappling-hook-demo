@@ -26,6 +26,9 @@ public class ShellBehaviour : UdonSharpBehaviour
     private int victimID = -1;
     private VRCPlayerApi localPlayer;
 
+    private DoAfterSmokeAnimFinish doAfterSmokeAnimFinish;
+    private ReturnShellCommand returnShellCommand;
+
     [UdonSynced, FieldChangeCallback(nameof(Init))]
     private string init = "";
     public string Init
@@ -58,6 +61,11 @@ public class ShellBehaviour : UdonSharpBehaviour
 
     void OnEnable()
     {
+
+        this.doAfterSmokeAnimFinish = this
+            .GetComponent<DoAfterSmokeAnimFinish>();
+        this.returnShellCommand = this
+            .GetComponent<ReturnShellCommand>();
 
         this.localPlayer = Networking.LocalPlayer;
 
@@ -93,10 +101,16 @@ public class ShellBehaviour : UdonSharpBehaviour
 
         if (shellToVictimDist > .5f)
         {
+
             // rotate shell to face victim
             Vector3 direction = victimPos - this.transform.position;
             direction = direction.normalized;
             this.transform.forward = direction;
+
+            // note: shell stops rotating after dist <= .5f
+            // this is to prevent shell from rapidly rotating
+            // when close to victim
+
         }
 
         // shell chases victim
@@ -146,12 +160,6 @@ public class ShellBehaviour : UdonSharpBehaviour
                 "StopSmoke"
             );
 
-            // // return shell to shellPool
-            // this.SendCustomNetworkEvent(
-            //     VRC.Udon.Common.Interfaces.NetworkEventTarget.Owner,
-            //     "BeforeReturnShell"
-            // );
-
         }
 
     }
@@ -159,15 +167,18 @@ public class ShellBehaviour : UdonSharpBehaviour
     public void BeforeReturnShell()
     {
 
+        // SmokeAnimFinishCommand smokeAnimFinishCommand = this
+        //     .GetComponent<SmokeAnimFinishCommand>().Init(this);
+
+        // DoAfterSmokeAnimFinish doAfterSmokeAnimFinish = this
+        //     .GetComponent<DoAfterSmokeAnimFinish>();
+
         // wait until all smoke particles are gone before returning shell
 
-        SmokeAnimFinishCommand smokeAnimFinishCommand = this
-            .GetComponent<SmokeAnimFinishCommand>().Init(this);
-
-        DoAfterSmokeAnimFinish doAfterSmokeAnimFinish = this
-            .GetComponent<DoAfterSmokeAnimFinish>();
-
-        doAfterSmokeAnimFinish.Init(smoke, smokeAnimFinishCommand);
+        this.doAfterSmokeAnimFinish.Initiate(
+            this.smoke, 
+            this.returnShellCommand.Init(this)
+        );
 
     }
 

@@ -11,7 +11,7 @@ public class DoAfterSmokeAnimFinish : UdonSharpBehaviour
     private ParticleSystem smoke;
     private Command cmd;
 
-    public DoAfterSmokeAnimFinish Init(ParticleSystem smoke, Command cmd)
+    public DoAfterSmokeAnimFinish Initiate(ParticleSystem smoke, Command cmd)
     {
         this.smoke = smoke;
         this.cmd = cmd;
