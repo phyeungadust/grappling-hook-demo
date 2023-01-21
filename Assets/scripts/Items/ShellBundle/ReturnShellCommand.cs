@@ -22,6 +22,10 @@ public class ReturnShellCommand : Command
     public override void Exec()
     {
         this.shellBehaviour.ReturnShell();
+        if (this.cmd != null)
+        {
+            this.cmd.Exec();
+        }
     }
 
 }

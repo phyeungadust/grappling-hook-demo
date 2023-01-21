@@ -20,14 +20,20 @@ public class ShellBehaviour : UdonSharpBehaviour
     private ShellShootProperties shellShootProperties;
     [SerializeField]
     private ParticleSystem smoke;
+    [SerializeField]
+    private ParticleSystem explosion;
+    [SerializeField]
+    private ParticleSystem debris;
+    [SerializeField]
+    private DoAfterAllParticleSystemsStop doAfterAllParticleSystemsStop;
+    [SerializeField]
+    private ReturnShellCommand returnShellCommand;
 
     private bool initialized = false;
     private int shooterID = -1;
     private int victimID = -1;
     private VRCPlayerApi localPlayer;
-
-    private DoAfterSmokeAnimFinish doAfterSmokeAnimFinish;
-    private ReturnShellCommand returnShellCommand;
+    private bool exploding = false;
 
     [UdonSynced, FieldChangeCallback(nameof(Init))]
     private string init = "";
@@ -53,6 +59,9 @@ public class ShellBehaviour : UdonSharpBehaviour
                 .GetPlayerById(shooterID)
                 .GetPosition();
 
+            // set exploding to false, since it has not yet exploded
+            this.exploding = false;
+
             // set initialized flag to true
             this.initialized = true;
 
@@ -62,10 +71,9 @@ public class ShellBehaviour : UdonSharpBehaviour
     void OnEnable()
     {
 
-        this.doAfterSmokeAnimFinish = this
-            .GetComponent<DoAfterSmokeAnimFinish>();
-        this.returnShellCommand = this
-            .GetComponent<ReturnShellCommand>();
+        // enable mesh and collider
+        this.GetComponent<MeshRenderer>().enabled = true;
+        this.GetComponent<Collider>().enabled = true;
 
         this.localPlayer = Networking.LocalPlayer;
 
@@ -89,6 +97,9 @@ public class ShellBehaviour : UdonSharpBehaviour
 
         // if not yet initialized, do not run below
         if (!this.initialized) return;
+
+        // if shell already exploding, no need to move it
+        if (this.exploding) return;
 
         Vector3 victimPos = VRCPlayerApi
             .GetPlayerById(this.victimID)
@@ -154,12 +165,36 @@ public class ShellBehaviour : UdonSharpBehaviour
                     .Initialize(5.0f)
             );
 
-            // smoke particle system stops playing
+            // play explosion effect
             this.SendCustomNetworkEvent(
                 VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
-                "StopSmoke"
+                "PlayExplosionEffect"
             );
 
+        }
+
+    }
+
+    public void PlayExplosionEffect()
+    {
+
+        // disable mesh and collider before explosion takes place
+        this.GetComponent<MeshRenderer>().enabled = false;
+        this.GetComponent<Collider>().enabled = false;
+
+        // stop smoke trail
+        this.smoke.Stop();
+
+        // set exploding to true, so position stops updating
+        this.exploding = true;
+
+        // start explosion animation
+        this.explosion.Play();
+        this.debris.Play();
+
+        if (this.localPlayer.playerId == this.shooterID)
+        {
+            this.BeforeReturnShell();
         }
 
     }
@@ -167,17 +202,14 @@ public class ShellBehaviour : UdonSharpBehaviour
     public void BeforeReturnShell()
     {
 
-        // SmokeAnimFinishCommand smokeAnimFinishCommand = this
-        //     .GetComponent<SmokeAnimFinishCommand>().Init(this);
+        // wait until all trail and explosion animations to finish
+        // before returning shell
 
-        // DoAfterSmokeAnimFinish doAfterSmokeAnimFinish = this
-        //     .GetComponent<DoAfterSmokeAnimFinish>();
-
-        // wait until all smoke particles are gone before returning shell
-
-        this.doAfterSmokeAnimFinish.Initiate(
-            this.smoke, 
-            this.returnShellCommand.Init(this)
+        this.doAfterAllParticleSystemsStop.Exec(
+            this.returnShellCommand.Init(this),
+            this.smoke,
+            this.explosion,
+            this.debris
         );
 
     }
@@ -185,15 +217,6 @@ public class ShellBehaviour : UdonSharpBehaviour
     public void ReturnShell()
     {
         this.ShellPool.Return(this.gameObject);
-    }
-
-    public void StopSmoke()
-    {
-        this.smoke.Stop();
-        if (this.localPlayer.playerId == this.shooterID)
-        {
-            this.BeforeReturnShell();
-        }
     }
 
     void OnDisable()
