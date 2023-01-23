@@ -28,6 +28,10 @@ public class ShellBehaviour : UdonSharpBehaviour
     private DoAfterAllParticleSystemsStop doAfterAllParticleSystemsStop;
     [SerializeField]
     private ReturnShellCommand returnShellCommand;
+    [SerializeField]
+    private HUDStatusPopUpBehaviour hudPopUp;
+
+    private Vector3 cachedVictimPos;
 
     private bool initialized = false;
     private int shooterID = -1;
@@ -101,9 +105,17 @@ public class ShellBehaviour : UdonSharpBehaviour
         // if shell already exploding, no need to move it
         if (this.exploding) return;
 
-        Vector3 victimPos = VRCPlayerApi
-            .GetPlayerById(this.victimID)
-            .GetPosition();
+        // get victimPos, if victim fetch failed
+        // use last victimPos (this.cachedVictimPos)
+        Vector3 victimPos = this.cachedVictimPos;
+        VRCPlayerApi victim = VRCPlayerApi
+            .GetPlayerById(this.victimID);
+        if (victim != null)
+        {
+            victimPos = victim.GetPosition();
+            this.cachedVictimPos = victimPos;
+        }
+
 
         float shellToVictimDist = Vector3.Distance(
             victimPos,
@@ -170,6 +182,8 @@ public class ShellBehaviour : UdonSharpBehaviour
                 VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
                 "PlayExplosionEffect"
             );
+
+            this.hudPopUp.ShowPopUp("STUNNED");
 
         }
 
