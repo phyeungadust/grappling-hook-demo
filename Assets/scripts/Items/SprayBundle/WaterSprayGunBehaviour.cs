@@ -36,10 +36,16 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
 
     }
 
-    void FixedUpdate()
+    // void FixedUpdate()
+    // {
+
+    //     // update gun position
+
+    // }
+
+    void Update()
     {
 
-        // update gun position
         VRCPlayerApi owner = VRCPlayerApi
             .GetPlayerById(this.ownerID);
         if (owner != null)
@@ -53,11 +59,6 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
                 td.rotation
             );
         }
-
-    }
-
-    void Update()
-    {
 
         if (this.localPlayer.playerId == this.ownerID)
         {

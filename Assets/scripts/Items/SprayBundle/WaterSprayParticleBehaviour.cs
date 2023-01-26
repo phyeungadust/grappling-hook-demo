@@ -10,12 +10,14 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
 
     [SerializeField]
     private WaterSprayParticleProperties properties;
-    [SerializeField]
-    private Transform waterSprayGunTransform; 
+    // [SerializeField]
+    // private Transform waterSprayGunTransform; 
     [SerializeField]
     private VRCObjectPool waterSprayParticlePool;
     [SerializeField]
     private SprayedOverlayBehaviour sprayedOverlay;
+    [SerializeField]
+    private Transform gunBarrelTip;
 
     private float timeBeforeDespawn;
     private VRCPlayerApi localPlayer;
@@ -26,10 +28,10 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
 
         // set particle position to tip of gun barrel
         this.transform.position = this
-            .waterSprayGunTransform
+            .gunBarrelTip
             .position;
         // this.transform.position = this
-        //     .waterSprayGunTransform
+        //     .gunBarrelTip
         //     .position;
 
         // scale particle randomly, within scale range
@@ -74,18 +76,27 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
         // the statement below simply rotates this vector3 to lie on the "normal plane"
         // this gives the result of offsetVector
         Vector3 offsetVector = this
-            .waterSprayGunTransform
+            .gunBarrelTip
             .rotation * new Vector3(xOffset, yOffset, 0.0f);
 
         // spread-corrected shootdirection
         Vector3 shootDirection = this
-            .waterSprayGunTransform
+            .gunBarrelTip
             .forward + offsetVector;
         shootDirection = shootDirection.normalized;
 
         // launch particle
-        this.GetComponent<Rigidbody>().velocity = 
+        Vector3 launchVel = 
             shootDirection * this.properties.ParticleTravelSpeed;
+        VRCPlayerApi owner = VRCPlayerApi.GetPlayerById(this.ownerID);
+        if (owner != null)
+        {
+            launchVel += Vector3.Project(
+                owner.GetVelocity(),
+                this.gunBarrelTip.forward
+            );
+        }
+        this.GetComponent<Rigidbody>().velocity = launchVel;
 
         // set timeBeforeDespawn to predefined lifetime
         this.timeBeforeDespawn = this
