@@ -135,9 +135,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075362465212}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075362465212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,9 +299,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075371213477}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075371213477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,9 +463,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075392060622}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075392060622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,9 +627,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075413036252}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075413036252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -791,9 +791,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075422266154}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075422266154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,9 +955,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075432302445}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075432302445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1119,9 +1119,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075434472425}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075434472425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1283,9 +1283,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075436202970}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075436202970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,9 +1447,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075459803397}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075459803397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,9 +1611,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075462732904}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075462732904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2271,9 +2271,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075485783715}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075485783715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2435,9 +2435,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075487798463}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075487798463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,9 +2599,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075494751328}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075494751328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2796,9 +2796,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075501540049}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075501540049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2960,9 +2960,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075506590316}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075506590316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3124,9 +3124,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075509073200}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075509073200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3288,9 +3288,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075527083281}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075527083281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3314,88 +3314,6 @@ MonoBehaviour:
   serializedProgramAsset: {fileID: 11400000, guid: 806ac592b81556c478a47738267369ef,
     type: 2}
   programSource: {fileID: 11400000, guid: 095d95c5888c25c4ca6d9c5f15ce7c8b, type: 2}
-  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
-  publicVariablesUnityEngineObjects: []
-  publicVariablesSerializationDataFormat: 0
---- !u!1 &4818807075554212405
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4818807075554212406}
-  - component: {fileID: 4818807075554212407}
-  - component: {fileID: 4818807075554212404}
-  m_Layer: 0
-  m_Name: WaterSprayGun
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4818807075554212406
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4818807075554212405}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4818807075498413990}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4818807075554212407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4818807075554212405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bb0920b71bf4854aa478655bf9c52e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
-  _udonSharpBackingUdonBehaviour: {fileID: 4818807075554212404}
-  ownerID: 1
-  waterSprayParticlePool: {fileID: 4818807075468945717}
---- !u!114 &4818807075554212404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4818807075554212405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactTextPlacement: {fileID: 0}
-  interactText: Use
-  interactTextGO: {fileID: 0}
-  proximity: 2
-  SynchronizePosition: 0
-  AllowCollisionOwnershipTransfer: 0
-  Reliable: 0
-  _syncMethod: 1
-  serializedProgramAsset: {fileID: 11400000, guid: 3cd14df47dbb8dd45903c4077fe74985,
-    type: 2}
-  programSource: {fileID: 11400000, guid: d1835dde6ed4df7428c93542eced915a, type: 2}
   serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
   publicVariablesUnityEngineObjects: []
   publicVariablesSerializationDataFormat: 0
@@ -3534,9 +3452,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075557788215}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075557788215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3698,9 +3616,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075587399255}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075587399255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3862,9 +3780,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075595882579}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075595882579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4026,9 +3944,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075600539673}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075600539673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4190,9 +4108,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075613635685}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075613635685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4354,9 +4272,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075616034902}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075616034902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4518,9 +4436,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075618621803}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075618621803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4682,9 +4600,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075622465988}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075622465988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4846,9 +4764,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075623662884}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075623662884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5010,9 +4928,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075627271670}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075627271670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5174,9 +5092,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075634217421}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075634217421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5338,9 +5256,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075636016128}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075636016128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5502,9 +5420,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075666105248}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075666105248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5666,9 +5584,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075730018415}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075730018415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5830,9 +5748,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075730789463}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075730789463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5994,9 +5912,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075748548696}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075748548696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6158,9 +6076,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075752353628}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075752353628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6322,9 +6240,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075786358029}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075786358029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6486,9 +6404,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075792714311}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075792714311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6650,9 +6568,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075794259246}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075794259246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6814,9 +6732,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075801700978}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075801700978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6978,9 +6896,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075805163498}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075805163498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7142,9 +7060,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075823428410}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075823428410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7306,9 +7224,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075825723887}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075825723887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7470,9 +7388,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075835562116}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075835562116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7634,9 +7552,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075854082571}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075854082571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7798,9 +7716,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075860947439}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075860947439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7962,9 +7880,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075866411883}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075866411883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8126,9 +8044,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075901801475}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075901801475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8290,9 +8208,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075907604178}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075907604178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8454,9 +8372,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075914914207}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075914914207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8618,9 +8536,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075928303277}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075928303277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8782,9 +8700,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075949310586}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075949310586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8946,9 +8864,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075951478195}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075951478195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9110,9 +9028,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075956803217}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075956803217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9274,9 +9192,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075964997390}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075964997390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9438,9 +9356,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075982847804}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075982847804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9602,9 +9520,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807075983587244}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807075983587244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9766,9 +9684,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076007176440}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076007176440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9930,9 +9848,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076009052907}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076009052907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10094,9 +10012,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076017493309}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076017493309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10258,9 +10176,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076019706394}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076019706394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10422,9 +10340,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076030007756}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076030007756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10586,9 +10504,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076042227528}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076042227528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10750,9 +10668,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076049219632}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076049219632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10914,9 +10832,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076063647846}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076063647846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11078,9 +10996,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076073196710}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076073196710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11242,9 +11160,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076076087294}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076076087294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11406,9 +11324,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076090204692}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076090204692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11570,9 +11488,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076105227350}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076105227350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11734,9 +11652,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076129391223}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076129391223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11898,9 +11816,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076153564203}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076153564203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12062,9 +11980,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076153887188}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076153887188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12226,9 +12144,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076158975349}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076158975349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12390,9 +12308,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076184754372}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076184754372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12554,9 +12472,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076192044438}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076192044438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12718,9 +12636,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076197531839}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076197531839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12882,9 +12800,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076229644468}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076229644468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13161,9 +13079,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076243026806}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076243026806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13325,9 +13243,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076267034281}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076267034281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13489,9 +13407,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076270012586}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076270012586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13653,9 +13571,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076272976826}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076272976826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13817,9 +13735,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076279860234}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076279860234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13981,9 +13899,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076301362790}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076301362790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14145,9 +14063,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076305255718}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076305255718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14309,9 +14227,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076341398871}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076341398871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14473,9 +14391,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076344401681}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076344401681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14637,9 +14555,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076348397191}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076348397191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14801,9 +14719,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076374149303}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076374149303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14965,9 +14883,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076380510978}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076380510978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15129,9 +15047,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076380667436}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076380667436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15293,9 +15211,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076388256146}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076388256146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15457,9 +15375,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076394774851}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076394774851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15621,9 +15539,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076428503651}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076428503651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15785,9 +15703,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076441030902}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076441030902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15949,9 +15867,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076443936481}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076443936481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16113,9 +16031,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076447818123}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076447818123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16277,9 +16195,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076448076786}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076448076786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16441,9 +16359,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076450556413}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076450556413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16605,9 +16523,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076453121577}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076453121577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16769,9 +16687,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076453373174}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076453373174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16933,9 +16851,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076457822561}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076457822561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17097,9 +17015,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076462144459}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076462144459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17261,9 +17179,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076472832489}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076472832489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17425,9 +17343,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076484612098}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076484612098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17589,9 +17507,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076491191668}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076491191668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17753,9 +17671,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076530140159}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076530140159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17917,9 +17835,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076551026284}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076551026284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18081,9 +17999,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076552132538}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076552132538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18245,9 +18163,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076556872817}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076556872817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18409,9 +18327,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076579312406}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076579312406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18573,9 +18491,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076596529443}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076596529443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18737,9 +18655,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076605612278}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076605612278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18901,9 +18819,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076607853182}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076607853182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19065,9 +18983,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076609342182}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076609342182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19229,9 +19147,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076625225152}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076625225152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19393,9 +19311,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076625793317}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076625793317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19557,9 +19475,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076631369214}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076631369214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19721,9 +19639,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076645952932}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076645952932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19885,9 +19803,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076647687755}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076647687755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20049,9 +19967,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076656072371}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076656072371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20213,9 +20131,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076660878294}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076660878294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20377,9 +20295,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076670325938}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076670325938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20541,9 +20459,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076679826235}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076679826235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20705,9 +20623,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076710677994}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076710677994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20869,9 +20787,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076733465773}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076733465773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21033,9 +20951,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076735536204}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076735536204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21197,9 +21115,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076754585077}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076754585077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21361,9 +21279,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076760093520}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076760093520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21525,9 +21443,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076778246673}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076778246673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21689,9 +21607,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076793274900}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076793274900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21853,9 +21771,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076826992483}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076826992483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22017,9 +21935,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076838296988}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076838296988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22181,9 +22099,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076844481534}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076844481534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22345,9 +22263,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076851570393}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076851570393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22509,9 +22427,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076858332876}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076858332876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22673,9 +22591,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076863766509}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076863766509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22837,9 +22755,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076864443866}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076864443866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23001,9 +22919,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076881143710}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076881143710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23165,9 +23083,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076882857412}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076882857412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23329,9 +23247,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076914470887}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076914470887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23493,9 +23411,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076915990461}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076915990461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23657,9 +23575,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076922639531}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076922639531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23821,9 +23739,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076943886333}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076943886333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23985,9 +23903,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076946570717}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076946570717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24149,9 +24067,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076958956273}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076958956273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24313,9 +24231,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807076959353378}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807076959353378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24477,9 +24395,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077001234400}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077001234400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24641,9 +24559,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077031939984}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077031939984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24805,9 +24723,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077037809184}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077037809184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24969,9 +24887,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077060724901}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077060724901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25133,9 +25051,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077067450317}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077067450317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25297,9 +25215,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077070272222}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077070272222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25461,9 +25379,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077071451568}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077071451568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25625,9 +25543,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077076072097}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077076072097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25789,9 +25707,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077079920448}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077079920448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25953,9 +25871,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077129965410}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077129965410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26117,9 +26035,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077142575651}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077142575651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26281,9 +26199,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077149277013}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077149277013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26445,9 +26363,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077150238579}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077150238579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26609,9 +26527,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077154824824}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077154824824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26773,9 +26691,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077164678855}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077164678855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26937,9 +26855,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077176234164}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077176234164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27101,9 +27019,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077176663014}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077176663014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27265,9 +27183,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077182034581}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077182034581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27429,9 +27347,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077184491454}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077184491454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27593,9 +27511,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077218386383}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077218386383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27757,9 +27675,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077231844291}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077231844291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27921,9 +27839,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077234685484}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077234685484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28085,9 +28003,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077253555124}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077253555124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28249,9 +28167,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077261881778}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077261881778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28413,9 +28331,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077261964893}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077261964893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28577,9 +28495,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077265751902}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077265751902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28741,9 +28659,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077275910141}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077275910141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28905,9 +28823,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077296179179}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077296179179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29069,9 +28987,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077314697809}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077314697809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29233,9 +29151,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077318132671}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077318132671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29397,9 +29315,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077323755350}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077323755350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29561,9 +29479,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077325108099}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077325108099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29725,9 +29643,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077327342916}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077327342916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29889,9 +29807,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077335065314}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077335065314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30053,9 +29971,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077340605175}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077340605175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30217,9 +30135,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077343048596}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077343048596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30381,9 +30299,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077353924909}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077353924909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30545,9 +30463,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077355275996}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077355275996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30709,9 +30627,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077357122661}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077357122661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30873,9 +30791,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077408668453}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077408668453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31037,9 +30955,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077418449400}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077418449400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31201,9 +31119,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077419396384}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077419396384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31365,9 +31283,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077424985634}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077424985634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31529,9 +31447,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077431925504}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077431925504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31693,9 +31611,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077437988921}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077437988921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31857,9 +31775,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077445570871}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077445570871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32021,9 +31939,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077447654081}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077447654081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32185,9 +32103,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077449602635}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077449602635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32349,9 +32267,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077462931934}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077462931934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32513,9 +32431,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077464565825}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077464565825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32677,9 +32595,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077468133494}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077468133494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32841,9 +32759,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077474661416}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077474661416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33005,9 +32923,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077475585771}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077475585771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33169,9 +33087,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077477906940}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077477906940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33333,9 +33251,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077491063541}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077491063541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33497,9 +33415,9 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4818807077492235339}
   properties: {fileID: 4818807076233032058}
-  waterSprayGunTransform: {fileID: 4818807075554212406}
   waterSprayParticlePool: {fileID: 4818807075468945717}
   sprayedOverlay: {fileID: 0}
+  gunBarrelTip: {fileID: 110318927293794237}
 --- !u!114 &4818807077492235339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33526,3 +33444,95 @@ MonoBehaviour:
   serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
   publicVariablesUnityEngineObjects: []
   publicVariablesSerializationDataFormat: 0
+--- !u!1001 &7071973253775664622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4818807075498413990}
+    m_Modifications:
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376605059112804313, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: waterSprayParticlePool
+      value: 
+      objectReference: {fileID: 4818807075468945717}
+    - target: {fileID: 2376605059112804313, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 2376605059112804313, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+    - target: {fileID: 2376605059112804315, guid: 0f99e66078b431041bdfbd71cf9dc273,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterSprayGun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f99e66078b431041bdfbd71cf9dc273, type: 3}
+--- !u!4 &4818807075554212406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2376605059112804312, guid: 0f99e66078b431041bdfbd71cf9dc273,
+    type: 3}
+  m_PrefabInstance: {fileID: 7071973253775664622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &110318927293794237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7179683722328138323, guid: 0f99e66078b431041bdfbd71cf9dc273,
+    type: 3}
+  m_PrefabInstance: {fileID: 7071973253775664622}
+  m_PrefabAsset: {fileID: 0}
