@@ -12,8 +12,9 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
     private int ownerID;
     [SerializeField]
     private VRCObjectPool waterSprayParticlePool;
-
     private VRCPlayerApi localPlayer;
+
+    private bool currentlyHeld = false;
 
     void Start()
     {
@@ -46,37 +47,65 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
     void Update()
     {
 
-        VRCPlayerApi owner = VRCPlayerApi
-            .GetPlayerById(this.ownerID);
-        if (owner != null)
-        {
-            VRCPlayerApi.TrackingData td = owner
-                .GetTrackingData(
-                    VRCPlayerApi.TrackingDataType.Head
-                );
-            this.transform.SetPositionAndRotation(
-                td.position,
-                td.rotation
-            );
-        }
+        VRCPlayerApi owner = VRCPlayerApi.GetPlayerById(this.ownerID);
+
+        // if (owner != null)
+        // {
+        //     VRCPlayerApi.TrackingData td = owner
+        //         .GetTrackingData(
+        //             VRCPlayerApi.TrackingDataType.Head
+        //         );
+        //     this.transform.SetPositionAndRotation(
+        //         td.position,
+        //         td.rotation
+        //     );
+        // }
+
+        // VRCPlayerApi owner = VRCPlayerApi
+        //     .GetPlayerById(this.ownerID);
+        // if (owner != null)
+        // {
+        // }
 
         if (this.localPlayer.playerId == this.ownerID)
         {
-            if (Input.GetKey(KeyCode.T))
+            if (currentlyHeld)
             {
-                GameObject waterParticle = this
-                    .waterSprayParticlePool
-                    .TryToSpawn();
-                if (waterParticle != null)
+                bool usePressed = false;
+                if (this.localPlayer.IsUserInVR())
                 {
-                    Networking.SetOwner(
-                        this.localPlayer,
-                        waterParticle
-                    );
+                    usePressed = Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger") > 0;
+                }
+                else
+                {
+                    usePressed = Input.GetKey(KeyCode.T);
+                }
+                if (usePressed)
+                {
+                    GameObject waterParticle = this
+                        .waterSprayParticlePool
+                        .TryToSpawn();
+                    if (waterParticle != null)
+                    {
+                        Networking.SetOwner(
+                            this.localPlayer,
+                            waterParticle
+                        );
+                    }
                 }
             }
         }
 
+    }
+
+    override public void OnPickup()
+    {
+        currentlyHeld = true;
+    }
+
+    override public void OnDrop()
+    {
+        currentlyHeld = false;
     }
 
 }

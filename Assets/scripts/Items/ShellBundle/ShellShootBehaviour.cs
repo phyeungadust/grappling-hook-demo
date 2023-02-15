@@ -33,13 +33,30 @@ public class ShellShootBehaviour : UdonSharpBehaviour
         }
     }
 
+    public override void OnPlayerJoined(VRCPlayerApi player)
+    {
+        if (player.isLocal)
+        {
+            this.Start();
+        }
+    }
+
     void Update()
     {
 
         if (this.localPlayer.playerId == this.ownerID)
         {
 
-            if (Input.GetKeyDown(KeyCode.E))
+            bool pressedUseKey = false;
+            if (this.localPlayer.IsUserInVR())
+            {
+                pressedUseKey = Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger") > 0;
+            }
+            else
+            {
+                pressedUseKey = Input.GetKeyDown(KeyCode.E);
+            }
+            if (pressedUseKey)
             {
 
                 GameObject spawnedShell = this

@@ -9,4 +9,6 @@ public class ShellShootProperties : UdonSharpBehaviour
 
     public int OwnerID;
 
+    public string UseAxis;
+
 }
