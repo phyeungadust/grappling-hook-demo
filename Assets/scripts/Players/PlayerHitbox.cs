@@ -9,13 +9,13 @@ public class PlayerHitbox : UdonSharpBehaviour
 
     [SerializeField]
     private PlayerStore playerStore;
-    private Collider collider;
+    private Collider playerHitboxCollider;
 
-    public Collider GetCollider() => this.collider;
+    public Collider GetCollider() => this.playerHitboxCollider;
 
     void Awake()
     {
-        this.collider = this.GetComponent<Collider>();
+        this.playerHitboxCollider = this.GetComponent<Collider>();
     }
 
     public void CustomUpdate()

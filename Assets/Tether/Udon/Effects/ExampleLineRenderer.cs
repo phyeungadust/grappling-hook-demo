@@ -1,4 +1,3 @@
-
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -19,7 +18,7 @@ namespace Effects
         [Tooltip("A line renderer, required for visualizing a grapple.")]
         public LineRenderer line;
 
-        public void LateUpdate()
+        public void CustomLateUpdate()
         {
             if (controller.GetTethering())
             {

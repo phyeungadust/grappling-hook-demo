@@ -1,4 +1,3 @@
-
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -9,35 +8,36 @@ namespace Tether
     /// <summary>
     /// Holds properties for TetherControllers. Can be used to share properties between multiple TetherControllers.
     /// </summary>
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class TetherProperties : UdonSharpBehaviour
     {
         [Header("Tether")]
         [Tooltip("Maximum length of a grapple. Also determines how far the grapple gun can shoot.")]
         public float tetherMaximumLength = 20.0f;
 
-        [Header("Force")]
-        [Tooltip("Force to tug the player back to center with. Gives the grapple a bungee-like springiness.")]
-        public float tetherSpringFactor = 45.0f;
-        [Tooltip("Maximum amount of force the tether will tug the player back to the center with. Use this to prevent the grapple from pulling the player too fast.")]
-        public float tetherMaximumSpringForce = 10.0f;
-        [Tooltip("Rate to project the player's velocity inside the grapple's sphere. Increasing this makes swinging smoother, but reduces the bounciness of the line.")]
-        public float tetherProjectionRate = 4.0f;
+        // [Header("Force")]
+        // [Tooltip("Force to tug the player back to center with. Gives the grapple a bungee-like springiness.")]
+        // public float tetherSpringFactor = 45.0f;
+        // [Tooltip("Maximum amount of force the tether will tug the player back to the center with. Use this to prevent the grapple from pulling the player too fast.")]
+        // public float tetherMaximumSpringForce = 10.0f;
+        // [Tooltip("Rate to project the player's velocity inside the grapple's sphere. Increasing this makes swinging smoother, but reduces the bounciness of the line.")]
+        // public float tetherProjectionRate = 4.0f;
 
         public float pullFactor = 20.0f;
         public float brakeLength = 3.0f;
         public float maxSpeed = 25.0f;
 
-        [Header("Physics")]
-        [Tooltip("Whether the grapple should manipulate rigidbodies, rather than swing on them.")]
-        public bool manipulatesRigidbodies;
-        [Tooltip("Mass of the player. The player will swing on rigidbodies heavier than this.")]
-        public float playerMass = 70.0f;
-        [Tooltip("Force to tug rigidbodies back to center with. Gives the grapple a bungee-like springiness.")]
-        public float rigidbodySpringFactor = 45.0f;
-        [Tooltip("Maximum amount of force the tether will tug the rigidbody back to the center with. Use this to prevent the grapple from pulling rigidbodies too fast.")]
-        public float rigidbodyMaximumSpringForce = 10.0f;
-        [Tooltip("Amount to project the rigidbody's velocity inside the grapple's sphere. Increasing this makes swinging smoother, but reduces the bounciness of the line.")]
-        public float rigidbodyProjectionRate = 0.25f;
+        // [Header("Physics")]
+        // [Tooltip("Whether the grapple should manipulate rigidbodies, rather than swing on them.")]
+        // public bool manipulatesRigidbodies;
+        // [Tooltip("Mass of the player. The player will swing on rigidbodies heavier than this.")]
+        // public float playerMass = 70.0f;
+        // [Tooltip("Force to tug rigidbodies back to center with. Gives the grapple a bungee-like springiness.")]
+        // public float rigidbodySpringFactor = 45.0f;
+        // [Tooltip("Maximum amount of force the tether will tug the rigidbody back to the center with. Use this to prevent the grapple from pulling rigidbodies too fast.")]
+        // public float rigidbodyMaximumSpringForce = 10.0f;
+        // [Tooltip("Amount to project the rigidbody's velocity inside the grapple's sphere. Increasing this makes swinging smoother, but reduces the bounciness of the line.")]
+        // public float rigidbodyProjectionRate = 0.25f;
 
         [Header("Detection")]
         [Tooltip("Layers you can grapple on.")]

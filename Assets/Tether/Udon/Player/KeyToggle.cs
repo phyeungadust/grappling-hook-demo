@@ -1,4 +1,3 @@
-
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -16,25 +15,28 @@ namespace Player
         [Tooltip("Key that toggles gameobjects.")]
         public KeyCode key;
         [Tooltip("List of game objects to toggle on/off.")]
-        public GameObject[] toggleObject;
+        public GameObject toggleObject;
 
-        public void Start()
+        public void CustomStart()
         {
-            for (int i = 0; i < toggleObject.Length; i++)
-            {
-                toggleObject[i].SetActive(initialState);
-            }
+
+            this.toggleObject.SetActive(this.initialState);
+
+            // for (int i = 0; i < toggleObject.Length; i++)
+            // {
+            //     toggleObject[i].SetActive(initialState);
+            // }
         }
 
-        public void Update()
-        {
-            if (Input.GetKeyDown(key))
-            {
-                for (int i = 0; i < toggleObject.Length; i++)
-                {
-                    toggleObject[i].SetActive(!toggleObject[i].activeSelf);
-                }
-            }
-        }
+        // public void Update()
+        // {
+        //     if (Input.GetKeyDown(key))
+        //     {
+        //         for (int i = 0; i < toggleObject.Length; i++)
+        //         {
+        //             toggleObject[i].SetActive(!toggleObject[i].activeSelf);
+        //         }
+        //     }
+        // }
     }
 }

@@ -7,5 +7,6 @@ public class CustomControls : UdonSharpBehaviour
 {
     public virtual void CustomStart() {}
     public virtual void CustomUpdate() {}
+    public virtual void CustomLateUpdate() {}
     public virtual void CustomFixedUpdate() {}
 }

@@ -1,4 +1,3 @@
-
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -11,16 +10,47 @@ namespace Tether
     /// </summary>
     public class TetherAxisInput : UdonSharpBehaviour
     {
+        
         [Tooltip("TetherController script.")]
         public TetherController controller;
 
-        [Tooltip("Input to read and send to tether controller.")]
-        public string tetherInput;
+        [SerializeField]
+        private string desktopTetherAxis;
+        [SerializeField]
+        private string vrTetherAxis;
+        private string tetherInput;
 
-        public void Update()
+        [SerializeField]
+        private PlayerStore ownerStore;
+        private VRCPlayerApi owner;
+
+        private bool enabled = true;
+
+        public void CustomStart()
         {
-            float input = Input.GetAxis(tetherInput);
-            controller.SetInput(input);
+            this.owner = this.ownerStore.playerApiSafe.Get();
+            if (this.owner.IsUserInVR())
+            {
+                this.tetherInput = this.vrTetherAxis;
+            }
+            else
+            {
+                this.tetherInput = this.desktopTetherAxis;
+            }
+        }
+
+        public void CustomUpdate()
+        {
+            if (enabled)
+            {
+                float input = Input.GetAxis(tetherInput);
+                controller.SetInput(input);
+            }
+        }
+
+        public void Disable()
+        {
+            this.enabled = false;
         }
 
         private void OnDisable()

@@ -1,4 +1,3 @@
-
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -16,7 +15,10 @@ namespace Tether
         public TetherProperties properties;
 
         private bool editorMode = true;
-        private VRCPlayerApi localPlayer;
+
+        [SerializeField]
+        private PlayerStore ownerStore;
+        public VRCPlayerApi owner;
 
         private float tetherInput = 0.0f;
 
@@ -35,15 +37,17 @@ namespace Tether
 
         private TetherState tetherState;
 
-        public void Start()
+        public void CustomStart()
         {
 
-            localPlayer = Networking.LocalPlayer;
+            this.owner = this.ownerStore.playerApiSafe.Get();
 
-            if (localPlayer != null)
-            {
-                editorMode = false;
-            }
+            // localPlayer = Networking.LocalPlayer;
+
+            // if (localPlayer != null)
+            // {
+            //     editorMode = false;
+            // }
 
             // initially, not tethered to anything
             // TetherNoneState
@@ -76,12 +80,12 @@ namespace Tether
 
         }
 
-        public void Update()
+        public void CustomUpdate()
         {
             this.tetherState.CheckStateChange(this);
         }
 
-        public void FixedUpdate()
+        public void CustomFixedUpdate()
         {
             this.tetherState.HandleUpdate(this);
         }

@@ -11,11 +11,12 @@ namespace Tether
     
         [SerializeField]
         private TetherStatesDict tetherStatesDict;
-        private RaycastHit hit;
-        private Vector3 ropeVector;
-        private Vector3 normalizedRopeVector;
-        private float ropeLength;
-        private VRCPlayerApi localPlayer;
+        public RaycastHit hit;
+        public Vector3 ropeVector;
+        public Vector3 normalizedRopeVector;
+        public float ropeLength;
+        public VRCPlayerApi owner;
+        public TetherStateOperationsStrat HandleUpdateStrat;
 
         public TetherAccelState Initialize(RaycastHit hit)
         {
@@ -74,31 +75,36 @@ namespace Tether
             // but is necessary for linerenderer to work
             tetherController.SetTetherLength(this.ropeLength);
 
-            Vector3 playerVelocity = this.localPlayer.GetVelocity();
+            if (this.owner.isLocal)
+            {
 
-            // acceleration along the rope 
-            // to give an effect of pulling towards grapple point
-            // larger pullFactor means pulling more intensely and faster
-            // by default, pullFactor is 25.0f
-            Vector3 acceleration 
-                = normalizedRopeVector * tetherController.properties.pullFactor;
+                Vector3 playerVelocity = this.owner.GetVelocity();
 
-            // new player velocity after accelerating 
-            // for an infinitesimal amount of time (Time.deltaTime)
-            // by default, maxSpeed is 25.0f
-            Vector3 newPlayerVelocity = Vector3.ClampMagnitude(
-                playerVelocity + acceleration * Time.deltaTime,
-                tetherController.properties.maxSpeed
-            );
+                // acceleration along the rope 
+                // to give an effect of pulling towards grapple point
+                // larger pullFactor means pulling more intensely and faster
+                // by default, pullFactor is 25.0f
+                Vector3 acceleration 
+                    = normalizedRopeVector * tetherController.properties.pullFactor;
 
-            this.localPlayer.SetVelocity(newPlayerVelocity);
+                // new player velocity after accelerating 
+                // for an infinitesimal amount of time (Time.deltaTime)
+                // by default, maxSpeed is 25.0f
+                Vector3 newPlayerVelocity = Vector3.ClampMagnitude(
+                    playerVelocity + acceleration * Time.deltaTime,
+                    tetherController.properties.maxSpeed
+                );
+
+                this.owner.SetVelocity(newPlayerVelocity);
+
+            }
 
         }
 
         public override void Enter(TetherController tetherController)
         {
 
-            this.localPlayer = Networking.LocalPlayer;
+            this.owner = tetherController.owner;
 
             // lines below are unrelated to our states
             // but are necessary for linerenderer to work
