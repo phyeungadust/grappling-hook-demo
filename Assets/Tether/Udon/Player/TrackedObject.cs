@@ -19,29 +19,21 @@ namespace Player
         [SerializeField]
         private PlayerStore ownerStore;
         private VRCPlayerApi owner;
+        private LocalVRMode localVRMode;
+
+        [SerializeField]
+        private TrackedObjectSetTrackingTypeLocalVRVisitor setTrackingTypeLocalVRVisitor;
 
         public void CustomStart()
         {
 
             this.owner = this.ownerStore.playerApiSafe.Get();
+            this.localVRMode = this.ownerStore.localVRMode;
 
-            // if (this.owner.IsUserInVR())
-            // {
-            //     this.trackingType = VRCPlayerApi.TrackingDataType.RightHand;
-            // }
-            // else
-            // {
-            //     this.trackingType = VRCPlayerApi.TrackingDataType.Head;
-            // }
-
-            // localPlayer = Networking.LocalPlayer;
-
-            // if (localPlayer != null)
-            // {
-            //     editorMode = false;
-
-            //     vrEnabledObject.SetActive(vrEnabled == localPlayer.IsUserInVR());
-            // }
+            // set trackingType to:
+            // Head when non-VR
+            // RightHand when VR
+            this.localVRMode.Accept(this.setTrackingTypeLocalVRVisitor);
 
             this.vrEnabledObject.SetActive(true);
 

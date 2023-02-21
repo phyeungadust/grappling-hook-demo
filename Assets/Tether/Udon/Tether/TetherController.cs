@@ -16,8 +16,7 @@ namespace Tether
 
         private bool editorMode = true;
 
-        [SerializeField]
-        private PlayerStore ownerStore;
+        public PlayerStore ownerStore;
         public VRCPlayerApi owner;
 
         private float tetherInput = 0.0f;

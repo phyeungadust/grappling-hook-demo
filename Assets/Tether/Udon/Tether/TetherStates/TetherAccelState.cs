@@ -11,12 +11,17 @@ namespace Tether
     
         [SerializeField]
         private TetherStatesDict tetherStatesDict;
+
         public RaycastHit hit;
         public Vector3 ropeVector;
         public Vector3 normalizedRopeVector;
         public float ropeLength;
+
         public VRCPlayerApi owner;
         public TetherStateOperationsStrat HandleUpdateStrat;
+        [SerializeField]
+        private TetherAccelSetHandleUpdateStratLocalVRVisitor setHandleUpdateStratLocalVRVisitor;
+        private LocalVRMode localVRMode;
 
         public TetherAccelState Initialize(RaycastHit hit)
         {
@@ -66,45 +71,17 @@ namespace Tether
 
         public override void HandleUpdate(TetherController tetherController)
         {
-
-            this.ropeVector = hit.point - tetherController.transform.position;
-            this.normalizedRopeVector = this.ropeVector.normalized; // direction of acceleration
-            this.ropeLength = this.ropeVector.magnitude;
-
-            // this line is unrelated to any state
-            // but is necessary for linerenderer to work
-            tetherController.SetTetherLength(this.ropeLength);
-
-            if (this.owner.isLocal)
-            {
-
-                Vector3 playerVelocity = this.owner.GetVelocity();
-
-                // acceleration along the rope 
-                // to give an effect of pulling towards grapple point
-                // larger pullFactor means pulling more intensely and faster
-                // by default, pullFactor is 25.0f
-                Vector3 acceleration 
-                    = normalizedRopeVector * tetherController.properties.pullFactor;
-
-                // new player velocity after accelerating 
-                // for an infinitesimal amount of time (Time.deltaTime)
-                // by default, maxSpeed is 25.0f
-                Vector3 newPlayerVelocity = Vector3.ClampMagnitude(
-                    playerVelocity + acceleration * Time.deltaTime,
-                    tetherController.properties.maxSpeed
-                );
-
-                this.owner.SetVelocity(newPlayerVelocity);
-
-            }
-
+            this.HandleUpdateStrat.Exec(tetherController);
         }
 
         public override void Enter(TetherController tetherController)
         {
 
             this.owner = tetherController.owner;
+            this.localVRMode = tetherController.ownerStore.localVRMode;
+
+            // sets HandleUpdate strategy based on localVRMode
+            this.localVRMode.Accept(this.setHandleUpdateStratLocalVRVisitor);
 
             // lines below are unrelated to our states
             // but are necessary for linerenderer to work
