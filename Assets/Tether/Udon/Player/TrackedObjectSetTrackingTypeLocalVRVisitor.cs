@@ -9,8 +9,13 @@ namespace Player
     public class TrackedObjectSetTrackingTypeLocalVRVisitor : LocalVRVisitor
     {
 
-        [SerializeField]
         private TrackedObject trackedObject;
+
+        public TrackedObjectSetTrackingTypeLocalVRVisitor Init(TrackedObject trackedObject)
+        {
+            this.trackedObject = trackedObject;
+            return this;
+        }
 
         public override void VisitLocalVR(LocalVR localVR)
         {
@@ -32,12 +37,12 @@ namespace Player
             this.VisitNonVR();
         }
 
-        public void VisitVR()
+        private void VisitVR()
         {
             this.trackedObject.trackingType = VRCPlayerApi.TrackingDataType.RightHand;
         }
 
-        public void VisitNonVR()
+        private void VisitNonVR()
         {
             this.trackedObject.trackingType = VRCPlayerApi.TrackingDataType.Head;
         }

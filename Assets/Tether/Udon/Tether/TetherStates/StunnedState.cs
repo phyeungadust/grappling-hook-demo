@@ -10,7 +10,7 @@ namespace Tether
 
         [SerializeField]
         private TetherStatesDict tetherStatesDict;
-        private float timer;
+        public float timer;
 
         public StunnedState Initialize(float timer)
         {
@@ -45,7 +45,7 @@ namespace Tether
             {
                 // stun timer ends
                 // TetherNoneState
-                tetherController.SwitchState(
+                tetherController.SwitchStateBroadcast(
                     this
                         .tetherStatesDict
                         .TetherNoneState
@@ -64,6 +64,11 @@ namespace Tether
         {
             // timer countdown
             this.timer -= Time.fixedDeltaTime; 
+        }
+
+        public override void Accept(TetherStateVisitor tetherStateVisitor)
+        {
+            tetherStateVisitor.VisitStunnedState(this);
         }
 
     }

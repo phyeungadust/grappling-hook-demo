@@ -11,5 +11,6 @@ namespace Tether
         public virtual void HandleUpdate(TetherController tetherController) {}
         public virtual void Enter(TetherController tetherController) {}
         public virtual void Exit(TetherController tetherController) {}
+        public virtual void Accept(TetherStateVisitor tetherStateVisitor) {}
     }
 }

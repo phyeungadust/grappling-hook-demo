@@ -10,6 +10,7 @@ namespace Effects
     /// Basic example for rendering a tether using a line renderer.
     /// </summary>
     [RequireComponent(typeof(LineRenderer))]
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class ExampleLineRenderer : UdonSharpBehaviour
     {
         [Tooltip("TetherController to get information from.")]

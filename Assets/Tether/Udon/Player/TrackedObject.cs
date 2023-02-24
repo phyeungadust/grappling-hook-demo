@@ -8,6 +8,7 @@ namespace Player
     /// <summary>
     /// Script to track objects to the player's hands or head.
     /// </summary>
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class TrackedObject : UdonSharpBehaviour
     {
 
@@ -33,7 +34,9 @@ namespace Player
             // set trackingType to:
             // Head when non-VR
             // RightHand when VR
-            this.localVRMode.Accept(this.setTrackingTypeLocalVRVisitor);
+            this.localVRMode.Accept(
+                this.setTrackingTypeLocalVRVisitor.Init(this)
+            );
 
             this.vrEnabledObject.SetActive(true);
 
@@ -46,5 +49,6 @@ namespace Player
                 .GetTrackingData(trackingType);
             transform.SetPositionAndRotation(data.position, data.rotation);
         }
+
     }
 }

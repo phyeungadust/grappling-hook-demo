@@ -8,6 +8,7 @@ namespace Player
     /// <summary>
     /// Basic gameobject toggle on key press script.
     /// </summary>
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class KeyToggle : UdonSharpBehaviour
     {
         [Tooltip("State of game objects when scene is loaded.")]
