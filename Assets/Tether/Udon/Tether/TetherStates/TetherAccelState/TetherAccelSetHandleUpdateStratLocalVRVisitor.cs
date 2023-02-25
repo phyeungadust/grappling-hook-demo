@@ -21,6 +21,7 @@ namespace Tether
         )
         {
             this.state = state;
+            this.localHandleUpdateStrat.Init(this.state);
             return this;
         }
 
@@ -47,8 +48,7 @@ namespace Tether
         private void VisitLocal()
         {
             this.state.HandleUpdateStrat = this
-                .localHandleUpdateStrat
-                .Init(this.state);
+                .localHandleUpdateStrat;
         }
 
         private void VisitNonLocal()

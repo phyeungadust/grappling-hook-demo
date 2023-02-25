@@ -19,6 +19,13 @@ public class GrapplableCollection : UdonSharpBehaviour
         }
     }
 
+    // void Update()
+    // {
+    //     for (int i = 0; i < 3; ++i)
+    //     {
+    //         Debug.Log($"grapplables[{i}].gameObject.GetInstanceID(): {this.grapplables[i].gameObject.GetInstanceID()}");
+    //     }
+    // }
     public Grapplable[] GetAll()
     {
         return this.grapplables;

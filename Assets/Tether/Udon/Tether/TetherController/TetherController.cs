@@ -61,8 +61,15 @@ namespace Tether
             // which means no need to call Exit on the previous state
             // because there is no previous state to begin with
 
-            // Debug.Log("prev tetherState: " + this.tetherState);
-            // Debug.Log("new thetherState: " + tetherState);
+            if 
+            (
+                Networking.LocalPlayer.playerId == 2
+                && this.owner.playerId == 1
+            )
+            {
+                Debug.Log("prev tetherState: " + this.tetherState);
+                Debug.Log("new thetherState: " + tetherState);
+            }
             if (!init)
             {
                 this.tetherState.Exit(this);
@@ -75,6 +82,9 @@ namespace Tether
 
         public void SwitchStateBroadcast(TetherState tetherState)
         {
+
+            // this.SwitchState(tetherState);
+
             this.controllerNetworked.SwitchStateBroadcast(
                 tetherState
             );
