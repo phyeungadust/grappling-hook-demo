@@ -8,9 +8,13 @@ public class GripSetTransformLocalVRVisitor : LocalVRVisitor
 {
 
     [SerializeField]
-    private Vector3 VRGripPos;
+    private Vector3 LocalVRGripPos;
     [SerializeField]
-    private Vector3 VRGripRot;
+    private Vector3 LocalVRGripRot;
+    [SerializeField]
+    private Vector3 NonLocalVRGripPos;
+    [SerializeField]
+    private Vector3 NonLocalVRGripRot;
     [SerializeField]
     private Vector3 NonVRGripPos;
     [SerializeField]
@@ -18,7 +22,8 @@ public class GripSetTransformLocalVRVisitor : LocalVRVisitor
 
     public override void VisitLocalVR(LocalVR localVR)
     {
-        this.VisitVR();
+        this.transform.localPosition = this.LocalVRGripPos;
+        this.transform.localEulerAngles = this.LocalVRGripRot;
     }
 
     public override void VisitLocalNonVR(LocalNonVR localNonVR)
@@ -28,18 +33,13 @@ public class GripSetTransformLocalVRVisitor : LocalVRVisitor
 
     public override void VisitNonLocalVR(NonLocalVR nonLocalVR)
     {
-        this.VisitVR();
+        this.transform.localPosition = this.NonLocalVRGripPos;
+        this.transform.localEulerAngles = this.NonLocalVRGripRot;
     }
 
     public override void VisitNonLocalNonVR(NonLocalNonVR nonLocalNonVR)
     {
         this.VisitNonVR();
-    }
-
-    private void VisitVR()
-    {
-        this.transform.localPosition = this.VRGripPos;
-        this.transform.localEulerAngles = this.VRGripRot;
     }
 
     private void VisitNonVR()

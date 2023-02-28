@@ -20,11 +20,19 @@ namespace Tether
         private VRCPlayerApi owner;
         private VRCPlayerApi localPlayer;
 
+        private WorldSpaceLogger wsLogger;
+
+        private bool initialized = false;
+
         public TetherControllerNetworked Init
         (
             TetherController controller
         )
         {
+
+            this.wsLogger = GameObject
+                .Find("WorldSpaceLogger")
+                .GetComponent<WorldSpaceLogger>();
 
             this.controller = controller;
 
@@ -36,6 +44,12 @@ namespace Tether
                 this.owner,
                 this.gameObject
             );
+            this.localPlayer = Networking.LocalPlayer;
+
+            wsLogger.Log("networked tethercontroller Init called!");
+            wsLogger.Log($"player {localPlayer.playerId} sets player {owner.playerId} to be the owner of {gameObject.name}");
+
+            this.initialized = true;
 
             return this;
 
@@ -67,19 +81,35 @@ namespace Tether
             {
 
                 this.switchStateBroadcastSyncString = value;
-                if (this.owner.isLocal)
+                if (this.localPlayer == this.owner)
                 {
                     this.RequestSerialization();
-                    Debug.Log("player " + this.owner.playerId + " serialized to other clients");
+                    if (wsLogger != null)
+                    {
+                        wsLogger.Log($"player {owner.playerId} of {gameObject.name} serialized to other clients");
+                        wsLogger.Log($"serialized content: {this.switchStateBroadcastSyncString}");
+                    }
+                    // Debug.Log("player " + this.owner.playerId + " serialized to other clients");
                 }
 
                 // deserializes SwitchStateBroadcastSyncString to state and
                 // SwitchState into that state
 
+                if (!this.initialized) return;
+
+                wsLogger.Log("SwitchState deserialized!");
+
+                wsLogger.Log($"player {localPlayer.playerId} accepts serialization from player {owner.playerId} of {gameObject.name}");
+                wsLogger.Log($"serialized content: {this.switchStateBroadcastSyncString}");
+
                 string[] args = value.Split(' ');
                 string tetherStateString = args[1];
 
-                Debug.Log("player " + owner.playerId + " switches to " + tetherStateString);
+                if (wsLogger != null)
+                {
+                    wsLogger.Log("player " + owner.playerId + " switches to " + tetherStateString);
+                }
+                // Debug.Log("player " + owner.playerId + " switches to " + tetherStateString);
 
                 switch (tetherStateString)
                 {

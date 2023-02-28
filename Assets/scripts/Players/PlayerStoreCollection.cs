@@ -10,12 +10,18 @@ public class PlayerStoreCollection : UdonSharpBehaviour
     [SerializeField]
     private PlayerStore[] allPlayerStores;
     private int playerCount = 0;
+    [SerializeField]
+    private WorldSpaceLogger wsLogger;
+
+    
 
     public override void OnPlayerJoined(VRCPlayerApi player)
     {
         ++this.playerCount;
+        wsLogger.Log($"player {player.playerId} joined");
+        wsLogger.Log($"playerCount: {this.playerCount}");
         this
-            .allPlayerStores[this.playerCount]
+            .allPlayerStores[player.playerId]
             .gameObject
             .SetActive(true);
     }

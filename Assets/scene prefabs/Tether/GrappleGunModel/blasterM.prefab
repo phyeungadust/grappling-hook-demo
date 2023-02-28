@@ -109,7 +109,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 2
+  _syncMethod: 3
   serializedProgramAsset: {fileID: 11400000, guid: 2e7af1691d5f2d949a43c25a9064448a,
     type: 2}
   programSource: {fileID: 11400000, guid: 8eca62712b7135d4b84f505848f51aa4, type: 2}
@@ -135,7 +135,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 2
+  _syncMethod: 3
   serializedProgramAsset: {fileID: 11400000, guid: bf3f88f8a895e2f4aa04e07606551dad,
     type: 2}
   programSource: {fileID: 11400000, guid: 88eb819275f748a4c9a209226bd14c8c, type: 2}
@@ -184,7 +184,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 2
+  _syncMethod: 3
   serializedProgramAsset: {fileID: 11400000, guid: 3bdf4f20f784a374285a3850c3e63be4,
     type: 2}
   programSource: {fileID: 11400000, guid: 6e817487b0a65ae4e8aa05ed40bc8456, type: 2}
@@ -233,7 +233,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 2
+  _syncMethod: 3
   serializedProgramAsset: {fileID: 11400000, guid: 8c9e19862022c9343b74634c15a1b7c8,
     type: 2}
   programSource: {fileID: 11400000, guid: 56f2072e6de88d94bb108e174d92e29e, type: 2}
@@ -414,6 +414,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3707066138835683491}
     m_Modifications:
+    - target: {fileID: 52364578836023827, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 52364578836023827, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+    - target: {fileID: 370805007808002211, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 370805007808002211, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+    - target: {fileID: 554627452714703309, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 554627452714703309, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
     - target: {fileID: 891222124915318042, guid: 23c3456ae577ba647b31d3fd3465b47c,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -444,11 +462,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5300677050013749756, guid: 23c3456ae577ba647b31d3fd3465b47c,
         type: 3}
+    - target: {fileID: 5976239162346021791, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 5976239162346021791, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
     - target: {fileID: 5995193254749506795, guid: 23c3456ae577ba647b31d3fd3465b47c,
         type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 5995193254749506795, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+    - target: {fileID: 6421254970375169581, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6421254970375169581, guid: 23c3456ae577ba647b31d3fd3465b47c,
         type: 3}
     - target: {fileID: 7084329920271582879, guid: 23c3456ae577ba647b31d3fd3465b47c,
         type: 3}
@@ -545,6 +575,12 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 7440149941472274276, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+    - target: {fileID: 7745387271835253475, guid: 23c3456ae577ba647b31d3fd3465b47c,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 7745387271835253475, guid: 23c3456ae577ba647b31d3fd3465b47c,
         type: 3}
     - target: {fileID: 7826289450676888187, guid: 23c3456ae577ba647b31d3fd3465b47c,
         type: 3}

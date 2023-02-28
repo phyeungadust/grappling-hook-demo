@@ -34,10 +34,24 @@ namespace Tether
         [SerializeField]
         private TetherControllerNetworked controllerNetworked;
 
+        private WorldSpaceLogger wsLogger;
+        private VRCPlayerApi localPlayer;
+
         public void CustomStart()
         {
 
+            this.wsLogger = GameObject
+                .Find("WorldSpaceLogger")
+                .GetComponent<WorldSpaceLogger>();
+
             this.owner = this.ownerStore.playerApiSafe.Get();
+            // Networking.SetOwner(
+            //     this.owner,
+            //     this.gameObject
+            // );
+            this.localPlayer = Networking.LocalPlayer;
+
+            // wsLogger.Log($"player {localPlayer.playerId} sets player {owner.playerId} to be the owner of {gameObject.name}");
 
             // initialize networked controller
             this.controllerNetworked.Init(this);
@@ -97,7 +111,7 @@ namespace Tether
 
         public void CustomFixedUpdate()
         {
-            Debug.Log("GetTetherInput(): " + this.GetTetherInput());
+            // Debug.Log("GetTetherInput(): " + this.GetTetherInput());
             this.tetherState.HandleUpdate(this);
         }
 
