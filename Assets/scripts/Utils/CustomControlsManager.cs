@@ -8,11 +8,11 @@ public class CustomControlsManager : CustomControls
 {
 
     [SerializeField]
-    private CustomControls[] tetherControls;
+    private CustomControls[] customControlsArr;
 
     public override void CustomStart()
     {
-        foreach (CustomControls cc in tetherControls)
+        foreach (CustomControls cc in this.customControlsArr)
         {
             cc.CustomStart();
         }
@@ -20,7 +20,7 @@ public class CustomControlsManager : CustomControls
 
     public override void CustomUpdate()
     {
-        foreach (CustomControls cc in tetherControls)
+        foreach (CustomControls cc in this.customControlsArr)
         {
             cc.CustomUpdate();
         }
@@ -28,7 +28,7 @@ public class CustomControlsManager : CustomControls
 
     public override void CustomLateUpdate()
     {
-        foreach (CustomControls cc in tetherControls)
+        foreach (CustomControls cc in this.customControlsArr)
         {
             cc.CustomLateUpdate();
         }
@@ -36,7 +36,7 @@ public class CustomControlsManager : CustomControls
 
     public override void CustomFixedUpdate()
     {
-        foreach (CustomControls cc in tetherControls)
+        foreach (CustomControls cc in this.customControlsArr)
         {
             cc.CustomFixedUpdate();
         }

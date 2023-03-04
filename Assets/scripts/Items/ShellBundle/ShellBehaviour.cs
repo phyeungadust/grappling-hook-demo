@@ -1,23 +1,16 @@
-﻿using UdonSharp;
+using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using VRC.SDK3.Components;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.Continuous)]
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class ShellBehaviour : UdonSharpBehaviour
 {
 
-    [SerializeField]
     public VRCObjectPool ShellPool;
     [SerializeField]
-    private Tether.TetherController leftController;
-    [SerializeField]
-    private Tether.TetherController rightController;
-    [SerializeField]
     private ShellProperties shellProperties;
-    [SerializeField]
-    private ShellShootProperties shellShootProperties;
     [SerializeField]
     private ParticleSystem smoke;
     [SerializeField]
@@ -31,170 +24,209 @@ public class ShellBehaviour : UdonSharpBehaviour
     [SerializeField]
     private HUDStatusPopUpBehaviour hudPopUp;
 
-    private Vector3 cachedVictimPos;
+    [SerializeField]
+    private PlayerStore ownerStore;
+    private LocalVRMode localVRMode;
 
-    private bool initialized = false;
-    private int shooterID = -1;
     private int victimID = -1;
-    private VRCPlayerApi localPlayer;
     private bool exploding = false;
+    [HideInInspector]
+    public bool launched = false;
 
-    [UdonSynced, FieldChangeCallback(nameof(Init))]
-    private string init = "";
-    public string Init
+    [SerializeField]
+    private MeshRenderer meshRenderer;
+    [SerializeField]
+    private Collider shellCollider;
+
+    public void Launch()
     {
-        get => this.init;
+        this.LaunchBroadcast(this.victimID);
+    }
+
+    public void LaunchBroadcast(int victimID)
+    {
+        this.LaunchBroadcastSyncString = string.Join(
+            " ",
+            System.Guid.NewGuid().ToString().Substring(0, 6),
+            victimID
+        );
+    }
+
+    [UdonSynced, FieldChangeCallback(nameof(LaunchBroadcastSyncString))]
+    private string launchBroadcastSyncString;
+    public string LaunchBroadcastSyncString
+    {
+        get => this.launchBroadcastSyncString;
         set
         {
 
-            this.init = value;
+            this.launchBroadcastSyncString = value;
+            if (this.localVRMode.IsLocal())
+            {
+                this.RequestSerialization();
+            }
             string[] args = value.Split(' ');
             string nonce = args[0];
             int victimID = System.Int32.Parse(args[1]);
 
-            // set shooterID
-            this.shooterID = this.shellShootProperties.OwnerID; 
-            
-            // set victimID
-            this.victimID = victimID;
-           
-            // set initial position to where shooter is at
-            this.transform.position = VRCPlayerApi
-                .GetPlayerById(shooterID)
-                .GetPosition();
-
-            // set exploding to false, since it has not yet exploded
-            this.exploding = false;
-
-            // set initialized flag to true
-            this.initialized = true;
+            this.LaunchLocal(victimID);
 
         }
+    }
+
+    public void LaunchLocal(int victimID)
+    {
+
+        this.victimID = victimID;
+        this.launched = true;
+
+        // detach from parent (player follower) so that the rocket's movement
+        // is on its own, without being affected by
+        // player's movements
+        this.transform.parent = null;
+
+        // smoke animation after launch
+        ParticleSystem.MainModule mm = this.smoke.main;
+        mm.startSpeed = -10.0f;
+        ParticleSystem.EmissionModule em = this.smoke.emission;
+        em.rateOverTime = 100.0f;
+
     }
 
     void OnEnable()
     {
 
+        Debug.Log(
+            $"player {this.ownerStore.playerApiSafe.Get().playerId}'s {this.gameObject.name} spawned"
+        );
+
+        this.localVRMode = this.ownerStore.localVRMode;
+
+        // reattach rocket to parent (player's follower)
+        // so that next time when it spawns
+        // it follows the shooter before the rocket is launched
+        this.transform.parent = this.ShellPool.gameObject.transform;
+
+        // smoke animation before launched
+        ParticleSystem.MainModule mm = this.smoke.main;
+        mm.startSpeed = 0.1f;
+        ParticleSystem.EmissionModule em = this.smoke.emission;
+        em.rateOverTime = 10.0f;
+        this.smoke.Play();
+
+        // when first spawned, shell is not exploding nor launched
+        this.exploding = false;
+        this.launched = false;
+
+        // reset to tracking pos
+        this.transform.localPosition = Vector3.zero;
+        this.transform.localEulerAngles = Vector3.zero;
+
         // enable mesh and collider
-        this.GetComponent<MeshRenderer>().enabled = true;
-        this.GetComponent<Collider>().enabled = true;
-
-        this.localPlayer = Networking.LocalPlayer;
-
-        if (this.localPlayer.IsOwner(this.gameObject))
-        {
-
-            // if this is the shooter
-            // set initialize fields and sync to other non-shooter instances
-            this.Init = string.Join(
-                " ",
-                System.Guid.NewGuid().ToString().Substring(0, 6),
-                ShellBehaviour.FindVictim(this.localPlayer.playerId).playerId
-            );
-
-        }
+        this.meshRenderer.enabled = true;
+        this.shellCollider.enabled = true;
 
     }
 
     void FixedUpdate()
     {
 
-        // if not yet initialized, do not run below
-        if (!this.initialized) return;
-
-        // if shell already exploding, no need to move it
+        // if shell already exploding, no need to move/ rotate it
         if (this.exploding) return;
 
-        // get victimPos, if victim fetch failed
-        // use last victimPos (this.cachedVictimPos)
-        Vector3 victimPos = this.cachedVictimPos;
-        VRCPlayerApi victim = VRCPlayerApi
-            .GetPlayerById(this.victimID);
-        if (victim != null)
+        if (!this.launched)
         {
-            victimPos = victim.GetPosition();
-            this.cachedVictimPos = victimPos;
+            // scan for new potential victim whenever shell isn't launched
+            this.victimID = this.FindVictim();
         }
 
+        // Debug.Log($"victimID: {this.victimID}");
 
-        float shellToVictimDist = Vector3.Distance(
-            victimPos,
-            this.transform.position
-        );
+        Vector3 victimPos = this
+            .ownerStore
+            .playerStoreCollection
+            .GetByID(this.victimID)
+            .hitbox
+            .transform
+            .position;
+
+        Vector3 shellToVictim = victimPos - this.transform.position;
+        Vector3 shellToVictimNormalized = shellToVictim.normalized;
+        float shellToVictimDist = shellToVictim.magnitude;
 
         if (shellToVictimDist > .5f)
         {
 
             // rotate shell to face victim
-            Vector3 direction = victimPos - this.transform.position;
-            direction = direction.normalized;
-            this.transform.forward = direction;
 
-            // note: shell stops rotating after dist <= .5f
+            // this.transform.forward = shellToVictimNormalized;
+
+            // this quaternion, when applied to shell, rotates
+            // the shell to face the victim in one operation
+            // we don't want that to happen in one go, we will
+            // do it incrementally using RotateTowards
+            // Quaternion completeRotation = Quaternion.FromToRotation(
+            //     this.transform.forward,
+            //     shellToVictim
+            // );
+
+            // this.rb.MoveRotation(Quaternion.RotateTowards(
+            //     this.transform.rotation,
+            //     completeRotation,
+            //     this.shellProperties.RotationalSpeed * Time.fixedDeltaTime
+            // ));
+
+            // this if branch is run if shellToVictimDist > .5f
             // this is to prevent shell from rapidly rotating
-            // when close to victim
+            // when it is very close to the victim
 
         }
 
-        // shell chases victim
-        this.transform.position = Vector3.MoveTowards(
-            this.transform.position,
-            victimPos,
-            this.shellProperties.Speed * Time.fixedDeltaTime
-        );
+        if (this.launched)
+        {
+            // shell chases victim 
+            this.transform.position += 
+                this.transform.forward 
+                * this.shellProperties.Speed 
+                * Time.fixedDeltaTime;
+        }
+
+        // (line up velocity vector to new forward direction)
+        // this.rb.velocity = this.transform.forward * this.shellProperties.Speed;
 
     }
 
-    public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+    private void OnTriggerEnter(Collider collider)
     {
 
-        // if not yet initialized, do not run below
-        if (!this.initialized) return;
-
-        if (
-            this.localPlayer.playerId == this.victimID
-            && player.playerId == this.victimID
-        )
+        if (this.localVRMode.IsLocal())
         {
 
-            // on victim's instance, they are hit by this shell
-            // victim should be stunned
-            // shell should be returned to shellPool
-
-            // put victim to StunnedState
-            this.leftController.SwitchState(
-                this
-                    .leftController
-                    .TetherStatesDict
-                    .StunnedState
-                    .Initialize(5.0f)
-            );
-            this.rightController.SwitchState(
-                this
-                    .rightController
-                    .TetherStatesDict
-                    .StunnedState
-                    .Initialize(5.0f)
-            );
-
-            // play explosion effect
-            this.SendCustomNetworkEvent(
-                VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
-                "PlayExplosionEffect"
-            );
-
-            this.hudPopUp.ShowPopUp("STUNNED");
+            // only check collisions of shell on shell's owner instance
+            PlayerHitbox playerHitbox = collider.GetComponent<PlayerHitbox>();
+            if (playerHitbox != null)
+            {
+                if (playerHitbox.ownerStore.localVRMode.IsLocal())
+                {
+                    // rocket cannot hit the shooter
+                    return;
+                }
+                this.SendCustomNetworkEvent(
+                    VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+                    nameof(ExplodeAndDespawn)
+                );
+            }
 
         }
 
     }
 
-    public void PlayExplosionEffect()
+    public void ExplodeAndDespawn()
     {
 
         // disable mesh and collider before explosion takes place
-        this.GetComponent<MeshRenderer>().enabled = false;
-        this.GetComponent<Collider>().enabled = false;
+        this.meshRenderer.enabled = false;
+        this.shellCollider.enabled = false;
 
         // stop smoke trail
         this.smoke.Stop();
@@ -206,104 +238,105 @@ public class ShellBehaviour : UdonSharpBehaviour
         this.explosion.Play();
         this.debris.Play();
 
-        if (this.localPlayer.playerId == this.shooterID)
+        if (this.localVRMode.IsLocal())
         {
-            this.BeforeReturnShell();
+
+            // wait until all trail and explosion animations to finish
+            // before returning shell
+
+            this.doAfterAllParticleSystemsStop.Exec(
+                this.returnShellCommand.Init(this),
+                this.smoke,
+                this.explosion,
+                this.debris
+            );
+
         }
-
-    }
-
-    public void BeforeReturnShell()
-    {
-
-        // wait until all trail and explosion animations to finish
-        // before returning shell
-
-        this.doAfterAllParticleSystemsStop.Exec(
-            this.returnShellCommand.Init(this),
-            this.smoke,
-            this.explosion,
-            this.debris
-        );
 
     }
 
     public void ReturnShell()
     {
         this.ShellPool.Return(this.gameObject);
+        Debug.Log("shell returned");
     }
 
     void OnDisable()
     {
-        this.initialized = false;
+        this.launched = false;
+        this.exploding = false;
     }
 
-    public static VRCPlayerApi FindVictim(int shooterID)
+    private int FindVictim()
     {
 
-        // load all players into array
-        VRCPlayerApi[] allPlayers = VRCPlayerApi.GetPlayers(
-            new VRCPlayerApi[VRCPlayerApi.GetPlayerCount()]
-        );
+        PlayerStoreCollection playerStoreCollection = this
+            .ownerStore
+            .playerStoreCollection;
 
-        if (allPlayers.Length == 1)
+        int playerCount = playerStoreCollection.GetCount();
+
+        if (playerCount == 1)
         {
-            return VRCPlayerApi.GetPlayerById(1);
+            // there is only 1 player, the victim is
+            // the shooter themself, aka player 1
+            return 1;
         }
 
-        VRCPlayerApi shooter = VRCPlayerApi
-            .GetPlayerById(shooterID);
-
-        VRCPlayerApi victim = null;
-
-        // temporarily set victim to
-        // 1st non-shooter player in the array
-        int start = 0;
-        if (allPlayers[start] == shooter)
+        // temporarily set 1st non-shooter as the victim
+        int start = 1;
+        if (this.ownerStore.playerApiSafe.GetID() == 1)
         {
-            if (VRCPlayerApi.GetPlayerCount() > 1)
-            {
-                ++start;
-            }
+            // shooter has id 1, check from player 2 onwards.
+            start = 2;
         }
-        victim = allPlayers[start];
+        PlayerStore victimStore = playerStoreCollection.GetByID(start);
+
+        Vector3 shooterForward = this
+            .ownerStore
+            .follower
+            .head
+            .transform
+            .rotation * Vector3.forward;
+
+        Vector3 shooterPos = this.ownerStore.hitbox.transform.position;
+        Vector3 candidatePos = victimStore.hitbox.transform.position;
+        Vector3 shooterToCandidate = candidatePos - shooterPos;
+
         bool currentBestFacing = Vector3.Dot(
-            shooter.GetRotation() * Vector3.forward,
-            victim.GetPosition() - shooter.GetPosition()
+            shooterForward, 
+            shooterToCandidate
         ) > 0;
-        float currentBestDistance = Vector3.Distance(
-            shooter.GetPosition(),
-            victim.GetPosition()
-        );
+        float currentBestDistance = shooterToCandidate.magnitude;
         ++start;
 
-        // find closest player as our victim
-        for (int i = start; i < allPlayers.Length; ++i)
+        for (int i = start; i <= playerCount; ++i)
         {
 
-            if (allPlayers[i] != shooter)
+            PlayerStore candidateStore = playerStoreCollection.GetByID(i);
+
+            if (candidateStore != this.ownerStore)
             {
 
                 // player being checked isn't shooter of shell
                 // (so they can be potential victim)
 
-                bool tempFacing = Vector3.Dot(
-                    shooter.GetRotation() * Vector3.forward,
-                    allPlayers[i].GetPosition() - shooter.GetPosition()
-                ) > 0;
+                candidatePos = candidateStore.hitbox.transform.position;
+                shooterToCandidate = candidatePos - shooterPos;
 
-                float tempDistance = Vector3.Distance(
-                    shooter.GetPosition(),
-                    allPlayers[i].GetPosition()
-                );
+                bool tempFacing = Vector3.Dot(
+                    shooterForward,
+                    shooterToCandidate
+                ) > 0;
+                float tempDistance = shooterToCandidate.magnitude;
 
                 if (tempFacing && !currentBestFacing)
                 {
                     // player being checked is in front of shooter
                     // current best match is behind shooter
                     // update this player to be the victim and current best match
-                    victim = allPlayers[i];
-                    currentBestFacing = tempFacing;
+                    victimStore = candidateStore;
+                    currentBestFacing = true;
                     currentBestDistance = tempDistance;
                 }
                 else if (tempFacing == currentBestFacing)
@@ -314,7 +347,7 @@ public class ShellBehaviour : UdonSharpBehaviour
                     {
                         // player being checked is closer to shooter
                         // update this player to be the victim and current best match
-                        victim = allPlayers[i];
+                        victimStore = candidateStore;
                         currentBestDistance = tempDistance;
                     }
                 }
@@ -323,7 +356,7 @@ public class ShellBehaviour : UdonSharpBehaviour
 
         }
 
-        return victim;
+        return victimStore.playerApiSafe.GetID();
 
     }
 

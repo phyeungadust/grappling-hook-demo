@@ -3,8 +3,8 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class ShellProperties : UdonSharpBehaviour
 {
-    public float Speed;
+    public float Speed = 20.0f;
 }

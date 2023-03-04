@@ -34,24 +34,10 @@ namespace Tether
         [SerializeField]
         private TetherControllerNetworked controllerNetworked;
 
-        private WorldSpaceLogger wsLogger;
-        private VRCPlayerApi localPlayer;
-
         public void CustomStart()
         {
 
-            this.wsLogger = GameObject
-                .Find("WorldSpaceLogger")
-                .GetComponent<WorldSpaceLogger>();
-
             this.owner = this.ownerStore.playerApiSafe.Get();
-            // Networking.SetOwner(
-            //     this.owner,
-            //     this.gameObject
-            // );
-            this.localPlayer = Networking.LocalPlayer;
-
-            // wsLogger.Log($"player {localPlayer.playerId} sets player {owner.playerId} to be the owner of {gameObject.name}");
 
             // initialize networked controller
             this.controllerNetworked.Init(this);
@@ -75,15 +61,6 @@ namespace Tether
             // which means no need to call Exit on the previous state
             // because there is no previous state to begin with
 
-            if 
-            (
-                Networking.LocalPlayer.playerId == 2
-                && this.owner.playerId == 1
-            )
-            {
-                Debug.Log("prev tetherState: " + this.tetherState);
-                Debug.Log("new thetherState: " + tetherState);
-            }
             if (!init)
             {
                 this.tetherState.Exit(this);
@@ -96,9 +73,6 @@ namespace Tether
 
         public void SwitchStateBroadcast(TetherState tetherState)
         {
-
-            // this.SwitchState(tetherState);
-
             this.controllerNetworked.SwitchStateBroadcast(
                 tetherState
             );
@@ -111,7 +85,6 @@ namespace Tether
 
         public void CustomFixedUpdate()
         {
-            // Debug.Log("GetTetherInput(): " + this.GetTetherInput());
             this.tetherState.HandleUpdate(this);
         }
 

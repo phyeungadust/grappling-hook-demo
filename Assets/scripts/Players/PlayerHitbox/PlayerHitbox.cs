@@ -7,8 +7,7 @@ using VRC.Udon;
 public class PlayerHitbox : UdonSharpBehaviour
 {
 
-    [SerializeField]
-    private PlayerStore playerStore;
+    public PlayerStore ownerStore;
     private Collider playerHitboxCollider;
 
     public Collider GetCollider() => this.playerHitboxCollider;
@@ -26,7 +25,7 @@ public class PlayerHitbox : UdonSharpBehaviour
     private void UpdateHitboxPos()
     {
 
-        VRCPlayerApi playerApi = this.playerStore.playerApiSafe.Get();
+        VRCPlayerApi playerApi = this.ownerStore.playerApiSafe.Get();
 
         Vector3 headPos = playerApi.GetTrackingData(
             VRCPlayerApi.TrackingDataType.Head

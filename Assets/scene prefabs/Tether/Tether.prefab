@@ -308,7 +308,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 6656343783048044706}
-  tetherControls:
+  customControlsArr:
   - {fileID: 1140784109391367428}
   - {fileID: 4055856629347676858}
   - {fileID: 4027289888050106676}
