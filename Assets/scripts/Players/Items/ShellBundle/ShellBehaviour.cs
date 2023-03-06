@@ -21,12 +21,11 @@ public class ShellBehaviour : UdonSharpBehaviour
     private DoAfterAllParticleSystemsStop doAfterAllParticleSystemsStop;
     [SerializeField]
     private ReturnShellCommand returnShellCommand;
-    [SerializeField]
-    private HUDStatusPopUpBehaviour hudPopUp;
 
     [SerializeField]
     private PlayerStore ownerStore;
     private LocalVRMode localVRMode;
+    private InteractionMediator interactionMediator;
 
     private int victimID = -1;
     private bool exploding = false;
@@ -101,10 +100,10 @@ public class ShellBehaviour : UdonSharpBehaviour
         );
 
         this.localVRMode = this.ownerStore.localVRMode;
+        this.interactionMediator = this.ownerStore.interactionMediator;
 
         // reattach rocket to parent (player's follower)
-        // so that next time when it spawns
-        // it follows the shooter before the rocket is launched
+        // so that it follows the shooter before the rocket is launched
         this.transform.parent = this.ShellPool.gameObject.transform;
 
         // smoke animation before launched
@@ -118,7 +117,7 @@ public class ShellBehaviour : UdonSharpBehaviour
         this.exploding = false;
         this.launched = false;
 
-        // reset to tracking pos
+        // reset to tracking pos (player's follower)
         this.transform.localPosition = Vector3.zero;
         this.transform.localEulerAngles = Vector3.zero;
 
@@ -140,8 +139,6 @@ public class ShellBehaviour : UdonSharpBehaviour
             this.victimID = this.FindVictim();
         }
 
-        // Debug.Log($"victimID: {this.victimID}");
-
         Vector3 victimPos = this
             .ownerStore
             .playerStoreCollection
@@ -159,22 +156,7 @@ public class ShellBehaviour : UdonSharpBehaviour
 
             // rotate shell to face victim
 
-            // this.transform.forward = shellToVictimNormalized;
-
-            // this quaternion, when applied to shell, rotates
-            // the shell to face the victim in one operation
-            // we don't want that to happen in one go, we will
-            // do it incrementally using RotateTowards
-            // Quaternion completeRotation = Quaternion.FromToRotation(
-            //     this.transform.forward,
-            //     shellToVictim
-            // );
-
-            // this.rb.MoveRotation(Quaternion.RotateTowards(
-            //     this.transform.rotation,
-            //     completeRotation,
-            //     this.shellProperties.RotationalSpeed * Time.fixedDeltaTime
-            // ));
+            this.transform.forward = shellToVictimNormalized;
 
             // this if branch is run if shellToVictimDist > .5f
             // this is to prevent shell from rapidly rotating
@@ -191,9 +173,6 @@ public class ShellBehaviour : UdonSharpBehaviour
                 * Time.fixedDeltaTime;
         }
 
-        // (line up velocity vector to new forward direction)
-        // this.rb.velocity = this.transform.forward * this.shellProperties.Speed;
-
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -204,17 +183,29 @@ public class ShellBehaviour : UdonSharpBehaviour
 
             // only check collisions of shell on shell's owner instance
             PlayerHitbox playerHitbox = collider.GetComponent<PlayerHitbox>();
+
             if (playerHitbox != null)
             {
+
                 if (playerHitbox.ownerStore.localVRMode.IsLocal())
                 {
                     // rocket cannot hit the shooter
                     return;
                 }
+
+                // stun victim for a few seconds
+                this.interactionMediator.ShellHitUnicast(
+                    playerHitbox.ownerStore.playerApiSafe.GetID(),
+                    3.0f
+                );
+
+                // play explosion vfx on all game instances
+                // and let the shooter despawn the shell
                 this.SendCustomNetworkEvent(
                     VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
                     nameof(ExplodeAndDespawn)
                 );
+
             }
 
         }
@@ -233,6 +224,11 @@ public class ShellBehaviour : UdonSharpBehaviour
 
         // set exploding to true, so position stops updating
         this.exploding = true;
+
+        // detach shell from shooter, if it's not already so
+        // this stops the explosion animation of shell from
+        // being affected by the shooter's movements
+        this.transform.parent = null;
 
         // start explosion animation
         this.explosion.Play();

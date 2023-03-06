@@ -82,7 +82,7 @@ public class ShellShootBehaviour : UdonSharpBehaviour
             if (this.cdAfterEquip <= 0.0f)
             {
                 // cooldown finishes, can read input
-                // fireButtonPressed = this.ReadInput();
+                fireButtonPressed = this.ReadInput();
             }
 
             if (fireButtonPressed)
