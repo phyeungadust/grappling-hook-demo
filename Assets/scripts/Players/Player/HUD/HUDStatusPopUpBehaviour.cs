@@ -24,7 +24,7 @@ public class HUDStatusPopUpBehaviour : UdonSharpBehaviour
     private Vector3 defaultScale;
     private Color defaultColor;
 
-    void Start()
+    public void CustomStart()
     {
         this.tmPro = this.GetComponent<TextMeshProUGUI>();
         this.tmPro.enabled = false;
@@ -32,7 +32,7 @@ public class HUDStatusPopUpBehaviour : UdonSharpBehaviour
         this.defaultColor = this.tmPro.color;
     }
 
-    void Update()
+    public void CustomUpdate()
     {
 
         if (this.displaying)

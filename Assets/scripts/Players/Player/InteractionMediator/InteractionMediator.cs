@@ -57,9 +57,14 @@ public class InteractionMediator : UdonSharpBehaviour
 
     public void ShellHitLocal(float stunTime)
     {
+
         Tether.TetherController controller = this.localStore.tetherController;
         Tether.StunnedState state = controller.TetherStatesDict.StunnedState;
+        HUDStatusPopUpBehaviour popup = this.localStore.hud.popup;
+
         controller.SwitchStateBroadcast(state.Initialize(stunTime));
+        popup.ShowPopUp("STUNNED");
+
     }
 
 }

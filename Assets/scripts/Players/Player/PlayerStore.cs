@@ -14,6 +14,7 @@ public class PlayerStore : UdonSharpBehaviour
     public PlayerHitbox hitbox; 
     public ItemManager itemManager;
     public Tether.TetherController tetherController;
+    public HUD hud;
     public InteractionMediator interactionMediator;
     [HideInInspector]
     public PlayerStoreCollection playerStoreCollection;

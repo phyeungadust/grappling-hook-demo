@@ -3,6 +3,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using VRC.SDK3.Components;
+using VRC.Udon.Common;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class ShellShootBehaviour : UdonSharpBehaviour
@@ -106,7 +107,7 @@ public class ShellShootBehaviour : UdonSharpBehaviour
             if (this.localVRMode.IsVR())
             {
                 // localVR
-                return Input.GetButtonDown(this.vrButtonName);
+                return Input.GetAxis(this.vrButtonName) > 0;
             }
             else
             {

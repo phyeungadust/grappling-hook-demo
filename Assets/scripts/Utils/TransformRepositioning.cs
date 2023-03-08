@@ -23,6 +23,12 @@ public class TransformRepositioning : UdonSharpBehaviour
     private InputField yRotField;
     [SerializeField]
     private InputField zRotField;
+    [SerializeField]
+    private InputField xScaleField;
+    [SerializeField]
+    private InputField yScaleField;
+    [SerializeField]
+    private InputField zScaleField;
 
     void Start()
     {
@@ -32,6 +38,9 @@ public class TransformRepositioning : UdonSharpBehaviour
         this.xRotField.text = this.target.localEulerAngles.x.ToString();
         this.yRotField.text = this.target.localEulerAngles.y.ToString();
         this.zRotField.text = this.target.localEulerAngles.z.ToString();
+        this.xScaleField.text = this.target.localScale.x.ToString();
+        this.yScaleField.text = this.target.localScale.y.ToString();
+        this.zScaleField.text = this.target.localScale.z.ToString();
     }
 
     public void SetXPos()
@@ -101,4 +110,41 @@ public class TransformRepositioning : UdonSharpBehaviour
             );
         }
     }
+
+    public void SetXScale()
+    {
+        if (float.TryParse(this.xScaleField.text, out float result))
+        {
+            this.target.localScale = new Vector3(
+                result,
+                this.target.localScale.y,
+                this.target.localScale.z
+            );
+        }
+    }
+
+    public void SetYScale()
+    {
+        if (float.TryParse(this.yScaleField.text, out float result))
+        {
+            this.target.localScale = new Vector3(
+                this.target.localScale.x,
+                result,
+                this.target.localScale.z
+            );
+        }
+    }
+
+    public void SetZScale()
+    {
+        if (float.TryParse(this.zScaleField.text, out float result))
+        {
+            this.target.localScale = new Vector3(
+                this.target.localScale.x,
+                this.target.localScale.y,
+                result
+            );
+        }
+    }
+
 }

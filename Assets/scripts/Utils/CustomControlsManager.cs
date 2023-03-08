@@ -14,7 +14,10 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            cc.CustomStart();
+            if (cc != null)
+            {
+                cc.CustomStart();
+            }
         }
     }
 
@@ -22,7 +25,10 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            cc.CustomUpdate();
+            if (cc != null)
+            {
+                cc.CustomUpdate();
+            }
         }
     }
 
@@ -30,7 +36,10 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            cc.CustomLateUpdate();
+            if (cc != null)
+            {
+                cc.CustomLateUpdate();
+            }
         }
     }
 
@@ -38,7 +47,10 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            cc.CustomFixedUpdate();
+            if (cc != null)
+            {
+                cc.CustomFixedUpdate();
+            }
         }
     }
 
