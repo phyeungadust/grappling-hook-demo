@@ -43,4 +43,10 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
         // no need to enable UI 
     }
 
+    public void CustomUpdate()
+    {
+        // int playerID = this.ownerStore.playerApiSafe.GetID();
+        // Debug.Log($"player {playerID}'s hudWrapper called CustomUpdate()!");
+    }
+
 }

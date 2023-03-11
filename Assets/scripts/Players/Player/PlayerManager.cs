@@ -8,13 +8,36 @@ public class PlayerManager : UdonSharpBehaviour
 {
 
     [SerializeField]
+    private CustomControls playerApiSafeControls;
+    [SerializeField]
+    private CustomControls localVRModeDeterminerControls;
+    [SerializeField]
     private CustomControls[] customControls;
-
+    [SerializeField]
+    private PlayerStore ownerStore;
+    [SerializeField]
+    private GameObject[] deactivateIfNonLocal;
+    
     void Start()
     {
+        this.playerApiSafeControls.CustomStart();
+        this.localVRModeDeterminerControls.CustomStart();
+        if (!this.ownerStore.localVRMode.IsLocal())
+        {
+            foreach (GameObject go in this.deactivateIfNonLocal)
+            {
+                go.SetActive(false);
+            }
+        }
         foreach (CustomControls controllable in this.customControls)
         {
-            controllable.CustomStart();
+            if (
+                controllable != null 
+                && controllable.gameObject.activeInHierarchy
+            )
+            {
+                controllable.CustomStart();
+            }
         }
     }
 
@@ -22,7 +45,13 @@ public class PlayerManager : UdonSharpBehaviour
     {
         foreach (CustomControls controllable in this.customControls)
         {
-            controllable.CustomUpdate();
+            if (
+                controllable != null 
+                && controllable.gameObject.activeInHierarchy
+            )
+            {
+                controllable.CustomUpdate();
+            }
         }
     }
 
@@ -30,7 +59,13 @@ public class PlayerManager : UdonSharpBehaviour
     {
         foreach (CustomControls controllable in this.customControls)
         {
-            controllable.CustomLateUpdate();
+            if (
+                controllable != null 
+                && controllable.gameObject.activeInHierarchy
+            )
+            {
+                controllable.CustomLateUpdate();
+            }
         }
     }
 
@@ -38,7 +73,13 @@ public class PlayerManager : UdonSharpBehaviour
     {
         foreach (CustomControls controllable in this.customControls)
         {
-            controllable.CustomFixedUpdate();
+            if (
+                controllable != null 
+                && controllable.gameObject.activeInHierarchy
+            )
+            {
+                controllable.CustomFixedUpdate();
+            }
         }
     }
 

@@ -4,16 +4,16 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
-public class DesktopVRHUDWrapperControls : CustomControls
+public class RerenderCameraControls : CustomControls
 {
     [SerializeField]
-    private DesktopVRHUDWrapper wrapper;
+    private RerenderCamera rerenderCamera;
     public override void CustomStart()
     {
-        this.wrapper.CustomStart();
+        this.rerenderCamera.CustomStart();
     }
     public override void CustomUpdate()
     {
-        this.wrapper.CustomUpdate();
+        this.rerenderCamera.CustomUpdate();
     }
 }

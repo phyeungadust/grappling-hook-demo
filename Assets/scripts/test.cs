@@ -7,9 +7,12 @@ using VRC.Udon;
 public class test : UdonSharpBehaviour
 {
 
-    void FixedUpdate()
-    {
-        this.transform.position += this.transform.forward * 15 * Time.fixedDeltaTime;
-    }
+    // [SerializeField]
+    // private Camera cam;
+
+    // void OnEnable()
+    // {
+    //     this.cam.enabled = true;
+    // }
 
 }
