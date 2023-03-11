@@ -7,6 +7,7 @@ using VRC.Udon;
 public class PlayerStore : UdonSharpBehaviour
 {
 
+    public PlayerManager manager;
     public VRCPlayerApiSafe playerApiSafe;
     [HideInInspector]
     public LocalVRMode localVRMode;

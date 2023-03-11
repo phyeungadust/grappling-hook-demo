@@ -18,7 +18,7 @@ public class PlayerManager : UdonSharpBehaviour
     [SerializeField]
     private GameObject[] deactivateIfNonLocal;
     
-    void Start()
+    public void CustomStart()
     {
         this.playerApiSafeControls.CustomStart();
         this.localVRModeDeterminerControls.CustomStart();
@@ -31,52 +31,40 @@ public class PlayerManager : UdonSharpBehaviour
         }
         foreach (CustomControls controllable in this.customControls)
         {
-            if (
-                controllable != null 
-                && controllable.gameObject.activeInHierarchy
-            )
+            if (controllable.gameObject.activeInHierarchy)
             {
                 controllable.CustomStart();
             }
         }
     }
 
-    void Update()
+    public void CustomUpdate()
     {
         foreach (CustomControls controllable in this.customControls)
         {
-            if (
-                controllable != null 
-                && controllable.gameObject.activeInHierarchy
-            )
+            if (controllable.gameObject.activeInHierarchy)
             {
                 controllable.CustomUpdate();
             }
         }
     }
 
-    void LateUpdate()
+    public void CustomLateUpdate()
     {
         foreach (CustomControls controllable in this.customControls)
         {
-            if (
-                controllable != null 
-                && controllable.gameObject.activeInHierarchy
-            )
+            if (controllable.gameObject.activeInHierarchy)
             {
                 controllable.CustomLateUpdate();
             }
         }
     }
 
-    void FixedUpdate()
+    public void CustomFixedUpdate()
     {
         foreach (CustomControls controllable in this.customControls)
         {
-            if (
-                controllable != null 
-                && controllable.gameObject.activeInHierarchy
-            )
+            if (controllable.gameObject.activeInHierarchy)
             {
                 controllable.CustomFixedUpdate();
             }

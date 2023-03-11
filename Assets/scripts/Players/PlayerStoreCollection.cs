@@ -19,19 +19,47 @@ public class PlayerStoreCollection : UdonSharpBehaviour
     public override void OnPlayerJoined(VRCPlayerApi player)
     {
 
+        int playerID = player.playerId;
+
         if (player.isLocal)
         {
-            this.localPlayerStore = this.GetByID(player.playerId);
+            this.localPlayerStore = this.allPlayerStores[playerID];
         }
 
         ++this.playerCount;
-        wsLogger.Log($"player {player.playerId} joined");
+        wsLogger.Log($"player {playerID} joined");
         wsLogger.Log($"playerCount: {this.playerCount}");
         this
-            .allPlayerStores[player.playerId]
+            .allPlayerStores[playerID]
             .gameObject
             .SetActive(true);
 
+        this.allPlayerStores[playerID].manager.CustomStart();
+
+    }
+
+    void Update()
+    {
+        for (int i = 1; i <= this.playerCount; ++i)
+        {
+            this.allPlayerStores[i].manager.CustomUpdate();
+        }
+    }
+
+    void FixedUpdate()
+    {
+        for (int i = 1; i <= this.playerCount; ++i)
+        {
+            this.allPlayerStores[i].manager.CustomFixedUpdate();
+        }
+    }
+
+    void LateUpdate()
+    {
+        for (int i = 1; i <= this.playerCount; ++i)
+        {
+            this.allPlayerStores[i].manager.CustomLateUpdate();
+        }
     }
 
     public PlayerStore GetByID(int id) => this.allPlayerStores[id];

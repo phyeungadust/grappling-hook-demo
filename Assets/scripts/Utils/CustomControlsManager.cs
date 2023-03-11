@@ -14,7 +14,7 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            if (cc != null && cc.gameObject.activeInHierarchy)
+            if (cc.gameObject.activeInHierarchy)
             {
                 cc.CustomStart();
             }
@@ -25,7 +25,7 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            if (cc != null && cc.gameObject.activeInHierarchy)
+            if (cc.gameObject.activeInHierarchy)
             {
                 cc.CustomUpdate();
             }
@@ -36,7 +36,7 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            if (cc != null && cc.gameObject.activeInHierarchy)
+            if (cc.gameObject.activeInHierarchy)
             {
                 cc.CustomLateUpdate();
             }
@@ -47,7 +47,7 @@ public class CustomControlsManager : CustomControls
     {
         foreach (CustomControls cc in this.customControlsArr)
         {
-            if (cc != null && cc.gameObject.activeInHierarchy)
+            if (cc.gameObject.activeInHierarchy)
             {
                 cc.CustomFixedUpdate();
             }
