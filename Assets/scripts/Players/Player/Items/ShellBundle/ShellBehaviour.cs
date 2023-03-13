@@ -196,7 +196,7 @@ public class ShellBehaviour : UdonSharpBehaviour
                 // stun victim for a few seconds
                 this.interactionMediator.ShellHitUnicast(
                     playerHitbox.ownerStore.playerApiSafe.GetID(),
-                    3.0f
+                    this.shellProperties.StunTime
                 );
 
                 // play explosion vfx on all game instances

@@ -14,47 +14,65 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
     // private Transform waterSprayGunTransform; 
     [SerializeField]
     private VRCObjectPool waterSprayParticlePool;
+    // [SerializeField]
+    // private SprayedOverlayBehaviour sprayedOverlay;
+    // [SerializeField]
+    // private Transform gunBarrelTip;
+
     [SerializeField]
-    private SprayedOverlayBehaviour sprayedOverlay;
+    private PlayerStore ownerStore;
+    private VRCPlayerApi owner;
+    private LocalVRMode localVRMode;
+
     [SerializeField]
-    private Transform gunBarrelTip;
+    private Rigidbody rb;
+    [SerializeField]
+    private MeshRenderer mesh;
 
     private float timeBeforeDespawn;
-    private VRCPlayerApi localPlayer;
-    private int ownerID;
+    // private VRCPlayerApi localPlayer;
+    // private int ownerID;
 
     public void InitTransform()
     {
 
-        // set particle position to tip of gun barrel
-        this.transform.position = this
-            .gunBarrelTip
-            .position;
+        // // set particle position to tip of gun barrel
         // this.transform.position = this
         //     .gunBarrelTip
         //     .position;
+        // // this.transform.position = this
+        // //     .gunBarrelTip
+        // //     .position;
 
-        // scale particle randomly, within scale range
-        float scaleFactor = Random.Range(
-            this.properties.ParticleScaleMin, 
-            this.properties.ParticleScaleMax
-        );
-        this.transform.localScale = Vector3.one * scaleFactor;
+        // // scale particle randomly, within scale range
+        // float scaleFactor = Random.Range(
+        //     this.properties.ParticleScaleMin, 
+        //     this.properties.ParticleScaleMax
+        // );
+        // this.transform.localScale = Vector3.one * scaleFactor;
 
-        // rotate particle randomly
-        this.transform.rotation = Random.rotation;
+        // // rotate particle randomly
+        // this.transform.rotation = Random.rotation;
 
     }
 
     void OnEnable()
     {
 
+        this.owner = this.ownerStore.playerApiSafe.Get();
+        this.localVRMode = this.ownerStore.localVRMode;
+
+        // reset local position and local eulerangles to zero
+        // these align the spray particle with the gun tip
+        this.transform.localPosition = Vector3.zero;
+        this.transform.localEulerAngles = Vector3.zero;
+
         Debug.Log("spawned " + this.gameObject.name);
 
-        this.localPlayer = Networking.LocalPlayer;
-        this.ownerID = this.properties.OwnerID;
+        // this.localPlayer = Networking.LocalPlayer;
+        // this.ownerID = this.properties.OwnerID;
         
-        this.SendCustomEventDelayedFrames("InitTransform", 0);
+        // this.SendCustomEventDelayedFrames("InitTransform", 0);
 
         // spread offsets
         float xOffset = Random.Range(
@@ -76,63 +94,60 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
         // the statement below simply rotates this vector3 to lie on the "normal plane"
         // this gives the result of offsetVector
         Vector3 offsetVector = this
-            .gunBarrelTip
+            .transform
             .rotation * new Vector3(xOffset, yOffset, 0.0f);
 
         // spread-corrected shootdirection
         Vector3 shootDirection = this
-            .gunBarrelTip
+            .transform
             .forward + offsetVector;
         shootDirection = shootDirection.normalized;
 
         // launch particle
         Vector3 launchVel = 
             shootDirection * this.properties.ParticleTravelSpeed;
-        VRCPlayerApi owner = VRCPlayerApi.GetPlayerById(this.ownerID);
-        if (owner != null)
-        {
-            launchVel += Vector3.Project(
-                owner.GetVelocity(),
-                this.gunBarrelTip.forward
-            );
-        }
-        this.GetComponent<Rigidbody>().velocity = launchVel;
+        launchVel += Vector3.Project(
+            this.owner.GetVelocity(),
+            this.transform.forward
+        );
+        this.rb.velocity = launchVel;
 
-        // set timeBeforeDespawn to predefined lifetime
-        this.timeBeforeDespawn = this
-            .properties
-            .ParticleLifeTime;
+        if (this.localVRMode.IsLocal())
+        {
+            // set timeBeforeDespawn to predefined lifetime
+            this.timeBeforeDespawn = this
+                .properties
+                .ParticleLifeTime;
+        }
+
 
     }
 
-    
-
     void FixedUpdate()
     {
-        if (this.timeBeforeDespawn > 0.0f)
+        if (this.localVRMode.IsLocal())
         {
-            this.timeBeforeDespawn -= Time.fixedDeltaTime;
+            if (this.timeBeforeDespawn > 0.0f)
+            {
+                this.timeBeforeDespawn -= Time.fixedDeltaTime;
+            }
         }
     }
 
     void Update()
     {
 
-        // Debug.Log("particle pos: " + this.transform.position);
-
-        if (this.localPlayer.playerId == this.ownerID)
+        if (this.localVRMode.IsLocal())
         {
             if (this.timeBeforeDespawn <= 0.0f)
             {
                 // time exceeds lifetime
                 // return this particle to pool
-                this
-                    .waterSprayParticlePool
-                    .Return(this.gameObject);
+                this.waterSprayParticlePool.Return(this.gameObject);
                 return;
             }
         }
-    
+
         // particle color changes over time
         float timeElapsedSinceLaunched = this
             .properties
@@ -144,40 +159,61 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
             .Evaluate(
                 timeElapsedSinceLaunched / this.properties.ParticleLifeTime
             );
-        this
-            .GetComponent<MeshRenderer>()
-            .material
-            .color = particleNewColor;
+        this.mesh.material.color = particleNewColor;
 
     }
 
-    // void OnDisable()
-    // {
-    //     this.GetComponent<Rigidbody>().velocity = Vector3.zero;
-    //     Debug.Log("despawned " + this.gameObject.name);
-    // }
-
-    public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+    private void OnTriggerEnter(Collider collider)
     {
+        if (this.localVRMode.IsLocal())
+        {
 
-        // ignore if a non shooter instance 'witnesses' a particle hit
-        // only the shooter is allowed to register particle hits
-        if (this.localPlayer.playerId != this.ownerID) return;
+            PlayerHitbox playerHitbox = collider.GetComponent<PlayerHitbox>();
 
-        // ignore if shooter shoots themself
-        if (player.playerId == this.ownerID) return;
+            if (playerHitbox != null)
+            {
 
-        Networking.SetOwner(
-            this.localPlayer,
-            this.sprayedOverlay.gameObject
-        );
+                if (playerHitbox.ownerStore.localVRMode.IsLocal())
+                {
+                    // spray particle cannot hit the shooter
+                    Debug.Log("spray particle cannot hit the shooter");
+                    return;
+                }
+                else
+                {
+                    int shooterID = this.ownerStore.playerApiSafe.GetID();
+                    int victimID = playerHitbox
+                        .ownerStore
+                        .playerApiSafe
+                        .GetID();
+                    Debug.Log($"player {shooterID} shot {victimID} with {this.gameObject.name}");
+                }
 
-        this.sprayedOverlay.SprayScreenUnicast = string.Join(
-            " ",
-            System.Guid.NewGuid().ToString().Substring(0, 6),
-            player.playerId
-        );
-
+            }
+        }
     }
+
+    // public override void OnPlayerTriggerEnter(VRCPlayerApi player)
+    // {
+
+    //     // ignore if a non shooter instance 'witnesses' a particle hit
+    //     // only the shooter is allowed to register particle hits
+    //     if (this.localPlayer.playerId != this.ownerID) return;
+
+    //     // ignore if shooter shoots themself
+    //     if (player.playerId == this.ownerID) return;
+
+    //     Networking.SetOwner(
+    //         this.localPlayer,
+    //         this.sprayedOverlay.gameObject
+    //     );
+
+    //     this.sprayedOverlay.SprayScreenUnicast = string.Join(
+    //         " ",
+    //         System.Guid.NewGuid().ToString().Substring(0, 6),
+    //         player.playerId
+    //     );
+
+    // }
 
 }

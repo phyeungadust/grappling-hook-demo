@@ -4,108 +4,149 @@ using VRC.SDKBase;
 using VRC.Udon;
 using VRC.SDK3.Components;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class WaterSprayGunBehaviour : UdonSharpBehaviour
 {
 
     [SerializeField]
-    private int ownerID;
-    [SerializeField]
     private VRCObjectPool waterSprayParticlePool;
-    private VRCPlayerApi localPlayer;
 
-    private bool currentlyHeld = false;
+    [SerializeField]
+    private string vrButtonName = "Oculus_CrossPlatform_PrimaryIndexTrigger";
+    [SerializeField]
+    private string desktopButtonName = "Fire1";
 
-    void Start()
+    [SerializeField]
+    private PlayerStore ownerStore;
+    private VRCPlayerApi owner;
+    private LocalVRMode localVRMode;
+
+    [SerializeField]
+    private MeshRenderer gunMesh;
+    [SerializeField]
+    private CustomTrackedObject gunTrackedObj;
+    [SerializeField]
+    private CustomGrip gunGrip;
+
+    private bool equipped = false;
+
+    [SerializeField]
+    private int defaultAmmoAmt = 50;
+    private int ammo;
+
+    [SerializeField]
+    private ItemManager itemManager;
+
+    public void Init()
     {
 
-        this.localPlayer = Networking.LocalPlayer;
+        this.owner = this.ownerStore.playerApiSafe.Get();
+        this.localVRMode = this.ownerStore.localVRMode;
 
-        if (this.localPlayer.playerId == this.ownerID)
-        {
-            // set gun, particles, and particle pool to owner
-            // specified by ownerID
-            Networking.SetOwner(
-                this.localPlayer,
-                this.gameObject
-            );
-            Networking.SetOwner(
-                this.localPlayer,
-                this.waterSprayParticlePool.gameObject
-            );
-        }
+        // set gun tracking object
+        // based on localVRMode
+        this.gunTrackedObj.CustomStart();
+
+        // adjust gun grip
+        // based on localVRMode
+        this.gunGrip.CustomStart();
+
+        Networking.SetOwner(
+            this.owner,
+            this.waterSprayParticlePool.gameObject
+        );
 
     }
 
-    // void FixedUpdate()
-    // {
-
-    //     // update gun position
-
-    // }
-
-    void Update()
+    public void Equip()
     {
+        // refill ammo
+        this.ammo = this.defaultAmmoAmt;
+        this.SendCustomNetworkEvent(
+            VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+            nameof(EquipBroadcast)
+        );
+        Debug.Log("Equip() called");
+    }
 
-        VRCPlayerApi owner = VRCPlayerApi.GetPlayerById(this.ownerID);
+    public void UnEquip()
+    {
+        this.SendCustomNetworkEvent(
+            VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+            nameof(UnEquipBroadcast)
+        );
+    }
 
-        // if (owner != null)
-        // {
-        //     VRCPlayerApi.TrackingData td = owner
-        //         .GetTrackingData(
-        //             VRCPlayerApi.TrackingDataType.Head
-        //         );
-        //     this.transform.SetPositionAndRotation(
-        //         td.position,
-        //         td.rotation
-        //     );
-        // }
+    public void EquipBroadcast()
+    {
+        // enable gun mesh
+        this.gunMesh.enabled = true;
+        // enable gun tracking
+        this.gunTrackedObj.tracking = true;
+        this.equipped = true;
+        Debug.Log("EquipBroadcast() called");
+    }
 
-        // VRCPlayerApi owner = VRCPlayerApi
-        //     .GetPlayerById(this.ownerID);
-        // if (owner != null)
-        // {
-        // }
+    public void UnEquipBroadcast()
+    {
+        // disable gun mesh
+        this.gunMesh.enabled = false;
+        // disable gun tracking
+        this.gunTrackedObj.tracking = false; 
+        this.equipped = false;
+    }
 
-        if (this.localPlayer.playerId == this.ownerID)
+    public void ItemUpdate()
+    {
+        
+        if (this.equipped)
         {
-            if (currentlyHeld)
+
+            // update gun tracking position
+            this.gunTrackedObj.CustomUpdate();
+
+            if (this.localVRMode.IsLocal())
             {
-                bool usePressed = false;
-                if (this.localPlayer.IsUserInVR())
+                if (this.ReadInput())
                 {
-                    usePressed = Input.GetAxis("Oculus_CrossPlatform_PrimaryIndexTrigger") > 0;
-                }
-                else
-                {
-                    usePressed = Input.GetKey(KeyCode.T);
-                }
-                if (usePressed)
-                {
-                    GameObject waterParticle = this
+
+                    // fire button pressed
+
+                    // spawn spray particle
+                    GameObject spawnedSprayParticle = this
                         .waterSprayParticlePool
                         .TryToSpawn();
-                    if (waterParticle != null)
+                    if (spawnedSprayParticle != null)
                     {
-                        Networking.SetOwner(
-                            this.localPlayer,
-                            waterParticle
-                        );
+                        Networking.SetOwner(this.owner, spawnedSprayParticle);
                     }
+
+                    // decrease ammo amount
+                    --this.ammo;
+
+                    if (this.ammo <= 0)
+                    {
+                        // exhausted ammo, switch to null item
+                        this.itemManager.EquipNullItem();
+                    }
+
                 }
             }
+
         }
 
     }
 
-    override public void OnPickup()
+    private bool ReadInput()
     {
-        currentlyHeld = true;
-    }
-
-    override public void OnDrop()
-    {
-        currentlyHeld = false;
+        if (this.localVRMode.IsVR())
+        {
+            return Input.GetAxis(this.vrButtonName) > 0;
+        }
+        else
+        {
+            return Input.GetButton(this.desktopButtonName);
+        }
     }
 
 }

@@ -7,12 +7,12 @@ using VRC.Udon;
 public class WaterSprayParticleProperties : UdonSharpBehaviour
 {
 
-    public int OwnerID;
+    // public int OwnerID;
     public float ParticleTravelSpeed;
     public float ParticleLifeTime;
     public float SpraySpread;
-    public float ParticleScaleMin;
-    public float ParticleScaleMax;
+    // public float ParticleScaleMin;
+    // public float ParticleScaleMax;
 
     public Gradient ColorGradientOverLifetime;
 

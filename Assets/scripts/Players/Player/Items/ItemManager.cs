@@ -42,6 +42,16 @@ public class ItemManager : UdonSharpBehaviour
         this.SwitchItem(this.itemCollection.shellShootBehaviourControls);
     }
 
+    public void EquipSprayGun()
+    {
+        this.SwitchItem(this.itemCollection.waterSprayGunBehaviourControls);
+    }
+
+    public void EquipNullItem()
+    {
+        this.SwitchItem(this.itemCollection.nullItemControls);
+    }
+
     public void CustomStart()
     {
 

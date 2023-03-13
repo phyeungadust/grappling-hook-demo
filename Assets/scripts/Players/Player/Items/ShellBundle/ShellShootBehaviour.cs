@@ -88,10 +88,9 @@ public class ShellShootBehaviour : UdonSharpBehaviour
 
             if (fireButtonPressed)
             {
+                // launch shell and switch to null item
                 this.shell.Launch();
-                this.itemManager.SwitchItem(
-                    this.itemManager.itemCollection.nullItemControls
-                );
+                this.itemManager.EquipNullItem();
             }
 
             this.cdAfterEquip -= Time.deltaTime;

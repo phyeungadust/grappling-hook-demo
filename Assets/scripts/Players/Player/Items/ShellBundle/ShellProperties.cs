@@ -7,4 +7,5 @@ using VRC.Udon;
 public class ShellProperties : UdonSharpBehaviour
 {
     public float Speed = 20.0f;
+    public float StunTime = 3.0f;
 }
