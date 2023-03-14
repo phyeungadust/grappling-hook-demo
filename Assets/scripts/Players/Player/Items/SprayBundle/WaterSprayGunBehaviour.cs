@@ -37,6 +37,10 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
     [SerializeField]
     private ItemManager itemManager;
 
+    [SerializeField]
+    private float defaultCDAfterEquip = 1.0f;
+    private float cdAfterEquip;
+
     public void Init()
     {
 
@@ -60,53 +64,43 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
 
     public void Equip()
     {
-        // refill ammo
-        this.ammo = this.defaultAmmoAmt;
-        this.SendCustomNetworkEvent(
-            VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
-            nameof(EquipBroadcast)
-        );
+        if (this.localVRMode.IsLocal())
+        {
+            // start cooldown
+            this.cdAfterEquip = this.defaultCDAfterEquip;
+            // refill ammo
+            this.ammo = this.defaultAmmoAmt;
+        }
+        // enable gun mesh
+        this.gunMesh.enabled = true;
+        // enable gun tracking
+        this.gunTrackedObj.tracking = true;
         Debug.Log("Equip() called");
     }
 
     public void UnEquip()
     {
-        this.SendCustomNetworkEvent(
-            VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
-            nameof(UnEquipBroadcast)
-        );
-    }
-
-    public void EquipBroadcast()
-    {
-        // enable gun mesh
-        this.gunMesh.enabled = true;
-        // enable gun tracking
-        this.gunTrackedObj.tracking = true;
-        this.equipped = true;
-        Debug.Log("EquipBroadcast() called");
-    }
-
-    public void UnEquipBroadcast()
-    {
         // disable gun mesh
         this.gunMesh.enabled = false;
         // disable gun tracking
         this.gunTrackedObj.tracking = false; 
-        this.equipped = false;
+        Debug.Log("UnEquip() called");
     }
 
     public void ItemUpdate()
     {
         
-        if (this.equipped)
+        // update gun tracking position
+        this.gunTrackedObj.CustomUpdate();
+
+        if (this.localVRMode.IsLocal())
         {
 
-            // update gun tracking position
-            this.gunTrackedObj.CustomUpdate();
-
-            if (this.localVRMode.IsLocal())
+            if (this.cdAfterEquip <= 0.0f)
             {
+
+                // cooldown finishes, can read input
+
                 if (this.ReadInput())
                 {
 
@@ -131,6 +125,12 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
                     }
 
                 }
+
+            }
+            else
+            {
+                // decrease equip cooldown
+                this.cdAfterEquip -= Time.deltaTime;
             }
 
         }

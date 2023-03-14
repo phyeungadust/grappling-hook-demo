@@ -2509,14 +2509,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345249137573410248}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.4616334, y: -0.53562546, z: -0.53562546, w: 0.4616334}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5884309443250350204}
   m_Father: {fileID: 4444061177453459274}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 261.513}
 --- !u!114 &2819735051122609392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2539,16 +2539,16 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 1841129283117798471}
-  localVRGripPos: {x: 0, y: 0, z: 0}
-  localVRGripRot: {x: 0, y: 0, z: 0}
+  localVRGripPos: {x: 0.0125, y: 0, z: 0}
+  localVRGripRot: {x: -5, y: 90, z: 80}
   localVRScale: {x: 1, y: 1, z: 1}
-  localNonVRGripPos: {x: 0, y: 0, z: 0}
+  localNonVRGripPos: {x: -0.239, y: -0.182, z: 0.155}
   localNonVRGripRot: {x: 0, y: 0, z: 0}
   localNonVRScale: {x: 1, y: 1, z: 1}
   nonLocalVRGripPos: {x: 0, y: 0, z: 0}
-  nonLocalVRGripRot: {x: 0, y: 0, z: 0}
+  nonLocalVRGripRot: {x: 270, y: 0, z: 270}
   nonLocalVRScale: {x: 1, y: 1, z: 1}
-  nonLocalNonVRGripPos: {x: 0, y: 0, z: 0}
+  nonLocalNonVRGripPos: {x: -0.239, y: -0.182, z: 0.155}
   nonLocalNonVRGripRot: {x: 0, y: 0, z: 0}
   nonLocalNonVRScale: {x: 1, y: 1, z: 1}
   ownerStore: {fileID: 4411225710739252128}
@@ -3120,6 +3120,7 @@ MonoBehaviour:
   gunGrip: {fileID: 2819735051122609392}
   defaultAmmoAmt: 50
   itemManager: {fileID: 6015368807834548223}
+  defaultCDAfterEquip: 1
 --- !u!114 &5447850893487452982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3717,6 +3718,7 @@ MonoBehaviour:
   itemCollection: {fileID: 8974948298865159901}
   customControlsArr:
   - {fileID: 8125932025971024796}
+  ownerStore: {fileID: 4411225710739252128}
 --- !u!114 &6367038903915534802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3736,7 +3738,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 2
+  _syncMethod: 3
   serializedProgramAsset: {fileID: 11400000, guid: 90d49af1c639a1d40a7ae586c82a10a2,
     type: 2}
   programSource: {fileID: 11400000, guid: 32b5878a4459114439a037465beab1a0, type: 2}
@@ -3785,7 +3787,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 2
+  _syncMethod: 3
   serializedProgramAsset: {fileID: 11400000, guid: 1f1d8cfad1e8f8c4b9429f1d1f60ece9,
     type: 2}
   programSource: {fileID: 11400000, guid: 96fae8f9365058a429fa1e4f1fbcad56, type: 2}
@@ -20305,7 +20307,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: a8eec6fc6b0238e48bc767ad905a0d23,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: a8eec6fc6b0238e48bc767ad905a0d23,
         type: 3}

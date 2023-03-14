@@ -3,7 +3,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
 public class ItemManager : UdonSharpBehaviour
 {
 
@@ -16,6 +16,10 @@ public class ItemManager : UdonSharpBehaviour
     [SerializeField]
     private CustomControls[] customControlsArr;
 
+    [SerializeField]
+    private PlayerStore ownerStore;
+    private LocalVRMode localVRMode;
+
     // the ItemUpdate() method in an ItemControls
     // runs only when the item is equipped
 
@@ -25,6 +29,39 @@ public class ItemManager : UdonSharpBehaviour
 
     public void SwitchItem(ItemControls item)
     {
+        this.SwitchItemBroadcast(item);
+    }
+
+    public void SwitchItemBroadcast(ItemControls item)
+    {
+        this.SwitchItemBroadcastSyncString = string.Join(
+            " ",
+            System.Guid.NewGuid().ToString().Substring(0, 6),
+            item.GetItemID()
+        );
+    }
+
+    [UdonSynced, FieldChangeCallback(nameof(SwitchItemBroadcastSyncString))]
+    private string switchItemBroadcastSyncString;
+    public string SwitchItemBroadcastSyncString
+    {
+        get => this.switchItemBroadcastSyncString;
+        set
+        {
+            this.switchItemBroadcastSyncString = value;
+            if (this.localVRMode.IsLocal())
+            {
+                this.RequestSerialization();
+            }
+            string[] args = value.Split(' ');
+            string nonce = args[0];
+            int itemID = System.Int32.Parse(args[1]);
+            this.SwitchItemLocal(this.itemControlsArr[itemID]);
+        }
+    }
+
+    private void SwitchItemLocal(ItemControls item)
+    {
         this.currentItem.UnEquip();
         this.currentItem = item;
         this.currentItem.Equip();
@@ -32,8 +69,10 @@ public class ItemManager : UdonSharpBehaviour
 
     public void EquipRandomItem()
     {
+        // randomly select an item from item ID [1, itemLength)
+        // item 0 is null item, not included in the random select
         this.SwitchItem(
-            this.itemControlsArr[Random.Range(0, this.itemControlsArr.Length)]
+            this.itemControlsArr[Random.Range(1, this.itemControlsArr.Length)]
         );
     }
 
@@ -54,6 +93,13 @@ public class ItemManager : UdonSharpBehaviour
 
     public void CustomStart()
     {
+
+        Networking.SetOwner(
+            this.ownerStore.playerApiSafe.Get(),
+            this.gameObject
+        );
+
+        this.localVRMode = this.ownerStore.localVRMode;
 
         this.itemCollection.Init();
         this.itemControlsArr = this.itemCollection.itemControlsArr;

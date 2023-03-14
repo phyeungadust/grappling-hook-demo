@@ -59,11 +59,12 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
     void OnEnable()
     {
 
+
         this.owner = this.ownerStore.playerApiSafe.Get();
         this.localVRMode = this.ownerStore.localVRMode;
 
-        // reset local position and local eulerangles to zero
-        // these align the spray particle with the gun tip
+        // lines below effectively set particle position to where gun tip is
+        this.transform.parent = this.waterSprayParticlePool.transform;
         this.transform.localPosition = Vector3.zero;
         this.transform.localEulerAngles = Vector3.zero;
 
@@ -103,34 +104,42 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
             .forward + offsetVector;
         shootDirection = shootDirection.normalized;
 
-        // launch particle
+        // calculate launchVel based on 
+        // shooter's current velocity along trajectory
         Vector3 launchVel = 
             shootDirection * this.properties.ParticleTravelSpeed;
         launchVel += Vector3.Project(
             this.owner.GetVelocity(),
             this.transform.forward
         );
+
+        // before particle is launched, detach the particle
+        // from the parent (i.e. player follower)
+        // such that player's movement will no longer affect
+        // the particle's trajectory
+        this.transform.parent = null;
+
+        // launch spray particle
         this.rb.velocity = launchVel;
 
-        if (this.localVRMode.IsLocal())
-        {
-            // set timeBeforeDespawn to predefined lifetime
-            this.timeBeforeDespawn = this
-                .properties
-                .ParticleLifeTime;
-        }
+        Debug.Log($"{this.gameObject.name}'s velocity: {this.rb.velocity}");
+
+        // give it a random rotation
+        this.transform.rotation = Random.rotation;
+
+        // set timeBeforeDespawn to predefined lifetime
+        this.timeBeforeDespawn = this
+            .properties
+            .ParticleLifeTime;
 
 
     }
 
     void FixedUpdate()
     {
-        if (this.localVRMode.IsLocal())
+        if (this.timeBeforeDespawn > 0.0f)
         {
-            if (this.timeBeforeDespawn > 0.0f)
-            {
-                this.timeBeforeDespawn -= Time.fixedDeltaTime;
-            }
+            this.timeBeforeDespawn -= Time.fixedDeltaTime;
         }
     }
 

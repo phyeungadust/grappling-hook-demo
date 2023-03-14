@@ -42,29 +42,29 @@ public class ShellShootBehaviour : UdonSharpBehaviour
 
     public void Equip()
     {
-        GameObject spawnedShellObj = this
-            .shellPool
-            .TryToSpawn();
-        if (spawnedShellObj != null)
+        if (this.localVRMode.IsLocal())
         {
-            // spawn success
-            Networking.SetOwner(
-                this.owner,
-                spawnedShellObj
-            );
-            this.shell = spawnedShellObj.GetComponent<ShellBehaviour>();
-            // set cooldown right after equip
-            this.cdAfterEquip = this.defaultCDAfterEquip;
+            GameObject spawnedShellObj = this.shellPool.TryToSpawn();
+            if (spawnedShellObj != null)
+            {
+                // spawn success
+                Networking.SetOwner(this.owner, spawnedShellObj);
+                // get shell reference, when this reference is not null, 
+                // shell is being held by player
+                this.shell = spawnedShellObj.GetComponent<ShellBehaviour>();
+                // set cooldown right after equip
+                this.cdAfterEquip = this.defaultCDAfterEquip;
+            }
         }
     }
 
     public void UnEquip()
     {
-        if (this.shell != null)
+        if (this.localVRMode.IsLocal())
         {
-            // shell really is equipped
-            if (!this.shell.launched)
+            if (this.shell != null)
             {
+                // shell still being held
                 // return shell to shellPool if shell not launched
                 this.shellPool.Return(this.shell.gameObject);
             }
@@ -79,21 +79,24 @@ public class ShellShootBehaviour : UdonSharpBehaviour
 
             // local
             
-            bool fireButtonPressed = false;
             if (this.cdAfterEquip <= 0.0f)
             {
                 // cooldown finishes, can read input
-                fireButtonPressed = this.ReadInput();
+                if (this.ReadInput())
+                {
+                    // launch shell
+                    this.shell.Launch();
+                    // no need to keep reference to launched shell
+                    this.shell = null;
+                    // switch back to null item
+                    this.itemManager.EquipNullItem();
+                }
             }
-
-            if (fireButtonPressed)
+            else
             {
-                // launch shell and switch to null item
-                this.shell.Launch();
-                this.itemManager.EquipNullItem();
+                // decrease cooldown
+                this.cdAfterEquip -= Time.deltaTime;
             }
-
-            this.cdAfterEquip -= Time.deltaTime;
 
         }
 
