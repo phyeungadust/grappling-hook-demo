@@ -51,7 +51,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608179462864091103}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -158,7 +158,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 1
+  _syncMethod: 3
   serializedProgramAsset: {fileID: 11400000, guid: 806ac592b81556c478a47738267369ef,
     type: 2}
   programSource: {fileID: 11400000, guid: 095d95c5888c25c4ca6d9c5f15ce7c8b, type: 2}

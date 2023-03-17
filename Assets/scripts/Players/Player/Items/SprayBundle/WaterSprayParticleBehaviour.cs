@@ -4,24 +4,18 @@ using VRC.SDKBase;
 using VRC.Udon;
 using VRC.SDK3.Components;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+[UdonBehaviourSyncMode(BehaviourSyncMode.Continuous)]
 public class WaterSprayParticleBehaviour : UdonSharpBehaviour
 {
 
     [SerializeField]
     private WaterSprayParticleProperties properties;
-    // [SerializeField]
-    // private Transform waterSprayGunTransform; 
     [SerializeField]
     private VRCObjectPool waterSprayParticlePool;
-    // [SerializeField]
-    // private SprayedOverlayBehaviour sprayedOverlay;
-    // [SerializeField]
-    // private Transform gunBarrelTip;
 
     [SerializeField]
     private PlayerStore ownerStore;
-    private VRCPlayerApi owner;
+    private VRCPlayerApi owner = null;
     private LocalVRMode localVRMode;
 
     [SerializeField]
@@ -29,9 +23,8 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
     [SerializeField]
     private MeshRenderer mesh;
 
+    private bool launched = false;
     private float timeBeforeDespawn;
-    // private VRCPlayerApi localPlayer;
-    // private int ownerID;
 
     public void InitTransform()
     {
@@ -56,95 +49,178 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
 
     }
 
-    void OnEnable()
+    public void Launch(Vector3 shooterPos, Vector3 gunTip, Vector3 velocity)
+    {
+        this.LaunchBroadcast(shooterPos, gunTip, velocity);
+    }
+
+    public void LaunchBroadcast(Vector3 shooterPos, Vector3 gunTip, Vector3 velocity)
+    {
+        this.LaunchBroadcastSyncString = string.Join(
+            " ",
+            System.Guid.NewGuid().ToString().Substring(0, 6),
+            shooterPos.x, shooterPos.y, shooterPos.z,
+            gunTip.x, gunTip.y, gunTip.z,
+            velocity.x, velocity.y, velocity.z
+        );
+    }
+
+    [UdonSynced, FieldChangeCallback(nameof(LaunchBroadcastSyncString))]
+    private string launchBroadcastSyncString;
+    public string LaunchBroadcastSyncString
+    {
+        get => this.launchBroadcastSyncString;
+        set
+        {
+            this.launchBroadcastSyncString = value;
+            string[] args = value.Split(' ');
+            string nonce = args[0];
+            float shooterPosX = float.Parse(args[1]);
+            float shooterPosY = float.Parse(args[2]);
+            float shooterPosZ = float.Parse(args[3]);
+            float gunTipX = float.Parse(args[4]);
+            float gunTipY = float.Parse(args[5]);
+            float gunTipZ = float.Parse(args[6]);
+            float velocityX = float.Parse(args[7]);
+            float velocityY = float.Parse(args[8]);
+            float velocityZ = float.Parse(args[9]);
+            this.LaunchLocal(
+                new Vector3(shooterPosX, shooterPosY, shooterPosZ),
+                new Vector3(gunTipX, gunTipY, gunTipZ),
+                new Vector3(velocityX, velocityY, velocityZ)
+            );
+        }
+    }
+
+    private void LaunchLocal(Vector3 shooterPos, Vector3 gunTip, Vector3 velocity)
     {
 
+        if (this.owner == null)
+        {
+            this.owner = this.ownerStore.playerApiSafe.Get();
+        }
 
-        this.owner = this.ownerStore.playerApiSafe.Get();
-        this.localVRMode = this.ownerStore.localVRMode;
+        Vector3 newShooterPos = this.owner.GetTrackingData(
+            VRCPlayerApi.TrackingDataType.Origin
+        ).position;
 
-        // lines below effectively set particle position to where gun tip is
-        this.transform.parent = this.waterSprayParticlePool.transform;
-        this.transform.localPosition = Vector3.zero;
-        this.transform.localEulerAngles = Vector3.zero;
+        // corrected guntip position based on new and old shooter positions
+        gunTip += newShooterPos - shooterPos;
 
-        Debug.Log("spawned " + this.gameObject.name);
+        if (this.transform.parent != null)
+        {
+            // detach the particle from player follower
+            // so that the particle's movements are not affected
+            // by player's movements
+            this.transform.parent = null;
+        }
 
-        // this.localPlayer = Networking.LocalPlayer;
-        // this.ownerID = this.properties.OwnerID;
-        
-        // this.SendCustomEventDelayedFrames("InitTransform", 0);
+        // teleport to corrected gunTip position
+        this.transform.position = gunTip;
 
-        // spread offsets
-        float xOffset = Random.Range(
-            -this.properties.SpraySpread, 
-            this.properties.SpraySpread
-        );
-        float yOffset = Random.Range(
-            -this.properties.SpraySpread, 
-            this.properties.SpraySpread
-        );
-
-        // calculation of offsetVector
-        // explanation:
-        // imagine there is a target at which the gun is pointing
-        // imagine there is such a vector extending from the gun tip to the target at which the gun is pointing
-        // imagine there is a plane normal to such vector
-        // we call such plane.. the "normal plane"
-        // now, originally Vector3(xOffset, yOffset, 0.0f) lies on the xy-plane globally
-        // the statement below simply rotates this vector3 to lie on the "normal plane"
-        // this gives the result of offsetVector
-        Vector3 offsetVector = this
-            .transform
-            .rotation * new Vector3(xOffset, yOffset, 0.0f);
-
-        // spread-corrected shootdirection
-        Vector3 shootDirection = this
-            .transform
-            .forward + offsetVector;
-        shootDirection = shootDirection.normalized;
-
-        // calculate launchVel based on 
-        // shooter's current velocity along trajectory
-        Vector3 launchVel = 
-            shootDirection * this.properties.ParticleTravelSpeed;
-        launchVel += Vector3.Project(
-            this.owner.GetVelocity(),
-            this.transform.forward
-        );
-
-        // before particle is launched, detach the particle
-        // from the parent (i.e. player follower)
-        // such that player's movement will no longer affect
-        // the particle's trajectory
-        this.transform.parent = null;
-
-        // launch spray particle
-        this.rb.velocity = launchVel;
-
-        Debug.Log($"{this.gameObject.name}'s velocity: {this.rb.velocity}");
+        // enable particle mesh
+        this.mesh.enabled = true;
 
         // give it a random rotation
         this.transform.rotation = Random.rotation;
+
+        // actually launch the particle
+        this.rb.velocity = velocity;
+
+        Debug.Log($"velocity: {this.rb.velocity}");
+
+        // mark as launch
+        this.launched = true;
 
         // set timeBeforeDespawn to predefined lifetime
         this.timeBeforeDespawn = this
             .properties
             .ParticleLifeTime;
 
+    }
+
+    void OnEnable()
+    {
+
+        if (this.owner == null)
+        {
+            this.owner = this.ownerStore.playerApiSafe.Get();
+        }
+        this.localVRMode = this.ownerStore.localVRMode;
+
+        if (this.localVRMode.IsLocal())
+        {
+
+            // spread offsets
+            float xOffset = Random.Range(
+                -this.properties.SpraySpread, 
+                this.properties.SpraySpread
+            );
+            float yOffset = Random.Range(
+                -this.properties.SpraySpread, 
+                this.properties.SpraySpread
+            );
+
+            // calculation of offsetVector
+            // explanation:
+            // imagine there is a target at which the gun is pointing
+            // imagine there is such a vector extending from the gun tip to the target at which the gun is pointing
+            // imagine there is a plane normal to such vector
+            // we call such plane.. the "normal plane"
+            // now, originally Vector3(xOffset, yOffset, 0.0f) lies on the xy-plane globally
+            // the statement below simply rotates this vector3 to lie on the "normal plane"
+            // this gives the result of offsetVector
+            Vector3 offsetVector = this
+                .waterSprayParticlePool
+                .transform
+                .rotation * new Vector3(xOffset, yOffset, 0.0f);
+
+            // spread-corrected shootdirection
+            Vector3 shootDirection = this
+                .waterSprayParticlePool
+                .transform
+                .forward + offsetVector;
+            shootDirection = shootDirection.normalized;
+
+            // calculate launchVel based on 
+            // shooter's current velocity along trajectory
+            Vector3 launchVel = 
+                shootDirection * this.properties.ParticleTravelSpeed;
+            launchVel += Vector3.Project(
+                this.owner.GetVelocity(),
+                this.waterSprayParticlePool.transform.forward
+            );
+
+            VRCPlayerApi.TrackingData tt = this.owner.GetTrackingData(
+                VRCPlayerApi.TrackingDataType.Origin
+            );
+
+            this.Launch(
+                tt.position,
+                this.waterSprayParticlePool.transform.position,
+                launchVel
+            );
+
+        }
 
     }
 
     void FixedUpdate()
     {
+
+        if (!this.launched) return;
+
         if (this.timeBeforeDespawn > 0.0f)
         {
             this.timeBeforeDespawn -= Time.fixedDeltaTime;
         }
+
     }
 
     void Update()
     {
+
+        if (!this.launched) return;
 
         if (this.localVRMode.IsLocal())
         {
@@ -174,6 +250,9 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
+
+        if (!this.launched) return;
+
         if (this.localVRMode.IsLocal())
         {
 
@@ -202,27 +281,20 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
         }
     }
 
-    // public override void OnPlayerTriggerEnter(VRCPlayerApi player)
-    // {
+    void OnDisable()
+    {
 
-    //     // ignore if a non shooter instance 'witnesses' a particle hit
-    //     // only the shooter is allowed to register particle hits
-    //     if (this.localPlayer.playerId != this.ownerID) return;
+        this.launched = false;
+        this.rb.velocity = Vector3.zero;
 
-    //     // ignore if shooter shoots themself
-    //     if (player.playerId == this.ownerID) return;
+        // sets mesh opacity to zero
+        this.mesh.material.color = this
+            .properties
+            .ColorGradientOverLifetime
+            .Evaluate(0.0f);
 
-    //     Networking.SetOwner(
-    //         this.localPlayer,
-    //         this.sprayedOverlay.gameObject
-    //     );
+        this.mesh.enabled = false;
 
-    //     this.sprayedOverlay.SprayScreenUnicast = string.Join(
-    //         " ",
-    //         System.Guid.NewGuid().ToString().Substring(0, 6),
-    //         player.playerId
-    //     );
-
-    // }
+    }
 
 }

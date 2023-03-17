@@ -44,6 +44,16 @@ public class PlayerStoreCollection : UdonSharpBehaviour
         {
             this.allPlayerStores[i].manager.CustomUpdate();
         }
+
+        // if (this.playerCount >= 1)
+        // {
+        //     PlayerStore player1Store = this.allPlayerStores[1];
+        //     float leftHandPosX = player1Store.follower.leftHand.transform.localPosition.x;
+        //     float leftHandPosY = player1Store.follower.leftHand.transform.localPosition.y;
+        //     float leftHandPosZ = player1Store.follower.leftHand.transform.localPosition.z;
+        //     wsLogger.Log($"leftHandPos: ({leftHandPosX}, {leftHandPosY}, {leftHandPosZ})");
+        // }
+
     }
 
     void FixedUpdate()

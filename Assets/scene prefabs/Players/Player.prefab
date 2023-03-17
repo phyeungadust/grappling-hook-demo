@@ -2509,14 +2509,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5345249137573410248}
-  m_LocalRotation: {x: -0.4616334, y: -0.53562546, z: -0.53562546, w: 0.4616334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5884309443250350204}
   m_Father: {fileID: 4444061177453459274}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 261.513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2819735051122609392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5122,7 +5122,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 4344963734202877018}
-  tracking: 0
+  tracking: 1
   localVRTrackedPartString: leftHand
   localNonVRTrackedPartString: head
   nonLocalVRTrackedPartString: leftHand
@@ -21934,6 +21934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1608179462864091097, guid: 4786b82effd21604d9acace4823d620f,
+        type: 3}
+      propertyPath: _syncMethod
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1608179462864091098, guid: 4786b82effd21604d9acace4823d620f,
         type: 3}
