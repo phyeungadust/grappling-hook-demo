@@ -7,4 +7,5 @@ using VRC.Udon;
 public class HUD : UdonSharpBehaviour
 {
     public HUDStatusPopUpBehaviour popup;
+    public SprayedOverlayBehaviour sprayHUD;
 }

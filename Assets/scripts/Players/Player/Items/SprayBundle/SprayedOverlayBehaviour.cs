@@ -2,52 +2,49 @@
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
-using UnityEngine.UIElements;
 
-[UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+[UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class SprayedOverlayBehaviour : UdonSharpBehaviour
 {
 
     private Color sprayedColor;
-    private VRCPlayerApi localPlayer;
 
     [SerializeField]
     private float defaultTimeBeforeClear = 3.0f;
     private float timeBeforeClear;
     [SerializeField]
     private float sprayAccumulateSpeed = 2.0f;
+    // [SerializeField]
+    // private float sprayClearSpeed = 2.0f;
     [SerializeField]
-    private float sprayClearSpeed = 2.0f;
+    private MeshRenderer mesh;
     private Material sprayedOverlayMaterial;
 
-    void Start()
+    [SerializeField]
+    private PlayerStore ownerStore;
+    private Transform headFollower;
+
+    public void CustomStart()
     {
-        this.sprayedOverlayMaterial = this
-            .GetComponent<MeshRenderer>()
-            .material;
+        this.headFollower = this.ownerStore.follower.head;
+        this.sprayedOverlayMaterial = this.mesh.material;
         this.sprayedColor = this.sprayedOverlayMaterial.color;
-        this.localPlayer = Networking.LocalPlayer;
     }
 
-    void Update()
+    // void Start()
+    // {
+    //     this.sprayedOverlayMaterial = this.mesh.material;
+    //     this.sprayedColor = this.sprayedOverlayMaterial.color;
+    //     this.localPlayer = Networking.LocalPlayer;
+    // }
+
+    public void CustomUpdate()
     {
 
-        // make cube mesh follow and cover player's head
-        // to give overlay effect
-        VRCPlayerApi.TrackingData td = this
-            .localPlayer
-            .GetTrackingData(
-                VRCPlayerApi.TrackingDataType.Head
-            );
         this.transform.SetPositionAndRotation(
-            td.position,
-            td.rotation
+            this.headFollower.position,
+            this.headFollower.rotation
         );
-
-        if (Input.GetKey(KeyCode.R))
-        {
-            this.SprayScreenLocal();
-        }
 
         if (this.timeBeforeClear <= 0.0f)
         {
@@ -60,7 +57,7 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
 
     }
 
-    void FixedUpdate()
+    public void CustomFixedUpdate()
     {
         if (this.timeBeforeClear > 0.0f)
         {
@@ -68,7 +65,46 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
         }
     }
 
-    private void SprayScreenLocal()
+    // void Update()
+    // {
+
+    //     // make cube mesh follow and cover player's head
+    //     // to give overlay effect
+    //     VRCPlayerApi.TrackingData td = this
+    //         .localPlayer
+    //         .GetTrackingData(
+    //             VRCPlayerApi.TrackingDataType.Head
+    //         );
+    //     this.transform.SetPositionAndRotation(
+    //         td.position,
+    //         td.rotation
+    //     );
+
+    //     if (Input.GetKey(KeyCode.R))
+    //     {
+    //         this.SprayScreenLocal();
+    //     }
+
+    //     if (this.timeBeforeClear <= 0.0f)
+    //     {
+    //         if (this.sprayedColor.a > 0.0f)
+    //         {
+    //             // there is still spray on screen, clear now
+    //             this.ClearSpray();
+    //         }
+    //     }
+
+    // }
+
+    // void FixedUpdate()
+    // {
+    //     if (this.timeBeforeClear > 0.0f)
+    //     {
+    //         this.timeBeforeClear -= Time.fixedDeltaTime;
+    //     }
+    // }
+
+    public void SprayScreenLocal()
     {
         // increase alpha (amount of spray on the screen)
         // not more than 1.0f
@@ -100,30 +136,30 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
 
     }
 
-    [UdonSynced, FieldChangeCallback(nameof(SprayScreenUnicast))]
-    private string sprayScreenUnicast;
-    public string SprayScreenUnicast
-    {
-        get => this.sprayScreenUnicast;
-        set
-        {
+    // [UdonSynced, FieldChangeCallback(nameof(SprayScreenUnicast))]
+    // private string sprayScreenUnicast;
+    // public string SprayScreenUnicast
+    // {
+    //     get => this.sprayScreenUnicast;
+    //     set
+    //     {
 
-            this.sprayScreenUnicast = value;
-            if (this.localPlayer.IsOwner(this.gameObject))
-            {
-                this.RequestSerialization();
-            }
+    //         this.sprayScreenUnicast = value;
+    //         if (this.localPlayer.IsOwner(this.gameObject))
+    //         {
+    //             this.RequestSerialization();
+    //         }
 
-            string[] args = value.Split(' ');
-            string nonce = args[0];
-            int targetID = System.Int32.Parse(args[1]);
+    //         string[] args = value.Split(' ');
+    //         string nonce = args[0];
+    //         int targetID = System.Int32.Parse(args[1]);
 
-            if (this.localPlayer.playerId == targetID)
-            {
-                this.SprayScreenLocal();
-            }
+    //         if (this.localPlayer.playerId == targetID)
+    //         {
+    //             this.SprayScreenLocal();
+    //         }
 
-        }
-    }
+    //     }
+    // }
 
 }

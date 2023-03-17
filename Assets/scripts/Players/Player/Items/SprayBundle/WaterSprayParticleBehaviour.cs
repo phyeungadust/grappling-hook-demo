@@ -23,6 +23,9 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
     [SerializeField]
     private MeshRenderer mesh;
 
+    [SerializeField]
+    private InteractionMediator interactionMediator;
+
     private bool launched = false;
     private float timeBeforeDespawn;
 
@@ -269,12 +272,13 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
                 }
                 else
                 {
-                    int shooterID = this.ownerStore.playerApiSafe.GetID();
                     int victimID = playerHitbox
                         .ownerStore
                         .playerApiSafe
                         .GetID();
-                    Debug.Log($"player {shooterID} shot {victimID} with {this.gameObject.name}");
+                    this
+                        .interactionMediator
+                        .SprayParticleHitUnicast(victimID);
                 }
 
             }

@@ -20,12 +20,12 @@ public class InteractionMediator : UdonSharpBehaviour
         this.initialized = true;
     }
 
-    public void ShellHitUnicast(int playerID, float stunTime)
+    public void ShellHitUnicast(int receiverID, float stunTime)
     {
         this.ShellHitUnicastSyncString = string.Join(
             " ",
             System.Guid.NewGuid().ToString().Substring(0, 6),
-            playerID,
+            receiverID,
             stunTime
         );
     }
@@ -50,6 +50,7 @@ public class InteractionMediator : UdonSharpBehaviour
             float stunTime = float.Parse(args[2]);
             if (this.localStore.playerApiSafe.GetID() == receiverID)
             {
+                // if the local player is the receiver
                 this.ShellHitLocal(stunTime);
             }
         }
@@ -65,6 +66,43 @@ public class InteractionMediator : UdonSharpBehaviour
         controller.SwitchStateBroadcast(state.Initialize(stunTime));
         popup.ShowPopUp("STUNNED");
 
+    }
+
+    public void SprayParticleHitUnicast(int receiverID)
+    {
+        this.SprayParticleHitUnicastSyncString = string.Join(
+            " ",
+            System.Guid.NewGuid().ToString().Substring(0, 6),
+            receiverID
+        );
+    }
+
+    [UdonSynced, FieldChangeCallback(nameof(SprayParticleHitUnicastSyncString))]
+    private string sprayParticleHitUnicastSyncString;
+    public string SprayParticleHitUnicastSyncString
+    {
+        get => this.sprayParticleHitUnicastSyncString;
+        set
+        {
+            this.sprayParticleHitUnicastSyncString = value;
+            if (this.senderStore == this.localStore)
+            {
+                this.RequestSerialization();
+            }
+            string[] args = value.Split(' ');
+            string nonce = args[0];
+            int receiverID = System.Int32.Parse(args[1]);
+            if (this.localStore.playerApiSafe.GetID() == receiverID)
+            {
+                // if the local player is the receiver
+                this.SprayParticleHitLocal();
+            }
+        }
+    }
+
+    public void SprayParticleHitLocal()
+    {
+        this.localStore.hud.sprayHUD.SprayScreenLocal();
     }
 
 }
