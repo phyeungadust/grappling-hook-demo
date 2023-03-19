@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1608179462864091108}
   - component: {fileID: 1608179462864091099}
   - component: {fileID: 1608179462864091098}
-  - component: {fileID: 1608179462864091097}
+  - component: {fileID: 135705150631079284}
   m_Layer: 0
   m_Name: WaterSprayParticle
   m_TagString: Untagged
@@ -133,13 +133,14 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _udonSharpBackingUdonBehaviour: {fileID: 1608179462864091097}
+  _udonSharpBackingUdonBehaviour: {fileID: 135705150631079284}
   properties: {fileID: 0}
   waterSprayParticlePool: {fileID: 0}
   ownerStore: {fileID: 0}
   rb: {fileID: 1608179462864091099}
   mesh: {fileID: 1608179462864091109}
---- !u!114 &1608179462864091097
+  interactionMediator: {fileID: 0}
+--- !u!114 &135705150631079284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +159,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 3
+  _syncMethod: 2
   serializedProgramAsset: {fileID: 11400000, guid: 806ac592b81556c478a47738267369ef,
     type: 2}
   programSource: {fileID: 11400000, guid: 095d95c5888c25c4ca6d9c5f15ce7c8b, type: 2}
