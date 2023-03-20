@@ -1,0 +1,4620 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1126 &-9126928559289059532
+PackedAssets:
+  m_File: 5
+  m_ShortPath: 040ebc7a46b0ff9b511e2b1eabe5cce7.rgb
+  m_Overhead: 15280
+  m_Contents: []
+--- !u!1126 &-8942829887774661640
+PackedAssets:
+  m_File: 148
+  m_ShortPath: e8940e001c0b3b816cc807a1c3f26264.iws.neo
+  m_Overhead: 24472
+  m_Contents: []
+--- !u!1126 &-8930546669632631737
+PackedAssets:
+  m_File: 129
+  m_ShortPath: d9352aa3c65cb39ab8658006fb63368c.ecm
+  m_Overhead: 10568
+  m_Contents: []
+--- !u!1126 &-8908138343013181364
+PackedAssets:
+  m_File: 4
+  m_ShortPath: 040ebc7a46b0ff9b511e2b1eabe5cce7.iws.neo
+  m_Overhead: 6840
+  m_Contents: []
+--- !u!1126 &-8895405771117071521
+PackedAssets:
+  m_File: 110
+  m_ShortPath: ba8ac732de64bf0edb696d845916f5e9.caw
+  m_Overhead: 8532
+  m_Contents: []
+--- !u!1126 &-8847917410201557492
+PackedAssets:
+  m_File: 127
+  m_ShortPath: d60e6af3b6e2d1b4093860b085859f96.vis
+  m_Overhead: 16591
+  m_Contents: []
+--- !u!1126 &-8645787308744059962
+PackedAssets:
+  m_File: 78
+  m_ShortPath: 820e09c319f97290be785e938b0a8140.rsc.neo
+  m_Overhead: 195880
+  m_Contents: []
+--- !u!1126 &-8439149409547530789
+PackedAssets:
+  m_File: 141
+  m_ShortPath: e3c96a6badd302fd926dddde90bbb3e9.ecm
+  m_Overhead: 11656
+  m_Contents: []
+--- !u!1126 &-8293158961441200035
+PackedAssets:
+  m_File: 35
+  m_ShortPath: 510d04b2691d0e72e7cbf040631a1dfb.rgb
+  m_Overhead: 206160
+  m_Contents: []
+--- !u!1126 &-8241948508891861857
+PackedAssets:
+  m_File: 116
+  m_ShortPath: c21c962b0cbd1ff1d52195fd042abc20.caw
+  m_Overhead: 7394
+  m_Contents: []
+--- !u!1126 &-7969822358295539752
+PackedAssets:
+  m_File: 58
+  m_ShortPath: 6ea3212664e4ba9ce578bd60eeca61d9.iws.neo
+  m_Overhead: 30264
+  m_Contents: []
+--- !u!1126 &-7925785284177470545
+PackedAssets:
+  m_File: 20
+  m_ShortPath: 45871f0615f369e9a60cf8d850c1a3a4.caw
+  m_Overhead: 7294
+  m_Contents: []
+--- !u!1126 &-7112992059362456423
+PackedAssets:
+  m_File: 46
+  m_ShortPath: 600c8c2ba0c1e17ae698929a11a485b0.iws.neo
+  m_Overhead: 26376
+  m_Contents: []
+--- !u!1126 &-6917726286210291523
+PackedAssets:
+  m_File: 22
+  m_ShortPath: 45871f0615f369e9a60cf8d850c1a3a4.iws.neo
+  m_Overhead: 15880
+  m_Contents: []
+--- !u!1126 &-6888778688957625764
+PackedAssets:
+  m_File: 53
+  m_ShortPath: 6901cc19bd34b10077168def0e22060b.rgb
+  m_Overhead: 13360
+  m_Contents: []
+--- !u!1126 &-6659113068955011953
+PackedAssets:
+  m_File: 63
+  m_ShortPath: 6fbe16f219d914236abf4435c1c2a7d9.ecm
+  m_Overhead: 11144
+  m_Contents: []
+--- !u!1126 &-6581221219021717227
+PackedAssets:
+  m_File: 34
+  m_ShortPath: 510d04b2691d0e72e7cbf040631a1dfb.iws.neo
+  m_Overhead: 1732472
+  m_Contents: []
+--- !u!1126 &-6446743268788532559
+PackedAssets:
+  m_File: 67
+  m_ShortPath: 6fbe16f219d914236abf4435c1c2a7d9.vis
+  m_Overhead: 18335
+  m_Contents: []
+--- !u!1126 &-6390131396647816273
+PackedAssets:
+  m_File: 41
+  m_ShortPath: 55af6f6e3dd2e0f24b974a632ed0943d.rgb
+  m_Overhead: 12336
+  m_Contents: []
+--- !u!1126 &-6294074458375461611
+PackedAssets:
+  m_File: 101
+  m_ShortPath: a744f7d7be09d09035e70069a84e61ea.rgb
+  m_Overhead: 9904
+  m_Contents: []
+--- !u!1126 &-6234059085356948965
+PackedAssets:
+  m_File: 56
+  m_ShortPath: 6ea3212664e4ba9ce578bd60eeca61d9.caw
+  m_Overhead: 11832
+  m_Contents: []
+--- !u!1126 &-6064924927961843701
+PackedAssets:
+  m_File: 151
+  m_ShortPath: e8940e001c0b3b816cc807a1c3f26264.vis
+  m_Overhead: 15332
+  m_Contents: []
+--- !u!1126 &-5830617587847192289
+PackedAssets:
+  m_File: 2
+  m_ShortPath: 040ebc7a46b0ff9b511e2b1eabe5cce7.caw
+  m_Overhead: 4974
+  m_Contents: []
+--- !u!1126 &-5828882476326401551
+PackedAssets:
+  m_File: 14
+  m_ShortPath: 40d015d7f6bee0078c1f26d34fed87a2.caw
+  m_Overhead: 6462
+  m_Contents: []
+--- !u!1126 &-5765664606591095755
+PackedAssets:
+  m_File: 49
+  m_ShortPath: 600c8c2ba0c1e17ae698929a11a485b0.vis
+  m_Overhead: 15272
+  m_Contents: []
+--- !u!1126 &-5682940898805447889
+PackedAssets:
+  m_File: 95
+  m_ShortPath: a550149d09709cebbddc59ade4ad87f0.rgb
+  m_Overhead: 10864
+  m_Contents: []
+--- !u!1126 &-5656058779684600875
+PackedAssets:
+  m_File: 121
+  m_ShortPath: c21c962b0cbd1ff1d52195fd042abc20.vis
+  m_Overhead: 11347
+  m_Contents: []
+--- !u!1126 &-5649842939529427878
+PackedAssets:
+  m_File: 130
+  m_ShortPath: d9352aa3c65cb39ab8658006fb63368c.iws.neo
+  m_Overhead: 27544
+  m_Contents: []
+--- !u!1126 &-5633517654570299747
+PackedAssets:
+  m_File: 125
+  m_ShortPath: d60e6af3b6e2d1b4093860b085859f96.rgb
+  m_Overhead: 10800
+  m_Contents: []
+--- !u!1126 &-5623291989520786411
+PackedAssets:
+  m_File: 44
+  m_ShortPath: 600c8c2ba0c1e17ae698929a11a485b0.caw
+  m_Overhead: 10596
+  m_Contents: []
+--- !u!1126 &-5468853990618115274
+PackedAssets:
+  m_File: 76
+  m_ShortPath: 820e09c319f97290be785e938b0a8140.iws.neo
+  m_Overhead: 4136
+  m_Contents: []
+--- !u!1126 &-5461356167966148690
+PackedAssets:
+  m_File: 118
+  m_ShortPath: c21c962b0cbd1ff1d52195fd042abc20.iws.neo
+  m_Overhead: 13944
+  m_Contents: []
+--- !u!1126 &-5316017343463992038
+PackedAssets:
+  m_File: 133
+  m_ShortPath: d9352aa3c65cb39ab8658006fb63368c.vis
+  m_Overhead: 16221
+  m_Contents: []
+--- !u!1126 &-5313666206392052829
+PackedAssets:
+  m_File: 70
+  m_ShortPath: 726985c6d7b9e81a386d4a7b8b44e59a.iws.neo
+  m_Overhead: 10440
+  m_Contents: []
+--- !u!1126 &-5285280744383825841
+PackedAssets:
+  m_File: 29
+  m_ShortPath: 49ee8d27739288282d437239bc583ff3.rgb
+  m_Overhead: 10800
+  m_Contents: []
+--- !u!1126 &-5224503894769114697
+PackedAssets:
+  m_File: 123
+  m_ShortPath: d60e6af3b6e2d1b4093860b085859f96.ecm
+  m_Overhead: 10760
+  m_Contents: []
+--- !u!1126 &-5210555091840413698
+PackedAssets:
+  m_File: 135
+  m_ShortPath: e063f52ab712544ee98da253cf54f7d1.ecm
+  m_Overhead: 8008
+  m_Contents: []
+--- !u!1126 &-5174385736713160312
+PackedAssets:
+  m_File: 30
+  m_ShortPath: 49ee8d27739288282d437239bc583ff3.rsc.neo
+  m_Overhead: 248504
+  m_Contents: []
+--- !u!1126 &-4641439851909841176
+PackedAssets:
+  m_File: 145
+  m_ShortPath: e3c96a6badd302fd926dddde90bbb3e9.vis
+  m_Overhead: 8417
+  m_Contents: []
+--- !u!1126 &-4500476012942572536
+PackedAssets:
+  m_File: 143
+  m_ShortPath: e3c96a6badd302fd926dddde90bbb3e9.rgb
+  m_Overhead: 11696
+  m_Contents: []
+--- !u!1126 &-4135181642492091143
+PackedAssets:
+  m_File: 72
+  m_ShortPath: 726985c6d7b9e81a386d4a7b8b44e59a.rsc.neo
+  m_Overhead: 171544
+  m_Contents: []
+--- !u!1126 &-4061046973407458222
+PackedAssets:
+  m_File: 31
+  m_ShortPath: 49ee8d27739288282d437239bc583ff3.vis
+  m_Overhead: 15171
+  m_Contents: []
+--- !u!1126 &-3892376095716340259
+PackedAssets:
+  m_File: 136
+  m_ShortPath: e063f52ab712544ee98da253cf54f7d1.iws.neo
+  m_Overhead: 13192
+  m_Contents: []
+--- !u!1126 &-3764844701496571090
+PackedAssets:
+  m_File: 8
+  m_ShortPath: 2f0cec9f51abfa3f696967746f59bc29.caw
+  m_Overhead: 6578
+  m_Contents: []
+--- !u!1126 &-3647027522988275629
+PackedAssets:
+  m_File: 57
+  m_ShortPath: 6ea3212664e4ba9ce578bd60eeca61d9.ecm
+  m_Overhead: 13320
+  m_Contents: []
+--- !u!1126 &-3348785539905213730
+PackedAssets:
+  m_File: 111
+  m_ShortPath: ba8ac732de64bf0edb696d845916f5e9.ecm
+  m_Overhead: 11528
+  m_Contents: []
+--- !u!668709126 &-3321237050637625598
+BuiltAssetBundleInfoSet:
+  bundleInfos:
+  - bundleName: scene-android-scene.vrcw
+    bundleArchiveFile: 152
+    packagedFileIndices: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f0000009000000091000000920000009300000094000000950000009600000097000000
+  - bundleName: GrapplingHookDemo
+    bundleArchiveFile: 155
+    packagedFileIndices: 9a000000
+--- !u!1126 &-3265700074679507015
+PackedAssets:
+  m_File: 144
+  m_ShortPath: e3c96a6badd302fd926dddde90bbb3e9.rsc.neo
+  m_Overhead: 237864
+  m_Contents: []
+--- !u!1126 &-3224822277461522379
+PackedAssets:
+  m_File: 15
+  m_ShortPath: 40d015d7f6bee0078c1f26d34fed87a2.ecm
+  m_Overhead: 11240
+  m_Contents: []
+--- !u!1126 &-3205490742597953161
+PackedAssets:
+  m_File: 102
+  m_ShortPath: a744f7d7be09d09035e70069a84e61ea.rsc.neo
+  m_Overhead: 230760
+  m_Contents: []
+--- !u!382020655 &-2790209911225458433
+PluginBuildInfo:
+  m_RuntimePlugins:
+  - Unity.Burst.Unsafe
+  - VRC.SDK3.Dynamics.PhysBone
+  - YamlDotNet
+  - WatsonTcp
+  - System.Threading.Tasks.Extensions
+  - VRC.Udon.ClientBindings
+  - VRC.Udon.VRCWrapperModules
+  - VRCSDK3
+  - VRC.Udon.VM
+  - Serilog
+  - nunit.framework
+  - SemanticVersioning
+  - OVRPlugin
+  - librsync.net
+  - VRC.Udon.Common
+  - VRC.SDK3.Dynamics.Contact
+  - Collections.Pooled
+  - System.Collections.Immutable
+  - System.Numerics.Vectors
+  - System.Buffers
+  - VRC.Dynamics
+  - VRC.Udon.Wrapper
+  - Serilog.Sinks.File
+  - VRC.Udon.Security
+  - clipper_library
+  - VRC.Collections
+  - VRCSDKBase
+  - System.Runtime.CompilerServices.Unsafe
+  - Newtonsoft.Json
+  - Blake2Sharp
+  - System.Memory
+  - System.Text.Encoding.CodePages
+  - VRCCore-Editor
+  - VRC.Utility
+  - libAudioPluginOculusSpatializer
+  m_EditorPlugins:
+  - openvr_api
+  - VRCSDK3-Editor
+  - Microsoft.CodeAnalysis
+  - VRC.Udon.VRCTypeResolverModules
+  - portmidi
+  - AppleEventIntegration
+  - liblz4Plastic
+  - Unity.Plastic.Newtonsoft.Json
+  - unityplastic
+  - VRC.Udon.Compiler
+  - System.Reflection.Metadata
+  - AudioPluginOculusSpatializer
+  - Microsoft.CodeAnalysis.CSharp
+  - VRC.Udon.UAssembly
+  - vpm-core-lib
+  - VRC.Udon.Graph
+  - UnityEditor.VR
+  - 0Harmony
+  - VRC.SDK3.Dynamics.PhysBone.Editor
+  - VRCSDKBase-Editor
+  - VRC.SDK3.Dynamics.Contact.Editor
+  - VRC.Udon.VRCGraphModules
+  - log4netPlastic
+  - VRC.Udon.EditorBindings
+  - libopenvr_api
+  - zlib64Plastic
+  - Unity.Plastic.Antlr3.Runtime
+  - Serilog.Sinks.Unity3D
+  - lz4x64Plastic
+--- !u!1126 &-2716095908235777947
+PackedAssets:
+  m_File: 65
+  m_ShortPath: 6fbe16f219d914236abf4435c1c2a7d9.rgb
+  m_Overhead: 11184
+  m_Contents: []
+--- !u!1126 &-2570411622509200030
+PackedAssets:
+  m_File: 33
+  m_ShortPath: 510d04b2691d0e72e7cbf040631a1dfb.ecm
+  m_Overhead: 206120
+  m_Contents: []
+--- !u!1126 &-2116586067327332237
+PackedAssets:
+  m_File: 114
+  m_ShortPath: ba8ac732de64bf0edb696d845916f5e9.rsc.neo
+  m_Overhead: 214600
+  m_Contents: []
+--- !u!1126 &-2073683435877442999
+PackedAssets:
+  m_File: 108
+  m_ShortPath: af0b9f42d95987c7b1c665724292945e.rsc.neo
+  m_Overhead: 270936
+  m_Contents: []
+--- !u!1126 &-1715283676461357879
+PackedAssets:
+  m_File: 139
+  m_ShortPath: e063f52ab712544ee98da253cf54f7d1.vis
+  m_Overhead: 10517
+  m_Contents: []
+--- !u!1126 &-1682733567159985727
+PackedAssets:
+  m_File: 117
+  m_ShortPath: c21c962b0cbd1ff1d52195fd042abc20.ecm
+  m_Overhead: 12296
+  m_Contents: []
+--- !u!1126 &-1566197336374759177
+PackedAssets:
+  m_File: 19
+  m_ShortPath: 40d015d7f6bee0078c1f26d34fed87a2.vis
+  m_Overhead: 8676
+  m_Contents: []
+--- !u!1126 &-1545806332628580258
+PackedAssets:
+  m_File: 73
+  m_ShortPath: 726985c6d7b9e81a386d4a7b8b44e59a.vis
+  m_Overhead: 9320
+  m_Contents: []
+--- !u!1126 &-1361550147932455597
+PackedAssets:
+  m_File: 69
+  m_ShortPath: 726985c6d7b9e81a386d4a7b8b44e59a.ecm
+  m_Overhead: 9864
+  m_Contents: []
+--- !u!1126 &-1207452763223080442
+PackedAssets:
+  m_File: 42
+  m_ShortPath: 55af6f6e3dd2e0f24b974a632ed0943d.rsc.neo
+  m_Overhead: 263112
+  m_Contents: []
+--- !u!1126 &-1108294674570808488
+PackedAssets:
+  m_File: 119
+  m_ShortPath: c21c962b0cbd1ff1d52195fd042abc20.rgb
+  m_Overhead: 12336
+  m_Contents: []
+--- !u!1126 &-1083290537246859667
+PackedAssets:
+  m_File: 149
+  m_ShortPath: e8940e001c0b3b816cc807a1c3f26264.rgb
+  m_Overhead: 14384
+  m_Contents: []
+--- !u!1126 &-1058536025189219375
+PackedAssets:
+  m_File: 120
+  m_ShortPath: c21c962b0cbd1ff1d52195fd042abc20.rsc.neo
+  m_Overhead: 263032
+  m_Contents: []
+--- !u!1126 &-952101683724719574
+PackedAssets:
+  m_File: 140
+  m_ShortPath: e3c96a6badd302fd926dddde90bbb3e9.caw
+  m_Overhead: 5628
+  m_Contents: []
+--- !u!1126 &-862906635923036716
+PackedAssets:
+  m_File: 12
+  m_ShortPath: 2f0cec9f51abfa3f696967746f59bc29.rsc.neo
+  m_Overhead: 196984
+  m_Contents: []
+--- !u!1126 &-833789157223427432
+PackedAssets:
+  m_File: 107
+  m_ShortPath: af0b9f42d95987c7b1c665724292945e.rgb
+  m_Overhead: 10800
+  m_Contents: []
+--- !u!1126 &-777828920232515573
+PackedAssets:
+  m_File: 106
+  m_ShortPath: af0b9f42d95987c7b1c665724292945e.iws.neo
+  m_Overhead: 24664
+  m_Contents: []
+--- !u!1126 &-765136755577985577
+PackedAssets:
+  m_File: 38
+  m_ShortPath: 55af6f6e3dd2e0f24b974a632ed0943d.caw
+  m_Overhead: 7664
+  m_Contents: []
+--- !u!1126 &-699639973439927883
+PackedAssets:
+  m_File: 3
+  m_ShortPath: 040ebc7a46b0ff9b511e2b1eabe5cce7.ecm
+  m_Overhead: 15240
+  m_Contents: []
+--- !u!1126 &-309348694529452677
+PackedAssets:
+  m_File: 68
+  m_ShortPath: 726985c6d7b9e81a386d4a7b8b44e59a.caw
+  m_Overhead: 6390
+  m_Contents: []
+--- !u!1126 &-266048746324414947
+PackedAssets:
+  m_File: 17
+  m_ShortPath: 40d015d7f6bee0078c1f26d34fed87a2.rgb
+  m_Overhead: 11280
+  m_Contents: []
+--- !u!1126 &-258424020230468285
+PackedAssets:
+  m_File: 59
+  m_ShortPath: 6ea3212664e4ba9ce578bd60eeca61d9.rgb
+  m_Overhead: 13360
+  m_Contents: []
+--- !u!1125 &1
+BuildReport:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LastQuestBuild
+  m_Summary:
+    buildStartTime:
+      serializedVersion: 2
+      ticks: 638148305847423503
+    buildGUID: 00000000000000000000000000000000
+    platformName: Android
+    platformGroupName: Android
+    options: 16
+    assetBundleOptions: 32
+    outputPath: C:/Users/JACOBR~1/AppData/Local/Temp/DefaultCompany/GrapplingHookDemo/scene-android-scene.vrcw
+    crc: 418365947
+    totalSize: 13019166
+    totalTimeTicks: 1492700678
+    totalErrors: 1
+    totalWarnings: 10
+    buildType: 1
+    buildResult: 1
+  m_Files:
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/BuildPlayer-Scene
+    role: Scene
+    id: 0
+    totalSize: 14038764
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/BuildPlayer-Scene.sharedAssets
+    role: SharedAssets
+    id: 1
+    totalSize: 63077676
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/04/040ebc7a46b0ff9b511e2b1eabe5cce7.caw
+    role: StreamingResourceFile
+    id: 2
+    totalSize: 4974
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/04/040ebc7a46b0ff9b511e2b1eabe5cce7.ecm
+    role: StreamingResourceFile
+    id: 3
+    totalSize: 15240
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/04/040ebc7a46b0ff9b511e2b1eabe5cce7.iws.neo
+    role: StreamingResourceFile
+    id: 4
+    totalSize: 6840
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/04/040ebc7a46b0ff9b511e2b1eabe5cce7.rgb
+    role: StreamingResourceFile
+    id: 5
+    totalSize: 15280
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/04/040ebc7a46b0ff9b511e2b1eabe5cce7.rsc.neo
+    role: StreamingResourceFile
+    id: 6
+    totalSize: 271144
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/04/040ebc7a46b0ff9b511e2b1eabe5cce7.vis
+    role: StreamingResourceFile
+    id: 7
+    totalSize: 7209
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/2f/2f0cec9f51abfa3f696967746f59bc29.caw
+    role: StreamingResourceFile
+    id: 8
+    totalSize: 6578
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/2f/2f0cec9f51abfa3f696967746f59bc29.ecm
+    role: StreamingResourceFile
+    id: 9
+    totalSize: 10376
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/2f/2f0cec9f51abfa3f696967746f59bc29.iws.neo
+    role: StreamingResourceFile
+    id: 10
+    totalSize: 13960
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/2f/2f0cec9f51abfa3f696967746f59bc29.rgb
+    role: StreamingResourceFile
+    id: 11
+    totalSize: 10416
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/2f/2f0cec9f51abfa3f696967746f59bc29.rsc.neo
+    role: StreamingResourceFile
+    id: 12
+    totalSize: 196984
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/2f/2f0cec9f51abfa3f696967746f59bc29.vis
+    role: StreamingResourceFile
+    id: 13
+    totalSize: 10999
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/40/40d015d7f6bee0078c1f26d34fed87a2.caw
+    role: StreamingResourceFile
+    id: 14
+    totalSize: 6462
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/40/40d015d7f6bee0078c1f26d34fed87a2.ecm
+    role: StreamingResourceFile
+    id: 15
+    totalSize: 11240
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/40/40d015d7f6bee0078c1f26d34fed87a2.iws.neo
+    role: StreamingResourceFile
+    id: 16
+    totalSize: 10008
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/40/40d015d7f6bee0078c1f26d34fed87a2.rgb
+    role: StreamingResourceFile
+    id: 17
+    totalSize: 11280
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/40/40d015d7f6bee0078c1f26d34fed87a2.rsc.neo
+    role: StreamingResourceFile
+    id: 18
+    totalSize: 187560
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/40/40d015d7f6bee0078c1f26d34fed87a2.vis
+    role: StreamingResourceFile
+    id: 19
+    totalSize: 8676
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/45/45871f0615f369e9a60cf8d850c1a3a4.caw
+    role: StreamingResourceFile
+    id: 20
+    totalSize: 7294
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/45/45871f0615f369e9a60cf8d850c1a3a4.ecm
+    role: StreamingResourceFile
+    id: 21
+    totalSize: 11528
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/45/45871f0615f369e9a60cf8d850c1a3a4.iws.neo
+    role: StreamingResourceFile
+    id: 22
+    totalSize: 15880
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/45/45871f0615f369e9a60cf8d850c1a3a4.rgb
+    role: StreamingResourceFile
+    id: 23
+    totalSize: 11568
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/45/45871f0615f369e9a60cf8d850c1a3a4.rsc.neo
+    role: StreamingResourceFile
+    id: 24
+    totalSize: 167784
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/45/45871f0615f369e9a60cf8d850c1a3a4.vis
+    role: StreamingResourceFile
+    id: 25
+    totalSize: 12435
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/49/49ee8d27739288282d437239bc583ff3.caw
+    role: StreamingResourceFile
+    id: 26
+    totalSize: 10390
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/49/49ee8d27739288282d437239bc583ff3.ecm
+    role: StreamingResourceFile
+    id: 27
+    totalSize: 10760
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/49/49ee8d27739288282d437239bc583ff3.iws.neo
+    role: StreamingResourceFile
+    id: 28
+    totalSize: 24440
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/49/49ee8d27739288282d437239bc583ff3.rgb
+    role: StreamingResourceFile
+    id: 29
+    totalSize: 10800
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/49/49ee8d27739288282d437239bc583ff3.rsc.neo
+    role: StreamingResourceFile
+    id: 30
+    totalSize: 248504
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/49/49ee8d27739288282d437239bc583ff3.vis
+    role: StreamingResourceFile
+    id: 31
+    totalSize: 15171
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/51/510d04b2691d0e72e7cbf040631a1dfb.caw
+    role: StreamingResourceFile
+    id: 32
+    totalSize: 530056
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/51/510d04b2691d0e72e7cbf040631a1dfb.ecm
+    role: StreamingResourceFile
+    id: 33
+    totalSize: 206120
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/51/510d04b2691d0e72e7cbf040631a1dfb.iws.neo
+    role: StreamingResourceFile
+    id: 34
+    totalSize: 1732472
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/51/510d04b2691d0e72e7cbf040631a1dfb.rgb
+    role: StreamingResourceFile
+    id: 35
+    totalSize: 206160
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/51/510d04b2691d0e72e7cbf040631a1dfb.rsc.neo
+    role: StreamingResourceFile
+    id: 36
+    totalSize: 5618488
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/51/510d04b2691d0e72e7cbf040631a1dfb.vis
+    role: StreamingResourceFile
+    id: 37
+    totalSize: 309450
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/55/55af6f6e3dd2e0f24b974a632ed0943d.caw
+    role: StreamingResourceFile
+    id: 38
+    totalSize: 7664
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/55/55af6f6e3dd2e0f24b974a632ed0943d.ecm
+    role: StreamingResourceFile
+    id: 39
+    totalSize: 12296
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/55/55af6f6e3dd2e0f24b974a632ed0943d.iws.neo
+    role: StreamingResourceFile
+    id: 40
+    totalSize: 15128
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/55/55af6f6e3dd2e0f24b974a632ed0943d.rgb
+    role: StreamingResourceFile
+    id: 41
+    totalSize: 12336
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/55/55af6f6e3dd2e0f24b974a632ed0943d.rsc.neo
+    role: StreamingResourceFile
+    id: 42
+    totalSize: 263112
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/55/55af6f6e3dd2e0f24b974a632ed0943d.vis
+    role: StreamingResourceFile
+    id: 43
+    totalSize: 11254
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/60/600c8c2ba0c1e17ae698929a11a485b0.caw
+    role: StreamingResourceFile
+    id: 44
+    totalSize: 10596
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/60/600c8c2ba0c1e17ae698929a11a485b0.ecm
+    role: StreamingResourceFile
+    id: 45
+    totalSize: 9864
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/60/600c8c2ba0c1e17ae698929a11a485b0.iws.neo
+    role: StreamingResourceFile
+    id: 46
+    totalSize: 26376
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/60/600c8c2ba0c1e17ae698929a11a485b0.rgb
+    role: StreamingResourceFile
+    id: 47
+    totalSize: 9904
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/60/600c8c2ba0c1e17ae698929a11a485b0.rsc.neo
+    role: StreamingResourceFile
+    id: 48
+    totalSize: 204520
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/60/600c8c2ba0c1e17ae698929a11a485b0.vis
+    role: StreamingResourceFile
+    id: 49
+    totalSize: 15272
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/69/6901cc19bd34b10077168def0e22060b.caw
+    role: StreamingResourceFile
+    id: 50
+    totalSize: 11344
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/69/6901cc19bd34b10077168def0e22060b.ecm
+    role: StreamingResourceFile
+    id: 51
+    totalSize: 13320
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/69/6901cc19bd34b10077168def0e22060b.iws.neo
+    role: StreamingResourceFile
+    id: 52
+    totalSize: 29656
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/69/6901cc19bd34b10077168def0e22060b.rgb
+    role: StreamingResourceFile
+    id: 53
+    totalSize: 13360
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/69/6901cc19bd34b10077168def0e22060b.rsc.neo
+    role: StreamingResourceFile
+    id: 54
+    totalSize: 261256
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/69/6901cc19bd34b10077168def0e22060b.vis
+    role: StreamingResourceFile
+    id: 55
+    totalSize: 16485
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6e/6ea3212664e4ba9ce578bd60eeca61d9.caw
+    role: StreamingResourceFile
+    id: 56
+    totalSize: 11832
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6e/6ea3212664e4ba9ce578bd60eeca61d9.ecm
+    role: StreamingResourceFile
+    id: 57
+    totalSize: 13320
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6e/6ea3212664e4ba9ce578bd60eeca61d9.iws.neo
+    role: StreamingResourceFile
+    id: 58
+    totalSize: 30264
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6e/6ea3212664e4ba9ce578bd60eeca61d9.rgb
+    role: StreamingResourceFile
+    id: 59
+    totalSize: 13360
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6e/6ea3212664e4ba9ce578bd60eeca61d9.rsc.neo
+    role: StreamingResourceFile
+    id: 60
+    totalSize: 269688
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6e/6ea3212664e4ba9ce578bd60eeca61d9.vis
+    role: StreamingResourceFile
+    id: 61
+    totalSize: 16493
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6f/6fbe16f219d914236abf4435c1c2a7d9.caw
+    role: StreamingResourceFile
+    id: 62
+    totalSize: 12306
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6f/6fbe16f219d914236abf4435c1c2a7d9.ecm
+    role: StreamingResourceFile
+    id: 63
+    totalSize: 11144
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6f/6fbe16f219d914236abf4435c1c2a7d9.iws.neo
+    role: StreamingResourceFile
+    id: 64
+    totalSize: 30504
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6f/6fbe16f219d914236abf4435c1c2a7d9.rgb
+    role: StreamingResourceFile
+    id: 65
+    totalSize: 11184
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6f/6fbe16f219d914236abf4435c1c2a7d9.rsc.neo
+    role: StreamingResourceFile
+    id: 66
+    totalSize: 244136
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/6f/6fbe16f219d914236abf4435c1c2a7d9.vis
+    role: StreamingResourceFile
+    id: 67
+    totalSize: 18335
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/72/726985c6d7b9e81a386d4a7b8b44e59a.caw
+    role: StreamingResourceFile
+    id: 68
+    totalSize: 6390
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/72/726985c6d7b9e81a386d4a7b8b44e59a.ecm
+    role: StreamingResourceFile
+    id: 69
+    totalSize: 9864
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/72/726985c6d7b9e81a386d4a7b8b44e59a.iws.neo
+    role: StreamingResourceFile
+    id: 70
+    totalSize: 10440
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/72/726985c6d7b9e81a386d4a7b8b44e59a.rgb
+    role: StreamingResourceFile
+    id: 71
+    totalSize: 9904
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/72/726985c6d7b9e81a386d4a7b8b44e59a.rsc.neo
+    role: StreamingResourceFile
+    id: 72
+    totalSize: 171544
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/72/726985c6d7b9e81a386d4a7b8b44e59a.vis
+    role: StreamingResourceFile
+    id: 73
+    totalSize: 9320
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/82/820e09c319f97290be785e938b0a8140.caw
+    role: StreamingResourceFile
+    id: 74
+    totalSize: 3474
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/82/820e09c319f97290be785e938b0a8140.ecm
+    role: StreamingResourceFile
+    id: 75
+    totalSize: 11240
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/82/820e09c319f97290be785e938b0a8140.iws.neo
+    role: StreamingResourceFile
+    id: 76
+    totalSize: 4136
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/82/820e09c319f97290be785e938b0a8140.rgb
+    role: StreamingResourceFile
+    id: 77
+    totalSize: 11280
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/82/820e09c319f97290be785e938b0a8140.rsc.neo
+    role: StreamingResourceFile
+    id: 78
+    totalSize: 195880
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/82/820e09c319f97290be785e938b0a8140.vis
+    role: StreamingResourceFile
+    id: 79
+    totalSize: 5732
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/90/9039e3cfcdcc836aabb8b1bcddb915eb.caw
+    role: StreamingResourceFile
+    id: 80
+    totalSize: 7920
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/90/9039e3cfcdcc836aabb8b1bcddb915eb.ecm
+    role: StreamingResourceFile
+    id: 81
+    totalSize: 13448
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/90/9039e3cfcdcc836aabb8b1bcddb915eb.iws.neo
+    role: StreamingResourceFile
+    id: 82
+    totalSize: 16664
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/90/9039e3cfcdcc836aabb8b1bcddb915eb.rgb
+    role: StreamingResourceFile
+    id: 83
+    totalSize: 13488
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/90/9039e3cfcdcc836aabb8b1bcddb915eb.rsc.neo
+    role: StreamingResourceFile
+    id: 84
+    totalSize: 276216
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/90/9039e3cfcdcc836aabb8b1bcddb915eb.vis
+    role: StreamingResourceFile
+    id: 85
+    totalSize: 12023
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/91/91a407b6733fa8353c6ac63ab6bfec96.caw
+    role: StreamingResourceFile
+    id: 86
+    totalSize: 10754
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/91/91a407b6733fa8353c6ac63ab6bfec96.ecm
+    role: StreamingResourceFile
+    id: 87
+    totalSize: 11624
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/91/91a407b6733fa8353c6ac63ab6bfec96.iws.neo
+    role: StreamingResourceFile
+    id: 88
+    totalSize: 28360
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/91/91a407b6733fa8353c6ac63ab6bfec96.rgb
+    role: StreamingResourceFile
+    id: 89
+    totalSize: 11664
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/91/91a407b6733fa8353c6ac63ab6bfec96.rsc.neo
+    role: StreamingResourceFile
+    id: 90
+    totalSize: 221064
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/91/91a407b6733fa8353c6ac63ab6bfec96.vis
+    role: StreamingResourceFile
+    id: 91
+    totalSize: 17845
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a5/a550149d09709cebbddc59ade4ad87f0.caw
+    role: StreamingResourceFile
+    id: 92
+    totalSize: 9074
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a5/a550149d09709cebbddc59ade4ad87f0.ecm
+    role: StreamingResourceFile
+    id: 93
+    totalSize: 10824
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a5/a550149d09709cebbddc59ade4ad87f0.iws.neo
+    role: StreamingResourceFile
+    id: 94
+    totalSize: 20376
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a5/a550149d09709cebbddc59ade4ad87f0.rgb
+    role: StreamingResourceFile
+    id: 95
+    totalSize: 10864
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a5/a550149d09709cebbddc59ade4ad87f0.rsc.neo
+    role: StreamingResourceFile
+    id: 96
+    totalSize: 215048
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a5/a550149d09709cebbddc59ade4ad87f0.vis
+    role: StreamingResourceFile
+    id: 97
+    totalSize: 13537
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a7/a744f7d7be09d09035e70069a84e61ea.caw
+    role: StreamingResourceFile
+    id: 98
+    totalSize: 6542
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a7/a744f7d7be09d09035e70069a84e61ea.ecm
+    role: StreamingResourceFile
+    id: 99
+    totalSize: 9864
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a7/a744f7d7be09d09035e70069a84e61ea.iws.neo
+    role: StreamingResourceFile
+    id: 100
+    totalSize: 15080
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a7/a744f7d7be09d09035e70069a84e61ea.rgb
+    role: StreamingResourceFile
+    id: 101
+    totalSize: 9904
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a7/a744f7d7be09d09035e70069a84e61ea.rsc.neo
+    role: StreamingResourceFile
+    id: 102
+    totalSize: 230760
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/a7/a744f7d7be09d09035e70069a84e61ea.vis
+    role: StreamingResourceFile
+    id: 103
+    totalSize: 9914
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/af/af0b9f42d95987c7b1c665724292945e.caw
+    role: StreamingResourceFile
+    id: 104
+    totalSize: 10828
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/af/af0b9f42d95987c7b1c665724292945e.ecm
+    role: StreamingResourceFile
+    id: 105
+    totalSize: 10760
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/af/af0b9f42d95987c7b1c665724292945e.iws.neo
+    role: StreamingResourceFile
+    id: 106
+    totalSize: 24664
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/af/af0b9f42d95987c7b1c665724292945e.rgb
+    role: StreamingResourceFile
+    id: 107
+    totalSize: 10800
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/af/af0b9f42d95987c7b1c665724292945e.rsc.neo
+    role: StreamingResourceFile
+    id: 108
+    totalSize: 270936
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/af/af0b9f42d95987c7b1c665724292945e.vis
+    role: StreamingResourceFile
+    id: 109
+    totalSize: 15042
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/ba/ba8ac732de64bf0edb696d845916f5e9.caw
+    role: StreamingResourceFile
+    id: 110
+    totalSize: 8532
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/ba/ba8ac732de64bf0edb696d845916f5e9.ecm
+    role: StreamingResourceFile
+    id: 111
+    totalSize: 11528
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/ba/ba8ac732de64bf0edb696d845916f5e9.iws.neo
+    role: StreamingResourceFile
+    id: 112
+    totalSize: 19608
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/ba/ba8ac732de64bf0edb696d845916f5e9.rgb
+    role: StreamingResourceFile
+    id: 113
+    totalSize: 11568
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/ba/ba8ac732de64bf0edb696d845916f5e9.rsc.neo
+    role: StreamingResourceFile
+    id: 114
+    totalSize: 214600
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/ba/ba8ac732de64bf0edb696d845916f5e9.vis
+    role: StreamingResourceFile
+    id: 115
+    totalSize: 15414
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/c2/c21c962b0cbd1ff1d52195fd042abc20.caw
+    role: StreamingResourceFile
+    id: 116
+    totalSize: 7394
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/c2/c21c962b0cbd1ff1d52195fd042abc20.ecm
+    role: StreamingResourceFile
+    id: 117
+    totalSize: 12296
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/c2/c21c962b0cbd1ff1d52195fd042abc20.iws.neo
+    role: StreamingResourceFile
+    id: 118
+    totalSize: 13944
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/c2/c21c962b0cbd1ff1d52195fd042abc20.rgb
+    role: StreamingResourceFile
+    id: 119
+    totalSize: 12336
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/c2/c21c962b0cbd1ff1d52195fd042abc20.rsc.neo
+    role: StreamingResourceFile
+    id: 120
+    totalSize: 263032
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/c2/c21c962b0cbd1ff1d52195fd042abc20.vis
+    role: StreamingResourceFile
+    id: 121
+    totalSize: 11347
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d6/d60e6af3b6e2d1b4093860b085859f96.caw
+    role: StreamingResourceFile
+    id: 122
+    totalSize: 11718
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d6/d60e6af3b6e2d1b4093860b085859f96.ecm
+    role: StreamingResourceFile
+    id: 123
+    totalSize: 10760
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d6/d60e6af3b6e2d1b4093860b085859f96.iws.neo
+    role: StreamingResourceFile
+    id: 124
+    totalSize: 23656
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d6/d60e6af3b6e2d1b4093860b085859f96.rgb
+    role: StreamingResourceFile
+    id: 125
+    totalSize: 10800
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d6/d60e6af3b6e2d1b4093860b085859f96.rsc.neo
+    role: StreamingResourceFile
+    id: 126
+    totalSize: 217272
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d6/d60e6af3b6e2d1b4093860b085859f96.vis
+    role: StreamingResourceFile
+    id: 127
+    totalSize: 16591
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d9/d9352aa3c65cb39ab8658006fb63368c.caw
+    role: StreamingResourceFile
+    id: 128
+    totalSize: 10818
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d9/d9352aa3c65cb39ab8658006fb63368c.ecm
+    role: StreamingResourceFile
+    id: 129
+    totalSize: 10568
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d9/d9352aa3c65cb39ab8658006fb63368c.iws.neo
+    role: StreamingResourceFile
+    id: 130
+    totalSize: 27544
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d9/d9352aa3c65cb39ab8658006fb63368c.rgb
+    role: StreamingResourceFile
+    id: 131
+    totalSize: 10608
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d9/d9352aa3c65cb39ab8658006fb63368c.rsc.neo
+    role: StreamingResourceFile
+    id: 132
+    totalSize: 229624
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/d9/d9352aa3c65cb39ab8658006fb63368c.vis
+    role: StreamingResourceFile
+    id: 133
+    totalSize: 16221
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e0/e063f52ab712544ee98da253cf54f7d1.caw
+    role: StreamingResourceFile
+    id: 134
+    totalSize: 6686
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e0/e063f52ab712544ee98da253cf54f7d1.ecm
+    role: StreamingResourceFile
+    id: 135
+    totalSize: 8008
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e0/e063f52ab712544ee98da253cf54f7d1.iws.neo
+    role: StreamingResourceFile
+    id: 136
+    totalSize: 13192
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e0/e063f52ab712544ee98da253cf54f7d1.rgb
+    role: StreamingResourceFile
+    id: 137
+    totalSize: 8048
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e0/e063f52ab712544ee98da253cf54f7d1.rsc.neo
+    role: StreamingResourceFile
+    id: 138
+    totalSize: 155464
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e0/e063f52ab712544ee98da253cf54f7d1.vis
+    role: StreamingResourceFile
+    id: 139
+    totalSize: 10517
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e3/e3c96a6badd302fd926dddde90bbb3e9.caw
+    role: StreamingResourceFile
+    id: 140
+    totalSize: 5628
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e3/e3c96a6badd302fd926dddde90bbb3e9.ecm
+    role: StreamingResourceFile
+    id: 141
+    totalSize: 11656
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e3/e3c96a6badd302fd926dddde90bbb3e9.iws.neo
+    role: StreamingResourceFile
+    id: 142
+    totalSize: 12952
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e3/e3c96a6badd302fd926dddde90bbb3e9.rgb
+    role: StreamingResourceFile
+    id: 143
+    totalSize: 11696
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e3/e3c96a6badd302fd926dddde90bbb3e9.rsc.neo
+    role: StreamingResourceFile
+    id: 144
+    totalSize: 237864
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e3/e3c96a6badd302fd926dddde90bbb3e9.vis
+    role: StreamingResourceFile
+    id: 145
+    totalSize: 8417
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e8/e8940e001c0b3b816cc807a1c3f26264.caw
+    role: StreamingResourceFile
+    id: 146
+    totalSize: 10548
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e8/e8940e001c0b3b816cc807a1c3f26264.ecm
+    role: StreamingResourceFile
+    id: 147
+    totalSize: 14344
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e8/e8940e001c0b3b816cc807a1c3f26264.iws.neo
+    role: StreamingResourceFile
+    id: 148
+    totalSize: 24472
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e8/e8940e001c0b3b816cc807a1c3f26264.rgb
+    role: StreamingResourceFile
+    id: 149
+    totalSize: 14384
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e8/e8940e001c0b3b816cc807a1c3f26264.rsc.neo
+    role: StreamingResourceFile
+    id: 150
+    totalSize: 285864
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/GI/BuildPlayer-Scene/e8/e8940e001c0b3b816cc807a1c3f26264.vis
+    role: StreamingResourceFile
+    id: 151
+    totalSize: 15332
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw
+    role: AssetBundle
+    id: 152
+    totalSize: 13013701
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw.manifest
+    role: AssetBundleTextManifest
+    id: 153
+    totalSize: 4272
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo/CAB-f46e8ffc7624421a41a0a5443a36c071
+    role: ResourcesFile
+    id: 154
+    totalSize: 4292
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo
+    role: ManifestAssetBundle
+    id: 155
+    totalSize: 1041
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo.manifest
+    role: AssetBundleTextManifest
+    id: 156
+    totalSize: 152
+  m_BuildSteps:
+  - stepName: Build Asset Bundles
+    durationTicks: 1492700678
+    depth: 0
+    messages: []
+  - stepName: Calculate asset bundles to be built
+    durationTicks: 18060291
+    depth: 1
+    messages: []
+  - stepName: Compile scripts
+    durationTicks: 125977704
+    depth: 1
+    messages: []
+  - stepName: Build player
+    durationTicks: 1140285159
+    depth: 1
+    messages: []
+  - stepName: Prepare assets for target platform
+    durationTicks: 5238675
+    depth: 2
+    messages:
+    - type: 2
+      content: Warning! Using antialiasing on a mobile device may decrease performance
+        severely. You can change the mobile quality settings in 'Project Settings
+        -> Quality Settings'.
+    - type: 2
+      content: Warning! Using more than 1 pixel lights on a mobile device may decrease
+        performance severely. You can change the mobile quality settings in 'Project
+        Settings -> Quality Settings'.
+  - stepName: Building scenes
+    durationTicks: 629319365
+    depth: 2
+    messages: []
+  - stepName: Building scene Assets/Scene.unity
+    durationTicks: 629221018
+    depth: 3
+    messages:
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+    - type: 2
+      content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
+        did not match, updated storage type
+  - stepName: Writing asset files
+    durationTicks: 148737145
+    depth: 2
+    messages: []
+  - stepName: Packaging assets - archive:/BuildPlayer-Scene/BuildPlayer-Scene.sharedAssets
+    durationTicks: 148162488
+    depth: 3
+    messages:
+    - type: 3
+      content: HTTPFormUseage:UrlEncoded
+    - type: 0
+      content: 'Controller ''BoxIdleAC'': Transition '''' in state ''Idle'' uses
+        parameter ''playerEntered'' which does not exist in controller.'
+  - stepName: Creating compressed player package
+    durationTicks: 204214150
+    depth: 2
+    messages: []
+  - stepName: Postprocess built player
+    durationTicks: 158057
+    depth: 2
+    messages: []
+  m_Appendices:
+  - {fileID: -3321237050637625598}
+  - {fileID: 4543325239565331057}
+  - {fileID: -5830617587847192289}
+  - {fileID: -699639973439927883}
+  - {fileID: -8908138343013181364}
+  - {fileID: -9126928559289059532}
+  - {fileID: 5129926001656625213}
+  - {fileID: 8703934090981947936}
+  - {fileID: -3764844701496571090}
+  - {fileID: 8616582234028072212}
+  - {fileID: 4845231929944184228}
+  - {fileID: 7127033728721453231}
+  - {fileID: -862906635923036716}
+  - {fileID: 8279735918217409287}
+  - {fileID: -5828882476326401551}
+  - {fileID: -3224822277461522379}
+  - {fileID: 9212840071763054924}
+  - {fileID: -266048746324414947}
+  - {fileID: 4903269275960029170}
+  - {fileID: -1566197336374759177}
+  - {fileID: -7925785284177470545}
+  - {fileID: 7933116332038663277}
+  - {fileID: -6917726286210291523}
+  - {fileID: 7751711989062658260}
+  - {fileID: 1940023069052828818}
+  - {fileID: 6315408110822547687}
+  - {fileID: 552231863376238779}
+  - {fileID: 7254943627899084659}
+  - {fileID: 5774215442610638238}
+  - {fileID: -5285280744383825841}
+  - {fileID: -5174385736713160312}
+  - {fileID: -4061046973407458222}
+  - {fileID: 4655857200501663777}
+  - {fileID: -2570411622509200030}
+  - {fileID: -6581221219021717227}
+  - {fileID: -8293158961441200035}
+  - {fileID: 8713831696741175041}
+  - {fileID: 5020304149473438465}
+  - {fileID: -765136755577985577}
+  - {fileID: 65606994849953659}
+  - {fileID: 6483494774373244305}
+  - {fileID: -6390131396647816273}
+  - {fileID: -1207452763223080442}
+  - {fileID: 8381483009278583210}
+  - {fileID: -5623291989520786411}
+  - {fileID: 7580257662334413230}
+  - {fileID: -7112992059362456423}
+  - {fileID: 2789523248683073922}
+  - {fileID: 497542660263072051}
+  - {fileID: -5765664606591095755}
+  - {fileID: 5050917348675555811}
+  - {fileID: 7836460280149353503}
+  - {fileID: 2911942129803540974}
+  - {fileID: -6888778688957625764}
+  - {fileID: 7810217684338797889}
+  - {fileID: 8821035224196579850}
+  - {fileID: -6234059085356948965}
+  - {fileID: -3647027522988275629}
+  - {fileID: -7969822358295539752}
+  - {fileID: -258424020230468285}
+  - {fileID: 7678429465074485003}
+  - {fileID: 2676718921496643145}
+  - {fileID: 5487694093351539114}
+  - {fileID: -6659113068955011953}
+  - {fileID: 5156645800345400702}
+  - {fileID: -2716095908235777947}
+  - {fileID: 362624392880932523}
+  - {fileID: -6446743268788532559}
+  - {fileID: -309348694529452677}
+  - {fileID: -1361550147932455597}
+  - {fileID: -5313666206392052829}
+  - {fileID: 675777326763174496}
+  - {fileID: -4135181642492091143}
+  - {fileID: -1545806332628580258}
+  - {fileID: 1695137928896417211}
+  - {fileID: 7137704932053094152}
+  - {fileID: -5468853990618115274}
+  - {fileID: 8364795296156482015}
+  - {fileID: -8645787308744059962}
+  - {fileID: 2839562954643721464}
+  - {fileID: 4671530214826810276}
+  - {fileID: 6011212000158311869}
+  - {fileID: 8685985743421571449}
+  - {fileID: 5902335289783626451}
+  - {fileID: 302621601289275294}
+  - {fileID: 8752705751102656542}
+  - {fileID: 5759450370546510710}
+  - {fileID: 2555960443216524425}
+  - {fileID: 4344879179809574409}
+  - {fileID: 2344110183894647365}
+  - {fileID: 7459171547286331981}
+  - {fileID: 6208343314630853814}
+  - {fileID: 4821706416408427829}
+  - {fileID: 5473483663198606706}
+  - {fileID: 7598861862283926601}
+  - {fileID: -5682940898805447889}
+  - {fileID: 1113513333527259078}
+  - {fileID: 5427474712220024487}
+  - {fileID: 2030356717323656192}
+  - {fileID: 1354241775646764967}
+  - {fileID: 2262834993366275572}
+  - {fileID: -6294074458375461611}
+  - {fileID: -3205490742597953161}
+  - {fileID: 7412794977508888302}
+  - {fileID: 6564793312621732101}
+  - {fileID: 6646473815785734886}
+  - {fileID: -777828920232515573}
+  - {fileID: -833789157223427432}
+  - {fileID: -2073683435877442999}
+  - {fileID: 728189012507248582}
+  - {fileID: -8895405771117071521}
+  - {fileID: -3348785539905213730}
+  - {fileID: 688497592348300816}
+  - {fileID: 126740504303501698}
+  - {fileID: -2116586067327332237}
+  - {fileID: 2579987651280541178}
+  - {fileID: -8241948508891861857}
+  - {fileID: -1682733567159985727}
+  - {fileID: -5461356167966148690}
+  - {fileID: -1108294674570808488}
+  - {fileID: -1058536025189219375}
+  - {fileID: -5656058779684600875}
+  - {fileID: 4179235305162185184}
+  - {fileID: -5224503894769114697}
+  - {fileID: 8656598280548294808}
+  - {fileID: -5633517654570299747}
+  - {fileID: 8710366097630659100}
+  - {fileID: -8847917410201557492}
+  - {fileID: 2173644218232602447}
+  - {fileID: -8930546669632631737}
+  - {fileID: -5649842939529427878}
+  - {fileID: 1379096738289572980}
+  - {fileID: 7781229559965340497}
+  - {fileID: -5316017343463992038}
+  - {fileID: 5179184483101883290}
+  - {fileID: -5210555091840413698}
+  - {fileID: -3892376095716340259}
+  - {fileID: 607745665061341270}
+  - {fileID: 2156853766556185922}
+  - {fileID: -1715283676461357879}
+  - {fileID: -952101683724719574}
+  - {fileID: -8439149409547530789}
+  - {fileID: 8718348177019508757}
+  - {fileID: -4500476012942572536}
+  - {fileID: -3265700074679507015}
+  - {fileID: -4641439851909841176}
+  - {fileID: 6917622598013174022}
+  - {fileID: 3331481953429656707}
+  - {fileID: -8942829887774661640}
+  - {fileID: -1083290537246859667}
+  - {fileID: 772985143084672561}
+  - {fileID: -6064924927961843701}
+  - {fileID: -2790209911225458433}
+  - {fileID: 6745080123055602307}
+  - {fileID: 7406840314221274774}
+--- !u!1126 &65606994849953659
+PackedAssets:
+  m_File: 39
+  m_ShortPath: 55af6f6e3dd2e0f24b974a632ed0943d.ecm
+  m_Overhead: 12296
+  m_Contents: []
+--- !u!1126 &126740504303501698
+PackedAssets:
+  m_File: 113
+  m_ShortPath: ba8ac732de64bf0edb696d845916f5e9.rgb
+  m_Overhead: 11568
+  m_Contents: []
+--- !u!1126 &302621601289275294
+PackedAssets:
+  m_File: 84
+  m_ShortPath: 9039e3cfcdcc836aabb8b1bcddb915eb.rsc.neo
+  m_Overhead: 276216
+  m_Contents: []
+--- !u!1126 &362624392880932523
+PackedAssets:
+  m_File: 66
+  m_ShortPath: 6fbe16f219d914236abf4435c1c2a7d9.rsc.neo
+  m_Overhead: 244136
+  m_Contents: []
+--- !u!1126 &497542660263072051
+PackedAssets:
+  m_File: 48
+  m_ShortPath: 600c8c2ba0c1e17ae698929a11a485b0.rsc.neo
+  m_Overhead: 204520
+  m_Contents: []
+--- !u!1126 &552231863376238779
+PackedAssets:
+  m_File: 26
+  m_ShortPath: 49ee8d27739288282d437239bc583ff3.caw
+  m_Overhead: 10390
+  m_Contents: []
+--- !u!1126 &607745665061341270
+PackedAssets:
+  m_File: 137
+  m_ShortPath: e063f52ab712544ee98da253cf54f7d1.rgb
+  m_Overhead: 8048
+  m_Contents: []
+--- !u!1126 &675777326763174496
+PackedAssets:
+  m_File: 71
+  m_ShortPath: 726985c6d7b9e81a386d4a7b8b44e59a.rgb
+  m_Overhead: 9904
+  m_Contents: []
+--- !u!1126 &688497592348300816
+PackedAssets:
+  m_File: 112
+  m_ShortPath: ba8ac732de64bf0edb696d845916f5e9.iws.neo
+  m_Overhead: 19608
+  m_Contents: []
+--- !u!1126 &728189012507248582
+PackedAssets:
+  m_File: 109
+  m_ShortPath: af0b9f42d95987c7b1c665724292945e.vis
+  m_Overhead: 15042
+  m_Contents: []
+--- !u!1126 &772985143084672561
+PackedAssets:
+  m_File: 150
+  m_ShortPath: e8940e001c0b3b816cc807a1c3f26264.rsc.neo
+  m_Overhead: 285864
+  m_Contents: []
+--- !u!1126 &1113513333527259078
+PackedAssets:
+  m_File: 96
+  m_ShortPath: a550149d09709cebbddc59ade4ad87f0.rsc.neo
+  m_Overhead: 215048
+  m_Contents: []
+--- !u!1126 &1354241775646764967
+PackedAssets:
+  m_File: 99
+  m_ShortPath: a744f7d7be09d09035e70069a84e61ea.ecm
+  m_Overhead: 9864
+  m_Contents: []
+--- !u!1126 &1379096738289572980
+PackedAssets:
+  m_File: 131
+  m_ShortPath: d9352aa3c65cb39ab8658006fb63368c.rgb
+  m_Overhead: 10608
+  m_Contents: []
+--- !u!1126 &1695137928896417211
+PackedAssets:
+  m_File: 74
+  m_ShortPath: 820e09c319f97290be785e938b0a8140.caw
+  m_Overhead: 3474
+  m_Contents: []
+--- !u!1126 &1940023069052828818
+PackedAssets:
+  m_File: 24
+  m_ShortPath: 45871f0615f369e9a60cf8d850c1a3a4.rsc.neo
+  m_Overhead: 167784
+  m_Contents: []
+--- !u!1126 &2030356717323656192
+PackedAssets:
+  m_File: 98
+  m_ShortPath: a744f7d7be09d09035e70069a84e61ea.caw
+  m_Overhead: 6542
+  m_Contents: []
+--- !u!1126 &2156853766556185922
+PackedAssets:
+  m_File: 138
+  m_ShortPath: e063f52ab712544ee98da253cf54f7d1.rsc.neo
+  m_Overhead: 155464
+  m_Contents: []
+--- !u!1126 &2173644218232602447
+PackedAssets:
+  m_File: 128
+  m_ShortPath: d9352aa3c65cb39ab8658006fb63368c.caw
+  m_Overhead: 10818
+  m_Contents: []
+--- !u!1126 &2262834993366275572
+PackedAssets:
+  m_File: 100
+  m_ShortPath: a744f7d7be09d09035e70069a84e61ea.iws.neo
+  m_Overhead: 15080
+  m_Contents: []
+--- !u!1126 &2344110183894647365
+PackedAssets:
+  m_File: 89
+  m_ShortPath: 91a407b6733fa8353c6ac63ab6bfec96.rgb
+  m_Overhead: 11664
+  m_Contents: []
+--- !u!1126 &2555960443216524425
+PackedAssets:
+  m_File: 87
+  m_ShortPath: 91a407b6733fa8353c6ac63ab6bfec96.ecm
+  m_Overhead: 11624
+  m_Contents: []
+--- !u!1126 &2579987651280541178
+PackedAssets:
+  m_File: 115
+  m_ShortPath: ba8ac732de64bf0edb696d845916f5e9.vis
+  m_Overhead: 15414
+  m_Contents: []
+--- !u!1126 &2676718921496643145
+PackedAssets:
+  m_File: 61
+  m_ShortPath: 6ea3212664e4ba9ce578bd60eeca61d9.vis
+  m_Overhead: 16493
+  m_Contents: []
+--- !u!1126 &2789523248683073922
+PackedAssets:
+  m_File: 47
+  m_ShortPath: 600c8c2ba0c1e17ae698929a11a485b0.rgb
+  m_Overhead: 9904
+  m_Contents: []
+--- !u!1126 &2839562954643721464
+PackedAssets:
+  m_File: 79
+  m_ShortPath: 820e09c319f97290be785e938b0a8140.vis
+  m_Overhead: 5732
+  m_Contents: []
+--- !u!1126 &2911942129803540974
+PackedAssets:
+  m_File: 52
+  m_ShortPath: 6901cc19bd34b10077168def0e22060b.iws.neo
+  m_Overhead: 29656
+  m_Contents: []
+--- !u!1126 &3331481953429656707
+PackedAssets:
+  m_File: 147
+  m_ShortPath: e8940e001c0b3b816cc807a1c3f26264.ecm
+  m_Overhead: 14344
+  m_Contents: []
+--- !u!1126 &4179235305162185184
+PackedAssets:
+  m_File: 122
+  m_ShortPath: d60e6af3b6e2d1b4093860b085859f96.caw
+  m_Overhead: 11718
+  m_Contents: []
+--- !u!1126 &4344879179809574409
+PackedAssets:
+  m_File: 88
+  m_ShortPath: 91a407b6733fa8353c6ac63ab6bfec96.iws.neo
+  m_Overhead: 28360
+  m_Contents: []
+--- !u!1126 &4543325239565331057
+PackedAssets:
+  m_File: 1
+  m_ShortPath: BuildPlayer-Scene.sharedAssets
+  m_Overhead: 147628
+  m_Contents:
+  - fileID: 1
+    classID: 150
+    packedSize: 145
+    offset: 149504
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 2
+    classID: 142
+    packedSize: 128
+    offset: 149656
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 3
+    classID: 21
+    packedSize: 896
+    offset: 149784
+    sourceAssetGUID: 7371c16c32db24e4ca8f3ed6b1ed74c8
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/blasterC.fbx
+  - fileID: 4
+    classID: 21
+    packedSize: 892
+    offset: 150680
+    sourceAssetGUID: 7371c16c32db24e4ca8f3ed6b1ed74c8
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/blasterC.fbx
+  - fileID: 5
+    classID: 21
+    packedSize: 892
+    offset: 151576
+    sourceAssetGUID: 7274a8679a190eb4884a2775282894c8
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/tile_low.fbx
+  - fileID: 6
+    classID: 21
+    packedSize: 892
+    offset: 152472
+    sourceAssetGUID: 785e4a3e048945542aad2e20e95fee27
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_crossroad.fbx
+  - fileID: 7
+    classID: 21
+    packedSize: 892
+    offset: 153368
+    sourceAssetGUID: b2fc25e7d371f32468e017f80e50e8f5
+    buildTimeAssetPath: Assets/models/misc meshes/road_straight.fbx
+  - fileID: 8
+    classID: 21
+    packedSize: 892
+    offset: 154264
+    sourceAssetGUID: b7e623a48ae8279438eaecd2878a1ebe
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_end.fbx
+  - fileID: 9
+    classID: 21
+    packedSize: 888
+    offset: 155160
+    sourceAssetGUID: 785e4a3e048945542aad2e20e95fee27
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_crossroad.fbx
+  - fileID: 10
+    classID: 21
+    packedSize: 888
+    offset: 156048
+    sourceAssetGUID: b2fc25e7d371f32468e017f80e50e8f5
+    buildTimeAssetPath: Assets/models/misc meshes/road_straight.fbx
+  - fileID: 11
+    classID: 21
+    packedSize: 888
+    offset: 156936
+    sourceAssetGUID: b7e623a48ae8279438eaecd2878a1ebe
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_end.fbx
+  - fileID: 12
+    classID: 21
+    packedSize: 1756
+    offset: 157824
+    sourceAssetGUID: 1c234599346f0654699178572854b4e5
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
+      SDF.asset
+  - fileID: 13
+    classID: 21
+    packedSize: 888
+    offset: 159584
+    sourceAssetGUID: 7371c16c32db24e4ca8f3ed6b1ed74c8
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/blasterC.fbx
+  - fileID: 14
+    classID: 21
+    packedSize: 896
+    offset: 160472
+    sourceAssetGUID: 1b7409837284e2044a4ed65ffe63ad05
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingC.fbx
+  - fileID: 15
+    classID: 21
+    packedSize: 896
+    offset: 161368
+    sourceAssetGUID: 1d4ffa378a8142d4e83762597f8e274c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingB.fbx
+  - fileID: 16
+    classID: 21
+    packedSize: 896
+    offset: 162264
+    sourceAssetGUID: 3df8b1517c7d87b4ab951bc776824f2c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingG.fbx
+  - fileID: 17
+    classID: 21
+    packedSize: 896
+    offset: 163160
+    sourceAssetGUID: 55565bbe13e41d14091eb1ee3ca190f2
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperF.fbx
+  - fileID: 18
+    classID: 21
+    packedSize: 896
+    offset: 164056
+    sourceAssetGUID: 5962c44222d346542a5a44cc447717f3
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperD.fbx
+  - fileID: 19
+    classID: 21
+    packedSize: 896
+    offset: 164952
+    sourceAssetGUID: 732837a3d502e17449c6d35c7a6ba51f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingF.fbx
+  - fileID: 20
+    classID: 21
+    packedSize: 896
+    offset: 165848
+    sourceAssetGUID: 9bfd39fd4f6fa9c468d26a62e0bb112a
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperE.fbx
+  - fileID: 21
+    classID: 21
+    packedSize: 896
+    offset: 166744
+    sourceAssetGUID: ac31cbce94927ac4abecb050ad83649f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/low_buildingC.fbx
+  - fileID: 22
+    classID: 21
+    packedSize: 896
+    offset: 167640
+    sourceAssetGUID: b8e20286ec32de148994272d67481c44
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingA.fbx
+  - fileID: 23
+    classID: 21
+    packedSize: 896
+    offset: 168536
+    sourceAssetGUID: cc4a07988842c4d41bb017fed970b0fe
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingA.fbx
+  - fileID: 24
+    classID: 21
+    packedSize: 896
+    offset: 169432
+    sourceAssetGUID: cf18bdd2b8fc6a14c81543426c658791
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/low_buildingN.fbx
+  - fileID: 25
+    classID: 21
+    packedSize: 896
+    offset: 170328
+    sourceAssetGUID: f1e42097b70d9c84094a7992d66e1dc9
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingB.fbx
+  - fileID: 26
+    classID: 21
+    packedSize: 892
+    offset: 171224
+    sourceAssetGUID: 1b7409837284e2044a4ed65ffe63ad05
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingC.fbx
+  - fileID: 27
+    classID: 21
+    packedSize: 892
+    offset: 172120
+    sourceAssetGUID: 1d4ffa378a8142d4e83762597f8e274c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingB.fbx
+  - fileID: 28
+    classID: 21
+    packedSize: 892
+    offset: 173016
+    sourceAssetGUID: 3df8b1517c7d87b4ab951bc776824f2c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingG.fbx
+  - fileID: 29
+    classID: 21
+    packedSize: 892
+    offset: 173912
+    sourceAssetGUID: 55565bbe13e41d14091eb1ee3ca190f2
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperF.fbx
+  - fileID: 30
+    classID: 21
+    packedSize: 892
+    offset: 174808
+    sourceAssetGUID: 5962c44222d346542a5a44cc447717f3
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperD.fbx
+  - fileID: 31
+    classID: 21
+    packedSize: 892
+    offset: 175704
+    sourceAssetGUID: 732837a3d502e17449c6d35c7a6ba51f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingF.fbx
+  - fileID: 32
+    classID: 21
+    packedSize: 892
+    offset: 176600
+    sourceAssetGUID: 9bfd39fd4f6fa9c468d26a62e0bb112a
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperE.fbx
+  - fileID: 33
+    classID: 21
+    packedSize: 892
+    offset: 177496
+    sourceAssetGUID: ac31cbce94927ac4abecb050ad83649f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/low_buildingC.fbx
+  - fileID: 34
+    classID: 21
+    packedSize: 892
+    offset: 178392
+    sourceAssetGUID: b8e20286ec32de148994272d67481c44
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingA.fbx
+  - fileID: 35
+    classID: 21
+    packedSize: 892
+    offset: 179288
+    sourceAssetGUID: cc4a07988842c4d41bb017fed970b0fe
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingA.fbx
+  - fileID: 36
+    classID: 21
+    packedSize: 892
+    offset: 180184
+    sourceAssetGUID: cf18bdd2b8fc6a14c81543426c658791
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/low_buildingN.fbx
+  - fileID: 37
+    classID: 21
+    packedSize: 892
+    offset: 181080
+    sourceAssetGUID: f1e42097b70d9c84094a7992d66e1dc9
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingB.fbx
+  - fileID: 38
+    classID: 21
+    packedSize: 1052
+    offset: 181976
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 39
+    classID: 21
+    packedSize: 252
+    offset: 183032
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 40
+    classID: 21
+    packedSize: 660
+    offset: 183288
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 41
+    classID: 21
+    packedSize: 972
+    offset: 183952
+    sourceAssetGUID: 88cff8156d6c6864a8366c10b7f30b02
+    buildTimeAssetPath: Assets/materials/Shell Smoke.mat
+  - fileID: 42
+    classID: 21
+    packedSize: 960
+    offset: 184928
+    sourceAssetGUID: a58f5e46e3244d84f89a8162701c7f29
+    buildTimeAssetPath: Assets/materials/Water Particle Material.mat
+  - fileID: 43
+    classID: 21
+    packedSize: 940
+    offset: 185888
+    sourceAssetGUID: 34ffbd6c62565e646a8ed5d14f54c558
+    buildTimeAssetPath: Assets/materials/test.mat
+  - fileID: 44
+    classID: 21
+    packedSize: 904
+    offset: 186832
+    sourceAssetGUID: e941d0d6425697b499256f89933a0df2
+    buildTimeAssetPath: Assets/models/AurynSky/Rockets Missiles and Bombs/Materials/RocketsPalletteRed.mat
+  - fileID: 45
+    classID: 21
+    packedSize: 960
+    offset: 187736
+    sourceAssetGUID: 9cbdac3088fceec40bde6d0619e2ebda
+    buildTimeAssetPath: Assets/models/LowPolyRoadPack/Materials/Road.mat
+  - fileID: 46
+    classID: 21
+    packedSize: 912
+    offset: 188696
+    sourceAssetGUID: 3f6e773f4260ae14f907c9819b40b281
+    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Box_Of_Pandora.mat
+  - fileID: 47
+    classID: 21
+    packedSize: 592
+    offset: 189608
+    sourceAssetGUID: 566428f457572c249a5ec48d349f2488
+    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Dust_particles.mat
+  - fileID: 48
+    classID: 21
+    packedSize: 592
+    offset: 190200
+    sourceAssetGUID: f47e41e4ec1f46641a912dd7f8b381d9
+    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Stars_particles.mat
+  - fileID: 49
+    classID: 21
+    packedSize: 900
+    offset: 190792
+    sourceAssetGUID: 710e4b660b5be7243a65dcba43c58953
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/Wall.mat
+  - fileID: 50
+    classID: 21
+    packedSize: 900
+    offset: 191696
+    sourceAssetGUID: 3be9231021208864199d8bab6423be59
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b1-1.mat
+  - fileID: 51
+    classID: 21
+    packedSize: 924
+    offset: 192600
+    sourceAssetGUID: f632b1c8557e32d43bff941c3a868a84
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b1.mat
+  - fileID: 52
+    classID: 21
+    packedSize: 888
+    offset: 193528
+    sourceAssetGUID: 00d0da6cbf30c1440bce2c1a4dfea6bf
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b2-2.mat
+  - fileID: 53
+    classID: 21
+    packedSize: 924
+    offset: 194416
+    sourceAssetGUID: c0e5deab59a7c22429e6cf07ac305842
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b2.mat
+  - fileID: 54
+    classID: 21
+    packedSize: 888
+    offset: 195344
+    sourceAssetGUID: 0cc39ea3a36172d439a872bcdf8c3d60
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3-1.mat
+  - fileID: 55
+    classID: 21
+    packedSize: 888
+    offset: 196232
+    sourceAssetGUID: 1e2f5a37bec567c4fa4483c075b4b840
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3-2.mat
+  - fileID: 56
+    classID: 21
+    packedSize: 888
+    offset: 197120
+    sourceAssetGUID: 4e7c2a4e38ce4e7469ef981fa12cade0
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3.mat
+  - fileID: 57
+    classID: 21
+    packedSize: 888
+    offset: 198008
+    sourceAssetGUID: 16571a3bb7d80e3408d5bb613d38a483
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-1.mat
+  - fileID: 58
+    classID: 21
+    packedSize: 888
+    offset: 198896
+    sourceAssetGUID: 0e5d9e87db75fbb41be0cdc300f654e9
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-2.mat
+  - fileID: 59
+    classID: 21
+    packedSize: 888
+    offset: 199784
+    sourceAssetGUID: 08a700b757b21744089a6ed03a436030
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-3.mat
+  - fileID: 60
+    classID: 21
+    packedSize: 888
+    offset: 200672
+    sourceAssetGUID: c823db213c09c834b9291fa879c9e5eb
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4.mat
+  - fileID: 61
+    classID: 21
+    packedSize: 888
+    offset: 201560
+    sourceAssetGUID: a31446a010d7d694da579576b289bb89
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b5-1.mat
+  - fileID: 62
+    classID: 21
+    packedSize: 924
+    offset: 202448
+    sourceAssetGUID: f7d66f5a5cf854747a6809479c3564ec
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b5.mat
+  - fileID: 63
+    classID: 21
+    packedSize: 888
+    offset: 203376
+    sourceAssetGUID: 313045ffbb76988449f1faccd80570bb
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b6-1.mat
+  - fileID: 64
+    classID: 21
+    packedSize: 924
+    offset: 204264
+    sourceAssetGUID: 8d6a8ab164fd36340871beae26805e66
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b6.mat
+  - fileID: 65
+    classID: 21
+    packedSize: 888
+    offset: 205192
+    sourceAssetGUID: 9f723c8f07f957e4da495e12b2779ca0
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b7-1.mat
+  - fileID: 66
+    classID: 21
+    packedSize: 888
+    offset: 206080
+    sourceAssetGUID: 94b8ea75ad770ae4a8692954d7b3e565
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b7.mat
+  - fileID: 67
+    classID: 21
+    packedSize: 924
+    offset: 206968
+    sourceAssetGUID: 66b15b6002815bf439bc3dad5da76f33
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b8.mat
+  - fileID: 68
+    classID: 21
+    packedSize: 888
+    offset: 207896
+    sourceAssetGUID: 17213a5fcfb16cd4bb80c78d85dcc4bd
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b87.mat
+  - fileID: 69
+    classID: 21
+    packedSize: 900
+    offset: 208784
+    sourceAssetGUID: abaff2e6c6f61e248a1de0b7581c0ecd
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9-1.mat
+  - fileID: 70
+    classID: 21
+    packedSize: 888
+    offset: 209688
+    sourceAssetGUID: aea4367c3439bfa4cb701b038e72d72a
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9-2.mat
+  - fileID: 71
+    classID: 21
+    packedSize: 924
+    offset: 210576
+    sourceAssetGUID: 6642346c671ae614dad01dfbd7c930b8
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9.mat
+  - fileID: 72
+    classID: 21
+    packedSize: 888
+    offset: 211504
+    sourceAssetGUID: f76498cabe605b748892b96f1753f810
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1-1.mat
+  - fileID: 73
+    classID: 21
+    packedSize: 888
+    offset: 212392
+    sourceAssetGUID: c68a9e0db1f90234e967880f9b0ad825
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1-2.mat
+  - fileID: 74
+    classID: 21
+    packedSize: 888
+    offset: 213280
+    sourceAssetGUID: d286f3735a8867c4daf31227a0ce7d2e
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1.mat
+  - fileID: 75
+    classID: 21
+    packedSize: 900
+    offset: 214168
+    sourceAssetGUID: f423eed10fed2a74ca2db25968c54bc0
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p3.mat
+  - fileID: 76
+    classID: 21
+    packedSize: 888
+    offset: 215072
+    sourceAssetGUID: b51aeb17874a02c4d8ace7051fd050e7
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-1.mat
+  - fileID: 77
+    classID: 21
+    packedSize: 892
+    offset: 215960
+    sourceAssetGUID: 549d9539eea0bb14fa3041fe51ba4bb8
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-10.mat
+  - fileID: 78
+    classID: 21
+    packedSize: 904
+    offset: 216856
+    sourceAssetGUID: e44aca311f6aafa47a9367a0b39c956d
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-11.mat
+  - fileID: 79
+    classID: 21
+    packedSize: 892
+    offset: 217760
+    sourceAssetGUID: 2b62e5bee89dacf4f80cd407aa6e553b
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-12.mat
+  - fileID: 80
+    classID: 21
+    packedSize: 892
+    offset: 218656
+    sourceAssetGUID: 57e23a00bfd1fa44a9917a33042650be
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-13.mat
+  - fileID: 81
+    classID: 21
+    packedSize: 888
+    offset: 219552
+    sourceAssetGUID: f9e6b3c023cce864d9c32a5caca2d8bd
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-2.mat
+  - fileID: 82
+    classID: 21
+    packedSize: 888
+    offset: 220440
+    sourceAssetGUID: 67a869affe614cf458c166289ec5c0cc
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-3.mat
+  - fileID: 83
+    classID: 21
+    packedSize: 900
+    offset: 221328
+    sourceAssetGUID: 847a09f7e0fc78f498a9096ddf09cec5
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-4.mat
+  - fileID: 84
+    classID: 21
+    packedSize: 888
+    offset: 222232
+    sourceAssetGUID: 52738ad12e8939a4ca2bce867d8c29fa
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-5.mat
+  - fileID: 85
+    classID: 21
+    packedSize: 888
+    offset: 223120
+    sourceAssetGUID: 925de37b1535eb64eaf1db52d6a7e925
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-6.mat
+  - fileID: 86
+    classID: 21
+    packedSize: 888
+    offset: 224008
+    sourceAssetGUID: 78dedd9cc03606545b5e39e405717801
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-8.mat
+  - fileID: 87
+    classID: 21
+    packedSize: 888
+    offset: 224896
+    sourceAssetGUID: f50a3f765c712d244a86a6e1991d3097
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-9.mat
+  - fileID: 88
+    classID: 21
+    packedSize: 1252
+    offset: 225784
+    sourceAssetGUID: 811e34dd05bc98e43883e3544122fbf6
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Explosion Material.mat
+  - fileID: 89
+    classID: 21
+    packedSize: 896
+    offset: 227040
+    sourceAssetGUID: 8b50b365d11af2045b41d99fdf804a25
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 1.mat
+  - fileID: 90
+    classID: 21
+    packedSize: 896
+    offset: 227936
+    sourceAssetGUID: 24fdcd4da49638a4385b372b22211e45
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 2.mat
+  - fileID: 91
+    classID: 21
+    packedSize: 932
+    offset: 228832
+    sourceAssetGUID: 0597842b5883a4441a3a09271a3d7afc
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 3.mat
+  - fileID: 92
+    classID: 21
+    packedSize: 936
+    offset: 229768
+    sourceAssetGUID: 3d229e80c6fe24847a69d4f4d35cdc02
+    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/dark.mat
+  - fileID: 93
+    classID: 21
+    packedSize: 892
+    offset: 230704
+    sourceAssetGUID: de34c94c60272ea4f8246e81ee6e7701
+    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/metal.mat
+  - fileID: 94
+    classID: 21
+    packedSize: 928
+    offset: 231600
+    sourceAssetGUID: 8608c65c8d8774c4c96b8c64bbcd432c
+    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/yellow.mat
+  - fileID: 95
+    classID: 21
+    packedSize: 900
+    offset: 232528
+    sourceAssetGUID: 90619dff9df9dd644bc1b970b590b9d0
+    buildTimeAssetPath: Assets/scene prefabs/Tether/newTetherLine.mat
+  - fileID: 96
+    classID: 21
+    packedSize: 1140
+    offset: 233432
+    sourceAssetGUID: c815f7613a04b724089c206857e57c6a
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/MirrorReflection.mat
+  - fileID: 97
+    classID: 21
+    packedSize: 900
+    offset: 234576
+    sourceAssetGUID: 7a2568654af4bef4cad7a3dfa02c31b2
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/Red.mat
+  - fileID: 98
+    classID: 21
+    packedSize: 136
+    offset: 235480
+    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
+    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
+  - fileID: 99
+    classID: 21
+    packedSize: 136
+    offset: 235616
+    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
+  - fileID: 100
+    classID: 21
+    packedSize: 136
+    offset: 235752
+    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
+    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  - fileID: 101
+    classID: 21
+    packedSize: 2004
+    offset: 235888
+    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+  - fileID: 102
+    classID: 21
+    packedSize: 944
+    offset: 237896
+    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+  - fileID: 103
+    classID: 21
+    packedSize: 1740
+    offset: 238840
+    sourceAssetGUID: 3199409928624324999b9336dd1ed8f3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-BOLD SDF.asset
+  - fileID: 104
+    classID: 21
+    packedSize: 1744
+    offset: 240584
+    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
+  - fileID: 105
+    classID: 21
+    packedSize: 1744
+    offset: 242328
+    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
+  - fileID: 106
+    classID: 21
+    packedSize: 1744
+    offset: 244072
+    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
+  - fileID: 107
+    classID: 21
+    packedSize: 1740
+    offset: 245816
+    sourceAssetGUID: 2032339f567bde146b32a51cb1425adf
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-LIGHT SDF.asset
+  - fileID: 108
+    classID: 21
+    packedSize: 1740
+    offset: 247560
+    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
+  - fileID: 109
+    classID: 21
+    packedSize: 1740
+    offset: 249304
+    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
+  - fileID: 110
+    classID: 21
+    packedSize: 892
+    offset: 251048
+    sourceAssetGUID: 785e4a3e048945542aad2e20e95fee27
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_crossroad.fbx
+  - fileID: 111
+    classID: 21
+    packedSize: 892
+    offset: 251944
+    sourceAssetGUID: b2fc25e7d371f32468e017f80e50e8f5
+    buildTimeAssetPath: Assets/models/misc meshes/road_straight.fbx
+  - fileID: 112
+    classID: 21
+    packedSize: 892
+    offset: 252840
+    sourceAssetGUID: b7e623a48ae8279438eaecd2878a1ebe
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_end.fbx
+  - fileID: 113
+    classID: 21
+    packedSize: 888
+    offset: 253736
+    sourceAssetGUID: 1b7409837284e2044a4ed65ffe63ad05
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingC.fbx
+  - fileID: 114
+    classID: 21
+    packedSize: 888
+    offset: 254624
+    sourceAssetGUID: 1d4ffa378a8142d4e83762597f8e274c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingB.fbx
+  - fileID: 115
+    classID: 21
+    packedSize: 888
+    offset: 255512
+    sourceAssetGUID: 3df8b1517c7d87b4ab951bc776824f2c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingG.fbx
+  - fileID: 116
+    classID: 21
+    packedSize: 888
+    offset: 256400
+    sourceAssetGUID: 55565bbe13e41d14091eb1ee3ca190f2
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperF.fbx
+  - fileID: 117
+    classID: 21
+    packedSize: 888
+    offset: 257288
+    sourceAssetGUID: 5962c44222d346542a5a44cc447717f3
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperD.fbx
+  - fileID: 118
+    classID: 21
+    packedSize: 888
+    offset: 258176
+    sourceAssetGUID: 732837a3d502e17449c6d35c7a6ba51f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingF.fbx
+  - fileID: 119
+    classID: 21
+    packedSize: 888
+    offset: 259064
+    sourceAssetGUID: 9bfd39fd4f6fa9c468d26a62e0bb112a
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperE.fbx
+  - fileID: 120
+    classID: 21
+    packedSize: 888
+    offset: 259952
+    sourceAssetGUID: b8e20286ec32de148994272d67481c44
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingA.fbx
+  - fileID: 121
+    classID: 21
+    packedSize: 888
+    offset: 260840
+    sourceAssetGUID: cc4a07988842c4d41bb017fed970b0fe
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingA.fbx
+  - fileID: 122
+    classID: 21
+    packedSize: 888
+    offset: 261728
+    sourceAssetGUID: f1e42097b70d9c84094a7992d66e1dc9
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingB.fbx
+  - fileID: 123
+    classID: 21
+    packedSize: 892
+    offset: 262616
+    sourceAssetGUID: 1b7409837284e2044a4ed65ffe63ad05
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingC.fbx
+  - fileID: 124
+    classID: 21
+    packedSize: 892
+    offset: 263512
+    sourceAssetGUID: 1d4ffa378a8142d4e83762597f8e274c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingB.fbx
+  - fileID: 125
+    classID: 21
+    packedSize: 892
+    offset: 264408
+    sourceAssetGUID: 3df8b1517c7d87b4ab951bc776824f2c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingG.fbx
+  - fileID: 126
+    classID: 21
+    packedSize: 892
+    offset: 265304
+    sourceAssetGUID: 55565bbe13e41d14091eb1ee3ca190f2
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperF.fbx
+  - fileID: 127
+    classID: 21
+    packedSize: 892
+    offset: 266200
+    sourceAssetGUID: 5962c44222d346542a5a44cc447717f3
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperD.fbx
+  - fileID: 128
+    classID: 21
+    packedSize: 892
+    offset: 267096
+    sourceAssetGUID: 732837a3d502e17449c6d35c7a6ba51f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingF.fbx
+  - fileID: 129
+    classID: 21
+    packedSize: 892
+    offset: 267992
+    sourceAssetGUID: 9bfd39fd4f6fa9c468d26a62e0bb112a
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperE.fbx
+  - fileID: 130
+    classID: 21
+    packedSize: 892
+    offset: 268888
+    sourceAssetGUID: b8e20286ec32de148994272d67481c44
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingA.fbx
+  - fileID: 131
+    classID: 21
+    packedSize: 892
+    offset: 269784
+    sourceAssetGUID: cc4a07988842c4d41bb017fed970b0fe
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingA.fbx
+  - fileID: 132
+    classID: 21
+    packedSize: 892
+    offset: 270680
+    sourceAssetGUID: f1e42097b70d9c84094a7992d66e1dc9
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingB.fbx
+  - fileID: 133
+    classID: 21
+    packedSize: 888
+    offset: 271576
+    sourceAssetGUID: 5962c44222d346542a5a44cc447717f3
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperD.fbx
+  - fileID: 134
+    classID: 21
+    packedSize: 888
+    offset: 272464
+    sourceAssetGUID: 9bfd39fd4f6fa9c468d26a62e0bb112a
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperE.fbx
+  - fileID: 135
+    classID: 21
+    packedSize: 896
+    offset: 273352
+    sourceAssetGUID: 785e4a3e048945542aad2e20e95fee27
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_crossroad.fbx
+  - fileID: 136
+    classID: 21
+    packedSize: 896
+    offset: 274248
+    sourceAssetGUID: b2fc25e7d371f32468e017f80e50e8f5
+    buildTimeAssetPath: Assets/models/misc meshes/road_straight.fbx
+  - fileID: 137
+    classID: 21
+    packedSize: 896
+    offset: 275144
+    sourceAssetGUID: b7e623a48ae8279438eaecd2878a1ebe
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_end.fbx
+  - fileID: 138
+    classID: 21
+    packedSize: 888
+    offset: 276040
+    sourceAssetGUID: 7371c16c32db24e4ca8f3ed6b1ed74c8
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/blasterC.fbx
+  - fileID: 139
+    classID: 21
+    packedSize: 888
+    offset: 276928
+    sourceAssetGUID: 1b7409837284e2044a4ed65ffe63ad05
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingC.fbx
+  - fileID: 140
+    classID: 21
+    packedSize: 888
+    offset: 277816
+    sourceAssetGUID: 1d4ffa378a8142d4e83762597f8e274c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingB.fbx
+  - fileID: 141
+    classID: 21
+    packedSize: 888
+    offset: 278704
+    sourceAssetGUID: 5962c44222d346542a5a44cc447717f3
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperD.fbx
+  - fileID: 142
+    classID: 21
+    packedSize: 888
+    offset: 279592
+    sourceAssetGUID: 732837a3d502e17449c6d35c7a6ba51f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingF.fbx
+  - fileID: 143
+    classID: 21
+    packedSize: 888
+    offset: 280480
+    sourceAssetGUID: 9bfd39fd4f6fa9c468d26a62e0bb112a
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperE.fbx
+  - fileID: 144
+    classID: 28
+    packedSize: 5564
+    offset: 281368
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 145
+    classID: 28
+    packedSize: 5568
+    offset: 286936
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 146
+    classID: 28
+    packedSize: 5576
+    offset: 292504
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 147
+    classID: 28
+    packedSize: 5564
+    offset: 298080
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 148
+    classID: 28
+    packedSize: 43548
+    offset: 303648
+    sourceAssetGUID: 05e3cc1417e5c224a973d923ca8926fd
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/transparent-textbox-grey-5.png
+  - fileID: 149
+    classID: 28
+    packedSize: 43896
+    offset: 347200
+    sourceAssetGUID: 05f659001c09bec428a6bf8899b37df6
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetail_Mono.png
+  - fileID: 150
+    classID: 28
+    packedSize: 21992
+    offset: 391096
+    sourceAssetGUID: 0eacdf0ca3a1eea489436a1e23a8bcf9
+    buildTimeAssetPath: Assets/ShopMenu/Money.png
+  - fileID: 151
+    classID: 28
+    packedSize: 626408
+    offset: 413088
+    sourceAssetGUID: 0fc2ab88855912d4eb4d4f7215ae8d38
+    buildTimeAssetPath: Assets/Scene/Lightmap-0_comp_light.exr
+  - fileID: 152
+    classID: 28
+    packedSize: 5876
+    offset: 1039496
+    sourceAssetGUID: 1f83b75f07feedf4baa18b728f75252a
+    buildTimeAssetPath: Assets/ShopMenu/avatars/junk.png
+  - fileID: 153
+    classID: 28
+    packedSize: 59276
+    offset: 1045376
+    sourceAssetGUID: 2323cb669376e8c449c3c32670900315
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Wide_Mono.png
+  - fileID: 154
+    classID: 28
+    packedSize: 158532
+    offset: 1104656
+    sourceAssetGUID: 291a8d39e3e4e374b82831225464867d
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/7.png
+  - fileID: 155
+    classID: 28
+    packedSize: 4148
+    offset: 1263192
+    sourceAssetGUID: 2a11849d78988a3489d6ffa83d159ecd
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt2_Mono.png
+  - fileID: 156
+    classID: 28
+    packedSize: 2880
+    offset: 1267344
+    sourceAssetGUID: 2ad70170f6ff89d468e5694143176d6b
+    buildTimeAssetPath: Assets/models/RPG Pack/Textures/Dust_particles.tif
+  - fileID: 157
+    classID: 28
+    packedSize: 1398216
+    offset: 1270224
+    sourceAssetGUID: 2f7ad163b654bf74085060307e13db4a
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/CornerDetail_Mono.png
+  - fileID: 158
+    classID: 28
+    packedSize: 86352
+    offset: 2668440
+    sourceAssetGUID: 3187dae7a26a51c43a9c2304464e476f
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBunFull.png
+  - fileID: 159
+    classID: 28
+    packedSize: 6188
+    offset: 2754792
+    sourceAssetGUID: 31ae7127c07a4cb4e8ae749f6276660b
+    buildTimeAssetPath: Assets/ShopMenu/avatars/riderabbit.png
+  - fileID: 160
+    classID: 28
+    packedSize: 315092
+    offset: 2760984
+    sourceAssetGUID: 32003ac298524ed4f9bb893d2269dc75
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/1.png
+  - fileID: 161
+    classID: 28
+    packedSize: 608536
+    offset: 3076080
+    sourceAssetGUID: 331c21dedef52024d8f4687226e40056
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/roundedCorners-20140106_Marie-Plocharz.png
+  - fileID: 162
+    classID: 28
+    packedSize: 158532
+    offset: 3684616
+    sourceAssetGUID: 339a9f1f77ad1c947ac4998979e046f7
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Wall.png
+  - fileID: 163
+    classID: 28
+    packedSize: 315092
+    offset: 3843152
+    sourceAssetGUID: 36f575e8b20145d4a8f00baf4f8a22b3
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/4.png
+  - fileID: 164
+    classID: 28
+    packedSize: 40196
+    offset: 4158248
+    sourceAssetGUID: 38fe3005fffb8384997fcecde0a492f4
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p2.PNG
+  - fileID: 165
+    classID: 28
+    packedSize: 315092
+    offset: 4198448
+    sourceAssetGUID: 426137a77b8e3b64888c93516cb33ea3
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/3.png
+  - fileID: 166
+    classID: 28
+    packedSize: 315092
+    offset: 4513544
+    sourceAssetGUID: 449d38dc743aea44eb0b79bb4d3912c3
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/5.png
+  - fileID: 167
+    classID: 28
+    packedSize: 315092
+    offset: 4828640
+    sourceAssetGUID: 49b8952406f4e4846ac7565499c33046
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p1-1.png
+  - fileID: 168
+    classID: 28
+    packedSize: 16777324
+    offset: 5143736
+    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
+    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
+  - fileID: 169
+    classID: 28
+    packedSize: 6184
+    offset: 21921064
+    sourceAssetGUID: 5ffc621c8968cd041bf1112fe81e0662
+    buildTimeAssetPath: Assets/ShopMenu/avatars/olive.png
+  - fileID: 170
+    classID: 28
+    packedSize: 118448
+    offset: 21927248
+    sourceAssetGUID: 603eabcd71ec55e41be090a50f8b646e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/Icons/arrow_512x512.png
+  - fileID: 171
+    classID: 28
+    packedSize: 626388
+    offset: 22045696
+    sourceAssetGUID: 644e0e4db7c316e478bb13b12512b8b8
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Lensflare/Textures/0.png
+  - fileID: 172
+    classID: 28
+    packedSize: 315092
+    offset: 22672088
+    sourceAssetGUID: 6f1a86f841d29354ab6cdd061bc58722
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p1.png
+  - fileID: 173
+    classID: 28
+    packedSize: 5884
+    offset: 22987184
+    sourceAssetGUID: 6f457b6cbbfa2fe4d96c6a70c2fd98ee
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBun.png
+  - fileID: 174
+    classID: 28
+    packedSize: 315092
+    offset: 22993072
+    sourceAssetGUID: 737a61236509b1a44a4de3627b7b03d6
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/9.png
+  - fileID: 175
+    classID: 28
+    packedSize: 40208
+    offset: 23308168
+    sourceAssetGUID: 7c4fe4d7f09b5f044a56e45d8d8f7130
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/White_Circle.svg.png
+  - fileID: 176
+    classID: 28
+    packedSize: 6184
+    offset: 23348376
+    sourceAssetGUID: 7ccf9ae289d0dd34a9164ba11747e92c
+    buildTimeAssetPath: Assets/ShopMenu/avatars/seven.png
+  - fileID: 177
+    classID: 28
+    packedSize: 79796
+    offset: 23354560
+    sourceAssetGUID: 825ca8510f66cbf4cbef2df54bedb8a9
+    buildTimeAssetPath: Assets/models/RPG Pack/Textures/star.png
+  - fileID: 178
+    classID: 28
+    packedSize: 315092
+    offset: 23434360
+    sourceAssetGUID: 8282e4971a726e64982b4fec3a29e67a
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/4-1.png
+  - fileID: 179
+    classID: 28
+    packedSize: 40204
+    offset: 23749456
+    sourceAssetGUID: 8480de0448ee588459c5da29fd196fb0
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/SquareSolid.png
+  - fileID: 180
+    classID: 28
+    packedSize: 626404
+    offset: 23789664
+    sourceAssetGUID: 87b14570171a8be458a29df2cd70f078
+    buildTimeAssetPath: Assets/models/AurynSky/Rockets Missiles and Bombs/Textures/RocketsPalletteRed.png
+  - fileID: 181
+    classID: 28
+    packedSize: 5576
+    offset: 24416072
+    sourceAssetGUID: 93917c189b5f9204885d199e112c71fd
+    buildTimeAssetPath: Assets/ShopMenu/avatars/Robot.png
+  - fileID: 182
+    classID: 28
+    packedSize: 349652
+    offset: 24421648
+    sourceAssetGUID: 9e2ea1cb70ae8cf41a3db001d7b7cebb
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/ButtonHighlighted_Mono.png
+  - fileID: 183
+    classID: 28
+    packedSize: 738680
+    offset: 24771304
+    sourceAssetGUID: a4545ebf8e47ac946b3e3180e0975b2e
+    buildTimeAssetPath: Assets/ShopMenu/ui_bg.png
+  - fileID: 184
+    classID: 28
+    packedSize: 2239280
+    offset: 25509984
+    sourceAssetGUID: a4fde6e0b21dc224d813ee493157874f
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Hover_Mono.png
+  - fileID: 185
+    classID: 28
+    packedSize: 2239276
+    offset: 27749264
+    sourceAssetGUID: a8292d7c3170a7348accf3d85c0e7359
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Mono.png
+  - fileID: 186
+    classID: 28
+    packedSize: 349644
+    offset: 29988544
+    sourceAssetGUID: b6f33d10c75334f4884f8d7baddc69f4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/LoadingHighlight.png
+  - fileID: 187
+    classID: 28
+    packedSize: 626388
+    offset: 30338192
+    sourceAssetGUID: ba852b59c6ae3a74da474c5f4ad1935e
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/8.png
+  - fileID: 188
+    classID: 28
+    packedSize: 315092
+    offset: 30964584
+    sourceAssetGUID: d10fb6cc192a4f44cb942be9af8cf658
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/2.png
+  - fileID: 189
+    classID: 28
+    packedSize: 108
+    offset: 31279680
+    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
+  - fileID: 190
+    classID: 28
+    packedSize: 158532
+    offset: 31279792
+    sourceAssetGUID: da98ef60dfdef9148a861d729a3609c9
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/6.png
+  - fileID: 191
+    classID: 28
+    packedSize: 40216
+    offset: 31438328
+    sourceAssetGUID: e1b63ec252a46f04781ae29870c118ec
+    buildTimeAssetPath: Assets/Scene/Lightmap-1_comp_light.exr
+  - fileID: 192
+    classID: 28
+    packedSize: 108
+    offset: 31478544
+    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
+    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  - fileID: 193
+    classID: 28
+    packedSize: 101352
+    offset: 31478656
+    sourceAssetGUID: e5a390d359542f845bd18b3970c5eff3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Press_Mono.png
+  - fileID: 194
+    classID: 28
+    packedSize: 626404
+    offset: 31580008
+    sourceAssetGUID: ebb57d4ee979f0f468fd27daa88b3179
+    buildTimeAssetPath: Assets/models/RPG Pack/Textures/BoxOfPandora_diffuse.png
+  - fileID: 195
+    classID: 28
+    packedSize: 40900
+    offset: 32206416
+    sourceAssetGUID: ec50faff23f099c48bf342bb3bcf274e
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p5-1.png
+  - fileID: 196
+    classID: 28
+    packedSize: 20872
+    offset: 32247320
+    sourceAssetGUID: ed2ba53c9ac56e443a585f4a3a7953d0
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/POSITION.png
+  - fileID: 197
+    classID: 28
+    packedSize: 880
+    offset: 32268192
+    sourceAssetGUID: ee1b8ae61c20d994aa45384f1afaaaed
+    buildTimeAssetPath: Assets/models/LowPolyRoadPack/Textures/Road Colorscheme.png
+  - fileID: 198
+    classID: 28
+    packedSize: 5580
+    offset: 32269072
+    sourceAssetGUID: f18e648a7c56c97459bc9dd0cfe685dc
+    buildTimeAssetPath: Assets/ShopMenu/avatars/GreenBlob.png
+  - fileID: 199
+    classID: 28
+    packedSize: 7844
+    offset: 32274656
+    sourceAssetGUID: f2ffaaff4245a7d41b3bf53a0edc7595
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/LAPS.png
+  - fileID: 200
+    classID: 28
+    packedSize: 1250804
+    offset: 32282504
+    sourceAssetGUID: f8eea88e60170414db5d8fdc34e6527e
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p3.png
+  - fileID: 201
+    classID: 28
+    packedSize: 4148
+    offset: 33533312
+    sourceAssetGUID: fc4228f9270498248a1d3298777bf5da
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt1_Mono.png
+  - fileID: 202
+    classID: 28
+    packedSize: 6188
+    offset: 33537464
+    sourceAssetGUID: fddb13df76efe9045b3ad498bd991718
+    buildTimeAssetPath: Assets/ShopMenu/avatars/FighterKirby.png
+  - fileID: 203
+    classID: 28
+    packedSize: 120
+    offset: 33543656
+    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+  - fileID: 204
+    classID: 28
+    packedSize: 1048692
+    offset: 33543776
+    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
+  - fileID: 205
+    classID: 28
+    packedSize: 1048692
+    offset: 34592472
+    sourceAssetGUID: 2032339f567bde146b32a51cb1425adf
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-LIGHT SDF.asset
+  - fileID: 206
+    classID: 28
+    packedSize: 1048696
+    offset: 35641168
+    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
+  - fileID: 207
+    classID: 28
+    packedSize: 1048696
+    offset: 36689864
+    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
+  - fileID: 208
+    classID: 28
+    packedSize: 1048696
+    offset: 37738560
+    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
+  - fileID: 209
+    classID: 28
+    packedSize: 1048692
+    offset: 38787256
+    sourceAssetGUID: 3199409928624324999b9336dd1ed8f3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-BOLD SDF.asset
+  - fileID: 210
+    classID: 28
+    packedSize: 1048696
+    offset: 39835952
+    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+  - fileID: 211
+    classID: 28
+    packedSize: 1048696
+    offset: 40884648
+    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
+  - fileID: 212
+    classID: 28
+    packedSize: 1048692
+    offset: 41933344
+    sourceAssetGUID: 1c234599346f0654699178572854b4e5
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
+      SDF.asset
+  - fileID: 213
+    classID: 43
+    packedSize: 46280
+    offset: 42982040
+    sourceAssetGUID: 1d4ffa378a8142d4e83762597f8e274c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingB.fbx
+  - fileID: 214
+    classID: 43
+    packedSize: 73312
+    offset: 43028320
+    sourceAssetGUID: 732837a3d502e17449c6d35c7a6ba51f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingF.fbx
+  - fileID: 215
+    classID: 43
+    packedSize: 27444
+    offset: 43101632
+    sourceAssetGUID: 55565bbe13e41d14091eb1ee3ca190f2
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperF.fbx
+  - fileID: 216
+    classID: 43
+    packedSize: 1620
+    offset: 43129080
+    sourceAssetGUID: 406ecc0c8ac4e524aa33202230ab9d1c
+    buildTimeAssetPath: Assets/models/misc meshes/cube_inverted_faces.fbx
+  - fileID: 217
+    classID: 43
+    packedSize: 27896
+    offset: 43130704
+    sourceAssetGUID: 2d32595ff0dc99f498218042be794cac
+    buildTimeAssetPath: Assets/models/blasterM.fbx
+  - fileID: 218
+    classID: 43
+    packedSize: 70272
+    offset: 43158600
+    sourceAssetGUID: 9bfd39fd4f6fa9c468d26a62e0bb112a
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperE.fbx
+  - fileID: 219
+    classID: 43
+    packedSize: 10666664
+    offset: 43228872
+    sourceAssetGUID: a8eec6fc6b0238e48bc767ad905a0d23
+    buildTimeAssetPath: "Assets/scene prefabs/Items/Spray/Pistolet \xE0 eau.fbx"
+  - fileID: 220
+    classID: 43
+    packedSize: 7968
+    offset: 53895536
+    sourceAssetGUID: 785e4a3e048945542aad2e20e95fee27
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_crossroad.fbx
+  - fileID: 221
+    classID: 43
+    packedSize: 33544
+    offset: 53903504
+    sourceAssetGUID: 7371c16c32db24e4ca8f3ed6b1ed74c8
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/blasterC.fbx
+  - fileID: 222
+    classID: 43
+    packedSize: 17120
+    offset: 53937048
+    sourceAssetGUID: ac31cbce94927ac4abecb050ad83649f
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/low_buildingC.fbx
+  - fileID: 223
+    classID: 43
+    packedSize: 7400
+    offset: 53954168
+    sourceAssetGUID: 016d566e117d8fd43be08461a2df3027
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/3-1.fbx
+  - fileID: 224
+    classID: 43
+    packedSize: 8172
+    offset: 53961568
+    sourceAssetGUID: 0b3034fd1a5bb254d8e081e8634d075f
+    buildTimeAssetPath: Assets/models/LowPolyRoadPack/Models/Tunnel Entrance 1.dae
+  - fileID: 225
+    classID: 43
+    packedSize: 20908
+    offset: 53969744
+    sourceAssetGUID: 11fc29c46ace9614aac1471a363525c1
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-4.fbx
+  - fileID: 226
+    classID: 43
+    packedSize: 7848
+    offset: 53990656
+    sourceAssetGUID: 1c9654e604a39b44b8293f6a34f7b66c
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/3.fbx
+  - fileID: 227
+    classID: 43
+    packedSize: 6012
+    offset: 53998504
+    sourceAssetGUID: 1f4a1ec0dedb43143a96c3d2e371b016
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-6.fbx
+  - fileID: 228
+    classID: 43
+    packedSize: 3896
+    offset: 54004520
+    sourceAssetGUID: 3745c28ede9bdf541bc2f0c5a7b3bfd2
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/2-1.fbx
+  - fileID: 229
+    classID: 43
+    packedSize: 17280
+    offset: 54008416
+    sourceAssetGUID: 3934c7a696d16b34e8892801fdda0e9f
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-5.fbx
+  - fileID: 230
+    classID: 43
+    packedSize: 5512
+    offset: 54025696
+    sourceAssetGUID: 4151a6192219ff249b121c536513d8ab
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/6.fbx
+  - fileID: 231
+    classID: 43
+    packedSize: 31468
+    offset: 54031208
+    sourceAssetGUID: 42152e0561545d64483b0f93dfbc9589
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-5.fbx
+  - fileID: 232
+    classID: 43
+    packedSize: 9512
+    offset: 54062680
+    sourceAssetGUID: 45414ae893ef0d24aaa8d91a7d834868
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/8.fbx
+  - fileID: 233
+    classID: 43
+    packedSize: 21324
+    offset: 54072192
+    sourceAssetGUID: 5529ec8d6f2af7a4194ea427aaf4f901
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-6.fbx
+  - fileID: 234
+    classID: 43
+    packedSize: 31156
+    offset: 54093520
+    sourceAssetGUID: 6379b00f66e16cd49b9df04eece629a3
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/7.fbx
+  - fileID: 235
+    classID: 43
+    packedSize: 8716
+    offset: 54124680
+    sourceAssetGUID: 6ad9d82f1af25f34ab6557c3d627a431
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p1.fbx
+  - fileID: 236
+    classID: 43
+    packedSize: 5740
+    offset: 54133400
+    sourceAssetGUID: 6bf94840710cc534ca5c718dd3733c51
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/4.fbx
+  - fileID: 237
+    classID: 43
+    packedSize: 1816
+    offset: 54139144
+    sourceAssetGUID: 6ea030f083954674b9d871dbecbcf011
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-2.fbx
+  - fileID: 238
+    classID: 43
+    packedSize: 44840
+    offset: 54140960
+    sourceAssetGUID: 6eda8701cab57474bb48b82c4d94944d
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/1.fbx
+  - fileID: 239
+    classID: 43
+    packedSize: 13016
+    offset: 54185800
+    sourceAssetGUID: 73deee65ec709a74aa72f4e27bfc3d35
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p1-1.fbx
+  - fileID: 240
+    classID: 43
+    packedSize: 4652
+    offset: 54198816
+    sourceAssetGUID: 78a8c0fcbd14a3241b17e232c96ef958
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-3.fbx
+  - fileID: 241
+    classID: 43
+    packedSize: 10736
+    offset: 54203472
+    sourceAssetGUID: a894c4c86d9e18f4d9d7ccd1a66399d7
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/p5-4.fbx
+  - fileID: 242
+    classID: 43
+    packedSize: 1824
+    offset: 54214208
+    sourceAssetGUID: c49350ef52968dc4eb3d925e1d19185e
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p2.fbx
+  - fileID: 243
+    classID: 43
+    packedSize: 27716
+    offset: 54216032
+    sourceAssetGUID: d0f4f4a6ea280eb49a9e01e9ab72fa18
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/5.fbx
+  - fileID: 244
+    classID: 43
+    packedSize: 8664
+    offset: 54243752
+    sourceAssetGUID: df5f660a0ad6ab24f8a986c2a33b341f
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/2.fbx
+  - fileID: 245
+    classID: 43
+    packedSize: 33756
+    offset: 54252416
+    sourceAssetGUID: f01b243fd257015438c2950cdbc4e872
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/p5-8.fbx
+  - fileID: 246
+    classID: 43
+    packedSize: 3256
+    offset: 54286176
+    sourceAssetGUID: f4b691195c179e945ac8f00a797961b2
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-7.fbx
+  - fileID: 247
+    classID: 43
+    packedSize: 24872
+    offset: 54289432
+    sourceAssetGUID: f637800949c72bf4c838823bdf15e754
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/9.fbx
+  - fileID: 248
+    classID: 43
+    packedSize: 13916
+    offset: 54314304
+    sourceAssetGUID: fb43c86eec07dd54eaf35d4cd3995ea8
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-7.fbx
+  - fileID: 249
+    classID: 43
+    packedSize: 6324
+    offset: 54328224
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 250
+    classID: 43
+    packedSize: 3644
+    offset: 54334552
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 251
+    classID: 43
+    packedSize: 5444
+    offset: 54338200
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 252
+    classID: 43
+    packedSize: 4988
+    offset: 54343648
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 253
+    classID: 43
+    packedSize: 18952
+    offset: 54348640
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 254
+    classID: 43
+    packedSize: 6140
+    offset: 54367592
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 255
+    classID: 43
+    packedSize: 6332
+    offset: 54373736
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 256
+    classID: 43
+    packedSize: 2612
+    offset: 54380072
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 257
+    classID: 43
+    packedSize: 6212
+    offset: 54382688
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 258
+    classID: 43
+    packedSize: 3092
+    offset: 54388904
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 259
+    classID: 43
+    packedSize: 6284
+    offset: 54392000
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 260
+    classID: 43
+    packedSize: 5108
+    offset: 54398288
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 261
+    classID: 43
+    packedSize: 7052
+    offset: 54403400
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 262
+    classID: 43
+    packedSize: 5420
+    offset: 54410456
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 263
+    classID: 43
+    packedSize: 2276
+    offset: 54415880
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 264
+    classID: 43
+    packedSize: 3908
+    offset: 54418160
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 265
+    classID: 43
+    packedSize: 2828
+    offset: 54422072
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 266
+    classID: 43
+    packedSize: 5468
+    offset: 54424904
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 267
+    classID: 43
+    packedSize: 3308
+    offset: 54430376
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 268
+    classID: 43
+    packedSize: 18080
+    offset: 54433688
+    sourceAssetGUID: 45d7b8cdea104d44ca0418178ec8138d
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/untitled.fbx
+  - fileID: 269
+    classID: 43
+    packedSize: 53116
+    offset: 54451768
+    sourceAssetGUID: 1b7409837284e2044a4ed65ffe63ad05
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingC.fbx
+  - fileID: 270
+    classID: 43
+    packedSize: 24612
+    offset: 54504888
+    sourceAssetGUID: f1e42097b70d9c84094a7992d66e1dc9
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingB.fbx
+  - fileID: 271
+    classID: 43
+    packedSize: 42688
+    offset: 54529504
+    sourceAssetGUID: 5962c44222d346542a5a44cc447717f3
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/skyscraperD.fbx
+  - fileID: 272
+    classID: 43
+    packedSize: 3688
+    offset: 54572192
+    sourceAssetGUID: b7e623a48ae8279438eaecd2878a1ebe
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/road_end.fbx
+  - fileID: 273
+    classID: 43
+    packedSize: 24976
+    offset: 54575880
+    sourceAssetGUID: cf18bdd2b8fc6a14c81543426c658791
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/low_buildingN.fbx
+  - fileID: 274
+    classID: 43
+    packedSize: 31200
+    offset: 54600856
+    sourceAssetGUID: cc4a07988842c4d41bb017fed970b0fe
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/small_buildingA.fbx
+  - fileID: 275
+    classID: 43
+    packedSize: 3888
+    offset: 54632056
+    sourceAssetGUID: b2fc25e7d371f32468e017f80e50e8f5
+    buildTimeAssetPath: Assets/models/misc meshes/road_straight.fbx
+  - fileID: 276
+    classID: 43
+    packedSize: 142480
+    offset: 54635944
+    sourceAssetGUID: b8e20286ec32de148994272d67481c44
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingA.fbx
+  - fileID: 277
+    classID: 43
+    packedSize: 106372
+    offset: 54778424
+    sourceAssetGUID: 3df8b1517c7d87b4ab951bc776824f2c
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/large_buildingG.fbx
+  - fileID: 278
+    classID: 43
+    packedSize: 1624
+    offset: 54884800
+    sourceAssetGUID: 7274a8679a190eb4884a2775282894c8
+    buildTimeAssetPath: Assets/models/kenney_citykitroads/tile_low.fbx
+  - fileID: 279
+    classID: 43
+    packedSize: 4420
+    offset: 54886424
+    sourceAssetGUID: 236abb271b61d2e4c8ff0bd570913501
+    buildTimeAssetPath: Assets/models/kenney_citykitcommercial/detail_awningWide.fbx
+  - fileID: 280
+    classID: 48
+    packedSize: 3480088
+    offset: 54890848
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 281
+    classID: 48
+    packedSize: 17800
+    offset: 58370936
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 282
+    classID: 48
+    packedSize: 10388
+    offset: 58388736
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 283
+    classID: 48
+    packedSize: 9964
+    offset: 58399128
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 284
+    classID: 48
+    packedSize: 53976
+    offset: 58409096
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 285
+    classID: 48
+    packedSize: 15248
+    offset: 58463072
+    sourceAssetGUID: 5f8fef09682fab74fb7a29d783391edb
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/VRChat-Sprites-Default.shader
+  - fileID: 286
+    classID: 48
+    packedSize: 61720
+    offset: 58478320
+    sourceAssetGUID: 68e6db2ebdc24f95958faec2be5558d6
+    buildTimeAssetPath: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+  - fileID: 287
+    classID: 48
+    packedSize: 7108
+    offset: 58540040
+    sourceAssetGUID: 693137b858e4dc64c83be531351f45e6
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mirror.shader
+  - fileID: 288
+    classID: 48
+    packedSize: 48776
+    offset: 58547152
+    sourceAssetGUID: fe393ace9b354375a9cb14cdbbc28be4
+    buildTimeAssetPath: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+  - fileID: 289
+    classID: 74
+    packedSize: 2372
+    offset: 58595928
+    sourceAssetGUID: 8e7e1ea2cd9147645a7352b9f511df2b
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Animations/HighlightFade.anim
+  - fileID: 290
+    classID: 74
+    packedSize: 58792
+    offset: 58598304
+    sourceAssetGUID: da547b840fa6c7f42b1e442741b758c7
+    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxOfPandora_Crash.anim
+  - fileID: 291
+    classID: 74
+    packedSize: 3392
+    offset: 58657096
+    sourceAssetGUID: 9f766eb0e8fc6c74ba1b27fe388f4057
+    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxOfPandora_Idle.anim
+  - fileID: 292
+    classID: 89
+    packedSize: 63264
+    offset: 58660488
+    sourceAssetGUID: d287680e1c08fd244a349d7c1feb905b
+    buildTimeAssetPath: Assets/Scene/ReflectionProbe-1.exr
+  - fileID: 293
+    classID: 89
+    packedSize: 63264
+    offset: 58723752
+    sourceAssetGUID: f55a25b3501b51040af61f002dac0ce5
+    buildTimeAssetPath: Assets/Scene/ReflectionProbe-0.exr
+  - fileID: 294
+    classID: 90
+    packedSize: 3356
+    offset: 58787016
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 295
+    classID: 91
+    packedSize: 432
+    offset: 58790376
+    sourceAssetGUID: f4f43775b058eee41abe03f631fe83a5
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Animations/HighlightFade.controller
+  - fileID: 296
+    classID: 91
+    packedSize: 732
+    offset: 58790808
+    sourceAssetGUID: b79f87718dae8f840b98142eef90b118
+    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxIdleAC.controller
+  - fileID: 297
+    classID: 115
+    packedSize: 92
+    offset: 146736
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 298
+    classID: 115
+    packedSize: 96
+    offset: 146832
+    sourceAssetGUID: 4ecd63eff847044b68db9453ce219299
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCCore-Editor.dll
+  - fileID: 299
+    classID: 115
+    packedSize: 108
+    offset: 146928
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 300
+    classID: 115
+    packedSize: 108
+    offset: 147040
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 301
+    classID: 115
+    packedSize: 96
+    offset: 147152
+    sourceAssetGUID: 0cd44c1031e13a943bb63640046fad76
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs
+  - fileID: 302
+    classID: 115
+    packedSize: 88
+    offset: 147248
+    sourceAssetGUID: 1344c3c82d62a2a41a3576d8abb8e3ea
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs
+  - fileID: 303
+    classID: 115
+    packedSize: 96
+    offset: 147336
+    sourceAssetGUID: 1aa08ab6e0800fa44ae55d278d1423e3
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs
+  - fileID: 304
+    classID: 115
+    packedSize: 96
+    offset: 147432
+    sourceAssetGUID: 2a4db7a114972834c8e4117be1d82ba3
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Scrollbar.cs
+  - fileID: 305
+    classID: 115
+    packedSize: 80
+    offset: 147528
+    sourceAssetGUID: 31a19414c41e5ae4aae2af33fee712f6
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Mask.cs
+  - fileID: 306
+    classID: 115
+    packedSize: 88
+    offset: 147608
+    sourceAssetGUID: 45115577ef41a5b4ca741ed302693907
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/UdonBehaviour.cs
+  - fileID: 307
+    classID: 115
+    packedSize: 88
+    offset: 147696
+    sourceAssetGUID: 4e29b1a8efbd4b44bb3f3716e73f07ff
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Button.cs
+  - fileID: 308
+    classID: 115
+    packedSize: 128
+    offset: 147784
+    sourceAssetGUID: 4f231c4fb786f3946a6b90b886c48677
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+  - fileID: 309
+    classID: 115
+    packedSize: 80
+    offset: 147912
+    sourceAssetGUID: 5f7201a12d95ffc409449d95f23cf332
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Text.cs
+  - fileID: 310
+    classID: 115
+    packedSize: 88
+    offset: 147992
+    sourceAssetGUID: 67db9e8f0e2ae9c40bc1e2b64352a6b4
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Slider.cs
+  - fileID: 311
+    classID: 115
+    packedSize: 100
+    offset: 148080
+    sourceAssetGUID: 71c1514a6bd24e1e882cebbe1904ce04
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs
+  - fileID: 312
+    classID: 115
+    packedSize: 104
+    offset: 148184
+    sourceAssetGUID: 76c392e42b5098c458856cdf6ecaaaa1
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs
+  - fileID: 313
+    classID: 115
+    packedSize: 92
+    offset: 148288
+    sourceAssetGUID: 7b743370ac3e4ec2a1668f5455a8ef8a
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Dropdown.cs
+  - fileID: 314
+    classID: 115
+    packedSize: 88
+    offset: 148384
+    sourceAssetGUID: 9085046f02f69544eb97fd06b6048fe2
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Toggle.cs
+  - fileID: 315
+    classID: 115
+    packedSize: 92
+    offset: 148472
+    sourceAssetGUID: 9541d86e2fd84c1d9990edf0852d74ab
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshPro.cs
+  - fileID: 316
+    classID: 115
+    packedSize: 128
+    offset: 148568
+    sourceAssetGUID: bf61d954ecb803046953c666facfb904
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/SerializedUdonProgramAsset.cs
+  - fileID: 317
+    classID: 115
+    packedSize: 104
+    offset: 148696
+    sourceAssetGUID: d0b148fe25e99eb48b9724523833bab1
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs
+  - fileID: 318
+    classID: 115
+    packedSize: 96
+    offset: 148800
+    sourceAssetGUID: d199490a83bb2b844b9695cbf13b01ef
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/InputField.cs
+  - fileID: 319
+    classID: 115
+    packedSize: 108
+    offset: 148896
+    sourceAssetGUID: d8f6aa6586f77764fab668a0a62d8f7a
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Scripts/OptionsMenuNew.cs
+  - fileID: 320
+    classID: 115
+    packedSize: 104
+    offset: 149008
+    sourceAssetGUID: dc42784cf147c0c48a680349fa168899
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/GraphicRaycaster.cs
+  - fileID: 321
+    classID: 115
+    packedSize: 100
+    offset: 149112
+    sourceAssetGUID: f4688fdb7df04437aeb418b961361dc5
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs
+  - fileID: 322
+    classID: 115
+    packedSize: 88
+    offset: 149216
+    sourceAssetGUID: fe87c0e1cc204ed48ad3b37840f39efc
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Image.cs
+  - fileID: 323
+    classID: 115
+    packedSize: 100
+    offset: 149304
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 324
+    classID: 115
+    packedSize: 92
+    offset: 149408
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 325
+    classID: 121
+    packedSize: 61
+    offset: 58791544
+    sourceAssetGUID: 67782eb9ec7569d4bb518dc8232c5bb2
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Lensflare/Sun.flare
+  - fileID: 326
+    classID: 128
+    packedSize: 13202
+    offset: 58791608
+    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
+    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
+  - fileID: 327
+    classID: 128
+    packedSize: 61942
+    offset: 58804816
+    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
+  - fileID: 328
+    classID: 128
+    packedSize: 352462
+    offset: 58866760
+    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
+    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  - fileID: 329
+    classID: 213
+    packedSize: 568
+    offset: 59219224
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 330
+    classID: 213
+    packedSize: 572
+    offset: 59219792
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 331
+    classID: 213
+    packedSize: 580
+    offset: 59220368
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 332
+    classID: 213
+    packedSize: 516
+    offset: 59220952
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 333
+    classID: 213
+    packedSize: 1068
+    offset: 59221472
+    sourceAssetGUID: 05e3cc1417e5c224a973d923ca8926fd
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/transparent-textbox-grey-5.png
+  - fileID: 334
+    classID: 213
+    packedSize: 468
+    offset: 59222544
+    sourceAssetGUID: 05f659001c09bec428a6bf8899b37df6
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetail_Mono.png
+  - fileID: 335
+    classID: 213
+    packedSize: 1280
+    offset: 59223016
+    sourceAssetGUID: 0eacdf0ca3a1eea489436a1e23a8bcf9
+    buildTimeAssetPath: Assets/ShopMenu/Money.png
+  - fileID: 336
+    classID: 213
+    packedSize: 456
+    offset: 59224296
+    sourceAssetGUID: 1f83b75f07feedf4baa18b728f75252a
+    buildTimeAssetPath: Assets/ShopMenu/avatars/junk.png
+  - fileID: 337
+    classID: 213
+    packedSize: 1128
+    offset: 59224752
+    sourceAssetGUID: 2323cb669376e8c449c3c32670900315
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Wide_Mono.png
+  - fileID: 338
+    classID: 213
+    packedSize: 680
+    offset: 59225880
+    sourceAssetGUID: 2a11849d78988a3489d6ffa83d159ecd
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt2_Mono.png
+  - fileID: 339
+    classID: 213
+    packedSize: 540
+    offset: 59226560
+    sourceAssetGUID: 2f7ad163b654bf74085060307e13db4a
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/CornerDetail_Mono.png
+  - fileID: 340
+    classID: 213
+    packedSize: 4268
+    offset: 59227104
+    sourceAssetGUID: 3187dae7a26a51c43a9c2304464e476f
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBunFull.png
+  - fileID: 341
+    classID: 213
+    packedSize: 464
+    offset: 59231376
+    sourceAssetGUID: 31ae7127c07a4cb4e8ae749f6276660b
+    buildTimeAssetPath: Assets/ShopMenu/avatars/riderabbit.png
+  - fileID: 342
+    classID: 213
+    packedSize: 460
+    offset: 59231840
+    sourceAssetGUID: 5ffc621c8968cd041bf1112fe81e0662
+    buildTimeAssetPath: Assets/ShopMenu/avatars/olive.png
+  - fileID: 343
+    classID: 213
+    packedSize: 1360
+    offset: 59232304
+    sourceAssetGUID: 603eabcd71ec55e41be090a50f8b646e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/Icons/arrow_512x512.png
+  - fileID: 344
+    classID: 213
+    packedSize: 464
+    offset: 59233664
+    sourceAssetGUID: 6f457b6cbbfa2fe4d96c6a70c2fd98ee
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBun.png
+  - fileID: 345
+    classID: 213
+    packedSize: 460
+    offset: 59234128
+    sourceAssetGUID: 7ccf9ae289d0dd34a9164ba11747e92c
+    buildTimeAssetPath: Assets/ShopMenu/avatars/seven.png
+  - fileID: 346
+    classID: 213
+    packedSize: 464
+    offset: 59234592
+    sourceAssetGUID: 8480de0448ee588459c5da29fd196fb0
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/SquareSolid.png
+  - fileID: 347
+    classID: 213
+    packedSize: 460
+    offset: 59235056
+    sourceAssetGUID: 93917c189b5f9204885d199e112c71fd
+    buildTimeAssetPath: Assets/ShopMenu/avatars/Robot.png
+  - fileID: 348
+    classID: 213
+    packedSize: 524
+    offset: 59235520
+    sourceAssetGUID: 9e2ea1cb70ae8cf41a3db001d7b7cebb
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/ButtonHighlighted_Mono.png
+  - fileID: 349
+    classID: 213
+    packedSize: 460
+    offset: 59236048
+    sourceAssetGUID: a4545ebf8e47ac946b3e3180e0975b2e
+    buildTimeAssetPath: Assets/ShopMenu/ui_bg.png
+  - fileID: 350
+    classID: 213
+    packedSize: 476
+    offset: 59236512
+    sourceAssetGUID: a4fde6e0b21dc224d813ee493157874f
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Hover_Mono.png
+  - fileID: 351
+    classID: 213
+    packedSize: 588
+    offset: 59236992
+    sourceAssetGUID: a8292d7c3170a7348accf3d85c0e7359
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Mono.png
+  - fileID: 352
+    classID: 213
+    packedSize: 524
+    offset: 59237584
+    sourceAssetGUID: b6f33d10c75334f4884f8d7baddc69f4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/LoadingHighlight.png
+  - fileID: 353
+    classID: 213
+    packedSize: 440
+    offset: 59238112
+    sourceAssetGUID: e5a390d359542f845bd18b3970c5eff3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Press_Mono.png
+  - fileID: 354
+    classID: 213
+    packedSize: 464
+    offset: 59238552
+    sourceAssetGUID: f18e648a7c56c97459bc9dd0cfe685dc
+    buildTimeAssetPath: Assets/ShopMenu/avatars/GreenBlob.png
+  - fileID: 355
+    classID: 213
+    packedSize: 524
+    offset: 59239016
+    sourceAssetGUID: fc4228f9270498248a1d3298777bf5da
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt1_Mono.png
+  - fileID: 356
+    classID: 213
+    packedSize: 464
+    offset: 59239544
+    sourceAssetGUID: fddb13df76efe9045b3ad498bd991718
+    buildTimeAssetPath: Assets/ShopMenu/avatars/FighterKirby.png
+  - fileID: 357
+    classID: 258
+    packedSize: 40
+    offset: 59240008
+    sourceAssetGUID: c7474266e1ec3674f9b2aed3834e1d5d
+    buildTimeAssetPath: Assets/Scene/LightingData.asset
+  - fileID: 358
+    classID: 114
+    packedSize: 46580
+    offset: 59240048
+    sourceAssetGUID: 6f9832cffe5aea4449eba5b38fac8e25
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/075edb17eff218c418bcd2656ae19290.asset
+  - fileID: 359
+    classID: 114
+    packedSize: 177248
+    offset: 59286632
+    sourceAssetGUID: 806ac592b81556c478a47738267369ef
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/095d95c5888c25c4ca6d9c5f15ce7c8b.asset
+  - fileID: 360
+    classID: 114
+    packedSize: 23652
+    offset: 59463880
+    sourceAssetGUID: e9c18e5e95cdf3142b047d6d23ed23e4
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1210da547d9832c4498ac3c15c41bcdc.asset
+  - fileID: 361
+    classID: 114
+    packedSize: 43204
+    offset: 59487536
+    sourceAssetGUID: f9cb3c1b0a288c34b841c84142df63e7
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/15506396185492847b442b8f120d3d94.asset
+  - fileID: 362
+    classID: 114
+    packedSize: 27964
+    offset: 59530744
+    sourceAssetGUID: 8aa46d44b27be14488b6b53f675843cd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/16fe3d2088baeaa498f812653a07b759.asset
+  - fileID: 363
+    classID: 114
+    packedSize: 13988
+    offset: 59558712
+    sourceAssetGUID: 681c5c858820529429a6fcb3c76e2220
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/17d578286f11b644f9fcc47f5ad30d7e.asset
+  - fileID: 364
+    classID: 114
+    packedSize: 44740
+    offset: 59572704
+    sourceAssetGUID: 55ee92e3d9cabd949b6f1c6cf7c4fb99
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1a4ea4a9d7d252448b548ec106d1d398.asset
+  - fileID: 365
+    classID: 114
+    packedSize: 21568
+    offset: 59617448
+    sourceAssetGUID: b9102d96281735643a03f253d7d7df9c
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1b488c376fc77bf4cb08adc1cb545669.asset
+  - fileID: 366
+    classID: 114
+    packedSize: 50824
+    offset: 59639016
+    sourceAssetGUID: de41fa62d9955454b80ac801a915c859
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1ca5141ed5b1dfe4a90a7a74fa918c00.asset
+  - fileID: 367
+    classID: 114
+    packedSize: 10972
+    offset: 59689840
+    sourceAssetGUID: 1ab021100d7298d4ca90c4c053bd30d4
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1fd8d0f51d7a8c848bf019a3b61b9932.asset
+  - fileID: 368
+    classID: 114
+    packedSize: 21980
+    offset: 59700816
+    sourceAssetGUID: c2678434a7099e34aa5982375281017a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/24481ac951c33224cbeab72e75c9a532.asset
+  - fileID: 369
+    classID: 114
+    packedSize: 15300
+    offset: 59722800
+    sourceAssetGUID: a8f0623d57db20745b32f1201b39b667
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/26e0abc7f520b5648aae50febfb065ca.asset
+  - fileID: 370
+    classID: 114
+    packedSize: 14108
+    offset: 59738104
+    sourceAssetGUID: 1a39be9390a8482448e82142c7cb2844
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/29ccc9c21b4da6a449c0ed3dff1f5e89.asset
+  - fileID: 371
+    classID: 114
+    packedSize: 17776
+    offset: 59752216
+    sourceAssetGUID: 50d9233581198f1449b8dd352dd59c1a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/2c76d37c798376049b99be96c2172c9a.asset
+  - fileID: 372
+    classID: 114
+    packedSize: 17032
+    offset: 59769992
+    sourceAssetGUID: 3abdf86e91e79874f99e6e05233616c2
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/2e3005b4c475dcd4fa7e6472d700d765.asset
+  - fileID: 373
+    classID: 114
+    packedSize: 200336
+    offset: 59787024
+    sourceAssetGUID: 57497fdd57e9c3b459bcdbb8929e787d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/2fd7d1ca94a40df468208c80b4fd0e99.asset
+  - fileID: 374
+    classID: 114
+    packedSize: 88288
+    offset: 59987360
+    sourceAssetGUID: 90d49af1c639a1d40a7ae586c82a10a2
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/32b5878a4459114439a037465beab1a0.asset
+  - fileID: 375
+    classID: 114
+    packedSize: 61672
+    offset: 60075648
+    sourceAssetGUID: 5d22d43b9a6158548bd4976b8929a74d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/33124a0bb03513d46a3c035bd55b306e.asset
+  - fileID: 376
+    classID: 114
+    packedSize: 107080
+    offset: 60137320
+    sourceAssetGUID: bcbdac8c7683e084b9cd53971e70a1fc
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/36b860ac299df9d4091aba890dab1d6e.asset
+  - fileID: 377
+    classID: 114
+    packedSize: 13972
+    offset: 60244400
+    sourceAssetGUID: c9ca74099df9a434ab33661584c126de
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/37128122e45947f4c9bafee4e875471b.asset
+  - fileID: 378
+    classID: 114
+    packedSize: 55456
+    offset: 60258376
+    sourceAssetGUID: a6dd4cafe0f290745a44bada4aa00513
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/3a4eeb1b9df5aaf4791e5d9f3925f8ef.asset
+  - fileID: 379
+    classID: 114
+    packedSize: 86048
+    offset: 60313832
+    sourceAssetGUID: 625b5205ab2b1b04b86ea73daa703613
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/403f2c33c3aa6934cb2ce89f336774c1.asset
+  - fileID: 380
+    classID: 114
+    packedSize: 30168
+    offset: 60399880
+    sourceAssetGUID: 23acc4bb06cf5db4cbed95776d36f36b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/47e053767c6fba144b15e35bde6eee7b.asset
+  - fileID: 381
+    classID: 114
+    packedSize: 14052
+    offset: 60430048
+    sourceAssetGUID: 48321f7662f678c47a3d26dd35ece2fb
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/4dde151da9d96ee4c99c1ee8c281c3d5.asset
+  - fileID: 382
+    classID: 114
+    packedSize: 32324
+    offset: 60444104
+    sourceAssetGUID: 106ed6818fd77774a892b6199077431a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5195d51780c6c3c419e86c487d011ae8.asset
+  - fileID: 383
+    classID: 114
+    packedSize: 16528
+    offset: 60476432
+    sourceAssetGUID: 8b5e62d98f5aed44c8f0609f835c3abd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/532f991406e2f464bb6e3fe935353849.asset
+  - fileID: 384
+    classID: 114
+    packedSize: 36836
+    offset: 60492960
+    sourceAssetGUID: 32677cc0781d42449b5c03e055d78087
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5470d68c578ffdb4f8885db1a9bf0b80.asset
+  - fileID: 385
+    classID: 114
+    packedSize: 86056
+    offset: 60529800
+    sourceAssetGUID: 8c9e19862022c9343b74634c15a1b7c8
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/56f2072e6de88d94bb108e174d92e29e.asset
+  - fileID: 386
+    classID: 114
+    packedSize: 23064
+    offset: 60615856
+    sourceAssetGUID: 4c069ad221ee63840916bd75e93113f1
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/572e09f66acf8704c8d36e9a4a2ba452.asset
+  - fileID: 387
+    classID: 114
+    packedSize: 15260
+    offset: 60638920
+    sourceAssetGUID: 908581c5fe8f03b47a88ac7909a702e9
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/595ad42caf822b74180549b0e48e28c9.asset
+  - fileID: 388
+    classID: 114
+    packedSize: 10768
+    offset: 60654184
+    sourceAssetGUID: 100221aed1b4f754fae949bfb5852199
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5c1f36ab8afd0c54d8194109b4769ef8.asset
+  - fileID: 389
+    classID: 114
+    packedSize: 12228
+    offset: 60664952
+    sourceAssetGUID: 8b98919f50e39814eb60c1af3c70dbbd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5f988b73463aa1444b995336443a7865.asset
+  - fileID: 390
+    classID: 114
+    packedSize: 15300
+    offset: 60677184
+    sourceAssetGUID: 3282b2e0e10472c48970949c75a814f8
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5fb2153cc474cb04c8ae86bf85955e03.asset
+  - fileID: 391
+    classID: 114
+    packedSize: 34824
+    offset: 60692488
+    sourceAssetGUID: 73c8e562eff801343b046d97f0ac2b91
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/64e8a70b99e8eed46be187c7174e78fa.asset
+  - fileID: 392
+    classID: 114
+    packedSize: 45736
+    offset: 60727312
+    sourceAssetGUID: be70de068916ea14b913592736477f2d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/699347fe888976d49aa998dcfb56e23c.asset
+  - fileID: 393
+    classID: 114
+    packedSize: 100888
+    offset: 60773048
+    sourceAssetGUID: ff4bed9347a18be47b13bcf64b02d284
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/6a92ce3fc6c9454429f8edbf1a9cbceb.asset
+  - fileID: 394
+    classID: 114
+    packedSize: 78780
+    offset: 60873936
+    sourceAssetGUID: 3bdf4f20f784a374285a3850c3e63be4
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/6e817487b0a65ae4e8aa05ed40bc8456.asset
+  - fileID: 395
+    classID: 114
+    packedSize: 72676
+    offset: 60952720
+    sourceAssetGUID: 92f3647ed772e8e48b4fcb501c8c047a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7063fb8e9b9fff04ba8529a8bcee1d9c.asset
+  - fileID: 396
+    classID: 114
+    packedSize: 14128
+    offset: 61025400
+    sourceAssetGUID: 7a1a1e0f8bb3d8a458bff8f6f30db0e3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/70e6beba1e21aed4c8f1a7ca38b99929.asset
+  - fileID: 397
+    classID: 114
+    packedSize: 59872
+    offset: 61039528
+    sourceAssetGUID: 86500144c451c214fbe7daecda564e8f
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7540f7c71c7c5b14a9756eeac5a9e95f.asset
+  - fileID: 398
+    classID: 114
+    packedSize: 47948
+    offset: 61099400
+    sourceAssetGUID: 152f3cf96fb180f48b3af3cf8172e672
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7735268f2205c9541a14713152bd9706.asset
+  - fileID: 399
+    classID: 114
+    packedSize: 25716
+    offset: 61147352
+    sourceAssetGUID: 3243122287fb65548b40fb007e66b3b3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7e54c726f7695ca41abdef5382002593.asset
+  - fileID: 400
+    classID: 114
+    packedSize: 27960
+    offset: 61173072
+    sourceAssetGUID: d9c323020873ceb43b01dcec33fecb95
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/87e1dba355c712247809db0389beb1a9.asset
+  - fileID: 401
+    classID: 114
+    packedSize: 65792
+    offset: 61201032
+    sourceAssetGUID: bf3f88f8a895e2f4aa04e07606551dad
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/88eb819275f748a4c9a209226bd14c8c.asset
+  - fileID: 402
+    classID: 114
+    packedSize: 15316
+    offset: 61266824
+    sourceAssetGUID: 4bdb49aac9ae75d41826fd12e25b4046
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/8da0d5e27886ff84e81b0fa830ed6c7a.asset
+  - fileID: 403
+    classID: 114
+    packedSize: 27900
+    offset: 61282144
+    sourceAssetGUID: 315a9a0ac00216c498e93be493222861
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/8de3bc79520c35149b0ef5f5bf994cb1.asset
+  - fileID: 404
+    classID: 114
+    packedSize: 16576
+    offset: 61310048
+    sourceAssetGUID: 2e7af1691d5f2d949a43c25a9064448a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/8eca62712b7135d4b84f505848f51aa4.asset
+  - fileID: 405
+    classID: 114
+    packedSize: 22944
+    offset: 61326624
+    sourceAssetGUID: ffc8ab0f8f57d1742a828168101b3133
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/907005790ca108741b8593ee1c6dcd85.asset
+  - fileID: 406
+    classID: 114
+    packedSize: 15268
+    offset: 61349568
+    sourceAssetGUID: 8aa019702ce1be24b97855a605409ef3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/915c794e3402df94e94b2b2604aed1dd.asset
+  - fileID: 407
+    classID: 114
+    packedSize: 16520
+    offset: 61364840
+    sourceAssetGUID: 1f1d8cfad1e8f8c4b9429f1d1f60ece9
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/96fae8f9365058a429fa1e4f1fbcad56.asset
+  - fileID: 408
+    classID: 114
+    packedSize: 27964
+    offset: 61381360
+    sourceAssetGUID: 6fc0cf41ff2ba884dbb84e53ad1cd36b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/97e900dac336bee458b117c46e4497e2.asset
+  - fileID: 409
+    classID: 114
+    packedSize: 61456
+    offset: 61409328
+    sourceAssetGUID: 9dbbac891e0e28c42aee7cfc8d63dcda
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/9dce673461ccf764f9209bd0ec0b962d.asset
+  - fileID: 410
+    classID: 114
+    packedSize: 17188
+    offset: 61470784
+    sourceAssetGUID: 2ae68bf61559dc84caec93f9ccbdda4e
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/9eadb8b1f82682e4e85febc84f2995a0.asset
+  - fileID: 411
+    classID: 114
+    packedSize: 9448
+    offset: 61487976
+    sourceAssetGUID: 8938beb9ac4f5bf4688253eb696733dd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a29a024598e130b4bb5a876f180addbd.asset
+  - fileID: 412
+    classID: 114
+    packedSize: 9444
+    offset: 61497424
+    sourceAssetGUID: 8fdf5dffce35a454290dc24840187f32
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a2dd4851411ed324f95f9f0e8b10f518.asset
+  - fileID: 413
+    classID: 114
+    packedSize: 23984
+    offset: 61506872
+    sourceAssetGUID: 3852429026317c340ab10395dafb7b17
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a830ffe1cd55b2c4eac2ab667ed9c962.asset
+  - fileID: 414
+    classID: 114
+    packedSize: 45620
+    offset: 61530856
+    sourceAssetGUID: 586aefab04e33ec40815814f5b1543ce
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a88716622fa9dee4382f6d2c95052490.asset
+  - fileID: 415
+    classID: 114
+    packedSize: 45620
+    offset: 61576480
+    sourceAssetGUID: f8fbf7a2ff0564a40b93e0900a0388e6
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a8b141330a657f840b352b42d23bfb90.asset
+  - fileID: 416
+    classID: 114
+    packedSize: 24544
+    offset: 61622104
+    sourceAssetGUID: b20e8841fad320f42a8cfc89e23aa9fd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a9767d5fc03fb444293eaacb6e238f0b.asset
+  - fileID: 417
+    classID: 114
+    packedSize: 17776
+    offset: 61646648
+    sourceAssetGUID: f9da5b80c9dada644a882367529a6c89
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ac773474169122e42b4ce33118e656c9.asset
+  - fileID: 418
+    classID: 114
+    packedSize: 15304
+    offset: 61664424
+    sourceAssetGUID: 532154c5c39c26140aa825ee88631e81
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ac91abd79afe1ab40a37260a0956a53b.asset
+  - fileID: 419
+    classID: 114
+    packedSize: 30468
+    offset: 61679728
+    sourceAssetGUID: 5eb4af47b27d67f419122fcb2e8c7c8c
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/b509d3d4b5488fc40b2fc4c5de2aee5a.asset
+  - fileID: 420
+    classID: 114
+    packedSize: 22892
+    offset: 61710200
+    sourceAssetGUID: d67217d7f1e9e434087f75a0f3560dad
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/bfe989037663a864596eed2353ed553c.asset
+  - fileID: 421
+    classID: 114
+    packedSize: 48000
+    offset: 61733096
+    sourceAssetGUID: 75d4bbace439ee64ca43591e52807826
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c28023a9f1e1c3347a6e8748e1f021a5.asset
+  - fileID: 422
+    classID: 114
+    packedSize: 51448
+    offset: 61781096
+    sourceAssetGUID: 1ed2e49e33cdfc64fb87d40547ad1a5d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c3e00580b38579d4498336e48a5e6ff5.asset
+  - fileID: 423
+    classID: 114
+    packedSize: 17068
+    offset: 61832544
+    sourceAssetGUID: be861434d2236cf4aaffb7e78cb14c58
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c8df303ceb45ae84f85a11591f741734.asset
+  - fileID: 424
+    classID: 114
+    packedSize: 17236
+    offset: 61849616
+    sourceAssetGUID: 02037739e7f3e6641942c419d37f87be
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/caec51ef148f11d43aa5c11a593c76dd.asset
+  - fileID: 425
+    classID: 114
+    packedSize: 58172
+    offset: 61866856
+    sourceAssetGUID: 3cd14df47dbb8dd45903c4077fe74985
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d1835dde6ed4df7428c93542eced915a.asset
+  - fileID: 426
+    classID: 114
+    packedSize: 14032
+    offset: 61925032
+    sourceAssetGUID: 07f85c56e6945f34b8d6693c20a374c8
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d1ddc06be5ccb9442a0ab04c1cc081d4.asset
+  - fileID: 427
+    classID: 114
+    packedSize: 14040
+    offset: 61939064
+    sourceAssetGUID: 9c7e6bc06074402409802b6e1687928f
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d3b3d191d51ee1143aae49fc8cb50904.asset
+  - fileID: 428
+    classID: 114
+    packedSize: 19552
+    offset: 61953104
+    sourceAssetGUID: e0ec7895a9300494da95c40ba87d8e90
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d5dadc01e1bf42a44a0d11c636a86073.asset
+  - fileID: 429
+    classID: 114
+    packedSize: 14032
+    offset: 61972656
+    sourceAssetGUID: 4930b3a2e462d144b947589cd5dd2102
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d782c17b34074a74484f4aa722d05673.asset
+  - fileID: 430
+    classID: 114
+    packedSize: 43408
+    offset: 61986688
+    sourceAssetGUID: 15e71ed668f85dc469e1c1c3459fc91c
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d89334515fdb5094d9c29cc79cd9a667.asset
+  - fileID: 431
+    classID: 114
+    packedSize: 15672
+    offset: 62030096
+    sourceAssetGUID: 4eceb218c3c46b8419b4adbe09f99874
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/da00f3e7971315f4f8e49c096ba5148a.asset
+  - fileID: 432
+    classID: 114
+    packedSize: 14088
+    offset: 62045768
+    sourceAssetGUID: 03574891341a47e4ab83229f4a948904
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/dd61c5096d5c35d4b9d2536413f5abf6.asset
+  - fileID: 433
+    classID: 114
+    packedSize: 16112
+    offset: 62059856
+    sourceAssetGUID: fafba794b38091346a52aab547ac0f81
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/dd8ca3e92a4dcda41899055793c16750.asset
+  - fileID: 434
+    classID: 114
+    packedSize: 22444
+    offset: 62075968
+    sourceAssetGUID: cbe68f9cf87e4a745b99aaba89b79e50
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e02b6841ddd33a24b95989f27c45145f.asset
+  - fileID: 435
+    classID: 114
+    packedSize: 39724
+    offset: 62098416
+    sourceAssetGUID: 54fb8096ee76a9841a32643a7240da29
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e211384b263791d48aab8aa73ec0b408.asset
+  - fileID: 436
+    classID: 114
+    packedSize: 26556
+    offset: 62138144
+    sourceAssetGUID: 685cbdaba8db1c041bb8d30703eaf46e
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e334092b2a83f4c4b85262140459cc39.asset
+  - fileID: 437
+    classID: 114
+    packedSize: 35660
+    offset: 62164704
+    sourceAssetGUID: 40cf48ac2acedd24b98568a12919752b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e60772d35af85134ca30bf3d0623a5bb.asset
+  - fileID: 438
+    classID: 114
+    packedSize: 23656
+    offset: 62200368
+    sourceAssetGUID: 4dd646e32eb54894892cdd649d31af6b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e86e5c0d0b9e18247b68b8310f415ade.asset
+  - fileID: 439
+    classID: 114
+    packedSize: 8852
+    offset: 62224024
+    sourceAssetGUID: b57774468a0b809438c226894868f776
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e9b19f53f140598419158f5123a34951.asset
+  - fileID: 440
+    classID: 114
+    packedSize: 11228
+    offset: 62232880
+    sourceAssetGUID: cbb21d3e742d9454b9fb17b1a7c01b7e
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/eac07254d9084134cb1ed4610d4da9f0.asset
+  - fileID: 441
+    classID: 114
+    packedSize: 15268
+    offset: 62244112
+    sourceAssetGUID: 41cc66637da21f342bb7cb75eb275064
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ecb0fcc15b3c70148b9e6c7d6fa077d1.asset
+  - fileID: 442
+    classID: 114
+    packedSize: 27900
+    offset: 62259384
+    sourceAssetGUID: 9a04c7be77088c947ba604dd141cd9f3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/f11dba788b2d7bf4dbef94631a98c341.asset
+  - fileID: 443
+    classID: 114
+    packedSize: 8012
+    offset: 62287288
+    sourceAssetGUID: 0f4be6fd4c4f59d4183ffa621b0a6063
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/fc58f4f069e453d41b4a0e01b6fd4a2a.asset
+  - fileID: 444
+    classID: 114
+    packedSize: 70012
+    offset: 62295304
+    sourceAssetGUID: 36bed5798b5e0904b9f5cb1ead03cc08
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/fc7e0a6ae6ea657469b772bedb306d8a.asset
+  - fileID: 445
+    classID: 114
+    packedSize: 132640
+    offset: 62365320
+    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
+  - fileID: 446
+    classID: 114
+    packedSize: 135768
+    offset: 62497960
+    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
+  - fileID: 447
+    classID: 114
+    packedSize: 137604
+    offset: 62633728
+    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
+  - fileID: 448
+    classID: 114
+    packedSize: 137604
+    offset: 62771336
+    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
+  - fileID: 449
+    classID: 114
+    packedSize: 137592
+    offset: 62908944
+    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
+  - fileID: 450
+    classID: 114
+    packedSize: 1152
+    offset: 63046536
+    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+  - fileID: 451
+    classID: 114
+    packedSize: 27760
+    offset: 63047688
+    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+  - fileID: 452
+    classID: 114
+    packedSize: 2228
+    offset: 63075448
+    sourceAssetGUID: 1c234599346f0654699178572854b4e5
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
+      SDF.asset
+--- !u!1126 &4655857200501663777
+PackedAssets:
+  m_File: 32
+  m_ShortPath: 510d04b2691d0e72e7cbf040631a1dfb.caw
+  m_Overhead: 530056
+  m_Contents: []
+--- !u!1126 &4671530214826810276
+PackedAssets:
+  m_File: 80
+  m_ShortPath: 9039e3cfcdcc836aabb8b1bcddb915eb.caw
+  m_Overhead: 7920
+  m_Contents: []
+--- !u!1126 &4821706416408427829
+PackedAssets:
+  m_File: 92
+  m_ShortPath: a550149d09709cebbddc59ade4ad87f0.caw
+  m_Overhead: 9074
+  m_Contents: []
+--- !u!1126 &4845231929944184228
+PackedAssets:
+  m_File: 10
+  m_ShortPath: 2f0cec9f51abfa3f696967746f59bc29.iws.neo
+  m_Overhead: 13960
+  m_Contents: []
+--- !u!1126 &4903269275960029170
+PackedAssets:
+  m_File: 18
+  m_ShortPath: 40d015d7f6bee0078c1f26d34fed87a2.rsc.neo
+  m_Overhead: 187560
+  m_Contents: []
+--- !u!1126 &5020304149473438465
+PackedAssets:
+  m_File: 37
+  m_ShortPath: 510d04b2691d0e72e7cbf040631a1dfb.vis
+  m_Overhead: 309450
+  m_Contents: []
+--- !u!1126 &5050917348675555811
+PackedAssets:
+  m_File: 50
+  m_ShortPath: 6901cc19bd34b10077168def0e22060b.caw
+  m_Overhead: 11344
+  m_Contents: []
+--- !u!1126 &5129926001656625213
+PackedAssets:
+  m_File: 6
+  m_ShortPath: 040ebc7a46b0ff9b511e2b1eabe5cce7.rsc.neo
+  m_Overhead: 271144
+  m_Contents: []
+--- !u!1126 &5156645800345400702
+PackedAssets:
+  m_File: 64
+  m_ShortPath: 6fbe16f219d914236abf4435c1c2a7d9.iws.neo
+  m_Overhead: 30504
+  m_Contents: []
+--- !u!1126 &5179184483101883290
+PackedAssets:
+  m_File: 134
+  m_ShortPath: e063f52ab712544ee98da253cf54f7d1.caw
+  m_Overhead: 6686
+  m_Contents: []
+--- !u!1126 &5427474712220024487
+PackedAssets:
+  m_File: 97
+  m_ShortPath: a550149d09709cebbddc59ade4ad87f0.vis
+  m_Overhead: 13537
+  m_Contents: []
+--- !u!1126 &5473483663198606706
+PackedAssets:
+  m_File: 93
+  m_ShortPath: a550149d09709cebbddc59ade4ad87f0.ecm
+  m_Overhead: 10824
+  m_Contents: []
+--- !u!1126 &5487694093351539114
+PackedAssets:
+  m_File: 62
+  m_ShortPath: 6fbe16f219d914236abf4435c1c2a7d9.caw
+  m_Overhead: 12306
+  m_Contents: []
+--- !u!1126 &5759450370546510710
+PackedAssets:
+  m_File: 86
+  m_ShortPath: 91a407b6733fa8353c6ac63ab6bfec96.caw
+  m_Overhead: 10754
+  m_Contents: []
+--- !u!1126 &5774215442610638238
+PackedAssets:
+  m_File: 28
+  m_ShortPath: 49ee8d27739288282d437239bc583ff3.iws.neo
+  m_Overhead: 24440
+  m_Contents: []
+--- !u!1126 &5902335289783626451
+PackedAssets:
+  m_File: 83
+  m_ShortPath: 9039e3cfcdcc836aabb8b1bcddb915eb.rgb
+  m_Overhead: 13488
+  m_Contents: []
+--- !u!1126 &6011212000158311869
+PackedAssets:
+  m_File: 81
+  m_ShortPath: 9039e3cfcdcc836aabb8b1bcddb915eb.ecm
+  m_Overhead: 13448
+  m_Contents: []
+--- !u!1126 &6208343314630853814
+PackedAssets:
+  m_File: 91
+  m_ShortPath: 91a407b6733fa8353c6ac63ab6bfec96.vis
+  m_Overhead: 17845
+  m_Contents: []
+--- !u!1126 &6315408110822547687
+PackedAssets:
+  m_File: 25
+  m_ShortPath: 45871f0615f369e9a60cf8d850c1a3a4.vis
+  m_Overhead: 12435
+  m_Contents: []
+--- !u!1126 &6483494774373244305
+PackedAssets:
+  m_File: 40
+  m_ShortPath: 55af6f6e3dd2e0f24b974a632ed0943d.iws.neo
+  m_Overhead: 15128
+  m_Contents: []
+--- !u!1126 &6564793312621732101
+PackedAssets:
+  m_File: 104
+  m_ShortPath: af0b9f42d95987c7b1c665724292945e.caw
+  m_Overhead: 10828
+  m_Contents: []
+--- !u!1126 &6646473815785734886
+PackedAssets:
+  m_File: 105
+  m_ShortPath: af0b9f42d95987c7b1c665724292945e.ecm
+  m_Overhead: 10760
+  m_Contents: []
+--- !u!641289076 &6745080123055602307
+AudioBuildInfo:
+  m_IsAudioDisabled: 0
+  m_AudioClipCount: 0
+  m_AudioMixerCount: 0
+--- !u!1126 &6917622598013174022
+PackedAssets:
+  m_File: 146
+  m_ShortPath: e8940e001c0b3b816cc807a1c3f26264.caw
+  m_Overhead: 10548
+  m_Contents: []
+--- !u!1126 &7127033728721453231
+PackedAssets:
+  m_File: 11
+  m_ShortPath: 2f0cec9f51abfa3f696967746f59bc29.rgb
+  m_Overhead: 10416
+  m_Contents: []
+--- !u!1126 &7137704932053094152
+PackedAssets:
+  m_File: 75
+  m_ShortPath: 820e09c319f97290be785e938b0a8140.ecm
+  m_Overhead: 11240
+  m_Contents: []
+--- !u!1126 &7254943627899084659
+PackedAssets:
+  m_File: 27
+  m_ShortPath: 49ee8d27739288282d437239bc583ff3.ecm
+  m_Overhead: 10760
+  m_Contents: []
+--- !u!1126 &7406840314221274774
+PackedAssets:
+  m_File: 154
+  m_ShortPath: CAB-f46e8ffc7624421a41a0a5443a36c071
+  m_Overhead: 4096
+  m_Contents:
+  - fileID: 1
+    classID: 142
+    packedSize: 104
+    offset: 4096
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: AssetBundle Object
+  - fileID: 2
+    classID: 290
+    packedSize: 92
+    offset: 4200
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 'Built-in AssetBundleManifest: AssetBundleManifest'
+--- !u!1126 &7412794977508888302
+PackedAssets:
+  m_File: 103
+  m_ShortPath: a744f7d7be09d09035e70069a84e61ea.vis
+  m_Overhead: 9914
+  m_Contents: []
+--- !u!1126 &7459171547286331981
+PackedAssets:
+  m_File: 90
+  m_ShortPath: 91a407b6733fa8353c6ac63ab6bfec96.rsc.neo
+  m_Overhead: 221064
+  m_Contents: []
+--- !u!1126 &7580257662334413230
+PackedAssets:
+  m_File: 45
+  m_ShortPath: 600c8c2ba0c1e17ae698929a11a485b0.ecm
+  m_Overhead: 9864
+  m_Contents: []
+--- !u!1126 &7598861862283926601
+PackedAssets:
+  m_File: 94
+  m_ShortPath: a550149d09709cebbddc59ade4ad87f0.iws.neo
+  m_Overhead: 20376
+  m_Contents: []
+--- !u!1126 &7678429465074485003
+PackedAssets:
+  m_File: 60
+  m_ShortPath: 6ea3212664e4ba9ce578bd60eeca61d9.rsc.neo
+  m_Overhead: 269688
+  m_Contents: []
+--- !u!1126 &7751711989062658260
+PackedAssets:
+  m_File: 23
+  m_ShortPath: 45871f0615f369e9a60cf8d850c1a3a4.rgb
+  m_Overhead: 11568
+  m_Contents: []
+--- !u!1126 &7781229559965340497
+PackedAssets:
+  m_File: 132
+  m_ShortPath: d9352aa3c65cb39ab8658006fb63368c.rsc.neo
+  m_Overhead: 229624
+  m_Contents: []
+--- !u!1126 &7810217684338797889
+PackedAssets:
+  m_File: 54
+  m_ShortPath: 6901cc19bd34b10077168def0e22060b.rsc.neo
+  m_Overhead: 261256
+  m_Contents: []
+--- !u!1126 &7836460280149353503
+PackedAssets:
+  m_File: 51
+  m_ShortPath: 6901cc19bd34b10077168def0e22060b.ecm
+  m_Overhead: 13320
+  m_Contents: []
+--- !u!1126 &7933116332038663277
+PackedAssets:
+  m_File: 21
+  m_ShortPath: 45871f0615f369e9a60cf8d850c1a3a4.ecm
+  m_Overhead: 11528
+  m_Contents: []
+--- !u!1126 &8279735918217409287
+PackedAssets:
+  m_File: 13
+  m_ShortPath: 2f0cec9f51abfa3f696967746f59bc29.vis
+  m_Overhead: 10999
+  m_Contents: []
+--- !u!1126 &8364795296156482015
+PackedAssets:
+  m_File: 77
+  m_ShortPath: 820e09c319f97290be785e938b0a8140.rgb
+  m_Overhead: 11280
+  m_Contents: []
+--- !u!1126 &8381483009278583210
+PackedAssets:
+  m_File: 43
+  m_ShortPath: 55af6f6e3dd2e0f24b974a632ed0943d.vis
+  m_Overhead: 11254
+  m_Contents: []
+--- !u!1126 &8616582234028072212
+PackedAssets:
+  m_File: 9
+  m_ShortPath: 2f0cec9f51abfa3f696967746f59bc29.ecm
+  m_Overhead: 10376
+  m_Contents: []
+--- !u!1126 &8656598280548294808
+PackedAssets:
+  m_File: 124
+  m_ShortPath: d60e6af3b6e2d1b4093860b085859f96.iws.neo
+  m_Overhead: 23656
+  m_Contents: []
+--- !u!1126 &8685985743421571449
+PackedAssets:
+  m_File: 82
+  m_ShortPath: 9039e3cfcdcc836aabb8b1bcddb915eb.iws.neo
+  m_Overhead: 16664
+  m_Contents: []
+--- !u!1126 &8703934090981947936
+PackedAssets:
+  m_File: 7
+  m_ShortPath: 040ebc7a46b0ff9b511e2b1eabe5cce7.vis
+  m_Overhead: 7209
+  m_Contents: []
+--- !u!1126 &8710366097630659100
+PackedAssets:
+  m_File: 126
+  m_ShortPath: d60e6af3b6e2d1b4093860b085859f96.rsc.neo
+  m_Overhead: 217272
+  m_Contents: []
+--- !u!1126 &8713831696741175041
+PackedAssets:
+  m_File: 36
+  m_ShortPath: 510d04b2691d0e72e7cbf040631a1dfb.rsc.neo
+  m_Overhead: 5618488
+  m_Contents: []
+--- !u!1126 &8718348177019508757
+PackedAssets:
+  m_File: 142
+  m_ShortPath: e3c96a6badd302fd926dddde90bbb3e9.iws.neo
+  m_Overhead: 12952
+  m_Contents: []
+--- !u!1126 &8752705751102656542
+PackedAssets:
+  m_File: 85
+  m_ShortPath: 9039e3cfcdcc836aabb8b1bcddb915eb.vis
+  m_Overhead: 12023
+  m_Contents: []
+--- !u!1126 &8821035224196579850
+PackedAssets:
+  m_File: 55
+  m_ShortPath: 6901cc19bd34b10077168def0e22060b.vis
+  m_Overhead: 16485
+  m_Contents: []
+--- !u!1126 &9212840071763054924
+PackedAssets:
+  m_File: 16
+  m_ShortPath: 40d015d7f6bee0078c1f26d34fed87a2.iws.neo
+  m_Overhead: 10008
+  m_Contents: []
