@@ -1,8 +1,2225 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1126 &-2818683387201859224
+--- !u!1126 &-7427080781289697633
 PackedAssets:
-  m_File: 4
+  m_File: 1
+  m_ShortPath: BuildPlayer-Scene.sharedAssets
+  m_Overhead: 145764
+  m_Contents:
+  - fileID: 1
+    classID: 150
+    packedSize: 121
+    offset: 147664
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 2
+    classID: 142
+    packedSize: 128
+    offset: 147792
+    sourceAssetGUID: 00000000000000000000000000000000
+    buildTimeAssetPath: 
+  - fileID: 3
+    classID: 21
+    packedSize: 1756
+    offset: 147920
+    sourceAssetGUID: 1c234599346f0654699178572854b4e5
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
+      SDF.asset
+  - fileID: 4
+    classID: 21
+    packedSize: 252
+    offset: 149680
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 5
+    classID: 21
+    packedSize: 660
+    offset: 149936
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 6
+    classID: 21
+    packedSize: 700
+    offset: 150600
+    sourceAssetGUID: 71aed95e44aca9241ab64e35cf0c1406
+    buildTimeAssetPath: Assets/materials/ReplacementForDefaultMat.mat
+  - fileID: 7
+    classID: 21
+    packedSize: 696
+    offset: 151304
+    sourceAssetGUID: e941d0d6425697b499256f89933a0df2
+    buildTimeAssetPath: Assets/models/AurynSky/Rockets Missiles and Bombs/Materials/RocketsPalletteRed.mat
+  - fileID: 8
+    classID: 21
+    packedSize: 692
+    offset: 152000
+    sourceAssetGUID: 3f6e773f4260ae14f907c9819b40b281
+    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Box_Of_Pandora.mat
+  - fileID: 9
+    classID: 21
+    packedSize: 592
+    offset: 152696
+    sourceAssetGUID: 566428f457572c249a5ec48d349f2488
+    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Dust_particles.mat
+  - fileID: 10
+    classID: 21
+    packedSize: 592
+    offset: 153288
+    sourceAssetGUID: f47e41e4ec1f46641a912dd7f8b381d9
+    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Stars_particles.mat
+  - fileID: 11
+    classID: 21
+    packedSize: 544
+    offset: 153880
+    sourceAssetGUID: 710e4b660b5be7243a65dcba43c58953
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/Wall.mat
+  - fileID: 12
+    classID: 21
+    packedSize: 900
+    offset: 154424
+    sourceAssetGUID: 3be9231021208864199d8bab6423be59
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b1-1.mat
+  - fileID: 13
+    classID: 21
+    packedSize: 936
+    offset: 155328
+    sourceAssetGUID: f632b1c8557e32d43bff941c3a868a84
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b1.mat
+  - fileID: 14
+    classID: 21
+    packedSize: 888
+    offset: 156264
+    sourceAssetGUID: 00d0da6cbf30c1440bce2c1a4dfea6bf
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b2-2.mat
+  - fileID: 15
+    classID: 21
+    packedSize: 936
+    offset: 157152
+    sourceAssetGUID: c0e5deab59a7c22429e6cf07ac305842
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b2.mat
+  - fileID: 16
+    classID: 21
+    packedSize: 888
+    offset: 158088
+    sourceAssetGUID: 0cc39ea3a36172d439a872bcdf8c3d60
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3-1.mat
+  - fileID: 17
+    classID: 21
+    packedSize: 888
+    offset: 158976
+    sourceAssetGUID: 1e2f5a37bec567c4fa4483c075b4b840
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3-2.mat
+  - fileID: 18
+    classID: 21
+    packedSize: 888
+    offset: 159864
+    sourceAssetGUID: 4e7c2a4e38ce4e7469ef981fa12cade0
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3.mat
+  - fileID: 19
+    classID: 21
+    packedSize: 888
+    offset: 160752
+    sourceAssetGUID: 16571a3bb7d80e3408d5bb613d38a483
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-1.mat
+  - fileID: 20
+    classID: 21
+    packedSize: 888
+    offset: 161640
+    sourceAssetGUID: 0e5d9e87db75fbb41be0cdc300f654e9
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-2.mat
+  - fileID: 21
+    classID: 21
+    packedSize: 888
+    offset: 162528
+    sourceAssetGUID: 08a700b757b21744089a6ed03a436030
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-3.mat
+  - fileID: 22
+    classID: 21
+    packedSize: 888
+    offset: 163416
+    sourceAssetGUID: c823db213c09c834b9291fa879c9e5eb
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4.mat
+  - fileID: 23
+    classID: 21
+    packedSize: 888
+    offset: 164304
+    sourceAssetGUID: a31446a010d7d694da579576b289bb89
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b5-1.mat
+  - fileID: 24
+    classID: 21
+    packedSize: 924
+    offset: 165192
+    sourceAssetGUID: f7d66f5a5cf854747a6809479c3564ec
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b5.mat
+  - fileID: 25
+    classID: 21
+    packedSize: 888
+    offset: 166120
+    sourceAssetGUID: 313045ffbb76988449f1faccd80570bb
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b6-1.mat
+  - fileID: 26
+    classID: 21
+    packedSize: 924
+    offset: 167008
+    sourceAssetGUID: 8d6a8ab164fd36340871beae26805e66
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b6.mat
+  - fileID: 27
+    classID: 21
+    packedSize: 888
+    offset: 167936
+    sourceAssetGUID: 9f723c8f07f957e4da495e12b2779ca0
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b7-1.mat
+  - fileID: 28
+    classID: 21
+    packedSize: 888
+    offset: 168824
+    sourceAssetGUID: 94b8ea75ad770ae4a8692954d7b3e565
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b7.mat
+  - fileID: 29
+    classID: 21
+    packedSize: 924
+    offset: 169712
+    sourceAssetGUID: 66b15b6002815bf439bc3dad5da76f33
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b8.mat
+  - fileID: 30
+    classID: 21
+    packedSize: 888
+    offset: 170640
+    sourceAssetGUID: 17213a5fcfb16cd4bb80c78d85dcc4bd
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b87.mat
+  - fileID: 31
+    classID: 21
+    packedSize: 900
+    offset: 171528
+    sourceAssetGUID: abaff2e6c6f61e248a1de0b7581c0ecd
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9-1.mat
+  - fileID: 32
+    classID: 21
+    packedSize: 888
+    offset: 172432
+    sourceAssetGUID: aea4367c3439bfa4cb701b038e72d72a
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9-2.mat
+  - fileID: 33
+    classID: 21
+    packedSize: 924
+    offset: 173320
+    sourceAssetGUID: 6642346c671ae614dad01dfbd7c930b8
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9.mat
+  - fileID: 34
+    classID: 21
+    packedSize: 532
+    offset: 174248
+    sourceAssetGUID: f76498cabe605b748892b96f1753f810
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1-1.mat
+  - fileID: 35
+    classID: 21
+    packedSize: 532
+    offset: 174784
+    sourceAssetGUID: c68a9e0db1f90234e967880f9b0ad825
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1-2.mat
+  - fileID: 36
+    classID: 21
+    packedSize: 532
+    offset: 175320
+    sourceAssetGUID: d286f3735a8867c4daf31227a0ce7d2e
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1.mat
+  - fileID: 37
+    classID: 21
+    packedSize: 532
+    offset: 175856
+    sourceAssetGUID: f423eed10fed2a74ca2db25968c54bc0
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p3.mat
+  - fileID: 38
+    classID: 21
+    packedSize: 532
+    offset: 176392
+    sourceAssetGUID: b51aeb17874a02c4d8ace7051fd050e7
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-1.mat
+  - fileID: 39
+    classID: 21
+    packedSize: 536
+    offset: 176928
+    sourceAssetGUID: 549d9539eea0bb14fa3041fe51ba4bb8
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-10.mat
+  - fileID: 40
+    classID: 21
+    packedSize: 536
+    offset: 177464
+    sourceAssetGUID: e44aca311f6aafa47a9367a0b39c956d
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-11.mat
+  - fileID: 41
+    classID: 21
+    packedSize: 684
+    offset: 178000
+    sourceAssetGUID: 2b62e5bee89dacf4f80cd407aa6e553b
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-12.mat
+  - fileID: 42
+    classID: 21
+    packedSize: 536
+    offset: 178688
+    sourceAssetGUID: 57e23a00bfd1fa44a9917a33042650be
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-13.mat
+  - fileID: 43
+    classID: 21
+    packedSize: 532
+    offset: 179224
+    sourceAssetGUID: f9e6b3c023cce864d9c32a5caca2d8bd
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-2.mat
+  - fileID: 44
+    classID: 21
+    packedSize: 532
+    offset: 179760
+    sourceAssetGUID: 67a869affe614cf458c166289ec5c0cc
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-3.mat
+  - fileID: 45
+    classID: 21
+    packedSize: 532
+    offset: 180296
+    sourceAssetGUID: 847a09f7e0fc78f498a9096ddf09cec5
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-4.mat
+  - fileID: 46
+    classID: 21
+    packedSize: 680
+    offset: 180832
+    sourceAssetGUID: 52738ad12e8939a4ca2bce867d8c29fa
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-5.mat
+  - fileID: 47
+    classID: 21
+    packedSize: 532
+    offset: 181512
+    sourceAssetGUID: 925de37b1535eb64eaf1db52d6a7e925
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-6.mat
+  - fileID: 48
+    classID: 21
+    packedSize: 532
+    offset: 182048
+    sourceAssetGUID: 78dedd9cc03606545b5e39e405717801
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-8.mat
+  - fileID: 49
+    classID: 21
+    packedSize: 532
+    offset: 182584
+    sourceAssetGUID: f50a3f765c712d244a86a6e1991d3097
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-9.mat
+  - fileID: 50
+    classID: 21
+    packedSize: 528
+    offset: 183120
+    sourceAssetGUID: e967ae8e487d0e5428eb5cb6d9286241
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Debris Trail.mat
+  - fileID: 51
+    classID: 21
+    packedSize: 1252
+    offset: 183648
+    sourceAssetGUID: 811e34dd05bc98e43883e3544122fbf6
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Explosion Material.mat
+  - fileID: 52
+    classID: 21
+    packedSize: 928
+    offset: 184904
+    sourceAssetGUID: 88cff8156d6c6864a8366c10b7f30b02
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Shell Smoke.mat
+  - fileID: 53
+    classID: 21
+    packedSize: 688
+    offset: 185832
+    sourceAssetGUID: 8b50b365d11af2045b41d99fdf804a25
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 1.mat
+  - fileID: 54
+    classID: 21
+    packedSize: 688
+    offset: 186520
+    sourceAssetGUID: 24fdcd4da49638a4385b372b22211e45
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 2.mat
+  - fileID: 55
+    classID: 21
+    packedSize: 724
+    offset: 187208
+    sourceAssetGUID: 0597842b5883a4441a3a09271a3d7afc
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 3.mat
+  - fileID: 56
+    classID: 21
+    packedSize: 960
+    offset: 187936
+    sourceAssetGUID: a58f5e46e3244d84f89a8162701c7f29
+    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Water Particle Material.mat
+  - fileID: 57
+    classID: 21
+    packedSize: 696
+    offset: 188896
+    sourceAssetGUID: 3d229e80c6fe24847a69d4f4d35cdc02
+    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/dark.mat
+  - fileID: 58
+    classID: 21
+    packedSize: 684
+    offset: 189592
+    sourceAssetGUID: de34c94c60272ea4f8246e81ee6e7701
+    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/metal.mat
+  - fileID: 59
+    classID: 21
+    packedSize: 732
+    offset: 190280
+    sourceAssetGUID: 8608c65c8d8774c4c96b8c64bbcd432c
+    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/yellow.mat
+  - fileID: 60
+    classID: 21
+    packedSize: 692
+    offset: 191016
+    sourceAssetGUID: 90619dff9df9dd644bc1b970b590b9d0
+    buildTimeAssetPath: Assets/scene prefabs/Tether/newTetherLine.mat
+  - fileID: 61
+    classID: 21
+    packedSize: 1140
+    offset: 191712
+    sourceAssetGUID: c815f7613a04b724089c206857e57c6a
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/MirrorReflection.mat
+  - fileID: 62
+    classID: 21
+    packedSize: 136
+    offset: 192856
+    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
+    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
+  - fileID: 63
+    classID: 21
+    packedSize: 136
+    offset: 192992
+    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
+  - fileID: 64
+    classID: 21
+    packedSize: 136
+    offset: 193128
+    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
+    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  - fileID: 65
+    classID: 21
+    packedSize: 2004
+    offset: 193264
+    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+  - fileID: 66
+    classID: 21
+    packedSize: 944
+    offset: 195272
+    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+  - fileID: 67
+    classID: 21
+    packedSize: 1740
+    offset: 196216
+    sourceAssetGUID: 3199409928624324999b9336dd1ed8f3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-BOLD SDF.asset
+  - fileID: 68
+    classID: 21
+    packedSize: 1744
+    offset: 197960
+    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
+  - fileID: 69
+    classID: 21
+    packedSize: 1744
+    offset: 199704
+    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
+  - fileID: 70
+    classID: 21
+    packedSize: 1744
+    offset: 201448
+    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
+  - fileID: 71
+    classID: 21
+    packedSize: 1740
+    offset: 203192
+    sourceAssetGUID: 2032339f567bde146b32a51cb1425adf
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-LIGHT SDF.asset
+  - fileID: 72
+    classID: 21
+    packedSize: 1740
+    offset: 204936
+    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
+  - fileID: 73
+    classID: 21
+    packedSize: 1740
+    offset: 206680
+    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
+  - fileID: 74
+    classID: 28
+    packedSize: 5564
+    offset: 208424
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 75
+    classID: 28
+    packedSize: 5568
+    offset: 213992
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 76
+    classID: 28
+    packedSize: 5576
+    offset: 219560
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 77
+    classID: 28
+    packedSize: 5564
+    offset: 225136
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 78
+    classID: 28
+    packedSize: 43548
+    offset: 230704
+    sourceAssetGUID: 05e3cc1417e5c224a973d923ca8926fd
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/transparent-textbox-grey-5.png
+  - fileID: 79
+    classID: 28
+    packedSize: 43896
+    offset: 274256
+    sourceAssetGUID: 05f659001c09bec428a6bf8899b37df6
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetail_Mono.png
+  - fileID: 80
+    classID: 28
+    packedSize: 21992
+    offset: 318152
+    sourceAssetGUID: 0eacdf0ca3a1eea489436a1e23a8bcf9
+    buildTimeAssetPath: Assets/ShopMenu/Money.png
+  - fileID: 81
+    classID: 28
+    packedSize: 5876
+    offset: 340144
+    sourceAssetGUID: 1f83b75f07feedf4baa18b728f75252a
+    buildTimeAssetPath: Assets/ShopMenu/avatars/junk.png
+  - fileID: 82
+    classID: 28
+    packedSize: 59276
+    offset: 346024
+    sourceAssetGUID: 2323cb669376e8c449c3c32670900315
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Wide_Mono.png
+  - fileID: 83
+    classID: 28
+    packedSize: 158532
+    offset: 405304
+    sourceAssetGUID: 291a8d39e3e4e374b82831225464867d
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/7.png
+  - fileID: 84
+    classID: 28
+    packedSize: 4148
+    offset: 563840
+    sourceAssetGUID: 2a11849d78988a3489d6ffa83d159ecd
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt2_Mono.png
+  - fileID: 85
+    classID: 28
+    packedSize: 2880
+    offset: 567992
+    sourceAssetGUID: 2ad70170f6ff89d468e5694143176d6b
+    buildTimeAssetPath: Assets/models/RPG Pack/Textures/Dust_particles.tif
+  - fileID: 86
+    classID: 28
+    packedSize: 1398216
+    offset: 570872
+    sourceAssetGUID: 2f7ad163b654bf74085060307e13db4a
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/CornerDetail_Mono.png
+  - fileID: 87
+    classID: 28
+    packedSize: 86352
+    offset: 1969088
+    sourceAssetGUID: 3187dae7a26a51c43a9c2304464e476f
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBunFull.png
+  - fileID: 88
+    classID: 28
+    packedSize: 6188
+    offset: 2055440
+    sourceAssetGUID: 31ae7127c07a4cb4e8ae749f6276660b
+    buildTimeAssetPath: Assets/ShopMenu/avatars/riderabbit.png
+  - fileID: 89
+    classID: 28
+    packedSize: 315092
+    offset: 2061632
+    sourceAssetGUID: 32003ac298524ed4f9bb893d2269dc75
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/1.png
+  - fileID: 90
+    classID: 28
+    packedSize: 608536
+    offset: 2376728
+    sourceAssetGUID: 331c21dedef52024d8f4687226e40056
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/roundedCorners-20140106_Marie-Plocharz.png
+  - fileID: 91
+    classID: 28
+    packedSize: 158532
+    offset: 2985264
+    sourceAssetGUID: 339a9f1f77ad1c947ac4998979e046f7
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Wall.png
+  - fileID: 92
+    classID: 28
+    packedSize: 315092
+    offset: 3143800
+    sourceAssetGUID: 36f575e8b20145d4a8f00baf4f8a22b3
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/4.png
+  - fileID: 93
+    classID: 28
+    packedSize: 40196
+    offset: 3458896
+    sourceAssetGUID: 38fe3005fffb8384997fcecde0a492f4
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p2.PNG
+  - fileID: 94
+    classID: 28
+    packedSize: 315092
+    offset: 3499096
+    sourceAssetGUID: 426137a77b8e3b64888c93516cb33ea3
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/3.png
+  - fileID: 95
+    classID: 28
+    packedSize: 315092
+    offset: 3814192
+    sourceAssetGUID: 449d38dc743aea44eb0b79bb4d3912c3
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/5.png
+  - fileID: 96
+    classID: 28
+    packedSize: 315092
+    offset: 4129288
+    sourceAssetGUID: 49b8952406f4e4846ac7565499c33046
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p1-1.png
+  - fileID: 97
+    classID: 28
+    packedSize: 16777324
+    offset: 4444384
+    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
+    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
+  - fileID: 98
+    classID: 28
+    packedSize: 6184
+    offset: 21221712
+    sourceAssetGUID: 5ffc621c8968cd041bf1112fe81e0662
+    buildTimeAssetPath: Assets/ShopMenu/avatars/olive.png
+  - fileID: 99
+    classID: 28
+    packedSize: 118448
+    offset: 21227896
+    sourceAssetGUID: 603eabcd71ec55e41be090a50f8b646e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/Icons/arrow_512x512.png
+  - fileID: 100
+    classID: 28
+    packedSize: 626388
+    offset: 21346344
+    sourceAssetGUID: 644e0e4db7c316e478bb13b12512b8b8
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Lensflare/Textures/0.png
+  - fileID: 101
+    classID: 28
+    packedSize: 315092
+    offset: 21972736
+    sourceAssetGUID: 6f1a86f841d29354ab6cdd061bc58722
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p1.png
+  - fileID: 102
+    classID: 28
+    packedSize: 5884
+    offset: 22287832
+    sourceAssetGUID: 6f457b6cbbfa2fe4d96c6a70c2fd98ee
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBun.png
+  - fileID: 103
+    classID: 28
+    packedSize: 315092
+    offset: 22293720
+    sourceAssetGUID: 737a61236509b1a44a4de3627b7b03d6
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/9.png
+  - fileID: 104
+    classID: 28
+    packedSize: 2497832
+    offset: 22608816
+    sourceAssetGUID: 7467e65286d90b64e89b620e5b48524e
+    buildTimeAssetPath: Assets/Scene/Lightmap-0_comp_light.exr
+  - fileID: 105
+    classID: 28
+    packedSize: 29696
+    offset: 25106648
+    sourceAssetGUID: 7c4fe4d7f09b5f044a56e45d8d8f7130
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/White_Circle.svg.png
+  - fileID: 106
+    classID: 28
+    packedSize: 6184
+    offset: 25136344
+    sourceAssetGUID: 7ccf9ae289d0dd34a9164ba11747e92c
+    buildTimeAssetPath: Assets/ShopMenu/avatars/seven.png
+  - fileID: 107
+    classID: 28
+    packedSize: 79796
+    offset: 25142528
+    sourceAssetGUID: 825ca8510f66cbf4cbef2df54bedb8a9
+    buildTimeAssetPath: Assets/models/RPG Pack/Textures/star.png
+  - fileID: 108
+    classID: 28
+    packedSize: 315092
+    offset: 25222328
+    sourceAssetGUID: 8282e4971a726e64982b4fec3a29e67a
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/4-1.png
+  - fileID: 109
+    classID: 28
+    packedSize: 40204
+    offset: 25537424
+    sourceAssetGUID: 8480de0448ee588459c5da29fd196fb0
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/SquareSolid.png
+  - fileID: 110
+    classID: 28
+    packedSize: 626404
+    offset: 25577632
+    sourceAssetGUID: 87b14570171a8be458a29df2cd70f078
+    buildTimeAssetPath: Assets/models/AurynSky/Rockets Missiles and Bombs/Textures/RocketsPalletteRed.png
+  - fileID: 111
+    classID: 28
+    packedSize: 5576
+    offset: 26204040
+    sourceAssetGUID: 93917c189b5f9204885d199e112c71fd
+    buildTimeAssetPath: Assets/ShopMenu/avatars/Robot.png
+  - fileID: 112
+    classID: 28
+    packedSize: 349652
+    offset: 26209616
+    sourceAssetGUID: 9e2ea1cb70ae8cf41a3db001d7b7cebb
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/ButtonHighlighted_Mono.png
+  - fileID: 113
+    classID: 28
+    packedSize: 738680
+    offset: 26559272
+    sourceAssetGUID: a4545ebf8e47ac946b3e3180e0975b2e
+    buildTimeAssetPath: Assets/ShopMenu/ui_bg.png
+  - fileID: 114
+    classID: 28
+    packedSize: 2239280
+    offset: 27297952
+    sourceAssetGUID: a4fde6e0b21dc224d813ee493157874f
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Hover_Mono.png
+  - fileID: 115
+    classID: 28
+    packedSize: 2239276
+    offset: 29537232
+    sourceAssetGUID: a8292d7c3170a7348accf3d85c0e7359
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Mono.png
+  - fileID: 116
+    classID: 28
+    packedSize: 349644
+    offset: 31776512
+    sourceAssetGUID: b6f33d10c75334f4884f8d7baddc69f4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/LoadingHighlight.png
+  - fileID: 117
+    classID: 28
+    packedSize: 626388
+    offset: 32126160
+    sourceAssetGUID: ba852b59c6ae3a74da474c5f4ad1935e
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/8.png
+  - fileID: 118
+    classID: 28
+    packedSize: 158536
+    offset: 32752552
+    sourceAssetGUID: bfa04bc0469b53a449d240f9980d81a9
+    buildTimeAssetPath: Assets/materials/flatMap.png
+  - fileID: 119
+    classID: 28
+    packedSize: 315092
+    offset: 32911088
+    sourceAssetGUID: d10fb6cc192a4f44cb942be9af8cf658
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/2.png
+  - fileID: 120
+    classID: 28
+    packedSize: 108
+    offset: 33226184
+    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
+  - fileID: 121
+    classID: 28
+    packedSize: 158532
+    offset: 33226296
+    sourceAssetGUID: da98ef60dfdef9148a861d729a3609c9
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/6.png
+  - fileID: 122
+    classID: 28
+    packedSize: 108
+    offset: 33384832
+    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
+    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  - fileID: 123
+    classID: 28
+    packedSize: 101352
+    offset: 33384944
+    sourceAssetGUID: e5a390d359542f845bd18b3970c5eff3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Press_Mono.png
+  - fileID: 124
+    classID: 28
+    packedSize: 626404
+    offset: 33486296
+    sourceAssetGUID: ebb57d4ee979f0f468fd27daa88b3179
+    buildTimeAssetPath: Assets/models/RPG Pack/Textures/BoxOfPandora_diffuse.png
+  - fileID: 125
+    classID: 28
+    packedSize: 40900
+    offset: 34112704
+    sourceAssetGUID: ec50faff23f099c48bf342bb3bcf274e
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p5-1.png
+  - fileID: 126
+    classID: 28
+    packedSize: 20872
+    offset: 34153608
+    sourceAssetGUID: ed2ba53c9ac56e443a585f4a3a7953d0
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/POSITION.png
+  - fileID: 127
+    classID: 28
+    packedSize: 5580
+    offset: 34174480
+    sourceAssetGUID: f18e648a7c56c97459bc9dd0cfe685dc
+    buildTimeAssetPath: Assets/ShopMenu/avatars/GreenBlob.png
+  - fileID: 128
+    classID: 28
+    packedSize: 7844
+    offset: 34180064
+    sourceAssetGUID: f2ffaaff4245a7d41b3bf53a0edc7595
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/LAPS.png
+  - fileID: 129
+    classID: 28
+    packedSize: 1250804
+    offset: 34187912
+    sourceAssetGUID: f8eea88e60170414db5d8fdc34e6527e
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p3.png
+  - fileID: 130
+    classID: 28
+    packedSize: 4148
+    offset: 35438720
+    sourceAssetGUID: fc4228f9270498248a1d3298777bf5da
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt1_Mono.png
+  - fileID: 131
+    classID: 28
+    packedSize: 6188
+    offset: 35442872
+    sourceAssetGUID: fddb13df76efe9045b3ad498bd991718
+    buildTimeAssetPath: Assets/ShopMenu/avatars/FighterKirby.png
+  - fileID: 132
+    classID: 28
+    packedSize: 120
+    offset: 35449064
+    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+  - fileID: 133
+    classID: 28
+    packedSize: 1048692
+    offset: 35449184
+    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
+  - fileID: 134
+    classID: 28
+    packedSize: 1048692
+    offset: 36497880
+    sourceAssetGUID: 2032339f567bde146b32a51cb1425adf
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-LIGHT SDF.asset
+  - fileID: 135
+    classID: 28
+    packedSize: 1048696
+    offset: 37546576
+    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
+  - fileID: 136
+    classID: 28
+    packedSize: 1048696
+    offset: 38595272
+    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
+  - fileID: 137
+    classID: 28
+    packedSize: 1048696
+    offset: 39643968
+    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
+  - fileID: 138
+    classID: 28
+    packedSize: 1048692
+    offset: 40692664
+    sourceAssetGUID: 3199409928624324999b9336dd1ed8f3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-BOLD SDF.asset
+  - fileID: 139
+    classID: 28
+    packedSize: 1048696
+    offset: 41741360
+    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+  - fileID: 140
+    classID: 28
+    packedSize: 1048696
+    offset: 42790056
+    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
+  - fileID: 141
+    classID: 28
+    packedSize: 1048692
+    offset: 43838752
+    sourceAssetGUID: 1c234599346f0654699178572854b4e5
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
+      SDF.asset
+  - fileID: 142
+    classID: 43
+    packedSize: 1620
+    offset: 44887448
+    sourceAssetGUID: 406ecc0c8ac4e524aa33202230ab9d1c
+    buildTimeAssetPath: Assets/models/misc meshes/cube_inverted_faces.fbx
+  - fileID: 143
+    classID: 43
+    packedSize: 27896
+    offset: 44889072
+    sourceAssetGUID: 2d32595ff0dc99f498218042be794cac
+    buildTimeAssetPath: Assets/models/blasterM.fbx
+  - fileID: 144
+    classID: 43
+    packedSize: 10666664
+    offset: 44916968
+    sourceAssetGUID: a8eec6fc6b0238e48bc767ad905a0d23
+    buildTimeAssetPath: "Assets/scene prefabs/Items/Spray/Pistolet \xE0 eau.fbx"
+  - fileID: 145
+    classID: 43
+    packedSize: 7400
+    offset: 55583632
+    sourceAssetGUID: 016d566e117d8fd43be08461a2df3027
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/3-1.fbx
+  - fileID: 146
+    classID: 43
+    packedSize: 20908
+    offset: 55591032
+    sourceAssetGUID: 11fc29c46ace9614aac1471a363525c1
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-4.fbx
+  - fileID: 147
+    classID: 43
+    packedSize: 7848
+    offset: 55611944
+    sourceAssetGUID: 1c9654e604a39b44b8293f6a34f7b66c
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/3.fbx
+  - fileID: 148
+    classID: 43
+    packedSize: 6012
+    offset: 55619792
+    sourceAssetGUID: 1f4a1ec0dedb43143a96c3d2e371b016
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-6.fbx
+  - fileID: 149
+    classID: 43
+    packedSize: 3896
+    offset: 55625808
+    sourceAssetGUID: 3745c28ede9bdf541bc2f0c5a7b3bfd2
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/2-1.fbx
+  - fileID: 150
+    classID: 43
+    packedSize: 17280
+    offset: 55629704
+    sourceAssetGUID: 3934c7a696d16b34e8892801fdda0e9f
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-5.fbx
+  - fileID: 151
+    classID: 43
+    packedSize: 5512
+    offset: 55646984
+    sourceAssetGUID: 4151a6192219ff249b121c536513d8ab
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/6.fbx
+  - fileID: 152
+    classID: 43
+    packedSize: 31468
+    offset: 55652496
+    sourceAssetGUID: 42152e0561545d64483b0f93dfbc9589
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-5.fbx
+  - fileID: 153
+    classID: 43
+    packedSize: 9512
+    offset: 55683968
+    sourceAssetGUID: 45414ae893ef0d24aaa8d91a7d834868
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/8.fbx
+  - fileID: 154
+    classID: 43
+    packedSize: 21324
+    offset: 55693480
+    sourceAssetGUID: 5529ec8d6f2af7a4194ea427aaf4f901
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-6.fbx
+  - fileID: 155
+    classID: 43
+    packedSize: 31156
+    offset: 55714808
+    sourceAssetGUID: 6379b00f66e16cd49b9df04eece629a3
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/7.fbx
+  - fileID: 156
+    classID: 43
+    packedSize: 8716
+    offset: 55745968
+    sourceAssetGUID: 6ad9d82f1af25f34ab6557c3d627a431
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p1.fbx
+  - fileID: 157
+    classID: 43
+    packedSize: 5740
+    offset: 55754688
+    sourceAssetGUID: 6bf94840710cc534ca5c718dd3733c51
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/4.fbx
+  - fileID: 158
+    classID: 43
+    packedSize: 1816
+    offset: 55760432
+    sourceAssetGUID: 6ea030f083954674b9d871dbecbcf011
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-2.fbx
+  - fileID: 159
+    classID: 43
+    packedSize: 44840
+    offset: 55762248
+    sourceAssetGUID: 6eda8701cab57474bb48b82c4d94944d
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/1.fbx
+  - fileID: 160
+    classID: 43
+    packedSize: 13016
+    offset: 55807088
+    sourceAssetGUID: 73deee65ec709a74aa72f4e27bfc3d35
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p1-1.fbx
+  - fileID: 161
+    classID: 43
+    packedSize: 4652
+    offset: 55820104
+    sourceAssetGUID: 78a8c0fcbd14a3241b17e232c96ef958
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-3.fbx
+  - fileID: 162
+    classID: 43
+    packedSize: 10736
+    offset: 55824760
+    sourceAssetGUID: a894c4c86d9e18f4d9d7ccd1a66399d7
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/p5-4.fbx
+  - fileID: 163
+    classID: 43
+    packedSize: 1824
+    offset: 55835496
+    sourceAssetGUID: c49350ef52968dc4eb3d925e1d19185e
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p2.fbx
+  - fileID: 164
+    classID: 43
+    packedSize: 27716
+    offset: 55837320
+    sourceAssetGUID: d0f4f4a6ea280eb49a9e01e9ab72fa18
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/5.fbx
+  - fileID: 165
+    classID: 43
+    packedSize: 8664
+    offset: 55865040
+    sourceAssetGUID: df5f660a0ad6ab24f8a986c2a33b341f
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/2.fbx
+  - fileID: 166
+    classID: 43
+    packedSize: 33756
+    offset: 55873704
+    sourceAssetGUID: f01b243fd257015438c2950cdbc4e872
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/p5-8.fbx
+  - fileID: 167
+    classID: 43
+    packedSize: 3256
+    offset: 55907464
+    sourceAssetGUID: f4b691195c179e945ac8f00a797961b2
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-7.fbx
+  - fileID: 168
+    classID: 43
+    packedSize: 24872
+    offset: 55910720
+    sourceAssetGUID: f637800949c72bf4c838823bdf15e754
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/9.fbx
+  - fileID: 169
+    classID: 43
+    packedSize: 13916
+    offset: 55935592
+    sourceAssetGUID: fb43c86eec07dd54eaf35d4cd3995ea8
+    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-7.fbx
+  - fileID: 170
+    classID: 43
+    packedSize: 6324
+    offset: 55949512
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 171
+    classID: 43
+    packedSize: 3644
+    offset: 55955840
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 172
+    classID: 43
+    packedSize: 5444
+    offset: 55959488
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 173
+    classID: 43
+    packedSize: 4988
+    offset: 55964936
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 174
+    classID: 43
+    packedSize: 18952
+    offset: 55969928
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 175
+    classID: 43
+    packedSize: 6140
+    offset: 55988880
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 176
+    classID: 43
+    packedSize: 6332
+    offset: 55995024
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 177
+    classID: 43
+    packedSize: 2612
+    offset: 56001360
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 178
+    classID: 43
+    packedSize: 6212
+    offset: 56003976
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 179
+    classID: 43
+    packedSize: 3092
+    offset: 56010192
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 180
+    classID: 43
+    packedSize: 6284
+    offset: 56013288
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 181
+    classID: 43
+    packedSize: 5108
+    offset: 56019576
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 182
+    classID: 43
+    packedSize: 7052
+    offset: 56024688
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 183
+    classID: 43
+    packedSize: 5420
+    offset: 56031744
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 184
+    classID: 43
+    packedSize: 2276
+    offset: 56037168
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 185
+    classID: 43
+    packedSize: 3908
+    offset: 56039448
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 186
+    classID: 43
+    packedSize: 2828
+    offset: 56043360
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 187
+    classID: 43
+    packedSize: 5468
+    offset: 56046192
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 188
+    classID: 43
+    packedSize: 3308
+    offset: 56051664
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 189
+    classID: 43
+    packedSize: 18080
+    offset: 56054976
+    sourceAssetGUID: 45d7b8cdea104d44ca0418178ec8138d
+    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Rocket02_mat_model.fbx
+  - fileID: 190
+    classID: 48
+    packedSize: 44368
+    offset: 56073056
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 191
+    classID: 48
+    packedSize: 303952
+    offset: 56117424
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 192
+    classID: 48
+    packedSize: 1474340
+    offset: 56421376
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 193
+    classID: 48
+    packedSize: 17800
+    offset: 57895720
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 194
+    classID: 48
+    packedSize: 10388
+    offset: 57913520
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 195
+    classID: 48
+    packedSize: 9964
+    offset: 57923912
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 196
+    classID: 48
+    packedSize: 6400
+    offset: 57933880
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 197
+    classID: 48
+    packedSize: 321916
+    offset: 57940280
+    sourceAssetGUID: 0b7113dea2069fc4e8943843eff19f70
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-StandardLite.shader
+  - fileID: 198
+    classID: 48
+    packedSize: 62692
+    offset: 58262200
+    sourceAssetGUID: 2dcd9e0568e0a6f45b92c60ba2eb16a0
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Diffuse.shader
+  - fileID: 199
+    classID: 48
+    packedSize: 61720
+    offset: 58324896
+    sourceAssetGUID: 68e6db2ebdc24f95958faec2be5558d6
+    buildTimeAssetPath: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+  - fileID: 200
+    classID: 48
+    packedSize: 7108
+    offset: 58386616
+    sourceAssetGUID: 693137b858e4dc64c83be531351f45e6
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mirror.shader
+  - fileID: 201
+    classID: 48
+    packedSize: 6412
+    offset: 58393728
+    sourceAssetGUID: 8b39b95ac85682040beff730e0cfc77a
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Particle-Alpha.shader
+  - fileID: 202
+    classID: 48
+    packedSize: 6404
+    offset: 58400144
+    sourceAssetGUID: 9200bec112b65ec4fbbbd33fa89c20f4
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Particle-Add.shader
+  - fileID: 203
+    classID: 48
+    packedSize: 11344
+    offset: 58406552
+    sourceAssetGUID: b1f7ecc80417c414b9d62ce541d5bcbf
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mobile/VRChat-Mobile-Lightmapped.shader
+  - fileID: 204
+    classID: 48
+    packedSize: 48776
+    offset: 58417896
+    sourceAssetGUID: fe393ace9b354375a9cb14cdbbc28be4
+    buildTimeAssetPath: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+  - fileID: 205
+    classID: 74
+    packedSize: 2372
+    offset: 58466672
+    sourceAssetGUID: 8e7e1ea2cd9147645a7352b9f511df2b
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Animations/HighlightFade.anim
+  - fileID: 206
+    classID: 74
+    packedSize: 58792
+    offset: 58469048
+    sourceAssetGUID: da547b840fa6c7f42b1e442741b758c7
+    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxOfPandora_Crash.anim
+  - fileID: 207
+    classID: 74
+    packedSize: 2248
+    offset: 58527840
+    sourceAssetGUID: 9f766eb0e8fc6c74ba1b27fe388f4057
+    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxOfPandora_Idle.anim
+  - fileID: 208
+    classID: 89
+    packedSize: 63264
+    offset: 58530088
+    sourceAssetGUID: bfd62bef43d3dfa47b00690ac98b1a25
+    buildTimeAssetPath: Assets/Scene/ReflectionProbe-1.exr
+  - fileID: 209
+    classID: 89
+    packedSize: 63264
+    offset: 58593352
+    sourceAssetGUID: c89dd5a47d0e2834fb32de1b5ee27893
+    buildTimeAssetPath: Assets/Scene/ReflectionProbe-0.exr
+  - fileID: 210
+    classID: 90
+    packedSize: 3356
+    offset: 58656616
+    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
+    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
+  - fileID: 211
+    classID: 91
+    packedSize: 432
+    offset: 58659976
+    sourceAssetGUID: f4f43775b058eee41abe03f631fe83a5
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Animations/HighlightFade.controller
+  - fileID: 212
+    classID: 91
+    packedSize: 584
+    offset: 58660408
+    sourceAssetGUID: b79f87718dae8f840b98142eef90b118
+    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxIdleAC.controller
+  - fileID: 213
+    classID: 115
+    packedSize: 92
+    offset: 144992
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 214
+    classID: 115
+    packedSize: 96
+    offset: 145088
+    sourceAssetGUID: 4ecd63eff847044b68db9453ce219299
+    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCCore-Editor.dll
+  - fileID: 215
+    classID: 115
+    packedSize: 108
+    offset: 145184
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 216
+    classID: 115
+    packedSize: 108
+    offset: 145296
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 217
+    classID: 115
+    packedSize: 96
+    offset: 145408
+    sourceAssetGUID: 0cd44c1031e13a943bb63640046fad76
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs
+  - fileID: 218
+    classID: 115
+    packedSize: 88
+    offset: 145504
+    sourceAssetGUID: 1344c3c82d62a2a41a3576d8abb8e3ea
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs
+  - fileID: 219
+    classID: 115
+    packedSize: 96
+    offset: 145592
+    sourceAssetGUID: 1aa08ab6e0800fa44ae55d278d1423e3
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs
+  - fileID: 220
+    classID: 115
+    packedSize: 96
+    offset: 145688
+    sourceAssetGUID: 2a4db7a114972834c8e4117be1d82ba3
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Scrollbar.cs
+  - fileID: 221
+    classID: 115
+    packedSize: 80
+    offset: 145784
+    sourceAssetGUID: 31a19414c41e5ae4aae2af33fee712f6
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Mask.cs
+  - fileID: 222
+    classID: 115
+    packedSize: 88
+    offset: 145864
+    sourceAssetGUID: 45115577ef41a5b4ca741ed302693907
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/UdonBehaviour.cs
+  - fileID: 223
+    classID: 115
+    packedSize: 88
+    offset: 145952
+    sourceAssetGUID: 4e29b1a8efbd4b44bb3f3716e73f07ff
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Button.cs
+  - fileID: 224
+    classID: 115
+    packedSize: 128
+    offset: 146040
+    sourceAssetGUID: 4f231c4fb786f3946a6b90b886c48677
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+  - fileID: 225
+    classID: 115
+    packedSize: 80
+    offset: 146168
+    sourceAssetGUID: 5f7201a12d95ffc409449d95f23cf332
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Text.cs
+  - fileID: 226
+    classID: 115
+    packedSize: 88
+    offset: 146248
+    sourceAssetGUID: 67db9e8f0e2ae9c40bc1e2b64352a6b4
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Slider.cs
+  - fileID: 227
+    classID: 115
+    packedSize: 100
+    offset: 146336
+    sourceAssetGUID: 71c1514a6bd24e1e882cebbe1904ce04
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs
+  - fileID: 228
+    classID: 115
+    packedSize: 104
+    offset: 146440
+    sourceAssetGUID: 76c392e42b5098c458856cdf6ecaaaa1
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs
+  - fileID: 229
+    classID: 115
+    packedSize: 92
+    offset: 146544
+    sourceAssetGUID: 7b743370ac3e4ec2a1668f5455a8ef8a
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Dropdown.cs
+  - fileID: 230
+    classID: 115
+    packedSize: 88
+    offset: 146640
+    sourceAssetGUID: 9085046f02f69544eb97fd06b6048fe2
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Toggle.cs
+  - fileID: 231
+    classID: 115
+    packedSize: 92
+    offset: 146728
+    sourceAssetGUID: 9541d86e2fd84c1d9990edf0852d74ab
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshPro.cs
+  - fileID: 232
+    classID: 115
+    packedSize: 128
+    offset: 146824
+    sourceAssetGUID: bf61d954ecb803046953c666facfb904
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/SerializedUdonProgramAsset.cs
+  - fileID: 233
+    classID: 115
+    packedSize: 104
+    offset: 146952
+    sourceAssetGUID: d0b148fe25e99eb48b9724523833bab1
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs
+  - fileID: 234
+    classID: 115
+    packedSize: 96
+    offset: 147056
+    sourceAssetGUID: d199490a83bb2b844b9695cbf13b01ef
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/InputField.cs
+  - fileID: 235
+    classID: 115
+    packedSize: 108
+    offset: 147152
+    sourceAssetGUID: d8f6aa6586f77764fab668a0a62d8f7a
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Scripts/OptionsMenuNew.cs
+  - fileID: 236
+    classID: 115
+    packedSize: 104
+    offset: 147264
+    sourceAssetGUID: dc42784cf147c0c48a680349fa168899
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/GraphicRaycaster.cs
+  - fileID: 237
+    classID: 115
+    packedSize: 100
+    offset: 147368
+    sourceAssetGUID: f4688fdb7df04437aeb418b961361dc5
+    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs
+  - fileID: 238
+    classID: 115
+    packedSize: 88
+    offset: 147472
+    sourceAssetGUID: fe87c0e1cc204ed48ad3b37840f39efc
+    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Image.cs
+  - fileID: 239
+    classID: 115
+    packedSize: 100
+    offset: 147560
+    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
+    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
+  - fileID: 240
+    classID: 121
+    packedSize: 61
+    offset: 58660992
+    sourceAssetGUID: 67782eb9ec7569d4bb518dc8232c5bb2
+    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Lensflare/Sun.flare
+  - fileID: 241
+    classID: 128
+    packedSize: 13202
+    offset: 58661056
+    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
+    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
+  - fileID: 242
+    classID: 128
+    packedSize: 61942
+    offset: 58674264
+    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
+  - fileID: 243
+    classID: 128
+    packedSize: 352462
+    offset: 58736208
+    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
+    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  - fileID: 244
+    classID: 213
+    packedSize: 568
+    offset: 59088672
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 245
+    classID: 213
+    packedSize: 572
+    offset: 59089240
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 246
+    classID: 213
+    packedSize: 580
+    offset: 59089816
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 247
+    classID: 213
+    packedSize: 516
+    offset: 59090400
+    sourceAssetGUID: 0000000000000000f000000000000000
+    buildTimeAssetPath: Resources/unity_builtin_extra
+  - fileID: 248
+    classID: 213
+    packedSize: 1068
+    offset: 59090920
+    sourceAssetGUID: 05e3cc1417e5c224a973d923ca8926fd
+    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/transparent-textbox-grey-5.png
+  - fileID: 249
+    classID: 213
+    packedSize: 468
+    offset: 59091992
+    sourceAssetGUID: 05f659001c09bec428a6bf8899b37df6
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetail_Mono.png
+  - fileID: 250
+    classID: 213
+    packedSize: 1280
+    offset: 59092464
+    sourceAssetGUID: 0eacdf0ca3a1eea489436a1e23a8bcf9
+    buildTimeAssetPath: Assets/ShopMenu/Money.png
+  - fileID: 251
+    classID: 213
+    packedSize: 456
+    offset: 59093744
+    sourceAssetGUID: 1f83b75f07feedf4baa18b728f75252a
+    buildTimeAssetPath: Assets/ShopMenu/avatars/junk.png
+  - fileID: 252
+    classID: 213
+    packedSize: 1128
+    offset: 59094200
+    sourceAssetGUID: 2323cb669376e8c449c3c32670900315
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Wide_Mono.png
+  - fileID: 253
+    classID: 213
+    packedSize: 680
+    offset: 59095328
+    sourceAssetGUID: 2a11849d78988a3489d6ffa83d159ecd
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt2_Mono.png
+  - fileID: 254
+    classID: 213
+    packedSize: 540
+    offset: 59096008
+    sourceAssetGUID: 2f7ad163b654bf74085060307e13db4a
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/CornerDetail_Mono.png
+  - fileID: 255
+    classID: 213
+    packedSize: 4268
+    offset: 59096552
+    sourceAssetGUID: 3187dae7a26a51c43a9c2304464e476f
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBunFull.png
+  - fileID: 256
+    classID: 213
+    packedSize: 464
+    offset: 59100824
+    sourceAssetGUID: 31ae7127c07a4cb4e8ae749f6276660b
+    buildTimeAssetPath: Assets/ShopMenu/avatars/riderabbit.png
+  - fileID: 257
+    classID: 213
+    packedSize: 460
+    offset: 59101288
+    sourceAssetGUID: 5ffc621c8968cd041bf1112fe81e0662
+    buildTimeAssetPath: Assets/ShopMenu/avatars/olive.png
+  - fileID: 258
+    classID: 213
+    packedSize: 1360
+    offset: 59101752
+    sourceAssetGUID: 603eabcd71ec55e41be090a50f8b646e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/Icons/arrow_512x512.png
+  - fileID: 259
+    classID: 213
+    packedSize: 464
+    offset: 59103112
+    sourceAssetGUID: 6f457b6cbbfa2fe4d96c6a70c2fd98ee
+    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBun.png
+  - fileID: 260
+    classID: 213
+    packedSize: 460
+    offset: 59103576
+    sourceAssetGUID: 7ccf9ae289d0dd34a9164ba11747e92c
+    buildTimeAssetPath: Assets/ShopMenu/avatars/seven.png
+  - fileID: 261
+    classID: 213
+    packedSize: 464
+    offset: 59104040
+    sourceAssetGUID: 8480de0448ee588459c5da29fd196fb0
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/SquareSolid.png
+  - fileID: 262
+    classID: 213
+    packedSize: 460
+    offset: 59104504
+    sourceAssetGUID: 93917c189b5f9204885d199e112c71fd
+    buildTimeAssetPath: Assets/ShopMenu/avatars/Robot.png
+  - fileID: 263
+    classID: 213
+    packedSize: 524
+    offset: 59104968
+    sourceAssetGUID: 9e2ea1cb70ae8cf41a3db001d7b7cebb
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/ButtonHighlighted_Mono.png
+  - fileID: 264
+    classID: 213
+    packedSize: 460
+    offset: 59105496
+    sourceAssetGUID: a4545ebf8e47ac946b3e3180e0975b2e
+    buildTimeAssetPath: Assets/ShopMenu/ui_bg.png
+  - fileID: 265
+    classID: 213
+    packedSize: 476
+    offset: 59105960
+    sourceAssetGUID: a4fde6e0b21dc224d813ee493157874f
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Hover_Mono.png
+  - fileID: 266
+    classID: 213
+    packedSize: 588
+    offset: 59106440
+    sourceAssetGUID: a8292d7c3170a7348accf3d85c0e7359
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Mono.png
+  - fileID: 267
+    classID: 213
+    packedSize: 524
+    offset: 59107032
+    sourceAssetGUID: b6f33d10c75334f4884f8d7baddc69f4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/LoadingHighlight.png
+  - fileID: 268
+    classID: 213
+    packedSize: 440
+    offset: 59107560
+    sourceAssetGUID: e5a390d359542f845bd18b3970c5eff3
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Press_Mono.png
+  - fileID: 269
+    classID: 213
+    packedSize: 464
+    offset: 59108000
+    sourceAssetGUID: f18e648a7c56c97459bc9dd0cfe685dc
+    buildTimeAssetPath: Assets/ShopMenu/avatars/GreenBlob.png
+  - fileID: 270
+    classID: 213
+    packedSize: 524
+    offset: 59108464
+    sourceAssetGUID: fc4228f9270498248a1d3298777bf5da
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt1_Mono.png
+  - fileID: 271
+    classID: 213
+    packedSize: 464
+    offset: 59108992
+    sourceAssetGUID: fddb13df76efe9045b3ad498bd991718
+    buildTimeAssetPath: Assets/ShopMenu/avatars/FighterKirby.png
+  - fileID: 272
+    classID: 258
+    packedSize: 40
+    offset: 59109456
+    sourceAssetGUID: 9d47cab4070f2b944b8c96878d5009b8
+    buildTimeAssetPath: Assets/Scene/LightingData.asset
+  - fileID: 273
+    classID: 114
+    packedSize: 46580
+    offset: 59109496
+    sourceAssetGUID: 6f9832cffe5aea4449eba5b38fac8e25
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/075edb17eff218c418bcd2656ae19290.asset
+  - fileID: 274
+    classID: 114
+    packedSize: 177248
+    offset: 59156080
+    sourceAssetGUID: 806ac592b81556c478a47738267369ef
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/095d95c5888c25c4ca6d9c5f15ce7c8b.asset
+  - fileID: 275
+    classID: 114
+    packedSize: 23652
+    offset: 59333328
+    sourceAssetGUID: e9c18e5e95cdf3142b047d6d23ed23e4
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1210da547d9832c4498ac3c15c41bcdc.asset
+  - fileID: 276
+    classID: 114
+    packedSize: 43204
+    offset: 59356984
+    sourceAssetGUID: f9cb3c1b0a288c34b841c84142df63e7
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/15506396185492847b442b8f120d3d94.asset
+  - fileID: 277
+    classID: 114
+    packedSize: 27964
+    offset: 59400192
+    sourceAssetGUID: 8aa46d44b27be14488b6b53f675843cd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/16fe3d2088baeaa498f812653a07b759.asset
+  - fileID: 278
+    classID: 114
+    packedSize: 13988
+    offset: 59428160
+    sourceAssetGUID: 681c5c858820529429a6fcb3c76e2220
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/17d578286f11b644f9fcc47f5ad30d7e.asset
+  - fileID: 279
+    classID: 114
+    packedSize: 44740
+    offset: 59442152
+    sourceAssetGUID: 55ee92e3d9cabd949b6f1c6cf7c4fb99
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1a4ea4a9d7d252448b548ec106d1d398.asset
+  - fileID: 280
+    classID: 114
+    packedSize: 21568
+    offset: 59486896
+    sourceAssetGUID: b9102d96281735643a03f253d7d7df9c
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1b488c376fc77bf4cb08adc1cb545669.asset
+  - fileID: 281
+    classID: 114
+    packedSize: 50824
+    offset: 59508464
+    sourceAssetGUID: de41fa62d9955454b80ac801a915c859
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1ca5141ed5b1dfe4a90a7a74fa918c00.asset
+  - fileID: 282
+    classID: 114
+    packedSize: 10972
+    offset: 59559288
+    sourceAssetGUID: 1ab021100d7298d4ca90c4c053bd30d4
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/1fd8d0f51d7a8c848bf019a3b61b9932.asset
+  - fileID: 283
+    classID: 114
+    packedSize: 21980
+    offset: 59570264
+    sourceAssetGUID: c2678434a7099e34aa5982375281017a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/24481ac951c33224cbeab72e75c9a532.asset
+  - fileID: 284
+    classID: 114
+    packedSize: 15300
+    offset: 59592248
+    sourceAssetGUID: a8f0623d57db20745b32f1201b39b667
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/26e0abc7f520b5648aae50febfb065ca.asset
+  - fileID: 285
+    classID: 114
+    packedSize: 14108
+    offset: 59607552
+    sourceAssetGUID: 1a39be9390a8482448e82142c7cb2844
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/29ccc9c21b4da6a449c0ed3dff1f5e89.asset
+  - fileID: 286
+    classID: 114
+    packedSize: 17776
+    offset: 59621664
+    sourceAssetGUID: 50d9233581198f1449b8dd352dd59c1a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/2c76d37c798376049b99be96c2172c9a.asset
+  - fileID: 287
+    classID: 114
+    packedSize: 17032
+    offset: 59639440
+    sourceAssetGUID: 3abdf86e91e79874f99e6e05233616c2
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/2e3005b4c475dcd4fa7e6472d700d765.asset
+  - fileID: 288
+    classID: 114
+    packedSize: 200336
+    offset: 59656472
+    sourceAssetGUID: 57497fdd57e9c3b459bcdbb8929e787d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/2fd7d1ca94a40df468208c80b4fd0e99.asset
+  - fileID: 289
+    classID: 114
+    packedSize: 88288
+    offset: 59856808
+    sourceAssetGUID: 90d49af1c639a1d40a7ae586c82a10a2
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/32b5878a4459114439a037465beab1a0.asset
+  - fileID: 290
+    classID: 114
+    packedSize: 61672
+    offset: 59945096
+    sourceAssetGUID: 5d22d43b9a6158548bd4976b8929a74d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/33124a0bb03513d46a3c035bd55b306e.asset
+  - fileID: 291
+    classID: 114
+    packedSize: 107080
+    offset: 60006768
+    sourceAssetGUID: bcbdac8c7683e084b9cd53971e70a1fc
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/36b860ac299df9d4091aba890dab1d6e.asset
+  - fileID: 292
+    classID: 114
+    packedSize: 13972
+    offset: 60113848
+    sourceAssetGUID: c9ca74099df9a434ab33661584c126de
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/37128122e45947f4c9bafee4e875471b.asset
+  - fileID: 293
+    classID: 114
+    packedSize: 55456
+    offset: 60127824
+    sourceAssetGUID: a6dd4cafe0f290745a44bada4aa00513
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/3a4eeb1b9df5aaf4791e5d9f3925f8ef.asset
+  - fileID: 294
+    classID: 114
+    packedSize: 86048
+    offset: 60183280
+    sourceAssetGUID: 625b5205ab2b1b04b86ea73daa703613
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/403f2c33c3aa6934cb2ce89f336774c1.asset
+  - fileID: 295
+    classID: 114
+    packedSize: 30168
+    offset: 60269328
+    sourceAssetGUID: 23acc4bb06cf5db4cbed95776d36f36b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/47e053767c6fba144b15e35bde6eee7b.asset
+  - fileID: 296
+    classID: 114
+    packedSize: 14052
+    offset: 60299496
+    sourceAssetGUID: 48321f7662f678c47a3d26dd35ece2fb
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/4dde151da9d96ee4c99c1ee8c281c3d5.asset
+  - fileID: 297
+    classID: 114
+    packedSize: 32324
+    offset: 60313552
+    sourceAssetGUID: 106ed6818fd77774a892b6199077431a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5195d51780c6c3c419e86c487d011ae8.asset
+  - fileID: 298
+    classID: 114
+    packedSize: 16528
+    offset: 60345880
+    sourceAssetGUID: 8b5e62d98f5aed44c8f0609f835c3abd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/532f991406e2f464bb6e3fe935353849.asset
+  - fileID: 299
+    classID: 114
+    packedSize: 36836
+    offset: 60362408
+    sourceAssetGUID: 32677cc0781d42449b5c03e055d78087
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5470d68c578ffdb4f8885db1a9bf0b80.asset
+  - fileID: 300
+    classID: 114
+    packedSize: 86056
+    offset: 60399248
+    sourceAssetGUID: 8c9e19862022c9343b74634c15a1b7c8
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/56f2072e6de88d94bb108e174d92e29e.asset
+  - fileID: 301
+    classID: 114
+    packedSize: 23064
+    offset: 60485304
+    sourceAssetGUID: 4c069ad221ee63840916bd75e93113f1
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/572e09f66acf8704c8d36e9a4a2ba452.asset
+  - fileID: 302
+    classID: 114
+    packedSize: 15260
+    offset: 60508368
+    sourceAssetGUID: 908581c5fe8f03b47a88ac7909a702e9
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/595ad42caf822b74180549b0e48e28c9.asset
+  - fileID: 303
+    classID: 114
+    packedSize: 10768
+    offset: 60523632
+    sourceAssetGUID: 100221aed1b4f754fae949bfb5852199
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5c1f36ab8afd0c54d8194109b4769ef8.asset
+  - fileID: 304
+    classID: 114
+    packedSize: 12228
+    offset: 60534400
+    sourceAssetGUID: 8b98919f50e39814eb60c1af3c70dbbd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5f988b73463aa1444b995336443a7865.asset
+  - fileID: 305
+    classID: 114
+    packedSize: 15300
+    offset: 60546632
+    sourceAssetGUID: 3282b2e0e10472c48970949c75a814f8
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/5fb2153cc474cb04c8ae86bf85955e03.asset
+  - fileID: 306
+    classID: 114
+    packedSize: 34824
+    offset: 60561936
+    sourceAssetGUID: 73c8e562eff801343b046d97f0ac2b91
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/64e8a70b99e8eed46be187c7174e78fa.asset
+  - fileID: 307
+    classID: 114
+    packedSize: 45736
+    offset: 60596760
+    sourceAssetGUID: be70de068916ea14b913592736477f2d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/699347fe888976d49aa998dcfb56e23c.asset
+  - fileID: 308
+    classID: 114
+    packedSize: 100888
+    offset: 60642496
+    sourceAssetGUID: ff4bed9347a18be47b13bcf64b02d284
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/6a92ce3fc6c9454429f8edbf1a9cbceb.asset
+  - fileID: 309
+    classID: 114
+    packedSize: 78780
+    offset: 60743384
+    sourceAssetGUID: 3bdf4f20f784a374285a3850c3e63be4
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/6e817487b0a65ae4e8aa05ed40bc8456.asset
+  - fileID: 310
+    classID: 114
+    packedSize: 72676
+    offset: 60822168
+    sourceAssetGUID: 92f3647ed772e8e48b4fcb501c8c047a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7063fb8e9b9fff04ba8529a8bcee1d9c.asset
+  - fileID: 311
+    classID: 114
+    packedSize: 14128
+    offset: 60894848
+    sourceAssetGUID: 7a1a1e0f8bb3d8a458bff8f6f30db0e3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/70e6beba1e21aed4c8f1a7ca38b99929.asset
+  - fileID: 312
+    classID: 114
+    packedSize: 59872
+    offset: 60908976
+    sourceAssetGUID: 86500144c451c214fbe7daecda564e8f
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7540f7c71c7c5b14a9756eeac5a9e95f.asset
+  - fileID: 313
+    classID: 114
+    packedSize: 47948
+    offset: 60968848
+    sourceAssetGUID: 152f3cf96fb180f48b3af3cf8172e672
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7735268f2205c9541a14713152bd9706.asset
+  - fileID: 314
+    classID: 114
+    packedSize: 25716
+    offset: 61016800
+    sourceAssetGUID: 3243122287fb65548b40fb007e66b3b3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/7e54c726f7695ca41abdef5382002593.asset
+  - fileID: 315
+    classID: 114
+    packedSize: 27960
+    offset: 61042520
+    sourceAssetGUID: d9c323020873ceb43b01dcec33fecb95
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/87e1dba355c712247809db0389beb1a9.asset
+  - fileID: 316
+    classID: 114
+    packedSize: 65792
+    offset: 61070480
+    sourceAssetGUID: bf3f88f8a895e2f4aa04e07606551dad
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/88eb819275f748a4c9a209226bd14c8c.asset
+  - fileID: 317
+    classID: 114
+    packedSize: 15316
+    offset: 61136272
+    sourceAssetGUID: 4bdb49aac9ae75d41826fd12e25b4046
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/8da0d5e27886ff84e81b0fa830ed6c7a.asset
+  - fileID: 318
+    classID: 114
+    packedSize: 27900
+    offset: 61151592
+    sourceAssetGUID: 315a9a0ac00216c498e93be493222861
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/8de3bc79520c35149b0ef5f5bf994cb1.asset
+  - fileID: 319
+    classID: 114
+    packedSize: 16576
+    offset: 61179496
+    sourceAssetGUID: 2e7af1691d5f2d949a43c25a9064448a
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/8eca62712b7135d4b84f505848f51aa4.asset
+  - fileID: 320
+    classID: 114
+    packedSize: 22944
+    offset: 61196072
+    sourceAssetGUID: ffc8ab0f8f57d1742a828168101b3133
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/907005790ca108741b8593ee1c6dcd85.asset
+  - fileID: 321
+    classID: 114
+    packedSize: 15268
+    offset: 61219016
+    sourceAssetGUID: 8aa019702ce1be24b97855a605409ef3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/915c794e3402df94e94b2b2604aed1dd.asset
+  - fileID: 322
+    classID: 114
+    packedSize: 16520
+    offset: 61234288
+    sourceAssetGUID: 1f1d8cfad1e8f8c4b9429f1d1f60ece9
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/96fae8f9365058a429fa1e4f1fbcad56.asset
+  - fileID: 323
+    classID: 114
+    packedSize: 27964
+    offset: 61250808
+    sourceAssetGUID: 6fc0cf41ff2ba884dbb84e53ad1cd36b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/97e900dac336bee458b117c46e4497e2.asset
+  - fileID: 324
+    classID: 114
+    packedSize: 61456
+    offset: 61278776
+    sourceAssetGUID: 9dbbac891e0e28c42aee7cfc8d63dcda
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/9dce673461ccf764f9209bd0ec0b962d.asset
+  - fileID: 325
+    classID: 114
+    packedSize: 17188
+    offset: 61340232
+    sourceAssetGUID: 2ae68bf61559dc84caec93f9ccbdda4e
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/9eadb8b1f82682e4e85febc84f2995a0.asset
+  - fileID: 326
+    classID: 114
+    packedSize: 9448
+    offset: 61357424
+    sourceAssetGUID: 8938beb9ac4f5bf4688253eb696733dd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a29a024598e130b4bb5a876f180addbd.asset
+  - fileID: 327
+    classID: 114
+    packedSize: 9444
+    offset: 61366872
+    sourceAssetGUID: 8fdf5dffce35a454290dc24840187f32
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a2dd4851411ed324f95f9f0e8b10f518.asset
+  - fileID: 328
+    classID: 114
+    packedSize: 23984
+    offset: 61376320
+    sourceAssetGUID: 3852429026317c340ab10395dafb7b17
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a830ffe1cd55b2c4eac2ab667ed9c962.asset
+  - fileID: 329
+    classID: 114
+    packedSize: 45620
+    offset: 61400304
+    sourceAssetGUID: 586aefab04e33ec40815814f5b1543ce
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a88716622fa9dee4382f6d2c95052490.asset
+  - fileID: 330
+    classID: 114
+    packedSize: 45620
+    offset: 61445928
+    sourceAssetGUID: f8fbf7a2ff0564a40b93e0900a0388e6
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a8b141330a657f840b352b42d23bfb90.asset
+  - fileID: 331
+    classID: 114
+    packedSize: 24544
+    offset: 61491552
+    sourceAssetGUID: b20e8841fad320f42a8cfc89e23aa9fd
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/a9767d5fc03fb444293eaacb6e238f0b.asset
+  - fileID: 332
+    classID: 114
+    packedSize: 17776
+    offset: 61516096
+    sourceAssetGUID: f9da5b80c9dada644a882367529a6c89
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ac773474169122e42b4ce33118e656c9.asset
+  - fileID: 333
+    classID: 114
+    packedSize: 15304
+    offset: 61533872
+    sourceAssetGUID: 532154c5c39c26140aa825ee88631e81
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ac91abd79afe1ab40a37260a0956a53b.asset
+  - fileID: 334
+    classID: 114
+    packedSize: 30468
+    offset: 61549176
+    sourceAssetGUID: 5eb4af47b27d67f419122fcb2e8c7c8c
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/b509d3d4b5488fc40b2fc4c5de2aee5a.asset
+  - fileID: 335
+    classID: 114
+    packedSize: 22892
+    offset: 61579648
+    sourceAssetGUID: d67217d7f1e9e434087f75a0f3560dad
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/bfe989037663a864596eed2353ed553c.asset
+  - fileID: 336
+    classID: 114
+    packedSize: 48000
+    offset: 61602544
+    sourceAssetGUID: 75d4bbace439ee64ca43591e52807826
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c28023a9f1e1c3347a6e8748e1f021a5.asset
+  - fileID: 337
+    classID: 114
+    packedSize: 51448
+    offset: 61650544
+    sourceAssetGUID: 1ed2e49e33cdfc64fb87d40547ad1a5d
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c3e00580b38579d4498336e48a5e6ff5.asset
+  - fileID: 338
+    classID: 114
+    packedSize: 17068
+    offset: 61701992
+    sourceAssetGUID: be861434d2236cf4aaffb7e78cb14c58
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/c8df303ceb45ae84f85a11591f741734.asset
+  - fileID: 339
+    classID: 114
+    packedSize: 17236
+    offset: 61719064
+    sourceAssetGUID: 02037739e7f3e6641942c419d37f87be
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/caec51ef148f11d43aa5c11a593c76dd.asset
+  - fileID: 340
+    classID: 114
+    packedSize: 58172
+    offset: 61736304
+    sourceAssetGUID: 3cd14df47dbb8dd45903c4077fe74985
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d1835dde6ed4df7428c93542eced915a.asset
+  - fileID: 341
+    classID: 114
+    packedSize: 14032
+    offset: 61794480
+    sourceAssetGUID: 07f85c56e6945f34b8d6693c20a374c8
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d1ddc06be5ccb9442a0ab04c1cc081d4.asset
+  - fileID: 342
+    classID: 114
+    packedSize: 14040
+    offset: 61808512
+    sourceAssetGUID: 9c7e6bc06074402409802b6e1687928f
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d3b3d191d51ee1143aae49fc8cb50904.asset
+  - fileID: 343
+    classID: 114
+    packedSize: 19552
+    offset: 61822552
+    sourceAssetGUID: e0ec7895a9300494da95c40ba87d8e90
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d5dadc01e1bf42a44a0d11c636a86073.asset
+  - fileID: 344
+    classID: 114
+    packedSize: 14032
+    offset: 61842104
+    sourceAssetGUID: 4930b3a2e462d144b947589cd5dd2102
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d782c17b34074a74484f4aa722d05673.asset
+  - fileID: 345
+    classID: 114
+    packedSize: 43408
+    offset: 61856136
+    sourceAssetGUID: 15e71ed668f85dc469e1c1c3459fc91c
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/d89334515fdb5094d9c29cc79cd9a667.asset
+  - fileID: 346
+    classID: 114
+    packedSize: 15672
+    offset: 61899544
+    sourceAssetGUID: 4eceb218c3c46b8419b4adbe09f99874
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/da00f3e7971315f4f8e49c096ba5148a.asset
+  - fileID: 347
+    classID: 114
+    packedSize: 14088
+    offset: 61915216
+    sourceAssetGUID: 03574891341a47e4ab83229f4a948904
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/dd61c5096d5c35d4b9d2536413f5abf6.asset
+  - fileID: 348
+    classID: 114
+    packedSize: 16112
+    offset: 61929304
+    sourceAssetGUID: fafba794b38091346a52aab547ac0f81
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/dd8ca3e92a4dcda41899055793c16750.asset
+  - fileID: 349
+    classID: 114
+    packedSize: 22444
+    offset: 61945416
+    sourceAssetGUID: cbe68f9cf87e4a745b99aaba89b79e50
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e02b6841ddd33a24b95989f27c45145f.asset
+  - fileID: 350
+    classID: 114
+    packedSize: 39724
+    offset: 61967864
+    sourceAssetGUID: 54fb8096ee76a9841a32643a7240da29
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e211384b263791d48aab8aa73ec0b408.asset
+  - fileID: 351
+    classID: 114
+    packedSize: 26556
+    offset: 62007592
+    sourceAssetGUID: 685cbdaba8db1c041bb8d30703eaf46e
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e334092b2a83f4c4b85262140459cc39.asset
+  - fileID: 352
+    classID: 114
+    packedSize: 35660
+    offset: 62034152
+    sourceAssetGUID: 40cf48ac2acedd24b98568a12919752b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e60772d35af85134ca30bf3d0623a5bb.asset
+  - fileID: 353
+    classID: 114
+    packedSize: 23656
+    offset: 62069816
+    sourceAssetGUID: 4dd646e32eb54894892cdd649d31af6b
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e86e5c0d0b9e18247b68b8310f415ade.asset
+  - fileID: 354
+    classID: 114
+    packedSize: 8852
+    offset: 62093472
+    sourceAssetGUID: b57774468a0b809438c226894868f776
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/e9b19f53f140598419158f5123a34951.asset
+  - fileID: 355
+    classID: 114
+    packedSize: 11228
+    offset: 62102328
+    sourceAssetGUID: cbb21d3e742d9454b9fb17b1a7c01b7e
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/eac07254d9084134cb1ed4610d4da9f0.asset
+  - fileID: 356
+    classID: 114
+    packedSize: 15268
+    offset: 62113560
+    sourceAssetGUID: 41cc66637da21f342bb7cb75eb275064
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/ecb0fcc15b3c70148b9e6c7d6fa077d1.asset
+  - fileID: 357
+    classID: 114
+    packedSize: 27900
+    offset: 62128832
+    sourceAssetGUID: 9a04c7be77088c947ba604dd141cd9f3
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/f11dba788b2d7bf4dbef94631a98c341.asset
+  - fileID: 358
+    classID: 114
+    packedSize: 8012
+    offset: 62156736
+    sourceAssetGUID: 0f4be6fd4c4f59d4183ffa621b0a6063
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/fc58f4f069e453d41b4a0e01b6fd4a2a.asset
+  - fileID: 359
+    classID: 114
+    packedSize: 70012
+    offset: 62164752
+    sourceAssetGUID: 36bed5798b5e0904b9f5cb1ead03cc08
+    buildTimeAssetPath: Assets/SerializedUdonPrograms/fc7e0a6ae6ea657469b772bedb306d8a.asset
+  - fileID: 360
+    classID: 114
+    packedSize: 132640
+    offset: 62234768
+    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
+  - fileID: 361
+    classID: 114
+    packedSize: 135768
+    offset: 62367408
+    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
+  - fileID: 362
+    classID: 114
+    packedSize: 137604
+    offset: 62503176
+    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
+  - fileID: 363
+    classID: 114
+    packedSize: 137604
+    offset: 62640784
+    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
+  - fileID: 364
+    classID: 114
+    packedSize: 137592
+    offset: 62778392
+    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
+    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
+  - fileID: 365
+    classID: 114
+    packedSize: 1152
+    offset: 62915984
+    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+  - fileID: 366
+    classID: 114
+    packedSize: 27760
+    offset: 62917136
+    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
+    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+  - fileID: 367
+    classID: 114
+    packedSize: 2228
+    offset: 62944896
+    sourceAssetGUID: 1c234599346f0654699178572854b4e5
+    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
+      SDF.asset
+--- !u!1126 &-4478255382858641584
+PackedAssets:
+  m_File: 3
   m_ShortPath: CAB-f46e8ffc7624421a41a0a5443a36c071
   m_Overhead: 4096
   m_Contents:
@@ -14,15 +2231,19 @@ PackedAssets:
     buildTimeAssetPath: AssetBundle Object
   - fileID: 2
     classID: 290
-    packedSize: 104
+    packedSize: 92
     offset: 4200
     sourceAssetGUID: 00000000000000000000000000000000
     buildTimeAssetPath: 'Built-in AssetBundleManifest: AssetBundleManifest'
---- !u!641289076 &-2575736548692903097
-AudioBuildInfo:
-  m_IsAudioDisabled: 0
-  m_AudioClipCount: 0
-  m_AudioMixerCount: 0
+--- !u!668709126 &-2730347435441846660
+BuiltAssetBundleInfoSet:
+  bundleInfos:
+  - bundleName: scene-android-scene.vrcw
+    bundleArchiveFile: 2
+    packagedFileIndices: 0000000001000000
+  - bundleName: GrapplingHookDemo
+    bundleArchiveFile: 4
+    packagedFileIndices: 03000000
 --- !u!1125 &1
 BuildReport:
   m_ObjectHideFlags: 0
@@ -33,76 +2254,80 @@ BuildReport:
   m_Summary:
     buildStartTime:
       serializedVersion: 2
-      ticks: 638148677372288726
+      ticks: 638149606578830709
     buildGUID: 00000000000000000000000000000000
-    platformName: Win64
-    platformGroupName: Standalone
+    platformName: Android
+    platformGroupName: Android
     options: 16
     assetBundleOptions: 32
-    outputPath: C:/Users/JACOBR~1/AppData/Local/Temp/DefaultCompany/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw
-    crc: 3450010125
-    totalSize: 7952762
-    totalTimeTicks: 1498370272
+    outputPath: C:/Users/JACOBR~1/AppData/Local/Temp/DefaultCompany/GrapplingHookDemo/scene-android-scene.vrcw
+    crc: 3761492530
+    totalSize: 8374741
+    totalTimeTicks: 1261751666
     totalErrors: 0
-    totalWarnings: 4
+    totalWarnings: 6
     buildType: 1
     buildResult: 1
   m_Files:
-  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw/BuildPlayer-Scene
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/BuildPlayer-Scene
     role: Scene
     id: 0
     totalSize: 7282732
-  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw/BuildPlayer-Scene.sharedAssets
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw/BuildPlayer-Scene.sharedAssets
     role: SharedAssets
     id: 1
-    totalSize: 78160716
-  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw
+    totalSize: 62947124
+  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-android-scene.vrcw
     role: AssetBundle
     id: 2
-    totalSize: 7947445
-  - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw.manifest
-    role: AssetBundleTextManifest
-    id: 3
-    totalSize: 4104
+    totalSize: 8373548
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo/CAB-f46e8ffc7624421a41a0a5443a36c071
     role: ResourcesFile
-    id: 4
-    totalSize: 4304
+    id: 3
+    totalSize: 4292
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo
     role: ManifestAssetBundle
-    id: 5
-    totalSize: 1049
+    id: 4
+    totalSize: 1041
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo.manifest
     role: AssetBundleTextManifest
-    id: 6
-    totalSize: 164
+    id: 5
+    totalSize: 152
   m_BuildSteps:
   - stepName: Build Asset Bundles
-    durationTicks: 1498370272
+    durationTicks: 1261751666
     depth: 0
     messages: []
   - stepName: Calculate asset bundles to be built
-    durationTicks: 14748319
+    durationTicks: 2758790
     depth: 1
     messages: []
   - stepName: Compile scripts
-    durationTicks: 169730504
+    durationTicks: 151854105
     depth: 1
     messages: []
   - stepName: Build player
-    durationTicks: 1042970205
+    durationTicks: 674479218
     depth: 1
     messages: []
   - stepName: Prepare assets for target platform
-    durationTicks: 6637209
+    durationTicks: 14625087
     depth: 2
-    messages: []
+    messages:
+    - type: 2
+      content: Warning! Using antialiasing on a mobile device may decrease performance
+        severely. You can change the mobile quality settings in 'Project Settings
+        -> Quality Settings'.
+    - type: 2
+      content: Warning! Using more than 1 pixel lights on a mobile device may decrease
+        performance severely. You can change the mobile quality settings in 'Project
+        Settings -> Quality Settings'.
   - stepName: Building scenes
-    durationTicks: 430005339
+    durationTicks: 293077125
     depth: 2
     messages: []
   - stepName: Building scene Assets/Scene.unity
-    durationTicks: 429921697
+    durationTicks: 292994312
     depth: 3
     messages:
     - type: 2
@@ -118,56 +2343,43 @@ BuildReport:
       content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
         did not match, updated storage type
   - stepName: Writing asset files
-    durationTicks: 187204533
+    durationTicks: 95849208
     depth: 2
     messages: []
   - stepName: Packaging assets - archive:/BuildPlayer-Scene/BuildPlayer-Scene.sharedAssets
-    durationTicks: 186989127
+    durationTicks: 95633974
     depth: 3
-    messages:
-    - type: 3
-      content: HTTPFormUseage:UrlEncoded
+    messages: []
   - stepName: Creating compressed player package
-    durationTicks: 276689196
+    durationTicks: 149163967
     depth: 2
     messages: []
   - stepName: Postprocess built player
-    durationTicks: 172509
+    durationTicks: 472266
     depth: 2
     messages: []
   m_Appendices:
-  - {fileID: 337077243555401530}
-  - {fileID: 7719786878812066054}
-  - {fileID: 5823694596338019401}
-  - {fileID: -2575736548692903097}
-  - {fileID: -2818683387201859224}
---- !u!668709126 &337077243555401530
-BuiltAssetBundleInfoSet:
-  bundleInfos:
-  - bundleName: scene-standalonewindows64-scene.vrcw
-    bundleArchiveFile: 2
-    packagedFileIndices: 0000000001000000
-  - bundleName: GrapplingHookDemo
-    bundleArchiveFile: 5
-    packagedFileIndices: 04000000
---- !u!382020655 &5823694596338019401
+  - {fileID: -2730347435441846660}
+  - {fileID: -7427080781289697633}
+  - {fileID: 2092486371586405576}
+  - {fileID: 5940055087906482981}
+  - {fileID: -4478255382858641584}
+--- !u!382020655 &2092486371586405576
 PluginBuildInfo:
   m_RuntimePlugins:
   - Unity.Burst.Unsafe
   - VRC.SDK3.Dynamics.PhysBone
-  - OVRPlugin
   - YamlDotNet
   - WatsonTcp
   - System.Threading.Tasks.Extensions
   - VRC.Udon.ClientBindings
-  - openvr_api
-  - portmidi
   - VRC.Udon.VRCWrapperModules
   - VRCSDK3
   - VRC.Udon.VM
   - Serilog
   - nunit.framework
   - SemanticVersioning
+  - OVRPlugin
   - librsync.net
   - VRC.Udon.Common
   - VRC.SDK3.Dynamics.Contact
@@ -184,23 +2396,25 @@ PluginBuildInfo:
   - VRCSDKBase
   - System.Runtime.CompilerServices.Unsafe
   - Newtonsoft.Json
-  - libopenvr_api
   - Blake2Sharp
   - System.Memory
   - System.Text.Encoding.CodePages
   - VRCCore-Editor
   - VRC.Utility
-  - AudioPluginOculusSpatializer
+  - libAudioPluginOculusSpatializer
   m_EditorPlugins:
+  - openvr_api
   - VRCSDK3-Editor
   - Microsoft.CodeAnalysis
   - VRC.Udon.VRCTypeResolverModules
+  - portmidi
   - AppleEventIntegration
   - liblz4Plastic
   - Unity.Plastic.Newtonsoft.Json
   - unityplastic
   - VRC.Udon.Compiler
   - System.Reflection.Metadata
+  - AudioPluginOculusSpatializer
   - Microsoft.CodeAnalysis.CSharp
   - VRC.Udon.UAssembly
   - vpm-core-lib
@@ -213,2182 +2427,13 @@ PluginBuildInfo:
   - VRC.Udon.VRCGraphModules
   - log4netPlastic
   - VRC.Udon.EditorBindings
+  - libopenvr_api
   - zlib64Plastic
   - Unity.Plastic.Antlr3.Runtime
   - Serilog.Sinks.Unity3D
   - lz4x64Plastic
---- !u!1126 &7719786878812066054
-PackedAssets:
-  m_File: 1
-  m_ShortPath: BuildPlayer-Scene.sharedAssets
-  m_Overhead: 145584
-  m_Contents:
-  - fileID: 1
-    classID: 150
-    packedSize: 121
-    offset: 147520
-    sourceAssetGUID: 00000000000000000000000000000000
-    buildTimeAssetPath: 
-  - fileID: 2
-    classID: 142
-    packedSize: 140
-    offset: 147648
-    sourceAssetGUID: 00000000000000000000000000000000
-    buildTimeAssetPath: 
-  - fileID: 3
-    classID: 21
-    packedSize: 1756
-    offset: 147792
-    sourceAssetGUID: 1c234599346f0654699178572854b4e5
-    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
-      SDF.asset
-  - fileID: 4
-    classID: 21
-    packedSize: 252
-    offset: 149552
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 5
-    classID: 21
-    packedSize: 660
-    offset: 149808
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 6
-    classID: 21
-    packedSize: 908
-    offset: 150472
-    sourceAssetGUID: 71aed95e44aca9241ab64e35cf0c1406
-    buildTimeAssetPath: Assets/materials/ReplacementForDefaultMat.mat
-  - fileID: 7
-    classID: 21
-    packedSize: 928
-    offset: 151384
-    sourceAssetGUID: e941d0d6425697b499256f89933a0df2
-    buildTimeAssetPath: Assets/models/AurynSky/Rockets Missiles and Bombs/Materials/RocketsPalletteRed.mat
-  - fileID: 8
-    classID: 21
-    packedSize: 912
-    offset: 152312
-    sourceAssetGUID: 3f6e773f4260ae14f907c9819b40b281
-    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Box_Of_Pandora.mat
-  - fileID: 9
-    classID: 21
-    packedSize: 592
-    offset: 153224
-    sourceAssetGUID: 566428f457572c249a5ec48d349f2488
-    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Dust_particles.mat
-  - fileID: 10
-    classID: 21
-    packedSize: 592
-    offset: 153816
-    sourceAssetGUID: f47e41e4ec1f46641a912dd7f8b381d9
-    buildTimeAssetPath: Assets/models/RPG Pack/Materials/Stars_particles.mat
-  - fileID: 11
-    classID: 21
-    packedSize: 900
-    offset: 154408
-    sourceAssetGUID: 710e4b660b5be7243a65dcba43c58953
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/Wall.mat
-  - fileID: 12
-    classID: 21
-    packedSize: 900
-    offset: 155312
-    sourceAssetGUID: 3be9231021208864199d8bab6423be59
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b1-1.mat
-  - fileID: 13
-    classID: 21
-    packedSize: 936
-    offset: 156216
-    sourceAssetGUID: f632b1c8557e32d43bff941c3a868a84
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b1.mat
-  - fileID: 14
-    classID: 21
-    packedSize: 888
-    offset: 157152
-    sourceAssetGUID: 00d0da6cbf30c1440bce2c1a4dfea6bf
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b2-2.mat
-  - fileID: 15
-    classID: 21
-    packedSize: 936
-    offset: 158040
-    sourceAssetGUID: c0e5deab59a7c22429e6cf07ac305842
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b2.mat
-  - fileID: 16
-    classID: 21
-    packedSize: 888
-    offset: 158976
-    sourceAssetGUID: 0cc39ea3a36172d439a872bcdf8c3d60
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3-1.mat
-  - fileID: 17
-    classID: 21
-    packedSize: 888
-    offset: 159864
-    sourceAssetGUID: 1e2f5a37bec567c4fa4483c075b4b840
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3-2.mat
-  - fileID: 18
-    classID: 21
-    packedSize: 888
-    offset: 160752
-    sourceAssetGUID: 4e7c2a4e38ce4e7469ef981fa12cade0
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b3.mat
-  - fileID: 19
-    classID: 21
-    packedSize: 888
-    offset: 161640
-    sourceAssetGUID: 16571a3bb7d80e3408d5bb613d38a483
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-1.mat
-  - fileID: 20
-    classID: 21
-    packedSize: 888
-    offset: 162528
-    sourceAssetGUID: 0e5d9e87db75fbb41be0cdc300f654e9
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-2.mat
-  - fileID: 21
-    classID: 21
-    packedSize: 888
-    offset: 163416
-    sourceAssetGUID: 08a700b757b21744089a6ed03a436030
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4-3.mat
-  - fileID: 22
-    classID: 21
-    packedSize: 888
-    offset: 164304
-    sourceAssetGUID: c823db213c09c834b9291fa879c9e5eb
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b4.mat
-  - fileID: 23
-    classID: 21
-    packedSize: 888
-    offset: 165192
-    sourceAssetGUID: a31446a010d7d694da579576b289bb89
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b5-1.mat
-  - fileID: 24
-    classID: 21
-    packedSize: 924
-    offset: 166080
-    sourceAssetGUID: f7d66f5a5cf854747a6809479c3564ec
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b5.mat
-  - fileID: 25
-    classID: 21
-    packedSize: 888
-    offset: 167008
-    sourceAssetGUID: 313045ffbb76988449f1faccd80570bb
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b6-1.mat
-  - fileID: 26
-    classID: 21
-    packedSize: 924
-    offset: 167896
-    sourceAssetGUID: 8d6a8ab164fd36340871beae26805e66
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b6.mat
-  - fileID: 27
-    classID: 21
-    packedSize: 888
-    offset: 168824
-    sourceAssetGUID: 9f723c8f07f957e4da495e12b2779ca0
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b7-1.mat
-  - fileID: 28
-    classID: 21
-    packedSize: 888
-    offset: 169712
-    sourceAssetGUID: 94b8ea75ad770ae4a8692954d7b3e565
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b7.mat
-  - fileID: 29
-    classID: 21
-    packedSize: 924
-    offset: 170600
-    sourceAssetGUID: 66b15b6002815bf439bc3dad5da76f33
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b8.mat
-  - fileID: 30
-    classID: 21
-    packedSize: 888
-    offset: 171528
-    sourceAssetGUID: 17213a5fcfb16cd4bb80c78d85dcc4bd
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b87.mat
-  - fileID: 31
-    classID: 21
-    packedSize: 900
-    offset: 172416
-    sourceAssetGUID: abaff2e6c6f61e248a1de0b7581c0ecd
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9-1.mat
-  - fileID: 32
-    classID: 21
-    packedSize: 888
-    offset: 173320
-    sourceAssetGUID: aea4367c3439bfa4cb701b038e72d72a
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9-2.mat
-  - fileID: 33
-    classID: 21
-    packedSize: 924
-    offset: 174208
-    sourceAssetGUID: 6642346c671ae614dad01dfbd7c930b8
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/Materials/b9.mat
-  - fileID: 34
-    classID: 21
-    packedSize: 888
-    offset: 175136
-    sourceAssetGUID: f76498cabe605b748892b96f1753f810
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1-1.mat
-  - fileID: 35
-    classID: 21
-    packedSize: 888
-    offset: 176024
-    sourceAssetGUID: c68a9e0db1f90234e967880f9b0ad825
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1-2.mat
-  - fileID: 36
-    classID: 21
-    packedSize: 888
-    offset: 176912
-    sourceAssetGUID: d286f3735a8867c4daf31227a0ce7d2e
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p1.mat
-  - fileID: 37
-    classID: 21
-    packedSize: 900
-    offset: 177800
-    sourceAssetGUID: f423eed10fed2a74ca2db25968c54bc0
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p3.mat
-  - fileID: 38
-    classID: 21
-    packedSize: 888
-    offset: 178704
-    sourceAssetGUID: b51aeb17874a02c4d8ace7051fd050e7
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-1.mat
-  - fileID: 39
-    classID: 21
-    packedSize: 892
-    offset: 179592
-    sourceAssetGUID: 549d9539eea0bb14fa3041fe51ba4bb8
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-10.mat
-  - fileID: 40
-    classID: 21
-    packedSize: 904
-    offset: 180488
-    sourceAssetGUID: e44aca311f6aafa47a9367a0b39c956d
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-11.mat
-  - fileID: 41
-    classID: 21
-    packedSize: 892
-    offset: 181392
-    sourceAssetGUID: 2b62e5bee89dacf4f80cd407aa6e553b
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-12.mat
-  - fileID: 42
-    classID: 21
-    packedSize: 892
-    offset: 182288
-    sourceAssetGUID: 57e23a00bfd1fa44a9917a33042650be
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-13.mat
-  - fileID: 43
-    classID: 21
-    packedSize: 888
-    offset: 183184
-    sourceAssetGUID: f9e6b3c023cce864d9c32a5caca2d8bd
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-2.mat
-  - fileID: 44
-    classID: 21
-    packedSize: 888
-    offset: 184072
-    sourceAssetGUID: 67a869affe614cf458c166289ec5c0cc
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-3.mat
-  - fileID: 45
-    classID: 21
-    packedSize: 900
-    offset: 184960
-    sourceAssetGUID: 847a09f7e0fc78f498a9096ddf09cec5
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-4.mat
-  - fileID: 46
-    classID: 21
-    packedSize: 888
-    offset: 185864
-    sourceAssetGUID: 52738ad12e8939a4ca2bce867d8c29fa
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-5.mat
-  - fileID: 47
-    classID: 21
-    packedSize: 888
-    offset: 186752
-    sourceAssetGUID: 925de37b1535eb64eaf1db52d6a7e925
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-6.mat
-  - fileID: 48
-    classID: 21
-    packedSize: 888
-    offset: 187640
-    sourceAssetGUID: 78dedd9cc03606545b5e39e405717801
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-8.mat
-  - fileID: 49
-    classID: 21
-    packedSize: 888
-    offset: 188528
-    sourceAssetGUID: f50a3f765c712d244a86a6e1991d3097
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/Materials/p5-9.mat
-  - fileID: 50
-    classID: 21
-    packedSize: 1364
-    offset: 189416
-    sourceAssetGUID: 811e34dd05bc98e43883e3544122fbf6
-    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Explosion Material.mat
-  - fileID: 51
-    classID: 21
-    packedSize: 972
-    offset: 190784
-    sourceAssetGUID: 88cff8156d6c6864a8366c10b7f30b02
-    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Shell Smoke.mat
-  - fileID: 52
-    classID: 21
-    packedSize: 896
-    offset: 191760
-    sourceAssetGUID: 8b50b365d11af2045b41d99fdf804a25
-    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 1.mat
-  - fileID: 53
-    classID: 21
-    packedSize: 896
-    offset: 192656
-    sourceAssetGUID: 24fdcd4da49638a4385b372b22211e45
-    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 2.mat
-  - fileID: 54
-    classID: 21
-    packedSize: 932
-    offset: 193552
-    sourceAssetGUID: 0597842b5883a4441a3a09271a3d7afc
-    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Couleur 3.mat
-  - fileID: 55
-    classID: 21
-    packedSize: 960
-    offset: 194488
-    sourceAssetGUID: a58f5e46e3244d84f89a8162701c7f29
-    buildTimeAssetPath: Assets/scene prefabs/Items/Spray/Water Particle Material.mat
-  - fileID: 56
-    classID: 21
-    packedSize: 936
-    offset: 195448
-    sourceAssetGUID: 3d229e80c6fe24847a69d4f4d35cdc02
-    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/dark.mat
-  - fileID: 57
-    classID: 21
-    packedSize: 892
-    offset: 196384
-    sourceAssetGUID: de34c94c60272ea4f8246e81ee6e7701
-    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/metal.mat
-  - fileID: 58
-    classID: 21
-    packedSize: 928
-    offset: 197280
-    sourceAssetGUID: 8608c65c8d8774c4c96b8c64bbcd432c
-    buildTimeAssetPath: Assets/scene prefabs/Tether/GrappleGunModel/yellow.mat
-  - fileID: 59
-    classID: 21
-    packedSize: 900
-    offset: 198208
-    sourceAssetGUID: 90619dff9df9dd644bc1b970b590b9d0
-    buildTimeAssetPath: Assets/scene prefabs/Tether/newTetherLine.mat
-  - fileID: 60
-    classID: 21
-    packedSize: 1140
-    offset: 199112
-    sourceAssetGUID: c815f7613a04b724089c206857e57c6a
-    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Materials/MirrorReflection.mat
-  - fileID: 61
-    classID: 21
-    packedSize: 136
-    offset: 200256
-    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
-    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
-  - fileID: 62
-    classID: 21
-    packedSize: 136
-    offset: 200392
-    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
-    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
-  - fileID: 63
-    classID: 21
-    packedSize: 136
-    offset: 200528
-    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
-    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  - fileID: 64
-    classID: 21
-    packedSize: 2004
-    offset: 200664
-    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
-    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF - Fallback.asset
-  - fileID: 65
-    classID: 21
-    packedSize: 944
-    offset: 202672
-    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
-    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF.asset
-  - fileID: 66
-    classID: 21
-    packedSize: 1740
-    offset: 203616
-    sourceAssetGUID: 3199409928624324999b9336dd1ed8f3
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-BOLD SDF.asset
-  - fileID: 67
-    classID: 21
-    packedSize: 1744
-    offset: 205360
-    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
-  - fileID: 68
-    classID: 21
-    packedSize: 1744
-    offset: 207104
-    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
-  - fileID: 69
-    classID: 21
-    packedSize: 1744
-    offset: 208848
-    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
-  - fileID: 70
-    classID: 21
-    packedSize: 1740
-    offset: 210592
-    sourceAssetGUID: 2032339f567bde146b32a51cb1425adf
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-LIGHT SDF.asset
-  - fileID: 71
-    classID: 21
-    packedSize: 1740
-    offset: 212336
-    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
-  - fileID: 72
-    classID: 21
-    packedSize: 1740
-    offset: 214080
-    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
-  - fileID: 73
-    classID: 28
-    packedSize: 5564
-    offset: 215824
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 74
-    classID: 28
-    packedSize: 5568
-    offset: 221392
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 75
-    classID: 28
-    packedSize: 5576
-    offset: 226960
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 76
-    classID: 28
-    packedSize: 5564
-    offset: 232536
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 77
-    classID: 28
-    packedSize: 380924
-    offset: 238104
-    sourceAssetGUID: 05e3cc1417e5c224a973d923ca8926fd
-    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/transparent-textbox-grey-5.png
-  - fileID: 78
-    classID: 28
-    packedSize: 43896
-    offset: 619032
-    sourceAssetGUID: 05f659001c09bec428a6bf8899b37df6
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetail_Mono.png
-  - fileID: 79
-    classID: 28
-    packedSize: 189524
-    offset: 662928
-    sourceAssetGUID: 0eacdf0ca3a1eea489436a1e23a8bcf9
-    buildTimeAssetPath: Assets/ShopMenu/Money.png
-  - fileID: 80
-    classID: 28
-    packedSize: 5592552
-    offset: 852456
-    sourceAssetGUID: 0fc2ab88855912d4eb4d4f7215ae8d38
-    buildTimeAssetPath: Assets/WhiteCityScene/Lightmap-0_comp_light.exr
-  - fileID: 81
-    classID: 28
-    packedSize: 37392
-    offset: 6445008
-    sourceAssetGUID: 1f83b75f07feedf4baa18b728f75252a
-    buildTimeAssetPath: Assets/ShopMenu/avatars/junk.png
-  - fileID: 82
-    classID: 28
-    packedSize: 131180
-    offset: 6482400
-    sourceAssetGUID: 2323cb669376e8c449c3c32670900315
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Wide_Mono.png
-  - fileID: 83
-    classID: 28
-    packedSize: 174876
-    offset: 6613584
-    sourceAssetGUID: 291a8d39e3e4e374b82831225464867d
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/7.png
-  - fileID: 84
-    classID: 28
-    packedSize: 33204
-    offset: 6788464
-    sourceAssetGUID: 2a11849d78988a3489d6ffa83d159ecd
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt2_Mono.png
-  - fileID: 85
-    classID: 28
-    packedSize: 5600
-    offset: 6821672
-    sourceAssetGUID: 2ad70170f6ff89d468e5694143176d6b
-    buildTimeAssetPath: Assets/models/RPG Pack/Textures/Dust_particles.tif
-  - fileID: 86
-    classID: 28
-    packedSize: 1398216
-    offset: 6827272
-    sourceAssetGUID: 2f7ad163b654bf74085060307e13db4a
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/CornerDetail_Mono.png
-  - fileID: 87
-    classID: 28
-    packedSize: 770256
-    offset: 8225488
-    sourceAssetGUID: 3187dae7a26a51c43a9c2304464e476f
-    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBunFull.png
-  - fileID: 88
-    classID: 28
-    packedSize: 38040
-    offset: 8995744
-    sourceAssetGUID: 31ae7127c07a4cb4e8ae749f6276660b
-    buildTimeAssetPath: Assets/ShopMenu/avatars/riderabbit.png
-  - fileID: 89
-    classID: 28
-    packedSize: 349644
-    offset: 9033784
-    sourceAssetGUID: 32003ac298524ed4f9bb893d2269dc75
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/1.png
-  - fileID: 90
-    classID: 28
-    packedSize: 5438360
-    offset: 9383432
-    sourceAssetGUID: 331c21dedef52024d8f4687226e40056
-    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/roundedCorners-20140106_Marie-Plocharz.png
-  - fileID: 91
-    classID: 28
-    packedSize: 174876
-    offset: 14821792
-    sourceAssetGUID: 339a9f1f77ad1c947ac4998979e046f7
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Wall.png
-  - fileID: 92
-    classID: 28
-    packedSize: 349644
-    offset: 14996672
-    sourceAssetGUID: 36f575e8b20145d4a8f00baf4f8a22b3
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/4.png
-  - fileID: 93
-    classID: 28
-    packedSize: 43804
-    offset: 15346320
-    sourceAssetGUID: 38fe3005fffb8384997fcecde0a492f4
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p2.PNG
-  - fileID: 94
-    classID: 28
-    packedSize: 349644
-    offset: 15390128
-    sourceAssetGUID: 426137a77b8e3b64888c93516cb33ea3
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/3.png
-  - fileID: 95
-    classID: 28
-    packedSize: 349644
-    offset: 15739776
-    sourceAssetGUID: 449d38dc743aea44eb0b79bb4d3912c3
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/5.png
-  - fileID: 96
-    classID: 28
-    packedSize: 349644
-    offset: 16089424
-    sourceAssetGUID: 49b8952406f4e4846ac7565499c33046
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p1-1.png
-  - fileID: 97
-    classID: 28
-    packedSize: 16777324
-    offset: 16439072
-    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
-    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
-  - fileID: 98
-    classID: 28
-    packedSize: 38716
-    offset: 33216400
-    sourceAssetGUID: 5ffc621c8968cd041bf1112fe81e0662
-    buildTimeAssetPath: Assets/ShopMenu/avatars/olive.png
-  - fileID: 99
-    classID: 28
-    packedSize: 262256
-    offset: 33255120
-    sourceAssetGUID: 603eabcd71ec55e41be090a50f8b646e
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/Icons/arrow_512x512.png
-  - fileID: 100
-    classID: 28
-    packedSize: 699164
-    offset: 33517376
-    sourceAssetGUID: 644e0e4db7c316e478bb13b12512b8b8
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Lensflare/Textures/0.png
-  - fileID: 101
-    classID: 28
-    packedSize: 349644
-    offset: 34216544
-    sourceAssetGUID: 6f1a86f841d29354ab6cdd061bc58722
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p1.png
-  - fileID: 102
-    classID: 28
-    packedSize: 36408
-    offset: 34566192
-    sourceAssetGUID: 6f457b6cbbfa2fe4d96c6a70c2fd98ee
-    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBun.png
-  - fileID: 103
-    classID: 28
-    packedSize: 349644
-    offset: 34602600
-    sourceAssetGUID: 737a61236509b1a44a4de3627b7b03d6
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/9.png
-  - fileID: 104
-    classID: 28
-    packedSize: 65648
-    offset: 34952248
-    sourceAssetGUID: 7c4fe4d7f09b5f044a56e45d8d8f7130
-    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/White_Circle.svg.png
-  - fileID: 105
-    classID: 28
-    packedSize: 39044
-    offset: 35017896
-    sourceAssetGUID: 7ccf9ae289d0dd34a9164ba11747e92c
-    buildTimeAssetPath: Assets/ShopMenu/avatars/seven.png
-  - fileID: 106
-    classID: 28
-    packedSize: 174900
-    offset: 35056944
-    sourceAssetGUID: 825ca8510f66cbf4cbef2df54bedb8a9
-    buildTimeAssetPath: Assets/models/RPG Pack/Textures/star.png
-  - fileID: 107
-    classID: 28
-    packedSize: 349644
-    offset: 35231848
-    sourceAssetGUID: 8282e4971a726e64982b4fec3a29e67a
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/4-1.png
-  - fileID: 108
-    classID: 28
-    packedSize: 43812
-    offset: 35581496
-    sourceAssetGUID: 8480de0448ee588459c5da29fd196fb0
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/SquareSolid.png
-  - fileID: 109
-    classID: 28
-    packedSize: 699180
-    offset: 35625312
-    sourceAssetGUID: 87b14570171a8be458a29df2cd70f078
-    buildTimeAssetPath: Assets/models/AurynSky/Rockets Missiles and Bombs/Textures/RocketsPalletteRed.png
-  - fileID: 110
-    classID: 28
-    packedSize: 35744
-    offset: 36324496
-    sourceAssetGUID: 93917c189b5f9204885d199e112c71fd
-    buildTimeAssetPath: Assets/ShopMenu/avatars/Robot.png
-  - fileID: 111
-    classID: 28
-    packedSize: 349652
-    offset: 36360240
-    sourceAssetGUID: 9e2ea1cb70ae8cf41a3db001d7b7cebb
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/ButtonHighlighted_Mono.png
-  - fileID: 112
-    classID: 28
-    packedSize: 4978040
-    offset: 36709896
-    sourceAssetGUID: a4545ebf8e47ac946b3e3180e0975b2e
-    buildTimeAssetPath: Assets/ShopMenu/ui_bg.png
-  - fileID: 113
-    classID: 28
-    packedSize: 2239280
-    offset: 41687936
-    sourceAssetGUID: a4fde6e0b21dc224d813ee493157874f
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Hover_Mono.png
-  - fileID: 114
-    classID: 28
-    packedSize: 2239276
-    offset: 43927216
-    sourceAssetGUID: a8292d7c3170a7348accf3d85c0e7359
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Mono.png
-  - fileID: 115
-    classID: 28
-    packedSize: 349644
-    offset: 46166496
-    sourceAssetGUID: b6f33d10c75334f4884f8d7baddc69f4
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/LoadingHighlight.png
-  - fileID: 116
-    classID: 28
-    packedSize: 699164
-    offset: 46516144
-    sourceAssetGUID: ba852b59c6ae3a74da474c5f4ad1935e
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/8.png
-  - fileID: 117
-    classID: 28
-    packedSize: 349644
-    offset: 47215312
-    sourceAssetGUID: d10fb6cc192a4f44cb942be9af8cf658
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/2.png
-  - fileID: 118
-    classID: 28
-    packedSize: 108
-    offset: 47564960
-    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
-    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
-  - fileID: 119
-    classID: 28
-    packedSize: 174876
-    offset: 47565072
-    sourceAssetGUID: da98ef60dfdef9148a861d729a3609c9
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Buildings/6.png
-  - fileID: 120
-    classID: 28
-    packedSize: 108
-    offset: 47739952
-    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
-    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  - fileID: 121
-    classID: 28
-    packedSize: 897144
-    offset: 47740064
-    sourceAssetGUID: e5a390d359542f845bd18b3970c5eff3
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Press_Mono.png
-  - fileID: 122
-    classID: 28
-    packedSize: 699180
-    offset: 48637208
-    sourceAssetGUID: ebb57d4ee979f0f468fd27daa88b3179
-    buildTimeAssetPath: Assets/models/RPG Pack/Textures/BoxOfPandora_diffuse.png
-  - fileID: 123
-    classID: 28
-    packedSize: 43820
-    offset: 49336392
-    sourceAssetGUID: ec50faff23f099c48bf342bb3bcf274e
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p5-1.png
-  - fileID: 124
-    classID: 28
-    packedSize: 179304
-    offset: 49380216
-    sourceAssetGUID: ed2ba53c9ac56e443a585f4a3a7953d0
-    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/POSITION.png
-  - fileID: 125
-    classID: 28
-    packedSize: 34116
-    offset: 49559520
-    sourceAssetGUID: f18e648a7c56c97459bc9dd0cfe685dc
-    buildTimeAssetPath: Assets/ShopMenu/avatars/GreenBlob.png
-  - fileID: 126
-    classID: 28
-    packedSize: 16484
-    offset: 49593640
-    sourceAssetGUID: f2ffaaff4245a7d41b3bf53a0edc7595
-    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/LAPS.png
-  - fileID: 127
-    classID: 28
-    packedSize: 1398220
-    offset: 49610128
-    sourceAssetGUID: f8eea88e60170414db5d8fdc34e6527e
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Roof/p3.png
-  - fileID: 128
-    classID: 28
-    packedSize: 33204
-    offset: 51008352
-    sourceAssetGUID: fc4228f9270498248a1d3298777bf5da
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt1_Mono.png
-  - fileID: 129
-    classID: 28
-    packedSize: 38368
-    offset: 51041560
-    sourceAssetGUID: fddb13df76efe9045b3ad498bd991718
-    buildTimeAssetPath: Assets/ShopMenu/avatars/FighterKirby.png
-  - fileID: 130
-    classID: 28
-    packedSize: 120
-    offset: 51079928
-    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
-    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF - Fallback.asset
-  - fileID: 131
-    classID: 28
-    packedSize: 1048692
-    offset: 51080048
-    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
-  - fileID: 132
-    classID: 28
-    packedSize: 1048692
-    offset: 52128744
-    sourceAssetGUID: 2032339f567bde146b32a51cb1425adf
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-LIGHT SDF.asset
-  - fileID: 133
-    classID: 28
-    packedSize: 1048696
-    offset: 53177440
-    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
-  - fileID: 134
-    classID: 28
-    packedSize: 1048696
-    offset: 54226136
-    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
-  - fileID: 135
-    classID: 28
-    packedSize: 1048696
-    offset: 55274832
-    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
-  - fileID: 136
-    classID: 28
-    packedSize: 1048692
-    offset: 56323528
-    sourceAssetGUID: 3199409928624324999b9336dd1ed8f3
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/LATO-BOLD SDF.asset
-  - fileID: 137
-    classID: 28
-    packedSize: 1048696
-    offset: 57372224
-    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
-    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF.asset
-  - fileID: 138
-    classID: 28
-    packedSize: 1048696
-    offset: 58420920
-    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
-  - fileID: 139
-    classID: 28
-    packedSize: 1048692
-    offset: 59469616
-    sourceAssetGUID: 1c234599346f0654699178572854b4e5
-    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
-      SDF.asset
-  - fileID: 140
-    classID: 43
-    packedSize: 1620
-    offset: 60518312
-    sourceAssetGUID: 406ecc0c8ac4e524aa33202230ab9d1c
-    buildTimeAssetPath: Assets/models/misc meshes/cube_inverted_faces.fbx
-  - fileID: 141
-    classID: 43
-    packedSize: 27896
-    offset: 60519936
-    sourceAssetGUID: 2d32595ff0dc99f498218042be794cac
-    buildTimeAssetPath: Assets/models/blasterM.fbx
-  - fileID: 142
-    classID: 43
-    packedSize: 10666664
-    offset: 60547832
-    sourceAssetGUID: a8eec6fc6b0238e48bc767ad905a0d23
-    buildTimeAssetPath: "Assets/scene prefabs/Items/Spray/Pistolet \xE0 eau.fbx"
-  - fileID: 143
-    classID: 43
-    packedSize: 7400
-    offset: 71214496
-    sourceAssetGUID: 016d566e117d8fd43be08461a2df3027
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/3-1.fbx
-  - fileID: 144
-    classID: 43
-    packedSize: 20908
-    offset: 71221896
-    sourceAssetGUID: 11fc29c46ace9614aac1471a363525c1
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-4.fbx
-  - fileID: 145
-    classID: 43
-    packedSize: 7848
-    offset: 71242808
-    sourceAssetGUID: 1c9654e604a39b44b8293f6a34f7b66c
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/3.fbx
-  - fileID: 146
-    classID: 43
-    packedSize: 6012
-    offset: 71250656
-    sourceAssetGUID: 1f4a1ec0dedb43143a96c3d2e371b016
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-6.fbx
-  - fileID: 147
-    classID: 43
-    packedSize: 3896
-    offset: 71256672
-    sourceAssetGUID: 3745c28ede9bdf541bc2f0c5a7b3bfd2
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/2-1.fbx
-  - fileID: 148
-    classID: 43
-    packedSize: 17280
-    offset: 71260568
-    sourceAssetGUID: 3934c7a696d16b34e8892801fdda0e9f
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-5.fbx
-  - fileID: 149
-    classID: 43
-    packedSize: 5512
-    offset: 71277848
-    sourceAssetGUID: 4151a6192219ff249b121c536513d8ab
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/6.fbx
-  - fileID: 150
-    classID: 43
-    packedSize: 31468
-    offset: 71283360
-    sourceAssetGUID: 42152e0561545d64483b0f93dfbc9589
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-5.fbx
-  - fileID: 151
-    classID: 43
-    packedSize: 9512
-    offset: 71314832
-    sourceAssetGUID: 45414ae893ef0d24aaa8d91a7d834868
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/8.fbx
-  - fileID: 152
-    classID: 43
-    packedSize: 21324
-    offset: 71324344
-    sourceAssetGUID: 5529ec8d6f2af7a4194ea427aaf4f901
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-6.fbx
-  - fileID: 153
-    classID: 43
-    packedSize: 31156
-    offset: 71345672
-    sourceAssetGUID: 6379b00f66e16cd49b9df04eece629a3
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/7.fbx
-  - fileID: 154
-    classID: 43
-    packedSize: 8716
-    offset: 71376832
-    sourceAssetGUID: 6ad9d82f1af25f34ab6557c3d627a431
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p1.fbx
-  - fileID: 155
-    classID: 43
-    packedSize: 5740
-    offset: 71385552
-    sourceAssetGUID: 6bf94840710cc534ca5c718dd3733c51
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/4.fbx
-  - fileID: 156
-    classID: 43
-    packedSize: 1816
-    offset: 71391296
-    sourceAssetGUID: 6ea030f083954674b9d871dbecbcf011
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-2.fbx
-  - fileID: 157
-    classID: 43
-    packedSize: 44840
-    offset: 71393112
-    sourceAssetGUID: 6eda8701cab57474bb48b82c4d94944d
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/1.fbx
-  - fileID: 158
-    classID: 43
-    packedSize: 13016
-    offset: 71437952
-    sourceAssetGUID: 73deee65ec709a74aa72f4e27bfc3d35
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p1-1.fbx
-  - fileID: 159
-    classID: 43
-    packedSize: 4652
-    offset: 71450968
-    sourceAssetGUID: 78a8c0fcbd14a3241b17e232c96ef958
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-3.fbx
-  - fileID: 160
-    classID: 43
-    packedSize: 10736
-    offset: 71455624
-    sourceAssetGUID: a894c4c86d9e18f4d9d7ccd1a66399d7
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/p5-4.fbx
-  - fileID: 161
-    classID: 43
-    packedSize: 1824
-    offset: 71466360
-    sourceAssetGUID: c49350ef52968dc4eb3d925e1d19185e
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p2.fbx
-  - fileID: 162
-    classID: 43
-    packedSize: 27716
-    offset: 71468184
-    sourceAssetGUID: d0f4f4a6ea280eb49a9e01e9ab72fa18
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/5.fbx
-  - fileID: 163
-    classID: 43
-    packedSize: 8664
-    offset: 71495904
-    sourceAssetGUID: df5f660a0ad6ab24f8a986c2a33b341f
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/2.fbx
-  - fileID: 164
-    classID: 43
-    packedSize: 33756
-    offset: 71504568
-    sourceAssetGUID: f01b243fd257015438c2950cdbc4e872
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/p5-8.fbx
-  - fileID: 165
-    classID: 43
-    packedSize: 3256
-    offset: 71538328
-    sourceAssetGUID: f4b691195c179e945ac8f00a797961b2
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p3-7.fbx
-  - fileID: 166
-    classID: 43
-    packedSize: 24872
-    offset: 71541584
-    sourceAssetGUID: f637800949c72bf4c838823bdf15e754
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Buildings/9.fbx
-  - fileID: 167
-    classID: 43
-    packedSize: 13916
-    offset: 71566456
-    sourceAssetGUID: fb43c86eec07dd54eaf35d4cd3995ea8
-    buildTimeAssetPath: Assets/models/WhiteCity/Models/Roof/p5-7.fbx
-  - fileID: 168
-    classID: 43
-    packedSize: 6324
-    offset: 71580376
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 169
-    classID: 43
-    packedSize: 3644
-    offset: 71586704
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 170
-    classID: 43
-    packedSize: 5444
-    offset: 71590352
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 171
-    classID: 43
-    packedSize: 4988
-    offset: 71595800
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 172
-    classID: 43
-    packedSize: 18952
-    offset: 71600792
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 173
-    classID: 43
-    packedSize: 6140
-    offset: 71619744
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 174
-    classID: 43
-    packedSize: 6332
-    offset: 71625888
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 175
-    classID: 43
-    packedSize: 2612
-    offset: 71632224
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 176
-    classID: 43
-    packedSize: 6212
-    offset: 71634840
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 177
-    classID: 43
-    packedSize: 3092
-    offset: 71641056
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 178
-    classID: 43
-    packedSize: 6284
-    offset: 71644152
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 179
-    classID: 43
-    packedSize: 5108
-    offset: 71650440
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 180
-    classID: 43
-    packedSize: 7052
-    offset: 71655552
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 181
-    classID: 43
-    packedSize: 5420
-    offset: 71662608
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 182
-    classID: 43
-    packedSize: 2276
-    offset: 71668032
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 183
-    classID: 43
-    packedSize: 3908
-    offset: 71670312
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 184
-    classID: 43
-    packedSize: 2828
-    offset: 71674224
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 185
-    classID: 43
-    packedSize: 5468
-    offset: 71677056
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 186
-    classID: 43
-    packedSize: 3308
-    offset: 71682528
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 187
-    classID: 43
-    packedSize: 18080
-    offset: 71685840
-    sourceAssetGUID: 45d7b8cdea104d44ca0418178ec8138d
-    buildTimeAssetPath: Assets/scene prefabs/Items/Shell/Rocket02_mat_model.fbx
-  - fileID: 188
-    classID: 48
-    packedSize: 27292
-    offset: 71703920
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 189
-    classID: 48
-    packedSize: 1629616
-    offset: 71731216
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 190
-    classID: 48
-    packedSize: 13452
-    offset: 73360832
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 191
-    classID: 48
-    packedSize: 8436
-    offset: 73374288
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 192
-    classID: 48
-    packedSize: 8144
-    offset: 73382728
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 193
-    classID: 48
-    packedSize: 54868
-    offset: 73390872
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 194
-    classID: 48
-    packedSize: 19324
-    offset: 73445744
-    sourceAssetGUID: 5f8fef09682fab74fb7a29d783391edb
-    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/VRChat-Sprites-Default.shader
-  - fileID: 195
-    classID: 48
-    packedSize: 40944
-    offset: 73465072
-    sourceAssetGUID: 68e6db2ebdc24f95958faec2be5558d6
-    buildTimeAssetPath: Assets/TextMesh Pro/Shaders/TMP_SDF.shader
-  - fileID: 196
-    classID: 48
-    packedSize: 5672
-    offset: 73506016
-    sourceAssetGUID: 693137b858e4dc64c83be531351f45e6
-    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Sample Assets/Shaders/Mirror.shader
-  - fileID: 197
-    classID: 48
-    packedSize: 32252
-    offset: 73511688
-    sourceAssetGUID: fe393ace9b354375a9cb14cdbbc28be4
-    buildTimeAssetPath: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
-  - fileID: 198
-    classID: 74
-    packedSize: 2372
-    offset: 73543944
-    sourceAssetGUID: 8e7e1ea2cd9147645a7352b9f511df2b
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Animations/HighlightFade.anim
-  - fileID: 199
-    classID: 74
-    packedSize: 58792
-    offset: 73546320
-    sourceAssetGUID: da547b840fa6c7f42b1e442741b758c7
-    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxOfPandora_Crash.anim
-  - fileID: 200
-    classID: 74
-    packedSize: 2248
-    offset: 73605112
-    sourceAssetGUID: 9f766eb0e8fc6c74ba1b27fe388f4057
-    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxOfPandora_Idle.anim
-  - fileID: 201
-    classID: 89
-    packedSize: 131424
-    offset: 73607360
-    sourceAssetGUID: d287680e1c08fd244a349d7c1feb905b
-    buildTimeAssetPath: Assets/WhiteCityScene/ReflectionProbe-1.exr
-  - fileID: 202
-    classID: 89
-    packedSize: 131424
-    offset: 73738784
-    sourceAssetGUID: f55a25b3501b51040af61f002dac0ce5
-    buildTimeAssetPath: Assets/WhiteCityScene/ReflectionProbe-0.exr
-  - fileID: 203
-    classID: 90
-    packedSize: 3356
-    offset: 73870208
-    sourceAssetGUID: bf5c3e0cc8f27e44fa80b78fbca7ac1a
-    buildTimeAssetPath: Assets/models/RPG Pack/Models/Box.FBX
-  - fileID: 204
-    classID: 91
-    packedSize: 432
-    offset: 73873568
-    sourceAssetGUID: f4f43775b058eee41abe03f631fe83a5
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Animations/HighlightFade.controller
-  - fileID: 205
-    classID: 91
-    packedSize: 584
-    offset: 73874000
-    sourceAssetGUID: b79f87718dae8f840b98142eef90b118
-    buildTimeAssetPath: Assets/models/RPG Pack/Animations/BoxIdleAC.controller
-  - fileID: 206
-    classID: 115
-    packedSize: 92
-    offset: 144848
-    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
-    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
-  - fileID: 207
-    classID: 115
-    packedSize: 96
-    offset: 144944
-    sourceAssetGUID: 4ecd63eff847044b68db9453ce219299
-    buildTimeAssetPath: Packages/com.vrchat.base/Runtime/VRCSDK/Plugins/VRCCore-Editor.dll
-  - fileID: 208
-    classID: 115
-    packedSize: 108
-    offset: 145040
-    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
-    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
-  - fileID: 209
-    classID: 115
-    packedSize: 108
-    offset: 145152
-    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
-    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
-  - fileID: 210
-    classID: 115
-    packedSize: 96
-    offset: 145264
-    sourceAssetGUID: 0cd44c1031e13a943bb63640046fad76
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Layout/CanvasScaler.cs
-  - fileID: 211
-    classID: 115
-    packedSize: 88
-    offset: 145360
-    sourceAssetGUID: 1344c3c82d62a2a41a3576d8abb8e3ea
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/RawImage.cs
-  - fileID: 212
-    classID: 115
-    packedSize: 96
-    offset: 145448
-    sourceAssetGUID: 1aa08ab6e0800fa44ae55d278d1423e3
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/ScrollRect.cs
-  - fileID: 213
-    classID: 115
-    packedSize: 96
-    offset: 145544
-    sourceAssetGUID: 2a4db7a114972834c8e4117be1d82ba3
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Scrollbar.cs
-  - fileID: 214
-    classID: 115
-    packedSize: 80
-    offset: 145640
-    sourceAssetGUID: 31a19414c41e5ae4aae2af33fee712f6
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Mask.cs
-  - fileID: 215
-    classID: 115
-    packedSize: 88
-    offset: 145720
-    sourceAssetGUID: 45115577ef41a5b4ca741ed302693907
-    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/UdonBehaviour.cs
-  - fileID: 216
-    classID: 115
-    packedSize: 88
-    offset: 145808
-    sourceAssetGUID: 4e29b1a8efbd4b44bb3f3716e73f07ff
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Button.cs
-  - fileID: 217
-    classID: 115
-    packedSize: 128
-    offset: 145896
-    sourceAssetGUID: 4f231c4fb786f3946a6b90b886c48677
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
-  - fileID: 218
-    classID: 115
-    packedSize: 80
-    offset: 146024
-    sourceAssetGUID: 5f7201a12d95ffc409449d95f23cf332
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Text.cs
-  - fileID: 219
-    classID: 115
-    packedSize: 88
-    offset: 146104
-    sourceAssetGUID: 67db9e8f0e2ae9c40bc1e2b64352a6b4
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Slider.cs
-  - fileID: 220
-    classID: 115
-    packedSize: 100
-    offset: 146192
-    sourceAssetGUID: 71c1514a6bd24e1e882cebbe1904ce04
-    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs
-  - fileID: 221
-    classID: 115
-    packedSize: 104
-    offset: 146296
-    sourceAssetGUID: 76c392e42b5098c458856cdf6ecaaaa1
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs
-  - fileID: 222
-    classID: 115
-    packedSize: 92
-    offset: 146400
-    sourceAssetGUID: 7b743370ac3e4ec2a1668f5455a8ef8a
-    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Dropdown.cs
-  - fileID: 223
-    classID: 115
-    packedSize: 88
-    offset: 146496
-    sourceAssetGUID: 9085046f02f69544eb97fd06b6048fe2
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Toggle.cs
-  - fileID: 224
-    classID: 115
-    packedSize: 92
-    offset: 146584
-    sourceAssetGUID: 9541d86e2fd84c1d9990edf0852d74ab
-    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshPro.cs
-  - fileID: 225
-    classID: 115
-    packedSize: 128
-    offset: 146680
-    sourceAssetGUID: bf61d954ecb803046953c666facfb904
-    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/Udon/ProgramSources/SerializedUdonProgramAsset.cs
-  - fileID: 226
-    classID: 115
-    packedSize: 104
-    offset: 146808
-    sourceAssetGUID: d0b148fe25e99eb48b9724523833bab1
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs
-  - fileID: 227
-    classID: 115
-    packedSize: 96
-    offset: 146912
-    sourceAssetGUID: d199490a83bb2b844b9695cbf13b01ef
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/InputField.cs
-  - fileID: 228
-    classID: 115
-    packedSize: 108
-    offset: 147008
-    sourceAssetGUID: d8f6aa6586f77764fab668a0a62d8f7a
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Scripts/OptionsMenuNew.cs
-  - fileID: 229
-    classID: 115
-    packedSize: 104
-    offset: 147120
-    sourceAssetGUID: dc42784cf147c0c48a680349fa168899
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/GraphicRaycaster.cs
-  - fileID: 230
-    classID: 115
-    packedSize: 100
-    offset: 147224
-    sourceAssetGUID: f4688fdb7df04437aeb418b961361dc5
-    buildTimeAssetPath: Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs
-  - fileID: 231
-    classID: 115
-    packedSize: 88
-    offset: 147328
-    sourceAssetGUID: fe87c0e1cc204ed48ad3b37840f39efc
-    buildTimeAssetPath: Packages/com.unity.ugui/Runtime/UI/Core/Image.cs
-  - fileID: 232
-    classID: 115
-    packedSize: 100
-    offset: 147416
-    sourceAssetGUID: 661092b4961be7145bfbe56e1e62337b
-    buildTimeAssetPath: Packages/com.vrchat.worlds/Runtime/VRCSDK/Plugins/VRCSDK3.dll
-  - fileID: 233
-    classID: 121
-    packedSize: 61
-    offset: 73874584
-    sourceAssetGUID: 67782eb9ec7569d4bb518dc8232c5bb2
-    buildTimeAssetPath: Assets/models/WhiteCity/Textures/Lensflare/Sun.flare
-  - fileID: 234
-    classID: 128
-    packedSize: 13202
-    offset: 73874648
-    sourceAssetGUID: 4f150ffb22c87ef45b4b5334c75368f8
-    buildTimeAssetPath: Assets/UI/HUD Panel/Fonts/Autobus-Bold.ttf
-  - fileID: 235
-    classID: 128
-    packedSize: 61942
-    offset: 73887856
-    sourceAssetGUID: d7cffddcbc0cc8f4ebe6e28eb9804082
-    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black.ttf
-  - fileID: 236
-    classID: 128
-    packedSize: 352462
-    offset: 73949800
-    sourceAssetGUID: e3265ab4bf004d28a9537516768c1c75
-    buildTimeAssetPath: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  - fileID: 237
-    classID: 213
-    packedSize: 568
-    offset: 74302264
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 238
-    classID: 213
-    packedSize: 572
-    offset: 74302832
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 239
-    classID: 213
-    packedSize: 580
-    offset: 74303408
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 240
-    classID: 213
-    packedSize: 516
-    offset: 74303992
-    sourceAssetGUID: 0000000000000000f000000000000000
-    buildTimeAssetPath: Resources/unity_builtin_extra
-  - fileID: 241
-    classID: 213
-    packedSize: 1068
-    offset: 74304512
-    sourceAssetGUID: 05e3cc1417e5c224a973d923ca8926fd
-    buildTimeAssetPath: Assets/UI/HUD Panel/Texture/transparent-textbox-grey-5.png
-  - fileID: 242
-    classID: 213
-    packedSize: 468
-    offset: 74305584
-    sourceAssetGUID: 05f659001c09bec428a6bf8899b37df6
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetail_Mono.png
-  - fileID: 243
-    classID: 213
-    packedSize: 1280
-    offset: 74306056
-    sourceAssetGUID: 0eacdf0ca3a1eea489436a1e23a8bcf9
-    buildTimeAssetPath: Assets/ShopMenu/Money.png
-  - fileID: 244
-    classID: 213
-    packedSize: 456
-    offset: 74307336
-    sourceAssetGUID: 1f83b75f07feedf4baa18b728f75252a
-    buildTimeAssetPath: Assets/ShopMenu/avatars/junk.png
-  - fileID: 245
-    classID: 213
-    packedSize: 1128
-    offset: 74307792
-    sourceAssetGUID: 2323cb669376e8c449c3c32670900315
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Wide_Mono.png
-  - fileID: 246
-    classID: 213
-    packedSize: 680
-    offset: 74308920
-    sourceAssetGUID: 2a11849d78988a3489d6ffa83d159ecd
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt2_Mono.png
-  - fileID: 247
-    classID: 213
-    packedSize: 540
-    offset: 74309600
-    sourceAssetGUID: 2f7ad163b654bf74085060307e13db4a
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/CornerDetail_Mono.png
-  - fileID: 248
-    classID: 213
-    packedSize: 4268
-    offset: 74310144
-    sourceAssetGUID: 3187dae7a26a51c43a9c2304464e476f
-    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBunFull.png
-  - fileID: 249
-    classID: 213
-    packedSize: 464
-    offset: 74314416
-    sourceAssetGUID: 31ae7127c07a4cb4e8ae749f6276660b
-    buildTimeAssetPath: Assets/ShopMenu/avatars/riderabbit.png
-  - fileID: 250
-    classID: 213
-    packedSize: 460
-    offset: 74314880
-    sourceAssetGUID: 5ffc621c8968cd041bf1112fe81e0662
-    buildTimeAssetPath: Assets/ShopMenu/avatars/olive.png
-  - fileID: 251
-    classID: 213
-    packedSize: 1360
-    offset: 74315344
-    sourceAssetGUID: 603eabcd71ec55e41be090a50f8b646e
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/Icons/arrow_512x512.png
-  - fileID: 252
-    classID: 213
-    packedSize: 464
-    offset: 74316704
-    sourceAssetGUID: 6f457b6cbbfa2fe4d96c6a70c2fd98ee
-    buildTimeAssetPath: Assets/ShopMenu/avatars/CaptainBun.png
-  - fileID: 253
-    classID: 213
-    packedSize: 460
-    offset: 74317168
-    sourceAssetGUID: 7ccf9ae289d0dd34a9164ba11747e92c
-    buildTimeAssetPath: Assets/ShopMenu/avatars/seven.png
-  - fileID: 254
-    classID: 213
-    packedSize: 464
-    offset: 74317632
-    sourceAssetGUID: 8480de0448ee588459c5da29fd196fb0
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/SquareSolid.png
-  - fileID: 255
-    classID: 213
-    packedSize: 460
-    offset: 74318096
-    sourceAssetGUID: 93917c189b5f9204885d199e112c71fd
-    buildTimeAssetPath: Assets/ShopMenu/avatars/Robot.png
-  - fileID: 256
-    classID: 213
-    packedSize: 524
-    offset: 74318560
-    sourceAssetGUID: 9e2ea1cb70ae8cf41a3db001d7b7cebb
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/ButtonHighlighted_Mono.png
-  - fileID: 257
-    classID: 213
-    packedSize: 460
-    offset: 74319088
-    sourceAssetGUID: a4545ebf8e47ac946b3e3180e0975b2e
-    buildTimeAssetPath: Assets/ShopMenu/ui_bg.png
-  - fileID: 258
-    classID: 213
-    packedSize: 476
-    offset: 74319552
-    sourceAssetGUID: a4fde6e0b21dc224d813ee493157874f
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Hover_Mono.png
-  - fileID: 259
-    classID: 213
-    packedSize: 588
-    offset: 74320032
-    sourceAssetGUID: a8292d7c3170a7348accf3d85c0e7359
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Mono.png
-  - fileID: 260
-    classID: 213
-    packedSize: 524
-    offset: 74320624
-    sourceAssetGUID: b6f33d10c75334f4884f8d7baddc69f4
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/LoadingHighlight.png
-  - fileID: 261
-    classID: 213
-    packedSize: 440
-    offset: 74321152
-    sourceAssetGUID: e5a390d359542f845bd18b3970c5eff3
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/Button_Frame_Press_Mono.png
-  - fileID: 262
-    classID: 213
-    packedSize: 464
-    offset: 74321592
-    sourceAssetGUID: f18e648a7c56c97459bc9dd0cfe685dc
-    buildTimeAssetPath: Assets/ShopMenu/avatars/GreenBlob.png
-  - fileID: 263
-    classID: 213
-    packedSize: 524
-    offset: 74322056
-    sourceAssetGUID: fc4228f9270498248a1d3298777bf5da
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Modern Menu 1/Graphics/New/LineDetailAlt1_Mono.png
-  - fileID: 264
-    classID: 213
-    packedSize: 464
-    offset: 74322584
-    sourceAssetGUID: fddb13df76efe9045b3ad498bd991718
-    buildTimeAssetPath: Assets/ShopMenu/avatars/FighterKirby.png
-  - fileID: 265
-    classID: 258
-    packedSize: 40
-    offset: 74323048
-    sourceAssetGUID: c7474266e1ec3674f9b2aed3834e1d5d
-    buildTimeAssetPath: Assets/WhiteCityScene/LightingData.asset
-  - fileID: 266
-    classID: 114
-    packedSize: 46580
-    offset: 74323088
-    sourceAssetGUID: 6f9832cffe5aea4449eba5b38fac8e25
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/075edb17eff218c418bcd2656ae19290.asset
-  - fileID: 267
-    classID: 114
-    packedSize: 177248
-    offset: 74369672
-    sourceAssetGUID: 806ac592b81556c478a47738267369ef
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/095d95c5888c25c4ca6d9c5f15ce7c8b.asset
-  - fileID: 268
-    classID: 114
-    packedSize: 23652
-    offset: 74546920
-    sourceAssetGUID: e9c18e5e95cdf3142b047d6d23ed23e4
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/1210da547d9832c4498ac3c15c41bcdc.asset
-  - fileID: 269
-    classID: 114
-    packedSize: 43204
-    offset: 74570576
-    sourceAssetGUID: f9cb3c1b0a288c34b841c84142df63e7
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/15506396185492847b442b8f120d3d94.asset
-  - fileID: 270
-    classID: 114
-    packedSize: 27964
-    offset: 74613784
-    sourceAssetGUID: 8aa46d44b27be14488b6b53f675843cd
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/16fe3d2088baeaa498f812653a07b759.asset
-  - fileID: 271
-    classID: 114
-    packedSize: 13988
-    offset: 74641752
-    sourceAssetGUID: 681c5c858820529429a6fcb3c76e2220
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/17d578286f11b644f9fcc47f5ad30d7e.asset
-  - fileID: 272
-    classID: 114
-    packedSize: 44740
-    offset: 74655744
-    sourceAssetGUID: 55ee92e3d9cabd949b6f1c6cf7c4fb99
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/1a4ea4a9d7d252448b548ec106d1d398.asset
-  - fileID: 273
-    classID: 114
-    packedSize: 21568
-    offset: 74700488
-    sourceAssetGUID: b9102d96281735643a03f253d7d7df9c
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/1b488c376fc77bf4cb08adc1cb545669.asset
-  - fileID: 274
-    classID: 114
-    packedSize: 50824
-    offset: 74722056
-    sourceAssetGUID: de41fa62d9955454b80ac801a915c859
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/1ca5141ed5b1dfe4a90a7a74fa918c00.asset
-  - fileID: 275
-    classID: 114
-    packedSize: 10972
-    offset: 74772880
-    sourceAssetGUID: 1ab021100d7298d4ca90c4c053bd30d4
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/1fd8d0f51d7a8c848bf019a3b61b9932.asset
-  - fileID: 276
-    classID: 114
-    packedSize: 21980
-    offset: 74783856
-    sourceAssetGUID: c2678434a7099e34aa5982375281017a
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/24481ac951c33224cbeab72e75c9a532.asset
-  - fileID: 277
-    classID: 114
-    packedSize: 15300
-    offset: 74805840
-    sourceAssetGUID: a8f0623d57db20745b32f1201b39b667
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/26e0abc7f520b5648aae50febfb065ca.asset
-  - fileID: 278
-    classID: 114
-    packedSize: 14108
-    offset: 74821144
-    sourceAssetGUID: 1a39be9390a8482448e82142c7cb2844
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/29ccc9c21b4da6a449c0ed3dff1f5e89.asset
-  - fileID: 279
-    classID: 114
-    packedSize: 17776
-    offset: 74835256
-    sourceAssetGUID: 50d9233581198f1449b8dd352dd59c1a
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/2c76d37c798376049b99be96c2172c9a.asset
-  - fileID: 280
-    classID: 114
-    packedSize: 17032
-    offset: 74853032
-    sourceAssetGUID: 3abdf86e91e79874f99e6e05233616c2
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/2e3005b4c475dcd4fa7e6472d700d765.asset
-  - fileID: 281
-    classID: 114
-    packedSize: 200336
-    offset: 74870064
-    sourceAssetGUID: 57497fdd57e9c3b459bcdbb8929e787d
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/2fd7d1ca94a40df468208c80b4fd0e99.asset
-  - fileID: 282
-    classID: 114
-    packedSize: 88288
-    offset: 75070400
-    sourceAssetGUID: 90d49af1c639a1d40a7ae586c82a10a2
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/32b5878a4459114439a037465beab1a0.asset
-  - fileID: 283
-    classID: 114
-    packedSize: 61672
-    offset: 75158688
-    sourceAssetGUID: 5d22d43b9a6158548bd4976b8929a74d
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/33124a0bb03513d46a3c035bd55b306e.asset
-  - fileID: 284
-    classID: 114
-    packedSize: 107080
-    offset: 75220360
-    sourceAssetGUID: bcbdac8c7683e084b9cd53971e70a1fc
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/36b860ac299df9d4091aba890dab1d6e.asset
-  - fileID: 285
-    classID: 114
-    packedSize: 13972
-    offset: 75327440
-    sourceAssetGUID: c9ca74099df9a434ab33661584c126de
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/37128122e45947f4c9bafee4e875471b.asset
-  - fileID: 286
-    classID: 114
-    packedSize: 55456
-    offset: 75341416
-    sourceAssetGUID: a6dd4cafe0f290745a44bada4aa00513
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/3a4eeb1b9df5aaf4791e5d9f3925f8ef.asset
-  - fileID: 287
-    classID: 114
-    packedSize: 86048
-    offset: 75396872
-    sourceAssetGUID: 625b5205ab2b1b04b86ea73daa703613
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/403f2c33c3aa6934cb2ce89f336774c1.asset
-  - fileID: 288
-    classID: 114
-    packedSize: 30168
-    offset: 75482920
-    sourceAssetGUID: 23acc4bb06cf5db4cbed95776d36f36b
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/47e053767c6fba144b15e35bde6eee7b.asset
-  - fileID: 289
-    classID: 114
-    packedSize: 14052
-    offset: 75513088
-    sourceAssetGUID: 48321f7662f678c47a3d26dd35ece2fb
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/4dde151da9d96ee4c99c1ee8c281c3d5.asset
-  - fileID: 290
-    classID: 114
-    packedSize: 32324
-    offset: 75527144
-    sourceAssetGUID: 106ed6818fd77774a892b6199077431a
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/5195d51780c6c3c419e86c487d011ae8.asset
-  - fileID: 291
-    classID: 114
-    packedSize: 16528
-    offset: 75559472
-    sourceAssetGUID: 8b5e62d98f5aed44c8f0609f835c3abd
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/532f991406e2f464bb6e3fe935353849.asset
-  - fileID: 292
-    classID: 114
-    packedSize: 36836
-    offset: 75576000
-    sourceAssetGUID: 32677cc0781d42449b5c03e055d78087
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/5470d68c578ffdb4f8885db1a9bf0b80.asset
-  - fileID: 293
-    classID: 114
-    packedSize: 86056
-    offset: 75612840
-    sourceAssetGUID: 8c9e19862022c9343b74634c15a1b7c8
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/56f2072e6de88d94bb108e174d92e29e.asset
-  - fileID: 294
-    classID: 114
-    packedSize: 23064
-    offset: 75698896
-    sourceAssetGUID: 4c069ad221ee63840916bd75e93113f1
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/572e09f66acf8704c8d36e9a4a2ba452.asset
-  - fileID: 295
-    classID: 114
-    packedSize: 15260
-    offset: 75721960
-    sourceAssetGUID: 908581c5fe8f03b47a88ac7909a702e9
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/595ad42caf822b74180549b0e48e28c9.asset
-  - fileID: 296
-    classID: 114
-    packedSize: 10768
-    offset: 75737224
-    sourceAssetGUID: 100221aed1b4f754fae949bfb5852199
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/5c1f36ab8afd0c54d8194109b4769ef8.asset
-  - fileID: 297
-    classID: 114
-    packedSize: 12228
-    offset: 75747992
-    sourceAssetGUID: 8b98919f50e39814eb60c1af3c70dbbd
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/5f988b73463aa1444b995336443a7865.asset
-  - fileID: 298
-    classID: 114
-    packedSize: 15300
-    offset: 75760224
-    sourceAssetGUID: 3282b2e0e10472c48970949c75a814f8
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/5fb2153cc474cb04c8ae86bf85955e03.asset
-  - fileID: 299
-    classID: 114
-    packedSize: 34824
-    offset: 75775528
-    sourceAssetGUID: 73c8e562eff801343b046d97f0ac2b91
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/64e8a70b99e8eed46be187c7174e78fa.asset
-  - fileID: 300
-    classID: 114
-    packedSize: 45736
-    offset: 75810352
-    sourceAssetGUID: be70de068916ea14b913592736477f2d
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/699347fe888976d49aa998dcfb56e23c.asset
-  - fileID: 301
-    classID: 114
-    packedSize: 100888
-    offset: 75856088
-    sourceAssetGUID: ff4bed9347a18be47b13bcf64b02d284
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/6a92ce3fc6c9454429f8edbf1a9cbceb.asset
-  - fileID: 302
-    classID: 114
-    packedSize: 78780
-    offset: 75956976
-    sourceAssetGUID: 3bdf4f20f784a374285a3850c3e63be4
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/6e817487b0a65ae4e8aa05ed40bc8456.asset
-  - fileID: 303
-    classID: 114
-    packedSize: 72676
-    offset: 76035760
-    sourceAssetGUID: 92f3647ed772e8e48b4fcb501c8c047a
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/7063fb8e9b9fff04ba8529a8bcee1d9c.asset
-  - fileID: 304
-    classID: 114
-    packedSize: 14128
-    offset: 76108440
-    sourceAssetGUID: 7a1a1e0f8bb3d8a458bff8f6f30db0e3
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/70e6beba1e21aed4c8f1a7ca38b99929.asset
-  - fileID: 305
-    classID: 114
-    packedSize: 59872
-    offset: 76122568
-    sourceAssetGUID: 86500144c451c214fbe7daecda564e8f
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/7540f7c71c7c5b14a9756eeac5a9e95f.asset
-  - fileID: 306
-    classID: 114
-    packedSize: 47948
-    offset: 76182440
-    sourceAssetGUID: 152f3cf96fb180f48b3af3cf8172e672
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/7735268f2205c9541a14713152bd9706.asset
-  - fileID: 307
-    classID: 114
-    packedSize: 25716
-    offset: 76230392
-    sourceAssetGUID: 3243122287fb65548b40fb007e66b3b3
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/7e54c726f7695ca41abdef5382002593.asset
-  - fileID: 308
-    classID: 114
-    packedSize: 27960
-    offset: 76256112
-    sourceAssetGUID: d9c323020873ceb43b01dcec33fecb95
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/87e1dba355c712247809db0389beb1a9.asset
-  - fileID: 309
-    classID: 114
-    packedSize: 65792
-    offset: 76284072
-    sourceAssetGUID: bf3f88f8a895e2f4aa04e07606551dad
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/88eb819275f748a4c9a209226bd14c8c.asset
-  - fileID: 310
-    classID: 114
-    packedSize: 15316
-    offset: 76349864
-    sourceAssetGUID: 4bdb49aac9ae75d41826fd12e25b4046
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/8da0d5e27886ff84e81b0fa830ed6c7a.asset
-  - fileID: 311
-    classID: 114
-    packedSize: 27900
-    offset: 76365184
-    sourceAssetGUID: 315a9a0ac00216c498e93be493222861
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/8de3bc79520c35149b0ef5f5bf994cb1.asset
-  - fileID: 312
-    classID: 114
-    packedSize: 16576
-    offset: 76393088
-    sourceAssetGUID: 2e7af1691d5f2d949a43c25a9064448a
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/8eca62712b7135d4b84f505848f51aa4.asset
-  - fileID: 313
-    classID: 114
-    packedSize: 22944
-    offset: 76409664
-    sourceAssetGUID: ffc8ab0f8f57d1742a828168101b3133
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/907005790ca108741b8593ee1c6dcd85.asset
-  - fileID: 314
-    classID: 114
-    packedSize: 15268
-    offset: 76432608
-    sourceAssetGUID: 8aa019702ce1be24b97855a605409ef3
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/915c794e3402df94e94b2b2604aed1dd.asset
-  - fileID: 315
-    classID: 114
-    packedSize: 16520
-    offset: 76447880
-    sourceAssetGUID: 1f1d8cfad1e8f8c4b9429f1d1f60ece9
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/96fae8f9365058a429fa1e4f1fbcad56.asset
-  - fileID: 316
-    classID: 114
-    packedSize: 27964
-    offset: 76464400
-    sourceAssetGUID: 6fc0cf41ff2ba884dbb84e53ad1cd36b
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/97e900dac336bee458b117c46e4497e2.asset
-  - fileID: 317
-    classID: 114
-    packedSize: 61456
-    offset: 76492368
-    sourceAssetGUID: 9dbbac891e0e28c42aee7cfc8d63dcda
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/9dce673461ccf764f9209bd0ec0b962d.asset
-  - fileID: 318
-    classID: 114
-    packedSize: 17188
-    offset: 76553824
-    sourceAssetGUID: 2ae68bf61559dc84caec93f9ccbdda4e
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/9eadb8b1f82682e4e85febc84f2995a0.asset
-  - fileID: 319
-    classID: 114
-    packedSize: 9448
-    offset: 76571016
-    sourceAssetGUID: 8938beb9ac4f5bf4688253eb696733dd
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/a29a024598e130b4bb5a876f180addbd.asset
-  - fileID: 320
-    classID: 114
-    packedSize: 9444
-    offset: 76580464
-    sourceAssetGUID: 8fdf5dffce35a454290dc24840187f32
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/a2dd4851411ed324f95f9f0e8b10f518.asset
-  - fileID: 321
-    classID: 114
-    packedSize: 23984
-    offset: 76589912
-    sourceAssetGUID: 3852429026317c340ab10395dafb7b17
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/a830ffe1cd55b2c4eac2ab667ed9c962.asset
-  - fileID: 322
-    classID: 114
-    packedSize: 45620
-    offset: 76613896
-    sourceAssetGUID: 586aefab04e33ec40815814f5b1543ce
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/a88716622fa9dee4382f6d2c95052490.asset
-  - fileID: 323
-    classID: 114
-    packedSize: 45620
-    offset: 76659520
-    sourceAssetGUID: f8fbf7a2ff0564a40b93e0900a0388e6
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/a8b141330a657f840b352b42d23bfb90.asset
-  - fileID: 324
-    classID: 114
-    packedSize: 24544
-    offset: 76705144
-    sourceAssetGUID: b20e8841fad320f42a8cfc89e23aa9fd
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/a9767d5fc03fb444293eaacb6e238f0b.asset
-  - fileID: 325
-    classID: 114
-    packedSize: 17776
-    offset: 76729688
-    sourceAssetGUID: f9da5b80c9dada644a882367529a6c89
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/ac773474169122e42b4ce33118e656c9.asset
-  - fileID: 326
-    classID: 114
-    packedSize: 15304
-    offset: 76747464
-    sourceAssetGUID: 532154c5c39c26140aa825ee88631e81
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/ac91abd79afe1ab40a37260a0956a53b.asset
-  - fileID: 327
-    classID: 114
-    packedSize: 30468
-    offset: 76762768
-    sourceAssetGUID: 5eb4af47b27d67f419122fcb2e8c7c8c
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/b509d3d4b5488fc40b2fc4c5de2aee5a.asset
-  - fileID: 328
-    classID: 114
-    packedSize: 22892
-    offset: 76793240
-    sourceAssetGUID: d67217d7f1e9e434087f75a0f3560dad
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/bfe989037663a864596eed2353ed553c.asset
-  - fileID: 329
-    classID: 114
-    packedSize: 48000
-    offset: 76816136
-    sourceAssetGUID: 75d4bbace439ee64ca43591e52807826
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/c28023a9f1e1c3347a6e8748e1f021a5.asset
-  - fileID: 330
-    classID: 114
-    packedSize: 51448
-    offset: 76864136
-    sourceAssetGUID: 1ed2e49e33cdfc64fb87d40547ad1a5d
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/c3e00580b38579d4498336e48a5e6ff5.asset
-  - fileID: 331
-    classID: 114
-    packedSize: 17068
-    offset: 76915584
-    sourceAssetGUID: be861434d2236cf4aaffb7e78cb14c58
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/c8df303ceb45ae84f85a11591f741734.asset
-  - fileID: 332
-    classID: 114
-    packedSize: 17236
-    offset: 76932656
-    sourceAssetGUID: 02037739e7f3e6641942c419d37f87be
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/caec51ef148f11d43aa5c11a593c76dd.asset
-  - fileID: 333
-    classID: 114
-    packedSize: 58172
-    offset: 76949896
-    sourceAssetGUID: 3cd14df47dbb8dd45903c4077fe74985
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/d1835dde6ed4df7428c93542eced915a.asset
-  - fileID: 334
-    classID: 114
-    packedSize: 14032
-    offset: 77008072
-    sourceAssetGUID: 07f85c56e6945f34b8d6693c20a374c8
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/d1ddc06be5ccb9442a0ab04c1cc081d4.asset
-  - fileID: 335
-    classID: 114
-    packedSize: 14040
-    offset: 77022104
-    sourceAssetGUID: 9c7e6bc06074402409802b6e1687928f
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/d3b3d191d51ee1143aae49fc8cb50904.asset
-  - fileID: 336
-    classID: 114
-    packedSize: 19552
-    offset: 77036144
-    sourceAssetGUID: e0ec7895a9300494da95c40ba87d8e90
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/d5dadc01e1bf42a44a0d11c636a86073.asset
-  - fileID: 337
-    classID: 114
-    packedSize: 14032
-    offset: 77055696
-    sourceAssetGUID: 4930b3a2e462d144b947589cd5dd2102
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/d782c17b34074a74484f4aa722d05673.asset
-  - fileID: 338
-    classID: 114
-    packedSize: 43408
-    offset: 77069728
-    sourceAssetGUID: 15e71ed668f85dc469e1c1c3459fc91c
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/d89334515fdb5094d9c29cc79cd9a667.asset
-  - fileID: 339
-    classID: 114
-    packedSize: 15672
-    offset: 77113136
-    sourceAssetGUID: 4eceb218c3c46b8419b4adbe09f99874
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/da00f3e7971315f4f8e49c096ba5148a.asset
-  - fileID: 340
-    classID: 114
-    packedSize: 14088
-    offset: 77128808
-    sourceAssetGUID: 03574891341a47e4ab83229f4a948904
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/dd61c5096d5c35d4b9d2536413f5abf6.asset
-  - fileID: 341
-    classID: 114
-    packedSize: 16112
-    offset: 77142896
-    sourceAssetGUID: fafba794b38091346a52aab547ac0f81
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/dd8ca3e92a4dcda41899055793c16750.asset
-  - fileID: 342
-    classID: 114
-    packedSize: 22444
-    offset: 77159008
-    sourceAssetGUID: cbe68f9cf87e4a745b99aaba89b79e50
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/e02b6841ddd33a24b95989f27c45145f.asset
-  - fileID: 343
-    classID: 114
-    packedSize: 39724
-    offset: 77181456
-    sourceAssetGUID: 54fb8096ee76a9841a32643a7240da29
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/e211384b263791d48aab8aa73ec0b408.asset
-  - fileID: 344
-    classID: 114
-    packedSize: 26556
-    offset: 77221184
-    sourceAssetGUID: 685cbdaba8db1c041bb8d30703eaf46e
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/e334092b2a83f4c4b85262140459cc39.asset
-  - fileID: 345
-    classID: 114
-    packedSize: 35660
-    offset: 77247744
-    sourceAssetGUID: 40cf48ac2acedd24b98568a12919752b
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/e60772d35af85134ca30bf3d0623a5bb.asset
-  - fileID: 346
-    classID: 114
-    packedSize: 23656
-    offset: 77283408
-    sourceAssetGUID: 4dd646e32eb54894892cdd649d31af6b
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/e86e5c0d0b9e18247b68b8310f415ade.asset
-  - fileID: 347
-    classID: 114
-    packedSize: 8852
-    offset: 77307064
-    sourceAssetGUID: b57774468a0b809438c226894868f776
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/e9b19f53f140598419158f5123a34951.asset
-  - fileID: 348
-    classID: 114
-    packedSize: 11228
-    offset: 77315920
-    sourceAssetGUID: cbb21d3e742d9454b9fb17b1a7c01b7e
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/eac07254d9084134cb1ed4610d4da9f0.asset
-  - fileID: 349
-    classID: 114
-    packedSize: 15268
-    offset: 77327152
-    sourceAssetGUID: 41cc66637da21f342bb7cb75eb275064
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/ecb0fcc15b3c70148b9e6c7d6fa077d1.asset
-  - fileID: 350
-    classID: 114
-    packedSize: 27900
-    offset: 77342424
-    sourceAssetGUID: 9a04c7be77088c947ba604dd141cd9f3
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/f11dba788b2d7bf4dbef94631a98c341.asset
-  - fileID: 351
-    classID: 114
-    packedSize: 8012
-    offset: 77370328
-    sourceAssetGUID: 0f4be6fd4c4f59d4183ffa621b0a6063
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/fc58f4f069e453d41b4a0e01b6fd4a2a.asset
-  - fileID: 352
-    classID: 114
-    packedSize: 70012
-    offset: 77378344
-    sourceAssetGUID: 36bed5798b5e0904b9f5cb1ead03cc08
-    buildTimeAssetPath: Assets/SerializedUdonPrograms/fc7e0a6ae6ea657469b772bedb306d8a.asset
-  - fileID: 353
-    classID: 114
-    packedSize: 132640
-    offset: 77448360
-    sourceAssetGUID: debe894442e153d479c7f9d07cce1276
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-BOLD SDF.asset
-  - fileID: 354
-    classID: 114
-    packedSize: 135768
-    offset: 77581000
-    sourceAssetGUID: 0b65c99348f068b49bef5db0bb76a6e4
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-LIGHT SDF.asset
-  - fileID: 355
-    classID: 114
-    packedSize: 137604
-    offset: 77716768
-    sourceAssetGUID: 699c21bb61664fb46be942fe27c37187
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom 2.asset
-  - fileID: 356
-    classID: 114
-    packedSize: 137604
-    offset: 77854376
-    sourceAssetGUID: 0ac05679e826fc342a8e7ac542e79886
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF 1 custom.asset
-  - fileID: 357
-    classID: 114
-    packedSize: 137592
-    offset: 77991984
-    sourceAssetGUID: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e
-    buildTimeAssetPath: Assets/ShopMenu/SlimUI/Fonts/RUBIK-MEDIUM SDF.asset
-  - fileID: 358
-    classID: 114
-    packedSize: 1152
-    offset: 78129576
-    sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
-    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF - Fallback.asset
-  - fileID: 359
-    classID: 114
-    packedSize: 27760
-    offset: 78130728
-    sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
-    buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF.asset
-  - fileID: 360
-    classID: 114
-    packedSize: 2228
-    offset: 78158488
-    sourceAssetGUID: 1c234599346f0654699178572854b4e5
-    buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
-      SDF.asset
+--- !u!641289076 &5940055087906482981
+AudioBuildInfo:
+  m_IsAudioDisabled: 0
+  m_AudioClipCount: 0
+  m_AudioMixerCount: 0
