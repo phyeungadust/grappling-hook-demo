@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 21a21eeb9f6b7a441827646363811aed
+  m_OcclusionCullingData: {fileID: 36300000, guid: 71c8525e601170945b9fd04c4340c96a,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -38885,19 +38886,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 865801541}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1169298494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169298489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentType: 1
 --- !u!1 &1170542773 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3440079231805506428, guid: 08c6618ffe4720046b74fde05c98d224,
