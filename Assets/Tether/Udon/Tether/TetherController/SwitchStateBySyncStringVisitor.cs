@@ -45,8 +45,7 @@ namespace Tether
 
             GameObject tetherObject = this
                 .grapplableCollection
-                .GetById(tetherObjectGrapplableID)
-                .gameObject;
+                .GetByID(tetherObjectGrapplableID);
 
             Vector3 hitPoint = new Vector3(hitPointX, hitPointY, hitPointZ);
 
@@ -72,9 +71,8 @@ namespace Tether
 
             GameObject tetherObject = this
                 .grapplableCollection
-                .GetById(tetherObjectGrapplableID)
-                .gameObject;
-
+                .GetByID(tetherObjectGrapplableID);
+                
             Vector3 hitPoint = new Vector3(hitPointX, hitPointY, hitPointZ);
 
             this.controller.SwitchState(state.Init(

@@ -41,7 +41,7 @@ namespace Tether
                     " ",
                     System.Guid.NewGuid().ToString().Substring(0, 6),
                     nameof(TetherAccelState),
-                    state.tetherObject.GetComponent<Grapplable>().id,
+                    this.grapplableCollection.GetID(state.tetherObject),
                     state.hitPoint.x,
                     state.hitPoint.y,
                     state.hitPoint.z
@@ -56,7 +56,7 @@ namespace Tether
                     " ",
                     System.Guid.NewGuid().ToString().Substring(0, 6),
                     nameof(TetherBrakeState),
-                    state.tetherObject.GetComponent<Grapplable>().id,
+                    this.grapplableCollection.GetID(state.tetherObject),
                     state.hitPoint.x,
                     state.hitPoint.y,
                     state.hitPoint.z

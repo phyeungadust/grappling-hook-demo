@@ -64,10 +64,6 @@ MonoBehaviour:
   - {fileID: 5023771774752105080}
   - {fileID: 6857084030221230637}
   - {fileID: 7780774000320867827}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   wsLogger: {fileID: 0}
 --- !u!114 &8670750498176782021
 MonoBehaviour:
