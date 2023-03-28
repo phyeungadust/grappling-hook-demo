@@ -16,6 +16,8 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
     private GameObject vrHUD;
     [SerializeField]
     private GameObject innerUI;
+    [SerializeField]
+    private CustomTrackedObject trackedObj;
 
     public void CustomStart()
     {
@@ -33,20 +35,16 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
                 // localNonVR
                 this.innerUI.transform.parent = this.desktopHUD.transform;
                 this.desktopHUD.SetActive(true); // enable screen-space HUD
+                this.trackedObj.tracking = false; // HUD rendered in screen-space, tracking not needed
             }
             // enable innerUI 
             // (this inner UI remains the same regardless of world/ screen space)
             this.innerUI.SetActive(true);
             this.innerUI.transform.localPosition = Vector3.zero;
+            this.innerUI.transform.localScale = Vector3.one;
         }
         // nonLocal
         // no need to enable UI 
-    }
-
-    public void CustomUpdate()
-    {
-        // int playerID = this.ownerStore.playerApiSafe.GetID();
-        // Debug.Log($"player {playerID}'s hudWrapper called CustomUpdate()!");
     }
 
 }

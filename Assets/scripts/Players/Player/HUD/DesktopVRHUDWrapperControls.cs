@@ -12,8 +12,8 @@ public class DesktopVRHUDWrapperControls : CustomControls
     {
         this.wrapper.CustomStart();
     }
-    public override void CustomUpdate()
-    {
-        this.wrapper.CustomUpdate();
-    }
+    // public override void CustomUpdate()
+    // {
+    //     this.wrapper.CustomUpdate();
+    // }
 }
