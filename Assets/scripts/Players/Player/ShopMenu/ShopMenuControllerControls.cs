@@ -4,16 +4,16 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
-public class ShopMenuToggleControls : CustomControls
+public class ShopMenuControllerControls : CustomControls
 {
     [SerializeField]
-    private ShopMenuToggle toggle;
+    private ShopMenuController controller;
     public override void CustomStart()
     {
-        this.toggle.CustomStart();
+        this.controller.CustomStart();
     }
     public override void CustomUpdate()
     {
-        this.toggle.CustomUpdate();
+        this.controller.CustomUpdate();
     }
 }

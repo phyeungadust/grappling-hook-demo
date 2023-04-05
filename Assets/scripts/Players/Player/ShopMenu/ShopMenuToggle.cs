@@ -8,6 +8,9 @@ public class ShopMenuToggle : UdonSharpBehaviour
 {
 
     [SerializeField]
+    private ShopMenuController shopMenuController;
+
+    [SerializeField]
     private GameObject innerShopMenu;
     [SerializeField]
     private CanvasGroup innerShopMenuCanvasGroup;
@@ -29,7 +32,7 @@ public class ShopMenuToggle : UdonSharpBehaviour
     [SerializeField]
     private AnimationCurve scaleCurve;
     [SerializeField]
-    private float toggleAnimationTime = 0.5f;
+    private float toggleAnimationTime = 1.5f;
     private float timeElapsedSinceToggle = 0.0f;
 
     private bool playingToggleAnimation = false;
@@ -38,9 +41,6 @@ public class ShopMenuToggle : UdonSharpBehaviour
 
     private string currentState = "menuClosed";
     private float toggleProgress = 0.0f;
-
-    [SerializeField]
-    private WorldSpaceLogger wsLogger;
 
     // states:
     // menuOpened
@@ -86,6 +86,14 @@ public class ShopMenuToggle : UdonSharpBehaviour
                 {
                     this.trackedObj.CustomUpdate();
                 }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.N))
+                    {
+                        // reposition menu if N is pressed
+                        this.trackedObj.CustomUpdate();
+                    }
+                }
                 if (this.ReadInput())
                 {
                     this.SwitchState("menuClosing");
@@ -105,6 +113,14 @@ public class ShopMenuToggle : UdonSharpBehaviour
                 if (this.localVRMode.IsVR())
                 {
                     this.trackedObj.CustomUpdate();
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.N))
+                    {
+                        // reposition menu if N is pressed
+                        this.trackedObj.CustomUpdate();
+                    }
                 }
 
                 this.EvaluateAnimationStep();
@@ -130,6 +146,14 @@ public class ShopMenuToggle : UdonSharpBehaviour
                 if (this.localVRMode.IsVR())
                 {
                     this.trackedObj.CustomUpdate();
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.N))
+                    {
+                        // reposition menu if N is pressed
+                        this.trackedObj.CustomUpdate();
+                    }
                 }
 
                 this.EvaluateAnimationStep();
@@ -172,6 +196,8 @@ public class ShopMenuToggle : UdonSharpBehaviour
                 }
                 // menu is closed, deactivate menu
                 this.innerShopMenu.SetActive(false);
+                // inform shopMenuController menu is toggled off
+                this.shopMenuController.OnMenuToggledOff();
                 break;
             default:
                 break;
@@ -202,6 +228,8 @@ public class ShopMenuToggle : UdonSharpBehaviour
                 );
                 // activate menu
                 this.innerShopMenu.SetActive(true);
+                // inform shopMenuController menu is toggled on
+                this.shopMenuController.OnMenuToggledOn();
 
                 break;
             default:
@@ -227,78 +255,6 @@ public class ShopMenuToggle : UdonSharpBehaviour
             .Evaluate(this.toggleProgress) 
                 * this.menuLocalScale 
                 * Vector3.one;
-    }
-
-    public void CustomUpdate2()
-    {
-
-        if (this.playingToggleAnimation)
-        {
-
-            // when toggle animation is playing, don't read input
-
-            if (this.timeElapsedSinceToggle > this.toggleAnimationTime)
-            {
-
-                // animation finished, return
-                this.playingToggleAnimation = false;
-                this.timeElapsedSinceToggle = 0.0f;
-
-                if (!this.menuOpen)
-                {
-                    // menu is closed, deactivate the menu
-                    this.innerShopMenu.SetActive(false);
-                }
-
-                return;
-            }
-
-            float fractionalTimeElapsed;
-
-            if (this.menuOpen)
-            {
-
-                // playing menu open animation
-
-                fractionalTimeElapsed = 
-                    this.timeElapsedSinceToggle / this.toggleAnimationTime;
-
-                this.innerShopMenuCanvasGroup.alpha = this
-                    .opacityCurve
-                    .Evaluate(fractionalTimeElapsed);
-                this.trackedGrip.transform.localScale = this
-                    .scaleCurve
-                    .Evaluate(fractionalTimeElapsed) 
-                        * this.menuLocalScale 
-                        * Vector3.one;
-
-            }
-            else
-            {
-                // playing menu close animation
-            }
-
-            this.timeElapsedSinceToggle += Time.deltaTime;
-
-        }
-        else
-        {
-            // toggle animation is not playing, read input
-            if (this.ReadInput())
-            {
-                // toggle key pressed
-                this.menuOpen = !this.menuOpen;
-                this.HandleMenuToggle();
-            }
-        }
-
-        if (this.localVRMode.IsVR() && this.menuOpen)
-        {
-            // VR mode
-            // keep updating trackedObj 
-            this.trackedObj.CustomUpdate();
-        }
-
     }
 
     private bool ReadInput()
@@ -335,48 +291,6 @@ public class ShopMenuToggle : UdonSharpBehaviour
             this.keyPressed = false;
             return false;
         }
-
-    }
-
-    private void HandleMenuToggle()
-    {
-
-        if (this.menuOpen)
-        {
-
-            // menuClose -> menuOpen
-
-            if (!this.localVRMode.IsVR())
-            {
-                // desktop mode
-                // player unable to move when menu is open
-                this.FreezePlayerCompletely(true);
-            }
-            // update trackedObj
-            // (effectively teleporting menu to player)
-            this.trackedObj.SendCustomEventDelayedFrames(
-                nameof(this.trackedObj.CustomUpdate),
-                0
-            );
-            // activate menu
-            this.innerShopMenu.SetActive(true);
-
-        }
-        else
-        {
-
-            // menuOpen -> menuClose
-
-            if (!this.localVRMode.IsVR())
-            {
-                // desktop mode 
-                // player can move again after menu closes
-                this.FreezePlayerCompletely(false);
-            }
-
-        }
-
-        this.playingToggleAnimation = true;
 
     }
 
