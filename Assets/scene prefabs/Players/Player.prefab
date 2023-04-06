@@ -1424,6 +1424,7 @@ MonoBehaviour:
   selectedSlot: {fileID: 0}
   avatarNameDisplay: {fileID: 4790586887644415575}
   buyEquipButton: {fileID: 7990854376264825557}
+  avatarPreviewImgDisplay: {fileID: 8349734836209977426}
 --- !u!114 &939575485485526070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3897,7 +3898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Captain Bun
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61fbe61264fc38f4e826d8098fba159d, type: 2}
   m_sharedMaterial: {fileID: -4784278351671704027, guid: 61fbe61264fc38f4e826d8098fba159d,
@@ -8491,7 +8492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3187dae7a26a51c43a9c2304464e476f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 124f33220e68a8b43bc8180d59dfa6a1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9845,6 +9846,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ca6ac27ccb95ff4c8948e26516552c3,
+        type: 3}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
@@ -10810,6 +10817,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: 24bc6a823cd28bf4aab175285daee37e,
+        type: 3}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
@@ -11325,6 +11338,12 @@ PrefabInstance:
       propertyPath: avatarName
       value: Seven
       objectReference: {fileID: 0}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: 7b011466e522fc648874f7b60faf23c6,
+        type: 3}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -14082,6 +14101,12 @@ PrefabInstance:
       propertyPath: avatarName
       value: RideRabbit
       objectReference: {fileID: 0}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: a6c174e8dae59d449971faca8122b9c1,
+        type: 3}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -18975,6 +19000,12 @@ PrefabInstance:
       propertyPath: avatarName
       value: Sage Akyo
       objectReference: {fileID: 0}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: f705c3a4679383d4a9028c9b66319abe,
+        type: 3}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -27667,6 +27698,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: d87dc40a3507d9c4a98f17440df923cf,
+        type: 3}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
@@ -28630,6 +28667,12 @@ PrefabInstance:
       propertyPath: avatarName
       value: Captain Bun
       objectReference: {fileID: 0}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: 3187dae7a26a51c43a9c2304464e476f,
+        type: 3}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
       propertyPath: serializationData.Prefab
@@ -30387,6 +30430,12 @@ PrefabInstance:
       propertyPath: avatarName
       value: Fighter Kirby
       objectReference: {fileID: 0}
+    - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
+        type: 3}
+      propertyPath: avatarPreviewImg
+      value: 
+      objectReference: {fileID: 21300000, guid: 22c4df4cceae17d438fb811c36383eaf,
+        type: 3}
     - target: {fileID: 3680099138666702580, guid: 7ebee8649229297469c4e5a5597d4eb0,
         type: 3}
       propertyPath: serializationData.Prefab

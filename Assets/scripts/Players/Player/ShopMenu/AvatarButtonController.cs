@@ -3,6 +3,7 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using TMPro;
+using UnityEngine.UI;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class AvatarButtonController : UdonSharpBehaviour
@@ -14,6 +15,8 @@ public class AvatarButtonController : UdonSharpBehaviour
     private TextMeshProUGUI avatarNameDisplay;
     [SerializeField]
     private BuyEquipButton buyEquipButton;
+    [SerializeField]
+    private Image avatarPreviewImgDisplay;
 
     public void Select(AvatarSlot avatarSlot)
     {
@@ -30,6 +33,7 @@ public class AvatarButtonController : UdonSharpBehaviour
         this.selectedSlot = avatarSlot;
 
         this.DisplayAvatarName();
+        this.DisplayAvatarPreviewImg();
         this.UpdateBuyEquipButton();
 
     }
@@ -40,6 +44,14 @@ public class AvatarButtonController : UdonSharpBehaviour
             .selectedSlot
             .avatarInfo
             .avatarName;
+    }
+
+    private void DisplayAvatarPreviewImg()
+    {
+        this.avatarPreviewImgDisplay.sprite = this
+            .selectedSlot
+            .avatarInfo
+            .avatarPreviewImg;
     }
 
     private void UpdateBuyEquipButton()
