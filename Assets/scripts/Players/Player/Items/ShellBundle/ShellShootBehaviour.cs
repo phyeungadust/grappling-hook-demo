@@ -6,8 +6,23 @@ using VRC.SDK3.Components;
 using VRC.Udon.Common;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
-public class ShellShootBehaviour : UdonSharpBehaviour
+public class ShellShootBehaviour : Item
 {
+
+    [SerializeField]
+    private ShellShootBehaviourControls shellShootBehaviourControls;
+    [SerializeField]
+    private ShellShootBehaviourGameStateControls shellShootBehaviourGameStateControls;
+
+    public override ItemControls GetItemControls()
+    {
+        return this.shellShootBehaviourControls;
+    }
+
+    public override GameStateControls GetGameStateControls()
+    {
+        return this.shellShootBehaviourGameStateControls;
+    }
 
     [SerializeField]
     private VRCObjectPool shellPool;
@@ -38,6 +53,24 @@ public class ShellShootBehaviour : UdonSharpBehaviour
             this.owner,
             this.shellPool.gameObject
         );
+    }
+
+    public void OnBeforeGameStarts()
+    {
+        if (this.localVRMode.IsLocal())
+        {
+            // switch back to null item
+            this.itemManager.EquipNullItem();
+            // despawn all rockets
+            foreach (GameObject rocketGameObject in this.shellPool.Pool)
+            {
+                if (rocketGameObject.activeSelf)
+                {
+                    // despawn all spawned rockets
+                    this.shellPool.Return(rocketGameObject);
+                }
+            }
+        }
     }
 
     public void Equip()
@@ -104,6 +137,9 @@ public class ShellShootBehaviour : UdonSharpBehaviour
 
     private bool ReadInput()
     {
+
+        if (!this.itemManager.enabledItemUse) return false;
+
         if (this.localVRMode.IsLocal())
         {
             if (this.localVRMode.IsVR())
@@ -119,6 +155,7 @@ public class ShellShootBehaviour : UdonSharpBehaviour
         }
         // nonLocal, no need to read input
         return false;
+
     }
 
 }

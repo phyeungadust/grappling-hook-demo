@@ -5,8 +5,23 @@ using VRC.Udon;
 using VRC.SDK3.Components;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
-public class WaterSprayGunBehaviour : UdonSharpBehaviour
+public class WaterSprayGunBehaviour : Item
 {
+
+    [SerializeField]
+    private WaterSprayGunBehaviourControls waterSprayGunBehaviourControls;
+    [SerializeField]
+    private WaterSprayGunBehaviourGameStateControls waterSprayGunBehaviourGameStateControls;
+
+    public override ItemControls GetItemControls()
+    {
+        return this.waterSprayGunBehaviourControls;
+    }
+
+    public override GameStateControls GetGameStateControls()
+    {
+        return this.waterSprayGunBehaviourGameStateControls;
+    }
 
     [SerializeField]
     private VRCObjectPool waterSprayParticlePool;
@@ -60,6 +75,15 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
             this.waterSprayParticlePool.gameObject
         );
 
+    }
+
+    public void OnBeforeGameStarts()
+    {
+        if (this.localVRMode.IsLocal())
+        {
+            // switch back to null item
+            this.itemManager.EquipNullItem();
+        }
     }
 
     public void Equip()
@@ -139,6 +163,9 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
 
     private bool ReadInput()
     {
+
+        if (!this.itemManager.enabledItemUse) return false;
+
         if (this.localVRMode.IsVR())
         {
             return Input.GetAxis(this.vrButtonName) > 0;
@@ -147,6 +174,7 @@ public class WaterSprayGunBehaviour : UdonSharpBehaviour
         {
             return Input.GetButton(this.desktopButtonName);
         }
+
     }
 
 }

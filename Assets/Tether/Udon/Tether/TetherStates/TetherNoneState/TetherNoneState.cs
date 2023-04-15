@@ -15,6 +15,7 @@ namespace Tether
         private VRCPlayerApi owner;
         private LocalVRMode localVRMode;
 
+        [HideInInspector]
         public TetherStateOperationsStrat CheckStateChangeStrat;
         [SerializeField]
         private TetherNoneSetCheckStateChangeStratLocalVRVisitor setCheckStateChangeStratLocalVRVisitor;

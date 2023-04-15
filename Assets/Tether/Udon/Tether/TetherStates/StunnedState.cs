@@ -5,6 +5,8 @@ using VRC.Udon;
 
 namespace Tether
 {
+
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class StunnedState : TetherState
     {
 

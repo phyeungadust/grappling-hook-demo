@@ -1,6 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!641289076 &-5299226052671251131
+--- !u!382020655 &-336760508399403349
+PluginBuildInfo:
+  m_RuntimePlugins:
+  - Unity.Burst.Unsafe
+  - VRC.SDK3.Dynamics.PhysBone
+  - OVRPlugin
+  - YamlDotNet
+  - WatsonTcp
+  - System.Threading.Tasks.Extensions
+  - VRC.Udon.ClientBindings
+  - openvr_api
+  - portmidi
+  - VRC.Udon.VRCWrapperModules
+  - VRCSDK3
+  - VRC.Udon.VM
+  - Serilog
+  - nunit.framework
+  - SemanticVersioning
+  - librsync.net
+  - VRC.Udon.Common
+  - VRC.SDK3.Dynamics.Contact
+  - Collections.Pooled
+  - System.Collections.Immutable
+  - System.Numerics.Vectors
+  - System.Buffers
+  - VRC.Dynamics
+  - VRC.Udon.Wrapper
+  - Serilog.Sinks.File
+  - VRC.Udon.Security
+  - clipper_library
+  - VRC.Collections
+  - VRCSDKBase
+  - System.Runtime.CompilerServices.Unsafe
+  - Newtonsoft.Json
+  - libopenvr_api
+  - Blake2Sharp
+  - System.Memory
+  - System.Text.Encoding.CodePages
+  - VRCCore-Editor
+  - VRC.Utility
+  - AudioPluginOculusSpatializer
+  m_EditorPlugins:
+  - VRCSDK3-Editor
+  - Microsoft.CodeAnalysis
+  - VRC.Udon.VRCTypeResolverModules
+  - AppleEventIntegration
+  - liblz4Plastic
+  - Unity.Plastic.Newtonsoft.Json
+  - unityplastic
+  - VRC.Udon.Compiler
+  - System.Reflection.Metadata
+  - Microsoft.CodeAnalysis.CSharp
+  - VRC.Udon.UAssembly
+  - vpm-core-lib
+  - VRC.Udon.Graph
+  - UnityEditor.VR
+  - 0Harmony
+  - VRC.SDK3.Dynamics.PhysBone.Editor
+  - VRCSDKBase-Editor
+  - VRC.SDK3.Dynamics.Contact.Editor
+  - VRC.Udon.VRCGraphModules
+  - log4netPlastic
+  - VRC.Udon.EditorBindings
+  - zlib64Plastic
+  - Unity.Plastic.Antlr3.Runtime
+  - Serilog.Sinks.Unity3D
+  - lz4x64Plastic
+--- !u!641289076 &-25841193769173843
 AudioBuildInfo:
   m_IsAudioDisabled: 0
   m_AudioClipCount: 0
@@ -15,16 +82,16 @@ BuildReport:
   m_Summary:
     buildStartTime:
       serializedVersion: 2
-      ticks: 638163141001281315
+      ticks: 638163232850957126
     buildGUID: 00000000000000000000000000000000
     platformName: Win64
     platformGroupName: Standalone
     options: 16
     assetBundleOptions: 32
     outputPath: C:/Users/JACOBR~1/AppData/Local/Temp/DefaultCompany/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw
-    crc: 2230035832
-    totalSize: 6971078
-    totalTimeTicks: 1198639087
+    crc: 216140985
+    totalSize: 6964175
+    totalTimeTicks: 1067544920
     totalErrors: 0
     totalWarnings: 4
     buildType: 1
@@ -33,19 +100,19 @@ BuildReport:
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw/BuildPlayer-Scene
     role: Scene
     id: 0
-    totalSize: 7428356
+    totalSize: 7426572
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw/BuildPlayer-Scene.sharedAssets
     role: SharedAssets
     id: 1
-    totalSize: 73628420
+    totalSize: 73630268
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw
     role: AssetBundle
     id: 2
-    totalSize: 6966243
+    totalSize: 6959417
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/scene-standalonewindows64-scene.vrcw.manifest
     role: AssetBundleTextManifest
     id: 3
-    totalSize: 3622
+    totalSize: 3545
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo/CAB-f46e8ffc7624421a41a0a5443a36c071
     role: ResourcesFile
     id: 4
@@ -53,38 +120,38 @@ BuildReport:
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo
     role: ManifestAssetBundle
     id: 5
-    totalSize: 1050
+    totalSize: 1049
   - path: C:/Users/Jacob Rows/HW/unity/GrapplingHookDemo/GrapplingHookDemo.manifest
     role: AssetBundleTextManifest
     id: 6
-    totalSize: 163
+    totalSize: 164
   m_BuildSteps:
   - stepName: Build Asset Bundles
-    durationTicks: 1198639087
+    durationTicks: 1067544920
     depth: 0
     messages: []
   - stepName: Calculate asset bundles to be built
-    durationTicks: 2314709
+    durationTicks: 786955
     depth: 1
     messages: []
   - stepName: Compile scripts
-    durationTicks: 238491368
+    durationTicks: 172508409
     depth: 1
     messages: []
   - stepName: Build player
-    durationTicks: 653911436
+    durationTicks: 678087908
     depth: 1
     messages: []
   - stepName: Prepare assets for target platform
-    durationTicks: 8474522
+    durationTicks: 7432534
     depth: 2
     messages: []
   - stepName: Building scenes
-    durationTicks: 300462413
+    durationTicks: 264552931
     depth: 2
     messages: []
   - stepName: Building scene Assets/Scene.unity
-    durationTicks: 300368586
+    durationTicks: 264461669
     depth: 3
     messages:
     - type: 2
@@ -100,41 +167,34 @@ BuildReport:
       content: Storage for variable 'toggleObject' of type 'UnityEngine.GameObject'
         did not match, updated storage type
   - stepName: Writing asset files
-    durationTicks: 53007725
+    durationTicks: 37196044
     depth: 2
     messages: []
   - stepName: Packaging assets - archive:/BuildPlayer-Scene/BuildPlayer-Scene.sharedAssets
-    durationTicks: 52755539
+    durationTicks: 36984141
     depth: 3
-    messages: []
+    messages:
+    - type: 3
+      content: HTTPFormUseage:UrlEncoded
   - stepName: Creating compressed player package
-    durationTicks: 172257287
+    durationTicks: 237799270
     depth: 2
     messages: []
   - stepName: Postprocess built player
-    durationTicks: 155234
+    durationTicks: 513152
     depth: 2
     messages: []
   m_Appendices:
-  - {fileID: 3118274388259662210}
-  - {fileID: 4768060953126506796}
-  - {fileID: 7515968759397414831}
-  - {fileID: -5299226052671251131}
-  - {fileID: 9130778879466004267}
---- !u!668709126 &3118274388259662210
-BuiltAssetBundleInfoSet:
-  bundleInfos:
-  - bundleName: scene-standalonewindows64-scene.vrcw
-    bundleArchiveFile: 2
-    packagedFileIndices: 0000000001000000
-  - bundleName: GrapplingHookDemo
-    bundleArchiveFile: 5
-    packagedFileIndices: 04000000
---- !u!1126 &4768060953126506796
+  - {fileID: 6985995439369045027}
+  - {fileID: 2977114713909691827}
+  - {fileID: -336760508399403349}
+  - {fileID: -25841193769173843}
+  - {fileID: 5747103534885194955}
+--- !u!1126 &2977114713909691827
 PackedAssets:
   m_File: 1
   m_ShortPath: BuildPlayer-Scene.sharedAssets
-  m_Overhead: 146596
+  m_Overhead: 146592
   m_Contents:
   - fileID: 1
     classID: 150
@@ -2052,363 +2112,296 @@ PackedAssets:
     buildTimeAssetPath: Assets/SerializedUdonPrograms/915c794e3402df94e94b2b2604aed1dd.asset
   - fileID: 318
     classID: 114
-    packedSize: 15400
+    packedSize: 16000
     offset: 72355544
     sourceAssetGUID: dfecaa71ea0ed87499c9221ad9b15a45
     buildTimeAssetPath: Assets/SerializedUdonPrograms/9469896dd2759a54991985f98ef3c29e.asset
   - fileID: 319
     classID: 114
     packedSize: 16520
-    offset: 72370944
+    offset: 72371544
     sourceAssetGUID: 1f1d8cfad1e8f8c4b9429f1d1f60ece9
     buildTimeAssetPath: Assets/SerializedUdonPrograms/96fae8f9365058a429fa1e4f1fbcad56.asset
   - fileID: 320
     classID: 114
     packedSize: 27964
-    offset: 72387464
+    offset: 72388064
     sourceAssetGUID: 6fc0cf41ff2ba884dbb84e53ad1cd36b
     buildTimeAssetPath: Assets/SerializedUdonPrograms/97e900dac336bee458b117c46e4497e2.asset
   - fileID: 321
     classID: 114
     packedSize: 61456
-    offset: 72415432
+    offset: 72416032
     sourceAssetGUID: 9dbbac891e0e28c42aee7cfc8d63dcda
     buildTimeAssetPath: Assets/SerializedUdonPrograms/9dce673461ccf764f9209bd0ec0b962d.asset
   - fileID: 322
     classID: 114
     packedSize: 17188
-    offset: 72476888
+    offset: 72477488
     sourceAssetGUID: 2ae68bf61559dc84caec93f9ccbdda4e
     buildTimeAssetPath: Assets/SerializedUdonPrograms/9eadb8b1f82682e4e85febc84f2995a0.asset
   - fileID: 323
     classID: 114
     packedSize: 9448
-    offset: 72494080
+    offset: 72494680
     sourceAssetGUID: 8938beb9ac4f5bf4688253eb696733dd
     buildTimeAssetPath: Assets/SerializedUdonPrograms/a29a024598e130b4bb5a876f180addbd.asset
   - fileID: 324
     classID: 114
     packedSize: 9444
-    offset: 72503528
+    offset: 72504128
     sourceAssetGUID: 8fdf5dffce35a454290dc24840187f32
     buildTimeAssetPath: Assets/SerializedUdonPrograms/a2dd4851411ed324f95f9f0e8b10f518.asset
   - fileID: 325
     classID: 114
     packedSize: 23984
-    offset: 72512976
+    offset: 72513576
     sourceAssetGUID: 3852429026317c340ab10395dafb7b17
     buildTimeAssetPath: Assets/SerializedUdonPrograms/a830ffe1cd55b2c4eac2ab667ed9c962.asset
   - fileID: 326
     classID: 114
     packedSize: 45620
-    offset: 72536960
+    offset: 72537560
     sourceAssetGUID: 586aefab04e33ec40815814f5b1543ce
     buildTimeAssetPath: Assets/SerializedUdonPrograms/a88716622fa9dee4382f6d2c95052490.asset
   - fileID: 327
     classID: 114
     packedSize: 45620
-    offset: 72582584
+    offset: 72583184
     sourceAssetGUID: f8fbf7a2ff0564a40b93e0900a0388e6
     buildTimeAssetPath: Assets/SerializedUdonPrograms/a8b141330a657f840b352b42d23bfb90.asset
   - fileID: 328
     classID: 114
     packedSize: 24544
-    offset: 72628208
+    offset: 72628808
     sourceAssetGUID: b20e8841fad320f42a8cfc89e23aa9fd
     buildTimeAssetPath: Assets/SerializedUdonPrograms/a9767d5fc03fb444293eaacb6e238f0b.asset
   - fileID: 329
     classID: 114
     packedSize: 17776
-    offset: 72652752
+    offset: 72653352
     sourceAssetGUID: f9da5b80c9dada644a882367529a6c89
     buildTimeAssetPath: Assets/SerializedUdonPrograms/ac773474169122e42b4ce33118e656c9.asset
   - fileID: 330
     classID: 114
     packedSize: 15304
-    offset: 72670528
+    offset: 72671128
     sourceAssetGUID: 532154c5c39c26140aa825ee88631e81
     buildTimeAssetPath: Assets/SerializedUdonPrograms/ac91abd79afe1ab40a37260a0956a53b.asset
   - fileID: 331
     classID: 114
     packedSize: 30468
-    offset: 72685832
+    offset: 72686432
     sourceAssetGUID: 5eb4af47b27d67f419122fcb2e8c7c8c
     buildTimeAssetPath: Assets/SerializedUdonPrograms/b509d3d4b5488fc40b2fc4c5de2aee5a.asset
   - fileID: 332
     classID: 114
     packedSize: 40200
-    offset: 72716304
+    offset: 72716904
     sourceAssetGUID: 028031741d67805409cedf48ab7c7281
     buildTimeAssetPath: Assets/SerializedUdonPrograms/beddabaea953ea74d92fe54b842e7743.asset
   - fileID: 333
     classID: 114
     packedSize: 22892
-    offset: 72756504
+    offset: 72757104
     sourceAssetGUID: d67217d7f1e9e434087f75a0f3560dad
     buildTimeAssetPath: Assets/SerializedUdonPrograms/bfe989037663a864596eed2353ed553c.asset
   - fileID: 334
     classID: 114
     packedSize: 48000
-    offset: 72779400
+    offset: 72780000
     sourceAssetGUID: 75d4bbace439ee64ca43591e52807826
     buildTimeAssetPath: Assets/SerializedUdonPrograms/c28023a9f1e1c3347a6e8748e1f021a5.asset
   - fileID: 335
     classID: 114
     packedSize: 51448
-    offset: 72827400
+    offset: 72828000
     sourceAssetGUID: 1ed2e49e33cdfc64fb87d40547ad1a5d
     buildTimeAssetPath: Assets/SerializedUdonPrograms/c3e00580b38579d4498336e48a5e6ff5.asset
   - fileID: 336
     classID: 114
     packedSize: 17068
-    offset: 72878848
+    offset: 72879448
     sourceAssetGUID: be861434d2236cf4aaffb7e78cb14c58
     buildTimeAssetPath: Assets/SerializedUdonPrograms/c8df303ceb45ae84f85a11591f741734.asset
   - fileID: 337
     classID: 114
     packedSize: 17236
-    offset: 72895920
+    offset: 72896520
     sourceAssetGUID: 02037739e7f3e6641942c419d37f87be
     buildTimeAssetPath: Assets/SerializedUdonPrograms/caec51ef148f11d43aa5c11a593c76dd.asset
   - fileID: 338
     classID: 114
     packedSize: 58172
-    offset: 72913160
+    offset: 72913760
     sourceAssetGUID: 3cd14df47dbb8dd45903c4077fe74985
     buildTimeAssetPath: Assets/SerializedUdonPrograms/d1835dde6ed4df7428c93542eced915a.asset
   - fileID: 339
     classID: 114
     packedSize: 14032
-    offset: 72971336
+    offset: 72971936
     sourceAssetGUID: 07f85c56e6945f34b8d6693c20a374c8
     buildTimeAssetPath: Assets/SerializedUdonPrograms/d1ddc06be5ccb9442a0ab04c1cc081d4.asset
   - fileID: 340
     classID: 114
     packedSize: 14040
-    offset: 72985368
+    offset: 72985968
     sourceAssetGUID: 9c7e6bc06074402409802b6e1687928f
     buildTimeAssetPath: Assets/SerializedUdonPrograms/d3b3d191d51ee1143aae49fc8cb50904.asset
   - fileID: 341
     classID: 114
     packedSize: 16160
-    offset: 72999408
+    offset: 73000008
     sourceAssetGUID: c99688b14bfbd8a44b8aec98128e1a65
     buildTimeAssetPath: Assets/SerializedUdonPrograms/d573d4a0217eeaf48b27fc95239f85e7.asset
   - fileID: 342
     classID: 114
     packedSize: 49568
-    offset: 73015568
+    offset: 73016168
     sourceAssetGUID: e0ec7895a9300494da95c40ba87d8e90
     buildTimeAssetPath: Assets/SerializedUdonPrograms/d5dadc01e1bf42a44a0d11c636a86073.asset
   - fileID: 343
     classID: 114
     packedSize: 14032
-    offset: 73065136
+    offset: 73065736
     sourceAssetGUID: 4930b3a2e462d144b947589cd5dd2102
     buildTimeAssetPath: Assets/SerializedUdonPrograms/d782c17b34074a74484f4aa722d05673.asset
   - fileID: 344
     classID: 114
     packedSize: 43408
-    offset: 73079168
+    offset: 73079768
     sourceAssetGUID: 15e71ed668f85dc469e1c1c3459fc91c
     buildTimeAssetPath: Assets/SerializedUdonPrograms/d89334515fdb5094d9c29cc79cd9a667.asset
   - fileID: 345
     classID: 114
     packedSize: 15672
-    offset: 73122576
+    offset: 73123176
     sourceAssetGUID: 4eceb218c3c46b8419b4adbe09f99874
     buildTimeAssetPath: Assets/SerializedUdonPrograms/da00f3e7971315f4f8e49c096ba5148a.asset
   - fileID: 346
     classID: 114
     packedSize: 25980
-    offset: 73138248
+    offset: 73138848
     sourceAssetGUID: 94457d92a9f84734fa56c44a6c6dbddd
     buildTimeAssetPath: Assets/SerializedUdonPrograms/da58c98e8b75a1a41bc87c01712e0aaa.asset
   - fileID: 347
     classID: 114
     packedSize: 14632
-    offset: 73164232
+    offset: 73164832
     sourceAssetGUID: 03574891341a47e4ab83229f4a948904
     buildTimeAssetPath: Assets/SerializedUdonPrograms/dd61c5096d5c35d4b9d2536413f5abf6.asset
   - fileID: 348
     classID: 114
     packedSize: 16112
-    offset: 73178864
+    offset: 73179464
     sourceAssetGUID: fafba794b38091346a52aab547ac0f81
     buildTimeAssetPath: Assets/SerializedUdonPrograms/dd8ca3e92a4dcda41899055793c16750.asset
   - fileID: 349
     classID: 114
     packedSize: 22444
-    offset: 73194976
+    offset: 73195576
     sourceAssetGUID: cbe68f9cf87e4a745b99aaba89b79e50
     buildTimeAssetPath: Assets/SerializedUdonPrograms/e02b6841ddd33a24b95989f27c45145f.asset
   - fileID: 350
     classID: 114
     packedSize: 39724
-    offset: 73217424
+    offset: 73218024
     sourceAssetGUID: 54fb8096ee76a9841a32643a7240da29
     buildTimeAssetPath: Assets/SerializedUdonPrograms/e211384b263791d48aab8aa73ec0b408.asset
   - fileID: 351
     classID: 114
     packedSize: 29212
-    offset: 73257152
+    offset: 73257752
     sourceAssetGUID: 685cbdaba8db1c041bb8d30703eaf46e
     buildTimeAssetPath: Assets/SerializedUdonPrograms/e334092b2a83f4c4b85262140459cc39.asset
   - fileID: 352
     classID: 114
     packedSize: 35660
-    offset: 73286368
+    offset: 73286968
     sourceAssetGUID: 40cf48ac2acedd24b98568a12919752b
     buildTimeAssetPath: Assets/SerializedUdonPrograms/e60772d35af85134ca30bf3d0623a5bb.asset
   - fileID: 353
     classID: 114
     packedSize: 23656
-    offset: 73322032
+    offset: 73322632
     sourceAssetGUID: 4dd646e32eb54894892cdd649d31af6b
     buildTimeAssetPath: Assets/SerializedUdonPrograms/e86e5c0d0b9e18247b68b8310f415ade.asset
   - fileID: 354
     classID: 114
     packedSize: 11228
-    offset: 73345688
+    offset: 73346288
     sourceAssetGUID: cbb21d3e742d9454b9fb17b1a7c01b7e
     buildTimeAssetPath: Assets/SerializedUdonPrograms/eac07254d9084134cb1ed4610d4da9f0.asset
   - fileID: 355
     classID: 114
     packedSize: 15268
-    offset: 73356920
+    offset: 73357520
     sourceAssetGUID: 41cc66637da21f342bb7cb75eb275064
     buildTimeAssetPath: Assets/SerializedUdonPrograms/ecb0fcc15b3c70148b9e6c7d6fa077d1.asset
   - fileID: 356
     classID: 114
-    packedSize: 97228
-    offset: 73372192
+    packedSize: 98480
+    offset: 73372792
     sourceAssetGUID: 38cf74a0e8444db45a4dce0a8b56adaf
     buildTimeAssetPath: Assets/SerializedUdonPrograms/f0704d3bfd0d9004391ab1db2fc6a263.asset
   - fileID: 357
     classID: 114
     packedSize: 27900
-    offset: 73469424
+    offset: 73471272
     sourceAssetGUID: 9a04c7be77088c947ba604dd141cd9f3
     buildTimeAssetPath: Assets/SerializedUdonPrograms/f11dba788b2d7bf4dbef94631a98c341.asset
   - fileID: 358
     classID: 114
     packedSize: 19316
-    offset: 73497328
+    offset: 73499176
     sourceAssetGUID: 0f4be6fd4c4f59d4183ffa621b0a6063
     buildTimeAssetPath: Assets/SerializedUdonPrograms/fc58f4f069e453d41b4a0e01b6fd4a2a.asset
   - fileID: 359
     classID: 114
     packedSize: 70012
-    offset: 73516648
+    offset: 73518496
     sourceAssetGUID: 36bed5798b5e0904b9f5cb1ead03cc08
     buildTimeAssetPath: Assets/SerializedUdonPrograms/fc7e0a6ae6ea657469b772bedb306d8a.asset
   - fileID: 360
     classID: 114
     packedSize: 4708
-    offset: 73586664
+    offset: 73588512
     sourceAssetGUID: 61fbe61264fc38f4e826d8098fba159d
     buildTimeAssetPath: Assets/ShopMenu/Rubik-Light SDF.asset
   - fileID: 361
     classID: 114
     packedSize: 1892
-    offset: 73591376
+    offset: 73593224
     sourceAssetGUID: 85754c08e3589444faaeb7892808e788
     buildTimeAssetPath: Assets/ShopMenu/Rubik-Medium SDF Thin Emissive.asset
   - fileID: 362
     classID: 114
     packedSize: 3716
-    offset: 73593272
+    offset: 73595120
     sourceAssetGUID: b780b6255d8ab48479e94bd7c24baaa8
     buildTimeAssetPath: Assets/ShopMenu/Rubik-Medium SDF.asset
   - fileID: 363
     classID: 114
     packedSize: 1152
-    offset: 73596992
+    offset: 73598840
     sourceAssetGUID: 2e498d1c8094910479dc3e1b768306a4
     buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
       SDF - Fallback.asset
   - fileID: 364
     classID: 114
     packedSize: 27760
-    offset: 73598144
+    offset: 73599992
     sourceAssetGUID: 8f586378b4e144a9851e7b34d9b748ee
     buildTimeAssetPath: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
       SDF.asset
   - fileID: 365
     classID: 114
     packedSize: 2516
-    offset: 73625904
+    offset: 73627752
     sourceAssetGUID: 1c234599346f0654699178572854b4e5
     buildTimeAssetPath: Assets/UI/HUD Panel/FPSFont/FPS Gaming Font/Square-Black
       SDF.asset
---- !u!382020655 &7515968759397414831
-PluginBuildInfo:
-  m_RuntimePlugins:
-  - Unity.Burst.Unsafe
-  - VRC.SDK3.Dynamics.PhysBone
-  - OVRPlugin
-  - YamlDotNet
-  - WatsonTcp
-  - System.Threading.Tasks.Extensions
-  - VRC.Udon.ClientBindings
-  - openvr_api
-  - portmidi
-  - VRC.Udon.VRCWrapperModules
-  - VRCSDK3
-  - VRC.Udon.VM
-  - Serilog
-  - nunit.framework
-  - SemanticVersioning
-  - librsync.net
-  - VRC.Udon.Common
-  - VRC.SDK3.Dynamics.Contact
-  - Collections.Pooled
-  - System.Collections.Immutable
-  - System.Numerics.Vectors
-  - System.Buffers
-  - VRC.Dynamics
-  - VRC.Udon.Wrapper
-  - Serilog.Sinks.File
-  - VRC.Udon.Security
-  - clipper_library
-  - VRC.Collections
-  - VRCSDKBase
-  - System.Runtime.CompilerServices.Unsafe
-  - Newtonsoft.Json
-  - libopenvr_api
-  - Blake2Sharp
-  - System.Memory
-  - System.Text.Encoding.CodePages
-  - VRCCore-Editor
-  - VRC.Utility
-  - AudioPluginOculusSpatializer
-  m_EditorPlugins:
-  - VRCSDK3-Editor
-  - Microsoft.CodeAnalysis
-  - VRC.Udon.VRCTypeResolverModules
-  - AppleEventIntegration
-  - liblz4Plastic
-  - Unity.Plastic.Newtonsoft.Json
-  - unityplastic
-  - VRC.Udon.Compiler
-  - System.Reflection.Metadata
-  - Microsoft.CodeAnalysis.CSharp
-  - VRC.Udon.UAssembly
-  - vpm-core-lib
-  - VRC.Udon.Graph
-  - UnityEditor.VR
-  - 0Harmony
-  - VRC.SDK3.Dynamics.PhysBone.Editor
-  - VRCSDKBase-Editor
-  - VRC.SDK3.Dynamics.Contact.Editor
-  - VRC.Udon.VRCGraphModules
-  - log4netPlastic
-  - VRC.Udon.EditorBindings
-  - zlib64Plastic
-  - Unity.Plastic.Antlr3.Runtime
-  - Serilog.Sinks.Unity3D
-  - lz4x64Plastic
---- !u!1126 &9130778879466004267
+--- !u!1126 &5747103534885194955
 PackedAssets:
   m_File: 4
   m_ShortPath: CAB-f46e8ffc7624421a41a0a5443a36c071
@@ -2426,3 +2419,12 @@ PackedAssets:
     offset: 4200
     sourceAssetGUID: 00000000000000000000000000000000
     buildTimeAssetPath: 'Built-in AssetBundleManifest: AssetBundleManifest'
+--- !u!668709126 &6985995439369045027
+BuiltAssetBundleInfoSet:
+  bundleInfos:
+  - bundleName: scene-standalonewindows64-scene.vrcw
+    bundleArchiveFile: 2
+    packagedFileIndices: 0000000001000000
+  - bundleName: GrapplingHookDemo
+    bundleArchiveFile: 5
+    packagedFileIndices: 04000000

@@ -31,13 +31,6 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
         this.sprayedColor = this.sprayedOverlayMaterial.color;
     }
 
-    // void Start()
-    // {
-    //     this.sprayedOverlayMaterial = this.mesh.material;
-    //     this.sprayedColor = this.sprayedOverlayMaterial.color;
-    //     this.localPlayer = Networking.LocalPlayer;
-    // }
-
     public void CustomUpdate()
     {
 
@@ -65,49 +58,15 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
         }
     }
 
-    // void Update()
-    // {
-
-    //     // make cube mesh follow and cover player's head
-    //     // to give overlay effect
-    //     VRCPlayerApi.TrackingData td = this
-    //         .localPlayer
-    //         .GetTrackingData(
-    //             VRCPlayerApi.TrackingDataType.Head
-    //         );
-    //     this.transform.SetPositionAndRotation(
-    //         td.position,
-    //         td.rotation
-    //     );
-
-    //     if (Input.GetKey(KeyCode.R))
-    //     {
-    //         this.SprayScreenLocal();
-    //     }
-
-    //     if (this.timeBeforeClear <= 0.0f)
-    //     {
-    //         if (this.sprayedColor.a > 0.0f)
-    //         {
-    //             // there is still spray on screen, clear now
-    //             this.ClearSpray();
-    //         }
-    //     }
-
-    // }
-
-    // void FixedUpdate()
-    // {
-    //     if (this.timeBeforeClear > 0.0f)
-    //     {
-    //         this.timeBeforeClear -= Time.fixedDeltaTime;
-    //     }
-    // }
-
     public void SprayScreenLocal()
     {
         // increase alpha (amount of spray on the screen)
         // not more than 1.0f
+
+        if (!this.mesh.enabled)
+        {
+            this.mesh.enabled = true;
+        }
 
         this.sprayedColor.a = Mathf.Min(
             this.sprayedOverlayMaterial.color.a 
@@ -134,32 +93,12 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
 
         this.sprayedOverlayMaterial.color = this.sprayedColor;
 
+        if (Mathf.Abs(this.sprayedColor.a - 0.0f) <= 1e-4)
+        {
+            // if alpha drops to 0, simply disable mesh
+            this.mesh.enabled = false;
+        }
+
     }
-
-    // [UdonSynced, FieldChangeCallback(nameof(SprayScreenUnicast))]
-    // private string sprayScreenUnicast;
-    // public string SprayScreenUnicast
-    // {
-    //     get => this.sprayScreenUnicast;
-    //     set
-    //     {
-
-    //         this.sprayScreenUnicast = value;
-    //         if (this.localPlayer.IsOwner(this.gameObject))
-    //         {
-    //             this.RequestSerialization();
-    //         }
-
-    //         string[] args = value.Split(' ');
-    //         string nonce = args[0];
-    //         int targetID = System.Int32.Parse(args[1]);
-
-    //         if (this.localPlayer.playerId == targetID)
-    //         {
-    //             this.SprayScreenLocal();
-    //         }
-
-    //     }
-    // }
 
 }

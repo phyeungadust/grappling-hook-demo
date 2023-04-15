@@ -10,8 +10,7 @@ public class ItemManager : UdonSharpBehaviour
     public ItemCollection itemCollection;
 
     private ItemControls[] itemControlsArr;
-    private ItemControls nullItem;
-    private ItemControls currentItem;
+    private Item currentItem;
 
     [SerializeField]
     private CustomControls[] customControlsArr;
@@ -20,6 +19,12 @@ public class ItemManager : UdonSharpBehaviour
     private PlayerStore ownerStore;
     private LocalVRMode localVRMode;
 
+    [SerializeField]
+    private GameStateControls gameStateControls;
+
+    [HideInInspector]
+    public bool enabledItemUse = true;
+
     // the ItemUpdate() method in an ItemControls
     // runs only when the item is equipped
 
@@ -27,19 +32,33 @@ public class ItemManager : UdonSharpBehaviour
     // runs regardless of what item is equipped
     // even when no item is equipped
 
-    public void SwitchItem(ItemControls item)
+    public void SwitchItem(Item item)
     {
         this.SwitchItemBroadcast(item);
     }
 
-    public void SwitchItemBroadcast(ItemControls item)
+    // public void SwitchItem(ItemControls item)
+    // {
+    //     this.SwitchItemBroadcast(item);
+    // }
+
+    public void SwitchItemBroadcast(Item item)
     {
         this.SwitchItemBroadcastSyncString = string.Join(
             " ",
             System.Guid.NewGuid().ToString().Substring(0, 6),
-            item.GetItemID()
+            item.GetItemControls().GetItemID()
         );
     }
+
+    // public void SwitchItemBroadcast(ItemControls item)
+    // {
+    //     this.SwitchItemBroadcastSyncString = string.Join(
+    //         " ",
+    //         System.Guid.NewGuid().ToString().Substring(0, 6),
+    //         item.GetItemID()
+    //     );
+    // }
 
     [UdonSynced, FieldChangeCallback(nameof(SwitchItemBroadcastSyncString))]
     private string switchItemBroadcastSyncString;
@@ -56,39 +75,64 @@ public class ItemManager : UdonSharpBehaviour
             string[] args = value.Split(' ');
             string nonce = args[0];
             int itemID = System.Int32.Parse(args[1]);
-            this.SwitchItemLocal(this.itemControlsArr[itemID]);
+            // this.SwitchItemLocal(this.itemControlsArr[itemID]);
+            this.SwitchItemLocal(this.itemCollection.GetById(itemID));
         }
     }
 
-    private void SwitchItemLocal(ItemControls item)
+    private void SwitchItemLocal(Item item)
     {
-        this.currentItem.UnEquip();
+        this.currentItem.GetItemControls().UnEquip();
         this.currentItem = item;
-        this.currentItem.Equip();
+        this.currentItem.GetItemControls().Equip();
     }
+
+    // private void SwitchItemLocal(ItemControls item)
+    // {
+    //     this.currentItem.UnEquip();
+    //     this.currentItem = item;
+    //     this.currentItem.Equip();
+    // }
 
     public void EquipRandomItem()
     {
+
         // randomly select an item from item ID [1, itemLength)
         // item 0 is null item, not included in the random select
         this.SwitchItem(
-            this.itemControlsArr[Random.Range(1, this.itemControlsArr.Length)]
+            this
+                .itemCollection
+                .GetById(Random.Range(1, this.itemCollection.GetLength()))
         );
+
+        // // randomly select an item from item ID [1, itemLength)
+        // // item 0 is null item, not included in the random select
+        // this.SwitchItem(
+        //     this.itemControlsArr[Random.Range(1, this.itemControlsArr.Length)]
+        // );
     }
 
     public void EquipShellShoot()
     {
-        this.SwitchItem(this.itemCollection.shellShootBehaviourControls);
+        this.SwitchItem(this.itemCollection.shellShoot);
+        // this.SwitchItem(this.itemCollection.shellShootBehaviourControls);
     }
 
     public void EquipSprayGun()
     {
-        this.SwitchItem(this.itemCollection.waterSprayGunBehaviourControls);
+        this.SwitchItem(this.itemCollection.sprayGun);
+        // this.SwitchItem(this.itemCollection.waterSprayGunBehaviourControls);
     }
 
     public void EquipNullItem()
     {
-        this.SwitchItem(this.itemCollection.nullItemControls);
+        this.SwitchItem(this.itemCollection.nullItem);
+        // this.SwitchItem(this.itemCollection.nullItemControls);
+    }
+
+    public void OnBeforeGameStarts()
+    {
+
     }
 
     public void CustomStart()
@@ -102,18 +146,32 @@ public class ItemManager : UdonSharpBehaviour
         this.localVRMode = this.ownerStore.localVRMode;
 
         this.itemCollection.Init();
-        this.itemControlsArr = this.itemCollection.itemControlsArr;
-        this.nullItem = this.itemCollection.nullItemControls;
-        this.currentItem = this.nullItem;
+        this.currentItem = this.itemCollection.nullItem;
+        // this.itemControlsArr = this.itemCollection.itemControlsArr;
+        // this.nullItem = this.itemCollection.nullItemControls;
+        // this.currentItem = this.nullItem;
 
         foreach (CustomControls customControls in this.customControlsArr)
         {
             customControls.CustomStart();
         }
-        foreach (ItemControls itemControls in this.itemControlsArr)
+
+        // foreach (ItemControls itemControls in this.itemControlsArr)
+        // {
+        //     itemControls.Init();
+        // }
+
+        foreach (Item item in this.itemCollection.GetAll())
         {
-            itemControls.Init();
+            item.GetItemControls().Init();
         }
+
+        // subscribe to game state changes
+        // this
+        //     .ownerStore
+        //     .playerStoreCollection
+        //     .customGameManager
+        //     .SubscribeToGameStateChanges(this.gameStateControls);
 
     }
 
@@ -123,7 +181,7 @@ public class ItemManager : UdonSharpBehaviour
         {
             customControls.CustomUpdate();
         }
-        this.currentItem.ItemUpdate();
+        this.currentItem.GetItemControls().ItemUpdate();
     }
 
     public void CustomFixedUpdate()
@@ -132,7 +190,7 @@ public class ItemManager : UdonSharpBehaviour
         {
             customControls.CustomFixedUpdate();
         }
-        this.currentItem.ItemFixedUpdate();
+        this.currentItem.GetItemControls().ItemFixedUpdate();
     }
 
 }

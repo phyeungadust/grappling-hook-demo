@@ -19,6 +19,8 @@ public class ShopMenuToggle : UdonSharpBehaviour
     private PlayerStore ownerStore;
     private LocalVRMode localVRMode;
     private VRCPlayerApi owner;
+    private Tether.TetherController tetherController;
+    private ItemManager itemManager;
     private float playerGravity;
 
     [SerializeField]
@@ -69,6 +71,9 @@ public class ShopMenuToggle : UdonSharpBehaviour
         this.owner = this.ownerStore.playerApiSafe.Get();
 
         this.playerGravity = this.owner.GetGravityStrength();
+
+        this.tetherController = this.ownerStore.tetherController;
+        this.itemManager = this.ownerStore.itemManager;
 
     }
 
@@ -198,6 +203,13 @@ public class ShopMenuToggle : UdonSharpBehaviour
                 this.innerShopMenu.SetActive(false);
                 // inform shopMenuController menu is toggled off
                 this.shopMenuController.OnMenuToggledOff();
+
+                // reenable tethering and tether raycast check
+                this.tetherController.EnableUpdate(true);
+
+                // reenable equipped item use
+                this.itemManager.enabledItemUse = true;
+
                 break;
             default:
                 break;
@@ -230,6 +242,15 @@ public class ShopMenuToggle : UdonSharpBehaviour
                 this.innerShopMenu.SetActive(true);
                 // inform shopMenuController menu is toggled on
                 this.shopMenuController.OnMenuToggledOn();
+
+                // disable tethering and tether raycast check
+                this.tetherController.SwitchState(
+                    this.tetherController.TetherStatesDict.TetherNoneState
+                );
+                this.tetherController.EnableUpdate(false);
+
+                // disable equipped item Use
+                this.itemManager.enabledItemUse = false;
 
                 break;
             default:

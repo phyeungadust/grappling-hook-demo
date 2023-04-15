@@ -34,6 +34,31 @@ namespace Tether
         [SerializeField]
         private TetherControllerNetworked controllerNetworked;
 
+        [SerializeField]
+        private GameStateControls gameStateControls;
+
+        private bool updateEnabled = true;
+
+        public void EnableUpdate(bool enabled)
+        {
+            this.updateEnabled = enabled;
+        }
+
+        public void OnBeforeGameStarts()
+        {
+            if (this.ownerStore.localVRMode.IsLocal())
+            {
+                // when game's about to start, switch to StunnedState
+                // this effectively stops player from tethering and moving
+                this.SwitchStateBroadcast(
+                    this
+                        .TetherStatesDict
+                        .StunnedState
+                        .Initialize(600f)
+                );
+            }
+        }
+
         public void CustomStart()
         {
 
@@ -51,6 +76,13 @@ namespace Tether
                 true
             );
 
+            // subscribe to game state changes
+            this
+                .ownerStore
+                .playerStoreCollection
+                .customGameManager
+                .SubscribeToGameStateChanges(this.gameStateControls);
+
         }
 
         public TetherState SwitchState(TetherState tetherState, bool init = false)
@@ -61,6 +93,7 @@ namespace Tether
             // which means no need to call Exit on the previous state
             // because there is no previous state to begin with
 
+            if (!this.updateEnabled) return this.tetherState;
             if (!init)
             {
                 this.tetherState.Exit(this);
@@ -73,6 +106,7 @@ namespace Tether
 
         public void SwitchStateBroadcast(TetherState tetherState)
         {
+            if (!this.updateEnabled) return;
             this.controllerNetworked.SwitchStateBroadcast(
                 tetherState
             );
@@ -80,11 +114,13 @@ namespace Tether
 
         public void CustomUpdate()
         {
+            if (!this.updateEnabled) return;
             this.tetherState.CheckStateChange(this);
         }
 
         public void CustomFixedUpdate()
         {
+            if (!this.updateEnabled) return;
             this.tetherState.HandleUpdate(this);
         }
 
