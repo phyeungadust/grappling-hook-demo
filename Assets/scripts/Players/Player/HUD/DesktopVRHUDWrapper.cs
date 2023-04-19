@@ -17,13 +17,28 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
     [SerializeField]
     private GameObject innerUI;
     [SerializeField]
+    private GameObject raceUI;
+    [SerializeField]
     private CustomTrackedObject trackedObj;
+
+    [SerializeField]
+    private GameStateControls gameStateControls;
+
+    public void OnBeforeGameStarts()
+    {
+        // // deactivate raceUI
+        // this.raceUI.SetActive(false);
+        // // popup text remains active
+    }
 
     public void CustomStart()
     {
+
         this.localVRMode = this.ownerStore.localVRMode;
+
         if (this.localVRMode.IsLocal())
         {
+
             if (this.localVRMode.IsVR())
             {
                 // localVR
@@ -42,9 +57,18 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
             this.innerUI.SetActive(true);
             this.innerUI.transform.localPosition = Vector3.zero;
             this.innerUI.transform.localScale = Vector3.one;
+
+            // subscribe to game state changes
+            this
+                .ownerStore
+                .playerStoreCollection
+                .customGameManager
+                .SubscribeToGameStateChanges(this.gameStateControls);
+
         }
         // nonLocal
         // no need to enable UI 
+
     }
 
 }

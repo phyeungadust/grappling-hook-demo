@@ -21,10 +21,33 @@ public class ShopMenuController : UdonSharpBehaviour
 
     private bool toggled = false;
 
+    [SerializeField]
+    private GameStateControls gameStateControls;
+
+    public void OnBeforeGameStarts()
+    {
+        // force close menu
+        this.toggler.SwitchState("menuClosed");
+        // // "menuClosed" state mobilizes player,
+        // // we want the player to be immobilized
+        // this.ownerStore.playerApiSafe.Get().Immobilize(true);
+        // deactivate this gameobject, so that updates won't run
+        this.gameObject.SetActive(false);
+    }
+
     public void CustomStart()
     {
+
         this.toggler.CustomStart();
         this.wallet = this.ownerStore.wallet;
+
+        // subscribe to game state changes
+        this
+            .ownerStore
+            .playerStoreCollection
+            .customGameManager
+            .SubscribeToGameStateChanges(this.gameStateControls);
+
     }
 
     public void CustomUpdate()

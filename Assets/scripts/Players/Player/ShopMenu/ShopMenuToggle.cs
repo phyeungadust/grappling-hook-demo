@@ -259,7 +259,7 @@ public class ShopMenuToggle : UdonSharpBehaviour
 
     }
 
-    private void SwitchState(string newState)
+    public void SwitchState(string newState)
     {
         this.Exit();
         this.currentState = newState;

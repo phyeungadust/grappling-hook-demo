@@ -9,7 +9,6 @@ public class ItemManager : UdonSharpBehaviour
 
     public ItemCollection itemCollection;
 
-    private ItemControls[] itemControlsArr;
     private Item currentItem;
 
     [SerializeField]
@@ -37,11 +36,6 @@ public class ItemManager : UdonSharpBehaviour
         this.SwitchItemBroadcast(item);
     }
 
-    // public void SwitchItem(ItemControls item)
-    // {
-    //     this.SwitchItemBroadcast(item);
-    // }
-
     public void SwitchItemBroadcast(Item item)
     {
         this.SwitchItemBroadcastSyncString = string.Join(
@@ -50,15 +44,6 @@ public class ItemManager : UdonSharpBehaviour
             item.GetItemControls().GetItemID()
         );
     }
-
-    // public void SwitchItemBroadcast(ItemControls item)
-    // {
-    //     this.SwitchItemBroadcastSyncString = string.Join(
-    //         " ",
-    //         System.Guid.NewGuid().ToString().Substring(0, 6),
-    //         item.GetItemID()
-    //     );
-    // }
 
     [UdonSynced, FieldChangeCallback(nameof(SwitchItemBroadcastSyncString))]
     private string switchItemBroadcastSyncString;
@@ -87,13 +72,6 @@ public class ItemManager : UdonSharpBehaviour
         this.currentItem.GetItemControls().Equip();
     }
 
-    // private void SwitchItemLocal(ItemControls item)
-    // {
-    //     this.currentItem.UnEquip();
-    //     this.currentItem = item;
-    //     this.currentItem.Equip();
-    // }
-
     public void EquipRandomItem()
     {
 
@@ -105,34 +83,26 @@ public class ItemManager : UdonSharpBehaviour
                 .GetById(Random.Range(1, this.itemCollection.GetLength()))
         );
 
-        // // randomly select an item from item ID [1, itemLength)
-        // // item 0 is null item, not included in the random select
-        // this.SwitchItem(
-        //     this.itemControlsArr[Random.Range(1, this.itemControlsArr.Length)]
-        // );
     }
 
     public void EquipShellShoot()
     {
         this.SwitchItem(this.itemCollection.shellShoot);
-        // this.SwitchItem(this.itemCollection.shellShootBehaviourControls);
     }
 
     public void EquipSprayGun()
     {
         this.SwitchItem(this.itemCollection.sprayGun);
-        // this.SwitchItem(this.itemCollection.waterSprayGunBehaviourControls);
     }
 
     public void EquipNullItem()
     {
         this.SwitchItem(this.itemCollection.nullItem);
-        // this.SwitchItem(this.itemCollection.nullItemControls);
     }
 
     public void OnBeforeGameStarts()
     {
-
+        this.currentItem.GetGameStateControls().OnBeforeGameStarts();
     }
 
     public void CustomStart()
@@ -147,31 +117,26 @@ public class ItemManager : UdonSharpBehaviour
 
         this.itemCollection.Init();
         this.currentItem = this.itemCollection.nullItem;
-        // this.itemControlsArr = this.itemCollection.itemControlsArr;
-        // this.nullItem = this.itemCollection.nullItemControls;
-        // this.currentItem = this.nullItem;
 
         foreach (CustomControls customControls in this.customControlsArr)
         {
             customControls.CustomStart();
         }
 
-        // foreach (ItemControls itemControls in this.itemControlsArr)
-        // {
-        //     itemControls.Init();
-        // }
+        if (this.localVRMode.IsLocal())
+        {
+            // subscribe to game state changes
+            this
+                .ownerStore
+                .playerStoreCollection
+                .customGameManager
+                .SubscribeToGameStateChanges(this.gameStateControls);
+        }
 
         foreach (Item item in this.itemCollection.GetAll())
         {
             item.GetItemControls().Init();
         }
-
-        // subscribe to game state changes
-        // this
-        //     .ownerStore
-        //     .playerStoreCollection
-        //     .customGameManager
-        //     .SubscribeToGameStateChanges(this.gameStateControls);
 
     }
 

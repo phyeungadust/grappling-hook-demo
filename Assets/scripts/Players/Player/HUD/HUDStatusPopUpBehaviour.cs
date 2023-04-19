@@ -52,7 +52,7 @@ public class HUDStatusPopUpBehaviour : UdonSharpBehaviour
                 this.tmPro.color = new Color(
                     this.defaultColor.r,
                     this.defaultColor.g,
-                    this.defaultColor.a,
+                    this.defaultColor.b,
                     this.opacityCurve.Evaluate(timeElapsed / totalAnimTime)
                 );
 

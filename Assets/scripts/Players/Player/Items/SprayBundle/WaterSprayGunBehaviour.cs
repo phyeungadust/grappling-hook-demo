@@ -79,11 +79,8 @@ public class WaterSprayGunBehaviour : Item
 
     public void OnBeforeGameStarts()
     {
-        if (this.localVRMode.IsLocal())
-        {
-            // switch back to null item
-            this.itemManager.EquipNullItem();
-        }
+        // switch back to null item
+        this.itemManager.EquipNullItem();
     }
 
     public void Equip()

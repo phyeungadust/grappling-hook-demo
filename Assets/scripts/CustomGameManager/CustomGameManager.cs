@@ -15,6 +15,9 @@ public class CustomGameManager : UdonSharpBehaviour
     private int maxSubscriberCount = 1024;
     private bool gameStarted = false;
 
+    [SerializeField]
+    private PlayerStoreCollection playerStoreCollection;
+
     public void GameStart()
     {
         foreach (GameObject go in this.deactivateWhenGameStarts)
@@ -26,7 +29,50 @@ public class CustomGameManager : UdonSharpBehaviour
         {
             this.gameStateControlsArr[i].OnBeforeGameStarts();
         }
-        this.gameStarted = true;
+        // this.gameStarted = true;
+        if (Networking.IsMaster)
+        {
+            this.CountDownBeforeStart();
+        }
+    }
+
+    public void CountDownBeforeStart()
+    {
+        // wait for 7 seconds
+        // for game to initialize
+        this.SendCustomEventDelayedSeconds(
+            nameof(this.CountDownBeforeStartBroadcast),
+            7f
+        );
+    }
+
+    public void CountDownBeforeStartBroadcast()
+    {
+        this.SendCustomNetworkEvent(
+            VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+            nameof(this.CountDownBeforeStartLocal)
+        );
+    }
+
+    public void CountDownBeforeStartLocal()
+    {
+
+        this
+            .playerStoreCollection
+            .GetLocal()
+            .hud
+            .gameStartCountDown
+            .gameObject
+            .SetActive(true);
+
+    }
+
+    public void OnGameStartCountDownFinishes()
+    {
+        for (int i = 0; i < this.stateChangeSubscribersCount; ++i)
+        {
+            this.gameStateControlsArr[i].OnAfterGameStarts();
+        }
     }
 
     public void GameEnd()

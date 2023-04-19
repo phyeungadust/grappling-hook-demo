@@ -7,5 +7,6 @@ using VRC.Udon;
 public class GameStateControls : UdonSharpBehaviour
 {
     public virtual void OnBeforeGameStarts() {}
+    public virtual void OnAfterGameStarts() {}
     public virtual void OnGameEnds() {}
 }

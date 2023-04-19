@@ -20,5 +20,6 @@ public class PlayerStore : UdonSharpBehaviour
     public InteractionMediator interactionMediator;
     [HideInInspector]
     public PlayerStoreCollection playerStoreCollection;
+    public Transform GamePlayerSpawnPoint;
 
 }

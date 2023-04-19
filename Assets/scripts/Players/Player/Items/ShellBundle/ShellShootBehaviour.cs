@@ -47,12 +47,29 @@ public class ShellShootBehaviour : Item
 
     public void Init()
     {
+
         this.owner = this.ownerStore.playerApiSafe.Get();
         this.localVRMode = this.ownerStore.localVRMode;
         Networking.SetOwner(
             this.owner,
             this.shellPool.gameObject
         );
+
+        if (this.localVRMode.IsLocal())
+        {
+            // subscribe all rockets to game state changes
+            foreach (GameObject rocketGameObject in this.shellPool.Pool)
+            {
+                GameStateControls rocketGameStateControls = rocketGameObject
+                    .GetComponent<ShellBehaviourGameStateControls>();
+                this
+                    .ownerStore
+                    .playerStoreCollection
+                    .customGameManager
+                    .SubscribeToGameStateChanges(rocketGameStateControls);
+            }
+        }
+
     }
 
     public void OnBeforeGameStarts()
@@ -61,15 +78,6 @@ public class ShellShootBehaviour : Item
         {
             // switch back to null item
             this.itemManager.EquipNullItem();
-            // despawn all rockets
-            foreach (GameObject rocketGameObject in this.shellPool.Pool)
-            {
-                if (rocketGameObject.activeSelf)
-                {
-                    // despawn all spawned rockets
-                    this.shellPool.Return(rocketGameObject);
-                }
-            }
         }
     }
 

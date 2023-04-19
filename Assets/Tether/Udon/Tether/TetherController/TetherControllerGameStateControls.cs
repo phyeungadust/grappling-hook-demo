@@ -14,5 +14,9 @@ namespace Tether
         {
             this.controller.OnBeforeGameStarts();
         }
+        public override void OnAfterGameStarts()
+        {
+            this.controller.OnAfterGameStarts();
+        }
     }
 }

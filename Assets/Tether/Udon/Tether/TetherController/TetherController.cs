@@ -46,17 +46,36 @@ namespace Tether
 
         public void OnBeforeGameStarts()
         {
-            if (this.ownerStore.localVRMode.IsLocal())
-            {
-                // when game's about to start, switch to StunnedState
-                // this effectively stops player from tethering and moving
-                this.SwitchStateBroadcast(
-                    this
-                        .TetherStatesDict
-                        .StunnedState
-                        .Initialize(600f)
-                );
-            }
+            // when game's about to start, switch to StunnedState
+            // this effectively stops player from tethering and moving
+            this.SendCustomEventDelayedFrames(
+                nameof(this.SwitchToStunnedStateFor10MinsLocal),
+                0
+            );
+
+            this.owner.TeleportTo(
+                this.ownerStore.GamePlayerSpawnPoint.position,
+                this.ownerStore.GamePlayerSpawnPoint.rotation
+            );
+        }
+
+        public void OnAfterGameStarts()
+        {
+            this.SwitchStateBroadcast(
+                this
+                    .TetherStatesDict
+                    .TetherNoneState
+            );
+        }
+
+        public void SwitchToStunnedStateFor10MinsLocal()
+        {
+            this.SwitchStateBroadcast(
+                this
+                    .TetherStatesDict
+                    .StunnedState
+                    .Initialize(600f)
+            );
         }
 
         public void CustomStart()
@@ -76,12 +95,15 @@ namespace Tether
                 true
             );
 
-            // subscribe to game state changes
-            this
-                .ownerStore
-                .playerStoreCollection
-                .customGameManager
-                .SubscribeToGameStateChanges(this.gameStateControls);
+            if (this.ownerStore.localVRMode.IsLocal())
+            {
+                // subscribe to game state changes
+                this
+                    .ownerStore
+                    .playerStoreCollection
+                    .customGameManager
+                    .SubscribeToGameStateChanges(this.gameStateControls);
+            }
 
         }
 
