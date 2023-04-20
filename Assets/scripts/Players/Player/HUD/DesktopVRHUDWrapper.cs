@@ -22,7 +22,7 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
     private CustomTrackedObject trackedObj;
 
     [SerializeField]
-    private GameStateControls gameStateControls;
+    private GameStateControls timerGameStateControls;
 
     public void OnBeforeGameStarts()
     {
@@ -58,12 +58,12 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
             this.innerUI.transform.localPosition = Vector3.zero;
             this.innerUI.transform.localScale = Vector3.one;
 
-            // subscribe to game state changes
+            // subscribe timer to game state changes
             this
                 .ownerStore
                 .playerStoreCollection
                 .customGameManager
-                .SubscribeToGameStateChanges(this.gameStateControls);
+                .SubscribeToGameStateChanges(this.timerGameStateControls);
 
         }
         // nonLocal

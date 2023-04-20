@@ -279,6 +279,12 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
                     this
                         .interactionMediator
                         .SprayParticleHitUnicast(victimID);
+
+                    // reward shooter with points
+                    this.ownerStore.hud.hudScoreController.ChangeScoreAmount(
+                        25,
+                        "SPRAY HIT!"
+                    );
                 }
 
             }

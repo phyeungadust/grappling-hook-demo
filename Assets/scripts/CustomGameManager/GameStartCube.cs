@@ -14,7 +14,7 @@ public class GameStartCube : UdonSharpBehaviour
     {
         if (Networking.IsMaster)
         {
-            this.customGameManager.GameToggle();
+            this.customGameManager.ActivateGame();
         }
     }
 

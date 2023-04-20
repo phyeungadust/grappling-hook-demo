@@ -18,7 +18,15 @@ public class CustomGameManager : UdonSharpBehaviour
     [SerializeField]
     private PlayerStoreCollection playerStoreCollection;
 
-    public void GameStart()
+    public void ActivateGame()
+    {
+        this.SendCustomNetworkEvent(
+            VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+            nameof(this.ActivateGameBroadcast)
+        );
+    }
+
+    public void ActivateGameBroadcast()
     {
         foreach (GameObject go in this.deactivateWhenGameStarts)
         {
@@ -29,7 +37,6 @@ public class CustomGameManager : UdonSharpBehaviour
         {
             this.gameStateControlsArr[i].OnBeforeGameStarts();
         }
-        // this.gameStarted = true;
         if (Networking.IsMaster)
         {
             this.CountDownBeforeStart();
@@ -56,7 +63,6 @@ public class CustomGameManager : UdonSharpBehaviour
 
     public void CountDownBeforeStartLocal()
     {
-
         this
             .playerStoreCollection
             .GetLocal()
@@ -64,7 +70,6 @@ public class CustomGameManager : UdonSharpBehaviour
             .gameStartCountDown
             .gameObject
             .SetActive(true);
-
     }
 
     public void OnGameStartCountDownFinishes()
@@ -75,32 +80,19 @@ public class CustomGameManager : UdonSharpBehaviour
         }
     }
 
-    public void GameEnd()
+    public void EndGame()
     {
-        foreach (GameObject go in this.deactivateWhenGameStarts)
-        {
-            go.SetActive(true);
-        }
-        this.gameStarted = false;
+        this.SendCustomNetworkEvent(
+            VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+            nameof(this.EndGameBroadcast)
+        );
     }
 
-    public void GameToggle()
+    public void EndGameBroadcast()
     {
-        if (this.gameStarted)
+        for (int i = 0; i < this.stateChangeSubscribersCount; ++i)
         {
-            // game started, toggle it off
-            this.SendCustomNetworkEvent(
-                VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
-                nameof(this.GameEnd)
-            );
-        }
-        else
-        {
-            // game has not started, toggle it on
-            this.SendCustomNetworkEvent(
-                VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
-                nameof(this.GameStart)
-            );
+            this.gameStateControlsArr[i].OnBeforeGameEnds();
         }
     }
 

@@ -211,6 +211,13 @@ public class ShellBehaviour : UdonSharpBehaviour
                     this.shellProperties.StunTime
                 );
 
+                // reward shooter with points
+                this
+                    .ownerStore
+                    .hud
+                    .hudScoreController
+                    .ChangeScoreAmount(100, "ROCKET HIT!");
+
                 // play explosion vfx on all game instances
                 // and let the shooter despawn the shell
                 this.SendCustomNetworkEvent(

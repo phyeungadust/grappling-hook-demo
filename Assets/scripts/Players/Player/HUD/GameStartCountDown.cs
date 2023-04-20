@@ -46,19 +46,46 @@ public class GameStartCountDown : UdonSharpBehaviour
             {
                 if (this.timer == 1)
                 {
+
                     --this.timer;
+
+                    // temporarily hide text before rescaling
+                    this.tmPro.text = "";
+
+                    // rescaling
+                    this.progressForEachSecond = 0.0f;
+                    this.transform.localScale = Vector3.one * this.scaleCurve.Evaluate(
+                        this.progressForEachSecond
+                    );
+
+                    // put text
                     this.tmPro.text = "GO!";
+
                     // tell custom manager game starts
                     this
                         .ownerStore
                         .playerStoreCollection
                         .customGameManager
                         .OnGameStartCountDownFinishes();
+
                 }
                 else
                 {
+
                     --this.timer;
+
+                    // temporarily hide text before rescaling
+                    this.tmPro.text = "";
+
+                    // rescaling
+                    this.progressForEachSecond = 0.0f;
+                    this.transform.localScale = Vector3.one * this.scaleCurve.Evaluate(
+                        this.progressForEachSecond
+                    );
+
+                    // put text
                     this.tmPro.text = this.timer.ToString();
+
                 }
                 this.progressForEachSecond = 0.0f;
             }

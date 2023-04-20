@@ -62,9 +62,14 @@ public class InteractionMediator : UdonSharpBehaviour
         Tether.TetherController controller = this.localStore.tetherController;
         Tether.StunnedState state = controller.TetherStatesDict.StunnedState;
         HUDStatusPopUpBehaviour popup = this.localStore.hud.popup;
+        HUDScoreController hudScoreController = this
+            .localStore
+            .hud
+            .hudScoreController;
 
         controller.SwitchStateBroadcast(state.Initialize(stunTime));
         popup.ShowPopUp("STUNNED");
+        hudScoreController.ChangeScoreAmount(-100, "ROCKET HIT!");
 
     }
 
@@ -103,6 +108,10 @@ public class InteractionMediator : UdonSharpBehaviour
     public void SprayParticleHitLocal()
     {
         this.localStore.hud.sprayHUD.SprayScreenLocal();
+        this.localStore.hud.hudScoreController.ChangeScoreAmount(
+            -25,
+            "SPRAY HIT!"
+        );
     }
 
 }
