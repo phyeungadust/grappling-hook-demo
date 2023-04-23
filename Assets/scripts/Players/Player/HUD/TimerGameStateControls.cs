@@ -20,4 +20,8 @@ public class TimerGameStateControls : GameStateControls
     {
         this.timer.OnBeforeGameEnds();
     }
+    public override void OnAfterGameEnds()
+    {
+        this.timer.OnAfterGameEnds();
+    }
 }

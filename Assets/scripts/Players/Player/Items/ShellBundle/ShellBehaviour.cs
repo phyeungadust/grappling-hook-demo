@@ -104,6 +104,18 @@ public class ShellBehaviour : UdonSharpBehaviour
         }
     }
 
+    public void OnBeforeGameEnds()
+    {
+        if (this.gameObject.activeSelf)
+        {
+            if (this.localVRMode.IsLocal())
+            {
+                // when game's about to start, despawn rocket if launched
+                this.ReturnShell();
+            }
+        }
+    }
+
     void OnEnable()
     {
 

@@ -12,4 +12,8 @@ public class ItemManagerGameStateControls : GameStateControls
     {
         this.itemManager.OnBeforeGameStarts();
     }
+    public override void OnBeforeGameEnds()
+    {
+        this.itemManager.OnBeforeGameEnds();
+    }
 }

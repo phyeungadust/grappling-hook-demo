@@ -58,6 +58,12 @@ public class Timer : UdonSharpBehaviour
         this.enabled = false;
     }
 
+    public void OnAfterGameEnds()
+    {
+        this.timeLeft = this.defaultTime;
+        this.DisplayTime(this.timeLeft);
+    }
+
     public void DisplayTime(float currentTime)
     {
         int currentTimeInInt = Mathf.CeilToInt(currentTime);

@@ -171,4 +171,10 @@ public class HUDScoreChangeAnim : UdonSharpBehaviour
         }
     }
 
+    public void ResetToZero()
+    {
+        this.cachedScore = 0;
+        this.scoreText.text = "0";
+    }
+
 }

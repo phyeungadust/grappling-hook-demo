@@ -12,19 +12,17 @@ public class HUDScoreController : UdonSharpBehaviour
     [SerializeField]
     private PlayerStore ownerStore;
 
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Q))
-    //     {
-    //         this.ownerStore.score.Deduct(10);
-    //         this.hudScoreChangeAnim.ScoreChangeAnimStart(-10, "SAMPLE TEXT");
-    //     }
-    //     else if (Input.GetKeyDown(KeyCode.E))
-    //     {
-    //         this.ownerStore.score.Add(10);
-    //         this.hudScoreChangeAnim.ScoreChangeAnimStart(10, "SAMPLE TEXT");
-    //     }
-    // }
+    public void OnBeforeGameStarts()
+    {
+        this.ownerStore.score.SetAmount(0);
+        this.hudScoreChangeAnim.ResetToZero();
+    }
+
+    public void OnAfterGameEnds()
+    {
+        this.ownerStore.score.SetAmount(0);
+        this.hudScoreChangeAnim.ResetToZero();
+    }
 
     public void ChangeScoreAmount(int amount, string hitMsg)
     {

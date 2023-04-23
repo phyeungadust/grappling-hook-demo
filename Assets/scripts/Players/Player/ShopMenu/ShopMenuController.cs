@@ -35,6 +35,12 @@ public class ShopMenuController : UdonSharpBehaviour
         this.gameObject.SetActive(false);
     }
 
+    public void OnAfterGameEnds()
+    {
+        // reactivate this gameobject, so that updates run
+        this.gameObject.SetActive(true);
+    }
+
     public void CustomStart()
     {
 

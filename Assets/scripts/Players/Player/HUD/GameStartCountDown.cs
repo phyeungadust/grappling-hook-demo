@@ -41,6 +41,8 @@ public class GameStartCountDown : UdonSharpBehaviour
             {
                 // deactivate this gameObject (timer)
                 this.gameObject.SetActive(false);
+                // disable this script (timer)
+                this.enabled = false;
             }
             else
             {
@@ -91,6 +93,12 @@ public class GameStartCountDown : UdonSharpBehaviour
             }
         }
 
+    }
+
+    public void StartCountDown()
+    {
+        this.gameObject.SetActive(true);
+        this.enabled = true;
     }
 
 }

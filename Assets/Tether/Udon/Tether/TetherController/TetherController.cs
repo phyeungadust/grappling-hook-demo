@@ -68,6 +68,21 @@ namespace Tether
             );
         }
 
+        public void OnBeforeGameEnds()
+        {
+            this.SwitchToStunnedStateFor10MinsLocal();
+        }
+
+        public void OnAfterGameEnds()
+        {
+            this.ownerStore.playerApiSafe.Get().Respawn();
+            this.SwitchStateBroadcast(
+                this
+                    .TetherStatesDict
+                    .TetherNoneState
+            );
+        }
+
         public void SwitchToStunnedStateFor10MinsLocal()
         {
             this.SwitchStateBroadcast(

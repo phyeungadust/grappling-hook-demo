@@ -105,6 +105,11 @@ public class ItemManager : UdonSharpBehaviour
         this.currentItem.GetGameStateControls().OnBeforeGameStarts();
     }
 
+    public void OnBeforeGameEnds()
+    {
+        this.currentItem.GetGameStateControls().OnBeforeGameStarts();
+    }
+
     public void CustomStart()
     {
 

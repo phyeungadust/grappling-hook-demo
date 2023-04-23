@@ -9,5 +9,6 @@ public class HUD : UdonSharpBehaviour
     public HUDStatusPopUpBehaviour popup;
     public SprayedOverlayBehaviour sprayHUD;
     public GameStartCountDown gameStartCountDown;
+    public GameEndSequence gameEndSequence;
     public HUDScoreController hudScoreController;
 }

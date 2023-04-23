@@ -68,8 +68,7 @@ public class CustomGameManager : UdonSharpBehaviour
             .GetLocal()
             .hud
             .gameStartCountDown
-            .gameObject
-            .SetActive(true);
+            .StartCountDown();
     }
 
     public void OnGameStartCountDownFinishes()
@@ -93,6 +92,25 @@ public class CustomGameManager : UdonSharpBehaviour
         for (int i = 0; i < this.stateChangeSubscribersCount; ++i)
         {
             this.gameStateControlsArr[i].OnBeforeGameEnds();
+        }
+        // end game animation
+        this
+            .playerStoreCollection
+            .GetLocal()
+            .hud
+            .gameEndSequence
+            .PlaySequence();
+    }
+
+    public void OnGameEndSequenceFinishes()
+    {
+        for (int i = 0; i < this.stateChangeSubscribersCount; ++i)
+        {
+            this.gameStateControlsArr[i].OnAfterGameEnds();
+        }
+        foreach (GameObject go in this.deactivateWhenGameStarts)
+        {
+            go.SetActive(true);
         }
     }
 

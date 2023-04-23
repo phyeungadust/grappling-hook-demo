@@ -23,13 +23,8 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
 
     [SerializeField]
     private GameStateControls timerGameStateControls;
-
-    public void OnBeforeGameStarts()
-    {
-        // // deactivate raceUI
-        // this.raceUI.SetActive(false);
-        // // popup text remains active
-    }
+    [SerializeField]
+    private GameStateControls hudScoreControllerGameStateControls;
 
     public void CustomStart()
     {
@@ -64,6 +59,15 @@ public class DesktopVRHUDWrapper : UdonSharpBehaviour
                 .playerStoreCollection
                 .customGameManager
                 .SubscribeToGameStateChanges(this.timerGameStateControls);
+
+            // subscribe hudScore to game state changes
+            this
+                .ownerStore
+                .playerStoreCollection
+                .customGameManager
+                .SubscribeToGameStateChanges(
+                    this.hudScoreControllerGameStateControls
+                );
 
         }
         // nonLocal

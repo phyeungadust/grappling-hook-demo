@@ -12,4 +12,8 @@ public class ShellBehaviourGameStateControls : GameStateControls
     {
         this.shell.OnBeforeGameStarts();
     }
+    public override void OnBeforeGameEnds()
+    {
+        this.shell.OnBeforeGameEnds();
+    }
 }

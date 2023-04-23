@@ -4,16 +4,16 @@ using VRC.SDKBase;
 using VRC.Udon;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
-public class ShopMenuGameStateControls : GameStateControls
+public class HUDScoreControllerGameStateControls : GameStateControls
 {
     [SerializeField]
-    private ShopMenuController shopMenuController;
+    private HUDScoreController hudScoreController;
     public override void OnBeforeGameStarts()
     {
-        this.shopMenuController.OnBeforeGameStarts();
+        this.hudScoreController.OnBeforeGameStarts();
     }
     public override void OnAfterGameEnds()
     {
-        this.shopMenuController.OnAfterGameEnds();
+        this.hudScoreController.OnAfterGameEnds();
     }
 }
