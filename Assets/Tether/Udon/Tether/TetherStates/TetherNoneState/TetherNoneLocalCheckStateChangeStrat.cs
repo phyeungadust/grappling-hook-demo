@@ -45,22 +45,15 @@ namespace Tether
                     GameObject tetherObject = hit.collider.gameObject;
                     Vector3 hitPoint = hit.point;
 
-                    if (ropeLength <= tetherController.properties.brakeLength)
+                    if (
+                        ropeLength > tetherController.properties.brakeLength
+                        || tetherObject.layer == 26
+                        || tetherObject.layer == 27
+                    )
                     {
-                        // tethered and within brake length
-                        // TetherBrakeState
-                        tetherController.SwitchStateBroadcast(
-                            this
-                                .state
-                                .tetherStatesDict
-                                .TetherBrakeState
-                                .Init(tetherObject, hitPoint)
-                        );
-                    }
-                    else
-                    {
-                        // tethered and not within brake length
-                        // TetherAccelState
+                        // either tethered out of brake length
+                        // or tethered to a NonLocalHitbox
+                        // or tethered to an ItemPickUpBox
                         tetherController.SwitchStateBroadcast(
                             this
                                 .state
@@ -69,6 +62,19 @@ namespace Tether
                                 .Init(tetherObject, hitPoint)
                         );
                     }
+                    else
+                    {
+                        // tethered to a MapProps
+                        // and is within brake length
+                        tetherController.SwitchStateBroadcast(
+                            this
+                                .state
+                                .tetherStatesDict
+                                .TetherBrakeState
+                                .Init(tetherObject, hitPoint)
+                        );
+                    }
+
                 }
 
             }

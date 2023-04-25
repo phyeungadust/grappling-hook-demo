@@ -114,4 +114,48 @@ public class InteractionMediator : UdonSharpBehaviour
         );
     }
 
+    public void MeleeHitUnicast(int receiverID, int score)
+    {
+        this.MeleeHitUnicastSyncString = string.Join(
+            " ",
+            System.Guid.NewGuid().ToString().Substring(0, 6),
+            receiverID,
+            score
+        );
+    }
+
+    [UdonSynced, FieldChangeCallback(nameof(MeleeHitUnicastSyncString))]
+    private string meleeHitUnicastSyncString;
+    public string MeleeHitUnicastSyncString
+    {
+        get => this.meleeHitUnicastSyncString;
+        set
+        {
+            this.meleeHitUnicastSyncString = value;
+            if (this.senderStore == this.localStore)
+            {
+                this.RequestSerialization();
+            }
+            string[] args = value.Split(' ');
+            string nonce = args[0];
+            int receiverID = System.Int32.Parse(args[1]);
+            int score = System.Int32.Parse(args[2]);
+            if (this.localStore.playerApiSafe.GetID() == receiverID)
+            {
+                // if the local player is the receiver
+                this.MeleeHitLocal(score);
+            }
+        }
+    }
+
+    public void MeleeHitLocal(int score)
+    {
+        this.localStore.hitbox.ChargeUsed();
+        this.localStore.hud.hudScoreController.ChangeScoreAmount(
+            -score,
+            "MELEE HIT"
+        );
+        this.localStore.hud.popup.ShowPopUp("MELEE DISABLED");
+    }
+
 }

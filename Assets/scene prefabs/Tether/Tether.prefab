@@ -253,7 +253,7 @@ MonoBehaviour:
   maxSpeed: 30
   tetherDetectionMask:
     serializedVersion: 2
-    m_Bits: 8388608
+    m_Bits: 75497472
   tetherDetectionSize: 0.75
   tetherDetectionIncrements: 2
   tetherInputDeadzone: 0

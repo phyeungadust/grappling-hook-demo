@@ -39,10 +39,20 @@ namespace Tether
             // new player velocity after accelerating 
             // for an infinitesimal amount of time (Time.deltaTime)
             // by default, maxSpeed is 25.0f
-            Vector3 newPlayerVelocity = Vector3.ClampMagnitude(
-                playerVelocity + acceleration * Time.deltaTime,
-                tetherController.properties.maxSpeed
-            );
+            // maxSpeed only applies when tethered to MapProps
+            Vector3 newPlayerVelocity = 
+                playerVelocity + acceleration * Time.deltaTime;
+            if (
+                tetherController.GetTetherObject().layer == 23
+            )
+            {
+                // if tethered to MapProps
+                // clamp to maxSpeed
+                newPlayerVelocity = Vector3.ClampMagnitude(
+                    newPlayerVelocity,
+                    tetherController.properties.maxSpeed
+                );
+            }
 
             state.owner.SetVelocity(newPlayerVelocity);
 

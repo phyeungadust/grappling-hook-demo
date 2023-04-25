@@ -30,9 +30,9 @@ TagManager:
   - SprayedScreen
   - MapProps
   - Tether
-  - 
-  - 
-  - 
+  - LocalHitbox
+  - NonLocalHitbox
+  - ItemPickUpBox
   - 
   - 
   - 
