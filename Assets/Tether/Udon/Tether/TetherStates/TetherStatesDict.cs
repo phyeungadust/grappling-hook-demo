@@ -5,6 +5,7 @@ using VRC.Udon;
 
 namespace Tether
 {
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class TetherStatesDict : UdonSharpBehaviour
     {
         public TetherNoneState TetherNoneState;

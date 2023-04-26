@@ -1,4 +1,3 @@
-
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -9,38 +8,47 @@ namespace Player
     /// <summary>
     /// Script to track objects to the player's hands or head.
     /// </summary>
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class TrackedObject : UdonSharpBehaviour
     {
 
-        [Tooltip("Whether this TrackedObject should be active if you are in desktop mode or VR mode.")]
-        public bool vrEnabled;
         [Tooltip("Which GameObject to enable if vrEnabled matches which mode we are in.")]
         public GameObject vrEnabledObject;
-        [Tooltip("Which tracking point to attach this object to.")]
+        // [Tooltip("Which tracking point to attach this object to.")]
         public VRCPlayerApi.TrackingDataType trackingType;
 
-        private bool editorMode = true;
-        private VRCPlayerApi localPlayer;
+        [SerializeField]
+        private PlayerStore ownerStore;
+        private VRCPlayerApi owner;
+        private LocalVRMode localVRMode;
 
-        public void Start()
+        [SerializeField]
+        private TrackedObjectSetTrackingTypeLocalVRVisitor setTrackingTypeLocalVRVisitor;
+
+        public void CustomStart()
         {
-            localPlayer = Networking.LocalPlayer;
 
-            if (localPlayer != null)
-            {
-                editorMode = false;
+            this.owner = this.ownerStore.playerApiSafe.Get();
+            this.localVRMode = this.ownerStore.localVRMode;
 
-                vrEnabledObject.SetActive(vrEnabled == localPlayer.IsUserInVR());
-            }
+            // set trackingType to:
+            // Head when non-VR
+            // RightHand when VR
+            this.localVRMode.Accept(
+                this.setTrackingTypeLocalVRVisitor.Init(this)
+            );
+
+            this.vrEnabledObject.SetActive(true);
+
         }
 
-        public void Update()
+        public void CustomUpdate()
         {
-            if (!editorMode && vrEnabled == localPlayer.IsUserInVR())
-            {
-                VRCPlayerApi.TrackingData data = localPlayer.GetTrackingData(trackingType);
-                transform.SetPositionAndRotation(data.position, data.rotation);
-            }
+            VRCPlayerApi.TrackingData data = this
+                .owner
+                .GetTrackingData(trackingType);
+            transform.SetPositionAndRotation(data.position, data.rotation);
         }
+
     }
 }

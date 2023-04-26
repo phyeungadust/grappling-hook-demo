@@ -28,11 +28,11 @@ TagManager:
   - reserved3
   - reserved4
   - SprayedScreen
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MapProps
+  - Tether
+  - LocalHitbox
+  - NonLocalHitbox
+  - ItemPickUpBox
   - 
   - 
   - 

@@ -861,5 +861,8 @@ MonoBehaviour:
     uid: c4324c30-684e-4557-8811-81c06b24e746
     jsonData: '{"uid":"c4324c30-684e-4557-8811-81c06b24e746","layout":{"serializedVersion":"2","x":1812.0001220703125,"y":908.0000610351563,"width":486.0,"height":312.0},"containedElements":["8f46e525-153b-4b02-a136-8d7475790e43","8e01d6cb-f182-4f7b-955a-715079e2a392","2d7db82f-8037-4bf6-86ca-cc25d3b23971"],"title":"Enable
       / Disable Guest Control","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  viewTransform:
+    position: {x: 383.33334, y: -184.66667}
+    scale: 0.64672804
   version: 1.0.0
   showAssembly: 0

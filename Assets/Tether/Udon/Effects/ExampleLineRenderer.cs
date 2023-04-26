@@ -1,4 +1,3 @@
-
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
@@ -11,6 +10,7 @@ namespace Effects
     /// Basic example for rendering a tether using a line renderer.
     /// </summary>
     [RequireComponent(typeof(LineRenderer))]
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
     public class ExampleLineRenderer : UdonSharpBehaviour
     {
         [Tooltip("TetherController to get information from.")]
@@ -19,7 +19,7 @@ namespace Effects
         [Tooltip("A line renderer, required for visualizing a grapple.")]
         public LineRenderer line;
 
-        public void LateUpdate()
+        public void CustomLateUpdate()
         {
             if (controller.GetTethering())
             {
