@@ -39,6 +39,7 @@ public class PlayerHitbox : UdonSharpBehaviour
             if (this.rechargeTimer >= 10.0f)
             {
                 this.chargeAvailable = true;
+                this.ownerStore.hud.meleePanel.Ready();
                 this.rechargeTimer = 10.0f;
             }
         }
@@ -130,7 +131,7 @@ public class PlayerHitbox : UdonSharpBehaviour
                                 .hudScoreController
                                 .ChangeScoreAmount(
                                     score,
-                                    "MELEE HIT!"
+                                    $"MELEE HIT! +{score}"
                                 );
 
                             this.ChargeUsed();
@@ -149,7 +150,16 @@ public class PlayerHitbox : UdonSharpBehaviour
                         this
                             .ownerStore
                             .interactionMediator
-                            .MeleeHitUnicast(victimStore.playerApiSafe.GetID(), 800);
+                            .MeleeHitUnicast(victimStore.playerApiSafe.GetID(), score);
+
+                        this
+                            .ownerStore
+                            .hud
+                            .hudScoreController
+                            .ChangeScoreAmount(
+                                score,
+                                $"MELEE HIT! +{score}"
+                            );
 
                         this.ChargeUsed();
 
@@ -163,6 +173,7 @@ public class PlayerHitbox : UdonSharpBehaviour
     public void ChargeUsed()
     {
         this.chargeAvailable = false;
+        this.ownerStore.hud.meleePanel.Cooldown();
         this.rechargeTimer = 0.0f;
         this.RequestSerialization();
     }

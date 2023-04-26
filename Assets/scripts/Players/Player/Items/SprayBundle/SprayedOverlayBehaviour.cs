@@ -77,7 +77,7 @@ public class SprayedOverlayBehaviour : UdonSharpBehaviour
         this.sprayedColor.a = Mathf.Min(
             this.sprayedOverlayMaterial.color.a 
                 + this.sprayAccumulateSpeed * Time.deltaTime,
-            0.8f
+            1.0f
         );
 
         this.sprayedOverlayMaterial.color = this.sprayedColor;

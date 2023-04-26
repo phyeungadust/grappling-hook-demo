@@ -69,7 +69,7 @@ public class InteractionMediator : UdonSharpBehaviour
 
         controller.SwitchStateBroadcast(state.Initialize(stunTime));
         popup.ShowPopUp("STUNNED");
-        hudScoreController.ChangeScoreAmount(-100, "ROCKET HIT!");
+        hudScoreController.ChangeScoreAmount(-100, "ROCKET HIT! -100");
 
     }
 
@@ -110,7 +110,7 @@ public class InteractionMediator : UdonSharpBehaviour
         this.localStore.hud.sprayHUD.SprayScreenLocal();
         this.localStore.hud.hudScoreController.ChangeScoreAmount(
             -25,
-            "SPRAY HIT!"
+            "SPRAY HIT! -25"
         );
     }
 
@@ -153,7 +153,7 @@ public class InteractionMediator : UdonSharpBehaviour
         this.localStore.hitbox.ChargeUsed();
         this.localStore.hud.hudScoreController.ChangeScoreAmount(
             -score,
-            "MELEE HIT"
+            $"MELEE HIT -{score}"
         );
         this.localStore.hud.popup.ShowPopUp("MELEE DISABLED");
     }

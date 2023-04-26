@@ -11,4 +11,5 @@ public class HUD : UdonSharpBehaviour
     public GameStartCountDown gameStartCountDown;
     public GameEndSequence gameEndSequence;
     public HUDScoreController hudScoreController;
+    public MeleePanel meleePanel;
 }

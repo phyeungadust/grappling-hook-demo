@@ -205,6 +205,20 @@ public class ShellBehaviour : UdonSharpBehaviour
         if (this.localVRMode.IsLocal())
         {
 
+            Debug.Log($"collided into {collider.gameObject.name}");
+
+            if (
+                this.launched
+                && collider.gameObject.layer == 23
+            )
+            {
+                this.SendCustomNetworkEvent(
+                    VRC.Udon.Common.Interfaces.NetworkEventTarget.All,
+                    nameof(ExplodeAndDespawn)
+                );
+                return;
+            }
+
             // only check collisions of shell on shell's owner instance
             PlayerHitbox playerHitbox = collider.GetComponent<PlayerHitbox>();
 
@@ -228,7 +242,7 @@ public class ShellBehaviour : UdonSharpBehaviour
                     .ownerStore
                     .hud
                     .hudScoreController
-                    .ChangeScoreAmount(100, "ROCKET HIT!");
+                    .ChangeScoreAmount(100, "ROCKET HIT! +100");
 
                 // play explosion vfx on all game instances
                 // and let the shooter despawn the shell

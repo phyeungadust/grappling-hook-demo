@@ -283,7 +283,7 @@ public class WaterSprayParticleBehaviour : UdonSharpBehaviour
                     // reward shooter with points
                     this.ownerStore.hud.hudScoreController.ChangeScoreAmount(
                         25,
-                        "SPRAY HIT!"
+                        "SPRAY HIT! +25"
                     );
                 }
 
